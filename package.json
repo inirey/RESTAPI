@@ -1,0 +1,58 @@
+{
+  "name": "api-zhirrr",
+  "version": "1.1.0",
+  "description": "My Rest Api Projectttttt",
+  "main": "nodemon index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zhirrr/Zhirrr-Api.git"
+  },
+  "keywords": [
+    "simple",
+    "api",
+    "rest",
+    "api"
+  ],
+  "author": "Zhirrr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zhirrr/Zhirrr-Api/issues"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "base-64": "^1.0.0",
+    "base32": "0.0.6",
+    "chalk": "^4.1.0",
+    "cheerio": "^1.0.0-rc.5",
+    "child_process": "^1.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "emoji-api": "^1.0.2",
+    "express": "^4.17.1",
+    "fbdl-core": "^1.0.2",
+    "form-data": "^4.0.0",
+    "fs": "0.0.1-security",
+    "genius-lyrics": "^4.2.7",
+    "instatouch": "^2.3.3",
+    "lodash": "^4.17.20",
+    "moment": "^2.29.1",
+    "mongodb": "^3.6.3",
+    "monk": "^7.3.3",
+    "morgan": "^1.10.0",
+    "needle": "^2.6.0",
+    "node-fetch": "^2.6.1",
+    "nodemon": "^2.0.7",
+    "request": "^2.88.2",
+    "serve-favicon": "^2.5.0",
+    "ssl-express-www": "^3.0.7",
+    "tiktok-scraper": "^1.4.12",
+    "urlencode": "^1.1.0",
+    "yt-search": "^2.7.6",
+    "ytdl-core": "^4.5.0",
+    "zrapi": "0.0.6"
+  },
+  "homepage": "https://github.com/Zhirrr/Zhirrr-Api#readme"
+}
