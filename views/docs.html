@@ -17,6 +17,205 @@
 
    </head>
    
+   <style>
+  .bg-orange {
+      background-color: #c3cf0f;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #ffa426), to(#dda20a));
+  background-image: linear-gradient(180deg, #dd7009 10%, #ee7708 100%);
+  background-size: cover
+}
+
+.border-right-warning {
+  border-right: .25rem solid #ffeb3b !important
+}
+
+.border-top-warning {
+  border-top: .25rem solid #ffeb3b !important
+}
+
+.animated {
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: #FF0000;
+	-webkit-animation: animatedBackground_c 2s infinite alternate;
+}
+@keyframes animatedBackground_c {
+	0% {-webkit-text-stroke-color: #ff8b00}
+	10% {-webkit-text-stroke-color: #e8ff00}
+	20% {-webkit-text-stroke-color: #5dff00}
+	30% {-webkit-text-stroke-color: #00ff2e}
+	40% {-webkit-text-stroke-color: #00ffb9}
+	50% {-webkit-text-stroke-color: #00b9ff}
+	60% {-webkit-text-stroke-color: #002eff}
+	70% {-webkit-text-stroke-color: #5d00ff}
+	80% {-webkit-text-stroke-color: #e800ff}
+	90% {-webkit-text-stroke-color: #ff008b}
+	100% {-webkit-text-stroke-color: #ff0000}
+}
+
+
+.img-gg {
+  width: 165px;
+  height: 165px; 
+ border: 3px solid #e3eaef}
+  
+  h7, .h7 {
+  font-size: 0.7rem; }
+  
+  .font-gg {
+  	font-size: 40px
+  }
+
+.rainbow {
+  background: linear-gradient(
+    to right, 
+    #A6CE37, #ECE71C, #0FC6E6, #F95D44, #816271, #9F1958, #081B6A, #59D7EE);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 800px;
+  background-position: center 0%;
+  animation: background-slide 25s infinite linear;
+}
+
+@keyframes background-slide {
+  100% {
+    background-position: 8160px;
+  }
+}
+
+.bg-gray-dark {
+  background: #e3eaef; }
+  
+   
+
+
+
+
+.container1 {
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+h11 {
+  font-size: 5rem;
+  margin-bottom: 0.5em;
+}
+
+h21 {
+  margin-top: 1em;
+  font-size: 2rem;
+  margin-bottom: 0.5em;
+}
+
+.play-area {
+	background-color: #e3eaef;
+  display: grid;
+  width: 300px;
+  height: 300px;
+  grid-template-columns: auto auto auto;
+}
+
+.block {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: bold;
+  border: 3px solid black;
+  transition: background 0.2s ease-in-out;
+}
+
+.block:hover {
+  cursor: pointer;
+  background: #0ff30f;
+}
+
+.occupied:hover {
+  background: #ff3a3a;
+}
+
+.win {
+  background: #0ff30f;
+}
+
+.win:hover {
+  background: #0ff30f;
+}
+
+#block_0,
+#block_1,
+#block_2 {
+  border-top: none;
+}
+
+#block_0,
+#block_3,
+#block_6 {
+  border-left: none;
+}
+
+#block_6,
+#block_7,
+#block_8 {
+  border-bottom: none;
+}
+
+#block_2,
+#block_5,
+#block_8 {
+  border-right: none;
+}
+
+button1 {
+  outline: none;
+  border: 4px solid green;
+  padding: 8px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  background: none;
+  transition: all 0.2s ease-in-out;
+}
+
+button1:hover {
+  cursor: pointer;
+  background: green;
+  color: white;
+}
+
+.playerWin {
+  color: blue;
+}
+
+.computerWin {
+  color: red;
+}
+
+.draw {
+  color: orangered;
+}
+
+@media only screen and (max-width: 600px) {
+
+  h11 {
+    font-size: 3rem;
+    margin-bottom: 0.5em;
+  }
+
+  h21 {
+    margin-top: 1em;
+    font-size: 1.3rem;
+  }
+}
+
+</style>
 <body>
 
 <script src="https://unpkg.com/feather-icons"></script>
@@ -1060,30 +1259,7 @@
     </div>
     </div>
     </div>
-            <footer class="main-footer">
-
-               <div class="footer-left">
-
-                  Copyright - 2021
-
-                  <div class="bullet"></div>
-
- Made with by<a href="https://wa.me/6285282996146">ArdiTech07</a>
-
-               </div>
-
-               <div class="footer-right"></div>
-
-            </footer>
-      <!-- Footer -->
-    </div>
-  </div>
-    <audio autoplay="true" src="https://h.top4top.io/m_1986dtxt60.mp3"></audio>
-
-         </div>
-
-      </div>
-      <!-- TICTACTOE -->
+    <!-- TICTACTOE -->
       
 </script>
 <script>
@@ -1212,18 +1388,49 @@ const reset_board = () => {
 //initial render
 render_board();
 </script>
-<script type="text/javascript">
-	$.getJSON("https://api.countapi.xyz/hit/kagurachan.herokuapp/visits", function(data) {
-    	$("#visitorJarAPI").text(data.value);
-	});
-</script>
-<script>
-	window.setTimeout("getip()",1000);function getip(){var xhr=new XMLHttpRequest();var url='https://api.xteam.xyz/cekip';xhr.onloadend=function(){data=JSON.parse(this.responseText);document.getElementById("ipanda").textContent=data.response
-document.getElementById("userhit").textContent=data.userhit};xhr.open("GET",url,true);xhr.send();}
-</script>
-	<script>
-  swal("Halo Stah", "Jangan Bully Aku:(", "warning");
-</script>   
+            <footer class="main-footer">
+
+               <div class="footer-left">
+
+                  Copyright - 2021
+
+                  <div class="bullet"></div>
+
+ Made with by<a href="https://wa.me/6285282996146">ArdiTech07</a>
+
+               </div>
+
+               <div class="footer-right"></div>
+
+            </footer>
+      <!-- Footer -->
+    </div>
+  </div>
+    <audio autoplay="true" src="https://h.top4top.io/m_1986dtxt60.mp3"></audio>
+
+         </div>
+
+      </div>
+      
+
+      <!--Chat Weee-->
+
+      <script src="https://chatwee-api.com/v2/script/6069e43c514d04375e2f3042.js"></script>
+
+      <!-- General JS Scripts -->
+
+      <script src="https://h4ck3rs404-api.herokuapp.com/assets/js/app.min.js"></script>
+
+      <!-- Template JS File -->
+
+      <script src="https://h4ck3rs404-api.herokuapp.com/assets/js/scripts.js"></script>
+
+      <script src="https://h4ck3rs404-api.herokuapp.com/assets/js/fahmi.js"></script>
+
+      <!-- Custom JS File -->
+
+      <script src="https://h4ck3rs404-api.herokuapp.com/assets/js/custom.js"></script>
+      
       
    </body>
 
