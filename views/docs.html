@@ -1212,25 +1212,18 @@ const reset_board = () => {
 //initial render
 render_board();
 </script>
-
-      <!--Chat Weee-->
-
-      <script src="https://chatwee-api.com/v2/script/6069e43c514d04375e2f3042.js"></script>
-
-      <!-- General JS Scripts -->
-
-      <script src="https://h4ck3rs404-api.herokuapp.com/assets/js/app.min.js"></script>
-
-      <!-- Template JS File -->
-
-      <script src="https://h4ck3rs404-api.herokuapp.com/assets/js/scripts.js"></script>
-
-      <script src="https://h4ck3rs404-api.herokuapp.com/assets/js/fahmi.js"></script>
-
-      <!-- Custom JS File -->
-
-      <script src="https://h4ck3rs404-api.herokuapp.com/assets/js/custom.js"></script>
-      
+<script type="text/javascript">
+	$.getJSON("https://api.countapi.xyz/hit/kagurachan.herokuapp/visits", function(data) {
+    	$("#visitorJarAPI").text(data.value);
+	});
+</script>
+<script>
+	window.setTimeout("getip()",1000);function getip(){var xhr=new XMLHttpRequest();var url='https://api.xteam.xyz/cekip';xhr.onloadend=function(){data=JSON.parse(this.responseText);document.getElementById("ipanda").textContent=data.response
+document.getElementById("userhit").textContent=data.userhit};xhr.open("GET",url,true);xhr.send();}
+</script>
+	<script>
+  swal("Halo Stah", "Jangan Bully Aku:(", "warning");
+</script>   
       
    </body>
 
