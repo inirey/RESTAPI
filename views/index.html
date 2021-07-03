@@ -1,662 +1,410 @@
 
 <!DOCTYPE html>
-<html lang="en">
+
+	<html>
 
 <head>
-  <link href="img/logo/logo2.jpg" rel= "icon">
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <title>Free Rest API - Kuvianti</title>
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-  <link href="css/ruang-admin.min.css" rel="stylesheet">
-  <script>
-</script>
+<title> KUVIANTI - Api </title> 
+<meta property="og:image" content="https://i.ibb.co/VWnwMtq/images-8.jpg" /> 
+<meta property="og:title" content="KUVIANTI - APIs" /> <meta property="og:description" content="Ampun stah masih pemula"/> 
+<link rel="shortcut icon" href="https://i.ibb.co/VWnwMtq/images-8.jpg" type="image/x-icon" />
 </head>
+<body>
 
-<body id="page-top" onload="getvisitor();">
-  <audio src="/database/staywithme.webm"></audio>
-  <div id="wrapper">
-    <!-- Sidebar -->
-    <ul class="navbar-nav sidebar sidebar-light accordion" id="accordionSidebar">
-      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-        <div class="sidebar-brand-icon">
-        	<img src="img/logo/logo2.jpg">
-        </div>
-        <div class="sidebar-brand-text mx-3">KUVIANTI API</div>
-      </a>
-      <hr class="sidebar-divider my-0">
-      <li class="nav-item active">
-        <a class="nav-link" href="index.html">
-          <i class="fas fa-fw fa-code"></i>
-          <span>Beranda</span></a>
-      </li>
-      <hr class="sidebar-divider">
-      <div class="sidebar-heading">
-        API Features
-      </div>
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseBootstrap"
-          aria-expanded="true" aria-controls="collapseBootstrap">
-          <i class="fas fa-fw fa-arrow-down"></i>
-          <span>Social Media API</span>
-        </a>
-        <div id="collapseBootstrap" class="collapse" aria-labelledby="headingBootstrap" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Media Features</h6>
-            <a class="collapse-item" href="api/yutub/video?url=MASUKIN_URL&apikey=Kuv-Api">YouTube Video Downloader</a>
-            <a class="collapse-item" href="api/yutub/audio?url=MASUKIN_URL&apikey=Kuv-Api">YouTube Audio Downloader</a>
-            <a class="collapse-item" href="api/fbdown/?url=MASUKIN_URL&apikey=Kuv-Api">Facebook Downloader</a>
-            <a class="collapse-item" href="api/tiktod/?url=MASUKIN_URL&apikey=Kuv-Api">Tiktok Downloader</a>
-            <a class="collapse-item" href="api/tiktod/stalk/?username=MASUKIN_USERNAME&apikey=Kuv-Api">Tiktok Stalk</a>
-            <a class="collapse-item" href="api/ig/stalk?username=MASUKIN_USERNAME&apikey=Kuv-Api">Instagram Stalk</a>
-            <a class="collapse-item" href="api/yutub/search?video=Ustadz Abdul Somad&apikey=Kuv-Api">YouTube Search</a>
-            </div>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseIslamic" aria-expanded="true"
-          aria-controls="collapseIslamic">
-          <i class="fas fa-fw fa-table"></i>
-          <span>Islamic Features</span>
-        </a>
-        <div id="collapseIslamic" class="collapse" aria-labelledby="headingIslamic" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Islamic  API</h6>
-            <a class="collapse-item" href="api/hadits?kitab=bukhari&nomor=52&apikey=Kuv-Api">Hadits Shahih</a>
-            <a class="collapse-item" href="api/quran?surah=1&ayat=2&apikey=Kuv-Api">Al Qur'an</a>
-            <a class="collapse-item" href="api/muslim/tahlil?apikey=Kuv-Api">Doa Tahlil</a>
-            <a class="collapse-item" href="api/muslim/wirid?apikey=Kuv-Api">Doa Wirid</a>
-            <a class="collapse-item" href="api/muslim/asmaulhusna?apikey=Kuv-Api">Asmaul Husna</a>
-            <a class="collapse-item" href="api/muslim/doaharian?apikey=Kuv-Api">Doa Harian</a>
-            <a class="collapse-item" href="api/muslim/ayatkursi?apikey=Kuv-Api">Ayat Kursi</a>
-            <a class="collapse-item" href="api/kisahnabi?nabi=muhammad&apikey=Kuv-Api">Kisah Nabi</a>
-            <a class="collapse-item" href="api/muslim/niatshalat?apikey=Kuv-Api">Niat Shalat</a>
-            <a class="collapse-item" href="api/muslim/bacaanshalat?apikey=Kuv-Api">Bacaan Shalat</a>
-            <a class="collapse-item" href="api/jadwalshalat?kota=jakartautara&apikey=Kuv-Api">Jadwal Shalat</a>
-          </div>
-        </div>
-      </li>
-       <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseKodepos" aria-expanded="true"
-          aria-controls="collapseKodepos">
-          <i class="fas fa-fw fa-search"></i>
-          <span>Images API</span>
-        </a>
-        <div id="collapseKodepos" class="collapse" aria-labelledby="headingKodepos" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Images API</h6>
-            <a class="collapse-item" href="api/wallpaper/teknologi?apikey=Kuv-Api">Wallpaper Teknologi</a>
-            <a class="collapse-item" href="api/wallpaper/programming?apikey=Kuv-Api">Wallpaper Programming</a>
-            <a class="collapse-item" href="api/wallpaper/cyberspace?apikey=Kuv-Api">Wallpaper CyberSpace</a>
-            <a class="collapse-item" href="api/wallpaper/muslim?apikey=Kuv-Api">Wallpaper Muslim</a>
-            <a class="collapse-item" href="api/wallpaper/pegunungan?apikey=Kuv-Api">Wallpaper Mountain View</a>
-            </div>
-            </div>
-            </li>
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseGithub"
-          aria-expanded="true" aria-controls="collapseGithub">
-          <i class="fas fa-fw fa-book"></i>
-          <span>Random API</span>
-        </a>
-        <div id="collapseGithub" class="collapse" aria-labelledby="headingGithub" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Random API</h6>
-            <a class="collapse-item" href="api/randomquote?apikey=Kuv-Api">Quotes</a>
-            <a class="collapse-item" href="api/randomquote/muslim?apikey=Kuv-Api">Quotes Islami</a>
-            <a class="collapse-item" href="api/quotes/kanye?apikey=Kuv-Api">Quotes Kanye</a>
-            <a class="collapse-item" href="api/random/asmaulhusna?apikey=Kuv-Api">Asmaul Husna</a>
-            <a class="collapse-item" href="api/random/meme?apikey=Kuv-Api">Meme</a>
-            <a class="collapse-item" href="api/random/wallpaper?apikey=Kuv-Api">Wallpaper</a>
-          </div>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseMaker"
-          aria-expanded="true" aria-controls="collapseMaker">
-          <i class="fa fa-fw fa-images"></i>
-          <span>TextMaker2D API</span>
-        </a>
-        <div id="collapseMaker" class="collapse" aria-labelledby="headingMaker" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">TextMaker2D API</h6>
-            <a class="collapse-item" href="api/maker?text=Ya Allah Kabulkan DoaKu&apikey=Kuv-Api">Maker 1</a>
-            <a class="collapse-item" href="api/maker2?text=Ya Allah Kabulkan DoaKu&apikey=Kuv-Api">Maker 2</a>
-            <a class="collapse-item" href="api/maker3?text=Ya Allah Kabulkan DoaKu&apikey=Kuv-Api">Maker 3</a>
-            <a class="collapse-item" href="api/maker4?text=Ya Allah Kabulkan DoaKu&apikey=Kuv-Api">Maker 4</a>
-          </div>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseMaker3D"
-          aria-expanded="true" aria-controls="collapseMaker3D">
-          <i class="fa fa-fw fa-images"></i>
-          <span>TextMaker3D API</span>
-        </a>
-        <div id="collapseMaker3D" class="collapse" aria-labelledby="headingMaker3D" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">TextMaker3D API</h6>
-            <a class="collapse-item" href="api/maker3d?text=Ya Allah Kabulkan DoaKu&apikey=Kuv-Api">Maker 1</a>
-            <a class="collapse-item" href="api/maker3d/no2?text=Ya Allah Kabulkan DoaKu&apikey=Kuv-Api">Maker 2</a>
-            <a class="collapse-item" href="api/maker3d/no3?text=Ya Allah Kabulkan DoaKu&apikey=Kuv-Api">Maker 3</a>
-            <a class="collapse-item" href="api/maker3d/no4?text=Ya Allah Kabulkan DoaKu&apikey=Kuv-Api">Maker 4</a>
-            <a class="collapse-item" href="api/maker3d/no5?text=Ya Allah Kabulkan DoaKu&apikey=Kuv-Api">Maker 5</a>
-          </div>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseMakerOther"
-          aria-expanded="true" aria-controls="collapseMakerOther">
-          <i class="fa fa-fw fa-images"></i>
-          <span>TextMaker Other API</span>
-        </a>
-        <div id="collapseMakerOther" class="collapse" aria-labelledby="headingMakerOther" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">TextMaker Other API</h6>
-            <a class="collapse-item" href="api/maker/special/transformer?text=Transformer&apikey=Kuv-Api">Transformer</a>
-            <a class="collapse-item" href="api/maker/special/epep?text=Alphabot&apikey=Kuv-Api">Sertifikat Epep</a>
-          </div>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseText" aria-expanded="true"
-          aria-controls="collapseText">
-          <i class="fas fa-fw fa-table"></i>
-          <span>Photooxy API</span>
-        </a>
-        <div id="collapseText" class="collapse" aria-labelledby="headingText" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Photooxy API</h6>
-            <a class="collapse-item" href="api/textmaker?text=halo&text2=hai&theme=glitch&apikey=Kuv-Api">Glitch</a>
-            <a class="collapse-item" href="api/textmaker?text=halo&text2=hai&text3=gwganteng&theme=google-suggestion&apikey=Kuv-Api">Google Suggestion</a>
-            <a class="collapse-item" href="api/textmaker/game?text=halo&text2=hai&theme=pubg&apikey=Kuv-Api">PUBG</a>
-            <a class="collapse-item" href="api/textmaker/game?text=halo&text2=hai&theme=battlefield&apikey=Kuv-Api">BattleField</a>
-            <a class="collapse-item" href="api/textmaker/senja?text=Alphabot&theme=coffee-cup&apikey=Kuv-Api">Coffee Cup</a>
-            <a class="collapse-item" href="api/textmaker/senja?text=Alphabot&theme=coffee-cup2&apikey=Kuv-Api">Coffee Cup 2</a>
-            <a class="collapse-item" href="api/textmaker/metallic?text=Alphabot&theme=neon&apikey=Kuv-Api">Neon</a>
-            <a class="collapse-item" href="api/textmaker/metallic?text=Alphabot&theme=glow&apikey=Kuv-Api">Glow</a>
-            <a class="collapse-item" href="api/textmaker/alam?text=Alphabot&theme=summer&apikey=Kuv-Api">Summer</a>
-            <a class="collapse-item" href="api/textmaker/alam?text=Alphabot&theme=flower&apikey=Kuv-Api">Flower</a>
-            <a class="collapse-item" href="api/textmaker/random?text=Alphabot&theme=text-burn&apikey=Kuv-Api">Text Burn</a>
-            <a class="collapse-item" href="api/textmaker/random?text=Alphabot&theme=art-quote&apikey=Kuv-Api">Art Quote</a>
-            <a class="collapse-item" href="api/textmaker/roses?text=Alphabot&theme=wooden-boarch&apikey=Kuv-Api">Wooden Boarch</a>
-            <a class="collapse-item" href="api/textmaker/roses?text=Alphabot&theme=golden&apikey=Kuv-Api">Golden Roses</a>
-          </div>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseAnime" aria-expanded="true"
-          aria-controls="collapseAnime">
-          <i class="fas fa-fw fa-bullseye"></i>
-          <span>Anime/Manga API</span>
-        </a>
-        <div id="collapseAnime" class="collapse" aria-labelledby="headingAnime" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Anime/Manga Features</h6>
-            <a class="collapse-item" href="api/anime/kusonime?search=planetarian&apikey=Kuv-Api">Kusonime</a>
-            <a class="collapse-item" href="api/manga?search=kimetsu no yaiba&apikey=Kuv-Api">Manga</a>
-          </div>
-        </div>
-      </li>
-      <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseGames" aria-expanded="true" aria-controls="collapseForm">
-                    <i class="app-menu__icon fa fa-laptop"></i>
-                    <span>Games API</span>
-                </a>
-                <div id="collapseGames" class="collapse" aria-labelledby="headingForm" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Games Features</h6>
-            <a class="collapse-item" href="/api/kuis/caklontong?apikey=Kuv-Api">Cak Lontong</a>
-            <a class="collapse-item" href="/api/kuis/tebakgambar?apikey=Kuv-Api">Tebak Gambar</a>
-            </div>
-            </div>
-        </li>
-        <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseFilmApik" aria-expanded="true" aria-controls="collapseForm">
-                    <i class="fab fa-fw fa-gratipay"></i>
-                    <span>FilmApik API</span>
-                </a>
-                <div id="collapseFilmApik" class="collapse" aria-labelledby="headingForm" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">FilmApik Features</h6>
-            <a class="collapse-item" href="/api/filmapik/search?film=avenger&apikey=Kuv-Api">Cari Film</a>
-            <a class="collapse-item" href="/api/filmapik/kategori?film=action&apikey=Kuv-Api">Cari Kategori Film</a>
-            <a class="collapse-item" href="/api/filmapik/terbaru?apikey=Kuv-Api">Film Terbaru</a>
-            <a class="collapse-item" href="/api/filmapik/play?id=142455&apikey=Kuv-Api">Play Film</a>
-            </div>
-            </div>
-        </li>
-        <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseLk21" aria-expanded="true" aria-controls="collapseForm">
-                    <i class="fas fa-fw fa-leaf"></i>
-                    <span>Lk21 API</span>
-                </a>
-                <div id="collapseLk21" class="collapse" aria-labelledby="headingForm" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Lk21 Features</h6>
-            <a class="collapse-item" href="/api/lk21/search?film=avenger&apikey=Kuv-Api">Cari Film</a>
-            <a class="collapse-item" href="/api/lk21/terbaru?apikey=Kuv-Api">Film Terbaru</a>
-            <a class="collapse-item" href="/api/lk21/comingsoon?apikey=Kuv-Api">Film Yg Akan Datang</a>
-            <a class="collapse-item" href="/api/lk21/tvseries?apikey=Kuv-Api">Series TV</a>
-            <a class="collapse-item" href="/api/lk21/year?tahun=2021&apikey=Kuv-Api">Berdasarkan Tahun</a>
-            <a class="collapse-item" href="/api/lk21/country?negara=indonesia&apikey=Kuv-Api">Berdasarkan Negara</a>
-            <a class="collapse-item" href="/api/lk21/genre?tipe=action&apikey=Kuv-Api">Berdasarkan Genre</a>
-            </div>
-            </div>
-        </li>
-        <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseNews" aria-expanded="true" aria-controls="collapseForm">
-                    <i class="fas fa-fw fa-exclamation"></i>
-                    <span>News API</span>
-                </a>
-                <div id="collapseNews" class="collapse" aria-labelledby="headingForm" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">News Features</h6>
-            <a class="collapse-item" href="api/news">Jenis Berita</a>
-            <a class="collapse-item" href="api/news/cnn?type=JENIS_BERITA&apikey=Kuv-Api">Cnn News</a>
-            <a class="collapse-item" href="api/news/cnbc?type=JENIS_BERITA&apikey=Kuv-Api">CnBc News</a>
-            <a class="collapse-item" href="api/news/republika?type=JENIS_BERITA&apikey=Kuv-Api">Republika News</a>
-            <a class="collapse-item" href="api/news/tempo?type=JENIS_BERITA&apikey=Kuv-Api">Tempo News</a>
-            <a class="collapse-item" href="api/news/antara?type=JENIS_BERITA&apikey=Kuv-Api">Antara News</a>
-            <a class="collapse-item" href="api/news/kumparan?type=JENIS_BERITA&apikey=Kuv-Api">Kumparan News</a>
-            </div>
-            </div>
-        </li>
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseother" aria-expanded="true"
-          aria-controls="collapseother">
-          <i class="fab fa-fw fa-wpforms"></i>
-          <span>Other API</span>
-        </a>
-        <div id="collapseother" class="collapse" aria-labelledby="headingother" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Other Menu</h6>
-            <a class="collapse-item" href="api/nulis?text=zeeone&apikey=Kuv-Api">Nulis Buku</a>
-            <a class="collapse-item" href="api/infonpm?query=zhirrr-api&hostname=zhirrr&apikey=Kuv-Api">Info NPM</a>
-            <a class="collapse-item" href="api/infogempa?apikey=Kuv-Api">Info Gempa Terkini</a>
-            <a class="collapse-item" href="api/infocuaca?provinsi=jakarta&apikey=Kuv-Api">Info Cuaca Indonesia</a>
-            <a class="collapse-item" href="api/infocuaca/dunia?apikey=Kuv-Api">Info Cuaca Dunia</a>
-            <a class="collapse-item" href="api/infocuaca/bandara?apikey=Kuv-Api">Info Cuaca Bandara</a>
-            <a class="collapse-item" href="api/infotsunami?apikey=Kuv-Api">Info Tsunami</a>
-            <a class="collapse-item" href="api/covidindo?apikey=Kuv-Api">Covid Indo</a>
-            <a class="collapse-item" href="api/covidworld?apikey=Kuv-Api">Covid World</a>
-            <a class="collapse-item" href="api/short/tiny?url=google.com&apikey=Kuv-Api">Short Link</a>
-            <a class="collapse-item" href="api/wikipedia?search=jembatan&apikey=Kuv-Api">Wikipedia</a>
-            <a class="collapse-item" href="api/drakorasia?search=tale&apikey=Kuv-Api">Drakor Asia</a>
-            <a class="collapse-item" href="api/fakedata?country=en&apikey=Kuv-Api">Fake Data</a>
-            <a class="collapse-item" href="api/hilih?kata=aku kan ganteng banget&apikey=Kuv-Api">Kata Hilih</a>
-            <a class="collapse-item" href="api/liriklagu?lagu=sayang&apikey=Kuv-Api">Lirik Lagu</a>
-            <a class="collapse-item" href="api/chordlagu?lagu=sayang&apikey=Kuv-Api">Chord Lagu</a>
-            <a class="collapse-item" href="api/kbbi?kata=pohon&apikey=Kuv-Api">KBBI</a>
-            <a class="collapse-item" href="api/kodepos?kota=jakarta&apikey=Kuv-Api">Kode Pos</a>
-            <a class="collapse-item" href="api/translate?kata=hi&apikey=Kuv-Api">Translate</a>
-            <a class="collapse-item" href="api/gabut?apikey=Kuv-Api">Gabut</a>
-          </div>
-        </div>
-      </li>
-      <hr class="sidebar-divider">
-      <div class="sidebar-heading">
-<div class="version"><b>Contact me</b></div>
-      </div>
-      <li class="nav-item">
-          
-            <a class="nav-link collapsed" href="./">
-            <i class="fas fa-fw fa-info"></i>
-                    <span>About Me</span>
-            </a>
-      </li>
-      <li class="nav-item">
-          
-            <a class="nav-link collapsed" href="https://wa.me/+6287717710182">
-            <i class="fab fa-fw fa-whatsapp"></i>
-                    <span>WhatsApp</span>
-            </a>
-      </li>
-      <li class="nav-item">
-            <a class="nav-link collapsed" href="https://github.com/KUVIANTIINDONESIANET">
-            <i class="fab fa-fw fa-github"></i>
-                    <span>Github</span>
-            </a>
-      </li>
-      <li class="nav-item">
-            <a class="nav-link collapsed" href="https://instagram.com/rinkashikimoz_">
-            <i class="fab fa-fw fa-instagram"></i>
-                    <span>Instagram</span>
-            </a>
-      </li>
-      <hr class="sidebar-divider">
-      <div class="version"><b>Made With ♥️ By Mario</b></div>
-    </ul>
-    <!-- Sidebar -->
-    <div id="content-wrapper" class="d-flex flex-column">
-      <div id="content">
-        <!-- TopBar -->
-        <nav class="navbar navbar-expand navbar-light bg-navbar topbar mb-4 static-top">
-          <button id="sidebarToggleTop" class="btn btn-link rounded-circle mr-3">
-            <i class="fa fa-bars"></i>
-          </button>
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item dropdown no-arrow">
-              
-              </a>
-              <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
-                aria-labelledby="searchDropdown">
-                <form class="navbar-search">
-                  <div class="input-group">
-                    <input type="text" class="form-control bg-light border-1 small" placeholder="Search for..."
-                      aria-label="Search" aria-describedby="basic-addon2" style="border-color: #3f51b5;">
-                    <div class="input-group-append">
-                      <button class="btn btn-primary" type="button">
-                        <i class="fas fa-search fa-sm"></i>
-                      </button>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </li>
-            <li class="nav-item dropdown no-arrow mx-1">
-              </a>
-              <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
-                aria-labelledby="alertsDropdown">
-                <h6 class="dropdown-header">
-                  Alerts Center
-                </h6>
-                <a class="dropdown-item d-flex align-items-center" href="#">
-                  <div class="mr-3">
-                    <div class="icon-circle bg-primary">
-                      <i class="fas fa-file-alt text-white"></i>
-                    </div>
-                  </div>
-                  <div>
-                    <div class="small text-gray-500">December 12, 2019</div>
-                    <span class="font-weight-bold">A new monthly report is ready to download!</span>
-                  </div>
-                </a>
-                <a class="dropdown-item d-flex align-items-center" href="#">
-                  <div class="mr-3">
-                    <div class="icon-circle bg-success">
-                      <i class="fas fa-donate text-white"></i>
-                    </div>
-                  </div>
-                  <div>
-                    <div class="small text-gray-500">December 7, 2019</div>
-                    $290.29 has been deposited into your account!
-                  </div>
-                </a>
-                <a class="dropdown-item d-flex align-items-center" href="#">
-                  <div class="mr-3">
-                    <div class="icon-circle bg-warning">
-                      <i class="fas fa-exclamation-triangle text-white"></i>
-                    </div>
-                  </div>
-                  <div>
-                    <div class="small text-gray-500">December 2, 2019</div>
-                    Spending Alert: We've noticed unusually high spending for your account.
-                  </div>
-                </a>
-                <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
-              </div>
-            </li>
-            <li class="nav-item dropdown no-arrow mx-1">
-              <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-              </a>
-              <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
-                aria-labelledby="messagesDropdown">
-              </div>
-            </li>
-            <li class="nav-item dropdown no-arrow mx-1">
-              <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                <i class="fas fa-tasks fa-fw"></i>
-                <span class="badge badge-success badge-counter">1</span>
-              </a>
-              <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
-                aria-labelledby="messagesDropdown">
-                <h6 class="dropdown-header">
-                  Programming Skill
-                </h6>
-                <a class="dropdown-item align-items-center" href="#">
-                  <div class="mb-3">
-                    <div class="small text-gray-500">Copy Paste
-                      <div class="small float-right"><b>0%</b></div>
-                    </div>
-                    <div class="progress" style="height: 12px;">
-                      <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100"
-                        aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div>
-                </a>
-                <a class="dropdown-item align-items-center" href="#">
-                  <div class="mb-3">
-                    <div class="small text-gray-500">JavaScript
-                      <div class="small float-right"><b>100%</b></div>
-                    </div>
-                    <div class="progress" style="height: 12px;">
-                      <div class="progress-bar bg-warning" role="progressbar" style="width: 0%" aria-valuenow="0"
-                        aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </li>
-            <div class="topbar-divider d-none d-sm-block"></div>
-            <li class="nav-item dropdown no-arrow">
-              <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                <img class="img-profile rounded-circle" src="img/logo/logo2.jpg" style="max-width: 60px">
-                <span class="ml-2 d-none d-lg-inline text-white small">Mr.Cognita</span>
-              </a>
-              </div>
-            </li>
-          </ul>
-        </nav>
-        <!-- Topbar -->
+<!--Please Volume up your mobile-->
+ <!--Automatically play when load this page-->
+ <audio autoplay="false" src="https://i.top4top.io/m_19290u0i99.mp3">
+ </audio>
 
-        <!-- Container Fluid-->
-        <div class="container-fluid" id="container-wrapper">
-          <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Beranda</h1>
-            <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="./">Home</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Beranda</li>
-            </ol>
-          </div>
-
-          <div class="row mb-3">
-            <!-- Earnings (Monthly) Card Example -->
-            <div class="col-xl-3 col-md-6 mb-4">
-              <div class="card h-100">
-                <div class="card-body">
-                  <div class="row align-items-center">
-                    <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-uppercase mb-1">Info Owner </div>
-                      <br>
-                      <div class="h5 mb-0 font-weight-bold text-gray-800">Cognita</div>
-                      <div class="mt-2 mb-0 text-muted text-xs">
-                        <span class="text-success mr-2">Kang Coding</span>
-                      </div>
-                    </div>
-                    <div class="col-auto">
-                      <i class="fas fa-users fa-2x text-info"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-           
-<!-- Hans Bot -->
-	
-<div class="col-xl-3 col-md-6 mb-4">
-  <div class="card h-100">
-  <div class="card-body">
-  <div class="row align-items-center">
-  <div class="col mr-2">
-  <div class="text-xs font-weight-bold text-uppercase mb-1">Info</div>
-  <div class="h5 mb-0 font-weight-bold text-gray-800">My +19 birthday</div>
-  <span class="text-success mr-2"><i class="fa fa-arrow-up"></i> 
-  <b id="time">238Hari  24Jam 0Menit 0Detik </b><br></span>
-  <div class="mt-2 mb-0 text-muted text-xs">
-  </div>
-  </div>
-  <div class="col-auto">
-  </div>
-  </div>
-  </div>
-  </div>
-  </div>
-
-<div class="col-xl-3 col-md-6 mb-4">
-<div class="card h-100">
-<div class="card-body">
-<div class="row no-gutters align-items-center">
-<div class="col mr-2">
-<div class="text-xs font-weight-bold text-uppercase mb-1">Request</div>
-<div class="h5 mb-0 font-weight-bold text-gray-800">
-<div class="visitor" id="visitor">00</div>
-</div>
-<div class="mt-2 mb-0 text-muted text-xs">
-
-</span>
-<span>Total Request</span>
-</div>
-</div>
-<div class="col-auto">
-<i class="fas fa-eye fa-2x text-primary"></i>
-</div>
-</div>
-</div>
-</div>
-</div>
-  
-         
-<!-- Pie Chart -->
-            <div class="col-xl-4 col-lg-5">
-              <div class="card mb-4">
-              	<div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-              	<h6 class="m-0 font-weight-bold text-primary">Progamming Skill</h6>
-                  <div class="dropdown no-arrow">
-                    <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
-                      aria-labelledby="dropdownMenuLink">
-                      <div class="dropdown-header">Select Periode</div>
-                      <a class="dropdown-item" href="#">Today</a>
-                      <a class="dropdown-item" href="#">Week</a>
-                      <a class="dropdown-item" href="#">This Year</a>
-                    </div>
-                  </div>
-                </div>
-<div class="card-body">
-                  <div class="mb-3">
-                    <div class="small text-gray-500">Copy Paste
-                      <div class="small float-right"><b>0%</b></div>
-                    </div>
-                    <div class="progress" style="height: 12px;">
-                      <div class="progress-bar bg-succes" role="progressbar" style="width: 0%" aria-valuenow="0"
-                        aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div>
-                  <div class="mb-3">
-                    <div class="small text-gray-500">JavaScript
-                      <div class="small float-right"><b>100%</b></div>
-                    </div>
-                    <div class="progress" style="height: 12px;">
-                      <div class="progress-bar bg-warning" role="progressbar" style="width: 100%" aria-valuenow="100"
-                        aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div>
-                  <div class="mb-3">
-                  </div>
-                  <div class="mb-3">
-                  </div>
-                </div>
-                <div class="card-footer text-center">
-                </div>
-              </div>
-            </div>
-            
-          <!--Row-->
-
-          <div class="row">
-            <div class="col-lg-12 text-center">
-              <p>Suka Dengan API Nya?Follow Nih: <a href="https://instagram.com/rinkashikimoz_"
-                  class="btn btn-primary btn-sm" target="_blank"><i class="fab fa-fw fa-instagram"></i>&nbsp;Instagram</a></p>
-            </div>
-          </div>
-
-        </div>
-        <!---Container Fluid-->
-      </div>
-      <!-- Footer -->
-      <footer class="sticky-footer bg-white">
-        <div class="container my-auto">
-          <div class="copyright text-center my-auto">
-            <span>Copyright &copy; 2021
-              <b><a href="https://github.com/KUVIANTIINDONESIANET" target="_blank">Mario</a></b>. All rights reserved
-            </span>
-          </div>
-        </div>
-      </footer>
-      <!-- Footer -->
+  <div class="sp-container">
+    <div class="sp-content">
+      <div class="sp-globe"></div>
+      <h2 class="frame-1">Selamat</h2>
+      <h2 class="frame-2">Datang</h2>
+      <h2 class="frame-3">Di Website</h2>
+      <h2 class="frame-4">Rest Api</h2>
+      <h2 class="frame-5">
+        <span>Kuvianti</span>
+        <span>Rest</span>
+        <span>API's</span>
+      </h2>
+      <a class="sp-circle-link" href="/api">Open Docs</a>
     </div>
   </div>
 
-  <!-- Scroll to top -->
-  <a class="scroll-to-top rounded" href="#page-top">
-    <i class="fas fa-angle-up"></i>
-  </a>
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Barlow');
+    body {
+      background: #310404 url(https://i.ibb.co/VWnwMtq/images-8.jpg) no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      font-family: 'Barlow', sans-serif;
+    }
+    
+    .container {
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    a {
+      text-decoration: none;
+    }
+    
+    h1.main,
+    p.demos {
+      -webkit-animation-delay: 18s;
+      -moz-animation-delay: 18s;
+      -ms-animation-delay: 18s;
+      animation-delay: 18s;
+    }
+    
+    .sp-container {
+      position: fixed;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      background: -webkit-radial-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3) 35%, rgba(0, 0, 0, 0.7));
+      background: -moz-radial-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3) 35%, rgba(0, 0, 0, 0.7));
+      background: -ms-radial-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3) 35%, rgba(0, 0, 0, 0.7));
+      background: radial-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3) 35%, rgba(0, 0, 0, 0.7));
+    }
+    
+    .sp-content {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0px;
+      top: 0px;
+      z-index: 1000;
+    }
+    
+    .sp-container h2 {
+      position: absolute;
+      top: 50%;
+      line-height: 100px;
+      height: 90px;
+      margin-top: -50px;
+      font-size: 90px;
+      width: 100%;
+      text-align: center;
+      color: transparent;
+      -webkit-animation: blurFadeInOut 3s ease-in backwards;
+      -moz-animation: blurFadeInOut 3s ease-in backwards;
+      -ms-animation: blurFadeInOut 3s ease-in backwards;
+      animation: blurFadeInOut 3s ease-in backwards;
+    }
+    
+    .sp-container h2.frame-1 {
+      -webkit-animation-delay: 0s;
+      -moz-animation-delay: 0s;
+      -ms-animation-delay: 0s;
+      animation-delay: 0s;
+ 
+    }
+    
+    .sp-container h2.frame-2 {
+      -webkit-animation-delay: 3s;
+      -moz-animation-delay: 3s;
+      -ms-animation-delay: 3s;
+      animation-delay: 3s;
+    }
+    
+    .sp-container h2.frame-3 {
+      -webkit-animation-delay: 6s;
+      -moz-animation-delay: 6s;
+      -ms-animation-delay: 6s;
+      animation-delay: 6s;
+    }
+    
+    .sp-container h2.frame-4 {
+      font-size: 200px;
+      -webkit-animation-delay: 9s;
+      -moz-animation-delay: 9s;
+      -ms-animation-delay: 9s;
+      animation-delay: 9s;
+    }
+    
+    .sp-container h2.frame-5 {
+      -webkit-animation: none;
+      -moz-animation: none;
+      -ms-animation: none;
+      animation: none;
+      color: transparent;
+      text-shadow: 0px 0px 1px #fff;
+    }
+    
+    .sp-container h2.frame-5 span {
+      -webkit-animation: blurFadeIn 3s ease-in 12s backwards;
+      -moz-animation: blurFadeIn 1s ease-in 12s backwards;
+      -ms-animation: blurFadeIn 3s ease-in 12s backwards;
+      animation: blurFadeIn 3s ease-in 12s backwards;
+      color: transparent;
+      text-shadow: 0px 0px 1px #fff;
+    }
+    
+    .sp-container h2.frame-5 span:nth-child(2) {
+      -webkit-animation-delay: 13s;
+      -moz-animation-delay: 13s;
+      -ms-animation-delay: 13s;
+      animation-delay: 13s;
+    }
+    
+    .sp-container h2.frame-5 span:nth-child(3) {
+      -webkit-animation-delay: 14s;
+      -moz-animation-delay: 14s;
+      -ms-animation-delay: 14s;
+      animation-delay: 14s;
+    }
+    
+    .sp-globe {
+      position: absolute;
+      width: 282px;
+      height: 273px;
+      left: 50%;
+      top: 50%;
+      margin: -137px 0 0 -141px;
+      background: transparent url(http://web-sonick.zz.mu/images/sl/globe.png) no-repeat top left;
+      -webkit-animation: fadeInBack 3.6s linear 14s backwards;
+      -moz-animation: fadeInBack 3.6s linear 14s backwards;
+      -ms-animation: fadeInBack 3.6s linear 14s backwards;
+      animation: fadeInBack 3.6s linear 14s backwards;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+      filter: alpha(opacity=30);
+      opacity: 0.3;
+      -webkit-transform: scale(5);
+      -moz-transform: scale(5);
+      -o-transform: scale(5);
+      -ms-transform: scale(5);
+      transform: scale(5);
+    }
+    
+    .sp-circle-link {
+      position: absolute;
+      left: 50%;
+      bottom: 100px;
+      margin-left: -50px;
+      text-align: center;
+      line-height: 100px;
+      width: 100px;
+      height: 100px;
+      background: #fff;
+      color: #3f1616;
+      font-size: 25px;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+      -webkit-animation: fadeInRotate 1s linear 16s backwards;
+      -moz-animation: fadeInRotate 1s linear 16s backwards;
+      -ms-animation: fadeInRotate 1s linear 16s backwards;
+      animation: fadeInRotate 1s linear 16s backwards;
+      -webkit-transform: scale(1) rotate(0deg);
+      -moz-transform: scale(1) rotate(0deg);
+      -o-transform: scale(1) rotate(0deg);
+      -ms-transform: scale(1) rotate(0deg);
+      transform: scale(1) rotate(0deg);
+    }
+    
+    .sp-circle-link:hover {
+      background: #85373b;
+      color: #fff;
+    }
+    /**/
+    
+    @-webkit-keyframes blurFadeInOut {
+      0% {
+        opacity: 0;
+        text-shadow: 0px 0px 40px #fff;
+        -webkit-transform: scale(1.3);
+      }
+      20%,
+      75% {
+        opacity: 1;
+        text-shadow: 0px 0px 1px #fff;
+        -webkit-transform: scale(1);
+      }
+      100% {
+        opacity: 0;
+        text-shadow: 0px 0px 50px #fff;
+        -webkit-transform: scale(0);
+      }
+    }
+    
+    @-webkit-keyframes blurFadeIn {
+      0% {
+        opacity: 0;
+        text-shadow: 0px 0px 40px #fff;
+        -webkit-transform: scale(1.3);
+      }
+      50% {
+        opacity: 0.5;
+        text-shadow: 0px 0px 10px #fff;
+        -webkit-transform: scale(1.1);
+      }
+      100% {
+        opacity: 1;
+        text-shadow: 0px 0px 1px #fff;
+        -webkit-transform: scale(1);
+      }
+    }
+    
+    @-webkit-keyframes fadeInBack {
+      0% {
+        opacity: 0;
+        -webkit-transform: scale(0);
+      }
+      50% {
+        opacity: 0.4;
+        -webkit-transform: scale(2);
+      }
+      100% {
+        opacity: 0.2;
+        -webkit-transform: scale(5);
+      }
+    }
+    
+    @-webkit-keyframes fadeInRotate {
+      0% {
+        opacity: 0;
+        -webkit-transform: scale(0) rotate(360deg);
+      }
+      100% {
+        opacity: 1;
+        -webkit-transform: scale(1) rotate(0deg);
+      }
+    }
+    /**/
+    
+    @-moz-keyframes blurFadeInOut {
+      0% {
+        opacity: 0;
+        text-shadow: 0px 0px 40px #fff;
+        -moz-transform: scale(1.3);
+      }
+      20%,
+      75% {
+        opacity: 1;
+        text-shadow: 0px 0px 1px #fff;
+        -moz-transform: scale(1);
+      }
+      100% {
+        opacity: 0;
+        text-shadow: 0px 0px 50px #fff;
+        -moz-transform: scale(0);
+      }
+    }
+    
+    @-moz-keyframes blurFadeIn {
+      0% {
+        opacity: 0;
+        text-shadow: 0px 0px 40px #fff;
+        -moz-transform: scale(1.3);
+      }
+      100% {
+        opacity: 1;
+        text-shadow: 0px 0px 1px #fff;
+        -moz-transform: scale(1);
+      }
+    }
+    
+    @-moz-keyframes fadeInBack {
+      0% {
+        opacity: 0;
+        -moz-transform: scale(0);
+      }
+      50% {
+        opacity: 0.4;
+        -moz-transform: scale(2);
+      }
+      100% {
+        opacity: 0.2;
+        -moz-transform: scale(5);
+      }
+    }
+    
+    @-moz-keyframes fadeInRotate {
+      0% {
+        opacity: 0;
+        -moz-transform: scale(0) rotate(360deg);
+      }
+      100% {
+        opacity: 1;
+        -moz-transform: scale(1) rotate(0deg);
+      }
+    }
+    /**/
+    
+    @keyframes blurFadeInOut {
+      0% {
+        opacity: 0;
+        text-shadow: 0px 0px 40px #fff;
+        transform: scale(1.3);
+      }
+      20%,
+      75% {
+        opacity: 1;
+        text-shadow: 0px 0px 1px #fff;
+        transform: scale(1);
+      }
+      100% {
+        opacity: 0;
+        text-shadow: 0px 0px 50px #fff;
+        transform: scale(0);
+      }
+    }
+    
+    @keyframes blurFadeIn {
+      0% {
+        opacity: 0;
+        text-shadow: 0px 0px 40px #fff;
+        transform: scale(1.3);
+      }
+      50% {
+        opacity: 0.5;
+        text-shadow: 0px 0px 10px #fff;
+        transform: scale(1.1);
+      }
+      100% {
+        opacity: 1;
+        text-shadow: 0px 0px 1px #fff;
+        transform: scale(1);
+      }
+    }
+    
+    @keyframes fadeInBack {
+      0% {
+        opacity: 0;
+        transform: scale(0);
+      }
+      50% {
+        opacity: 0.4;
+        transform: scale(2);
+      }
+      100% {
+        opacity: 0.2;
+        transform: scale(5);
+      }
+    }
+    
+    @keyframes fadeInRotate {
+      0% {
+        opacity: 0;
+        transform: scale(0) rotate(360deg);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1) rotate(0deg);
+      }
+    }
+  </style>
 
-   <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-  <script src="js/ruang-admin.js"></script>
-  <script src="vendor/chart.js/Chart.min.js"></script>
-  <script src="js/demo/chart-area-demo.js"></script>  
-  <iframe allow="autoplay" width="0" height="0" src="https://k.top4top.io/m_1986d7vmy3.mp3" frameborder="0" allowfullscreen></iframe>
 
-</body>
-<script>
-	    function getvisitor(){
-              var xhr = new XMLHttpRequest();
-              var url = 'https://api.countapi.xyz/hit/api-alphabot.herokuapp.com/visits';
-              xhr.onloadend = function(){
-             data = JSON.parse(this.responseText);
-  document.getElementById("visitor").textContent = data.value
-              };
-              xhr.open("GET", url, true);
-              xhr.send();
-  }
-  </script>
-<script>
-				// Akhir Hitungan Mundur
-				var countDownDate = new Date("Maret 5, 2022 00:00:00").getTime();
 
-				// Update Hitungan Mundur Setiap 1 Detik
-				var x = setInterval(function() {
+' ) );
 
-					// Mengambil Tanggal Dan Waktu
-					var now = new Date().getTime();
 
-					// Find the distance between now and the count down date
-					var distance = countDownDate - now;
-
-					// Kalkulator Waktu Hari, Jam, Menit, Detik 
-					var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-					var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-					var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-					var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-					// Menampilkan Hasil Di Dalam element Menggunakan id="time"
-					document.getElementById("time").innerHTML = days + "Hari  " + hours + "Jam " + minutes + "Menit " + seconds + "Detik ";
-
-					// Ketika countdown timer sudah berakhir Maka Tulisan Berakhir
-					if (distance < 0) {
-						clearInterval(x);
-						document.getElementById("time").innerHTML = "Berakhir";
-					}
-				}, 1000);
-			</script>
-</html>
+</body></html>
