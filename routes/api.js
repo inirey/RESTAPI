@@ -2484,11 +2484,12 @@ router.get('/maker/pubglogo', async(req, res, next) => {
   const text2 = req.query.text2;
   const apikey = req.query.apikey;
   
-  if(!text) return res.json(loghandler.nottext)
+  if(!text1) return res.json(loghandler.nottext)
+  if(!text2) return res.json(loghandler.nottext)
   if(!apikey) return res.json(loghandler.notparam)
   
   if(listkey.includes(apikey)) {
-  let hasil = 'https://api.zeks.xyz/api/pubglogo?text1='+ text1 +'&apikey=administrator'
+  let hasil = 'https://api.zeks.xyz/api/pubglogo?text1='+ text1 + '&text2' +'&apikey=administrator'
   data = await fetch(hasil).then(v => v.buffer())
   await fs.writeFileSync(__path +'/tmp/pubglogo.jpg', data)
   res.sendFile(__path +'/tmp/pubglogo.jpg')
