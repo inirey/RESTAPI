@@ -150,7 +150,7 @@ loghandler = {
         status: false,
         creator: `${creator}`,
         code: 406,
-        message: 'apikey invalid'
+        message: 'apikey nya = apirey'
     },
     invalidlink: {
         status: false,
