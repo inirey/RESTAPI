@@ -1,1238 +1,569 @@
 
-
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8" />
-      <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport" />
-      <title>ArdyStore</title>
-      <!-- General CSS Files -->
-      <link rel="stylesheet" href="https://h4ck3rs404-api.herokuapp.com/assets/css/app.min.css" />
-      <!-- Template CSS -->
-      <link rel="stylesheet" href="https://h4ck3rs404-api.herokuapp.com/assets/css/style.css" />
-      <link rel="stylesheet" href="https://h4ck3rs404-api.herokuapp.com/assets/css/components.css" />
-      <!-- Custom style CSS -->
-      <link rel="stylesheet" href="https://h4ck3rs404-api.herokuapp.com/assets/css/custom.css" />
-      <link rel="shortcut icon" type="image/x-icon" href="https://i.postimg.cc/tCMHgZ07/20210703-130046.jpg" />
 
-   </head>
-   
-<body>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Scraper Free Rest Api's">
+  <meta name="author" content="KocakZ">
+  <base href="/api">
+  <title>KocakZ API's</title>
+  <link href="https://i.imgur.com/zJzZldV.jpeg" rel="icon">
+  <link href="https://indrijunanda.github.io/RuangAdmin/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://indrijunanda.github.io/RuangAdmin/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="https://indrijunanda.github.io/RuangAdmin/css/ruang-admin.min.css" rel="stylesheet">
+  <meta property="og:title" content="KocakZ API's">
+  <meta property="og:description" content="REST API TOOLS & DOWNLOADER ONLINE">
+  <meta property="og:image" content="https://i.imgur.com/zJzZldV.jpeg">
+  <meta property="og:url" content="#">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+</head>
 
-<script src="https://unpkg.com/feather-icons"></script>
+<body id="page-top">
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5fee5a40df060f156a92e37e/1eqth13e6';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+   <div id="wrapper" >
+	<!-- Sidebar -->
+    <ul class="navbar-nav sidebar sidebar-light accordion" id="accordionSidebar">
+      <a class="sidebar-brand d-flex align-items-center justify-content-center bg-warning" href="/">
+        <div class="sidebar-brand-icon">
+          <img src="https://raw.githubusercontent.com/ArugaZ/scraper-results/main/media/love.svg">
+        </div>
+        <div class="sidebar-brand-text mx-3">Kamu</div>
+      </a>
+      <hr class="sidebar-divider my-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="/api">
+          <i class="fas fa-fw fa-code text-warning"></i>
+          <span class="text-warning">Documentation</span></a>
+      </li>
+      <hr class="sidebar-divider">
+      <div class="sidebar-heading text-warning">
+        Features
+      </div>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseBootstrap"
+          aria-expanded="true" aria-controls="collapseBootstrap">
+          <i class="fas fa-fw fa-arrow-down text-warning"></i>
+          <span class="text-warning">Sosial Media API</span>
+        </a>
+        <div id="collapseBootstrap" class="collapse" aria-labelledby="headingBootstrap" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">SosMed Features</h6>
+			<a class="collapse-item text-warning" href="/api/media/ytsearch?query=menepi" target="_blank" >Youtube Search</a>
+			<a class="collapse-item text-warning" href="/api/media/ytvideo?url=https://youtu.be/6l5V3BWDcMw" target="_blank" >Youtube Video1</a>
+			<a class="collapse-item text-warning" href="/api/media/ytaudio?url=https://youtu.be/6l5V3BWDcMw" target="_blank" >Youtube Audio1</a>
+			<a class="collapse-item text-warning" href="/api/media/ytvid?url=https://youtu.be/6l5V3BWDcMw" target="_blank" >Youtube Video2</a>
+			<a class="collapse-item text-warning" href="/api/media/ytmus?url=https://youtu.be/6l5V3BWDcMw" target="_blank" >Youtube Audio2</a>
+            <a class="collapse-item text-warning" href="/api/media/ig?url=https://www.instagram.com/p/CJRoarUnUcW/?utm_source=ig_web_copy_link" target="_blank" >Instagram</a>
+			<a class="collapse-item text-warning" href="/api/media/stalkig?user=ini.kocakz" target="_blank" >Stalk Insta</a>
+            <a class="collapse-item text-warning" href="/api/media/tiktok?url=https://www.tiktok.com/@graciajessicajane/video/6910824586909076738?sender_device=pc&sender_web_id=6911703472580724225&is_from_webapp=v2" target="_blank" >Tiktok No WM</a>
+            <a class="collapse-item text-warning" href="/api/media/twimg?url=https://twitter.com/renaldypjs/status/1343516524934438912" target="_blank" >Twitter Image</a>
+            <a class="collapse-item text-warning" href="/api/media/twvid?url=https://twitter.com/weareoneEXO/status/1344811074864914433" target="_blank" >Twitter Video</a>
+            <a class="collapse-item text-warning" href="/api/media/stalktwitt?user=growtopiagame" target="_blank" >Stalk Twitt</a>
+			<a class="collapse-item text-warning" href="/api/media/facebook?url=https://www.facebook.com/watch/?v=1393572814172251" target="_blank" >Facebook Video</a>
+      <a class="collapse-item text-warning" href="/api/media/pornhub/search?query=japan" target="_blank" >PornHub Scraper</a>
+      <a class="collapse-item text-warning" href="/api/media/pornhub/detail?url=https://www.pornhub.com/view_video.php?viewkey=ph5ff611ac7f9ad" target="_blank" >PornHub Detail</a>
+      <a class="collapse-item text-warning" href="/api/media/xvideo/search?query=japan" target="_blank" >XVideo Scraper</a>
+      <a class="collapse-item text-warning" href="/api/media/xvideo/detail?url=https://www.xvideos.com/video31785617/milf_jessryan_hot_video_clip_pussy_play_time" target="_blank" >XVideo Detail</a>
+      <a class="collapse-item text-warning" href="/api/media/xnxx/search?query=japan" target="_blank" >XNXX Scraper</a>
+      <a class="collapse-item text-warning" href="/api/media/xnxx/detail?url=https://www.xnxx.com/video-kt0nb99/who_is_she_big_hot_girl_asia_japan_korean_jav" target="_blank" >XNXX Detail</a>
+          </div>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseForm" aria-expanded="true"
+          aria-controls="collapseForm">
+          <i class="fas fa-fw fa-heading text-warning"></i>
+          <span class="text-warning">Text Pro Me API</span>
+        </a>
+        <div id="collapseForm" class="collapse" aria-labelledby="headingForm" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Text Pro Me Features</h6>
+            <a class="collapse-item text-warning" href="/api/textpro/luxury?text=aruga" target="_blank" >Luxury</a>
+            <a class="collapse-item text-warning" href="/api/textpro/text3d?text=aruga" target="_blank" >Text 3D</a>
+            <a class="collapse-item text-warning" href="/api/textpro/blackpink?text=aruga" target="_blank" >Black Pink</a>
+            <a class="collapse-item text-warning" href="/api/textpro/realvintage?text=aruga" target="_blank" >Real Vintage</a>
+            <a class="collapse-item text-warning" href="/api/textpro/realcloud?text=aruga" target="_blank" >Real Cloud</a>
+            <a class="collapse-item text-warning" href="/api/textpro/cloudsky?text=aruga" target="_blank" >Cloud Sky</a>
+            <a class="collapse-item text-warning" href="/api/textpro/sandsummer?text=aruga" target="_blank" >Sand Summer</a>
+            <a class="collapse-item text-warning" href="/api/textpro/sandwrite?text=aruga" target="_blank" >Sand Write</a>
+            <a class="collapse-item text-warning" href="/api/textpro/sandengraved?text=aruga" target="_blank" >Sand Engraved</a>
+            <a class="collapse-item text-warning" href="/api/textpro/sandsummery?text=aruga" target="_blank" >Sand Summery</a>
+            <a class="collapse-item text-warning" href="/api/textpro/foilballoon?text=aruga" target="_blank" >Foil Balloon</a>
+            <a class="collapse-item text-warning" href="/api/textpro/glue3d?text=aruga" target="_blank" >Glue 3D</a>
+            <a class="collapse-item text-warning" href="/api/textpro/space3d?text1=aruga&text2=kocakz" target="_blank" >Space 3D</a>
+            <a class="collapse-item text-warning" href="/api/textpro/metaldark?text=aruga" target="_blank" >Metal Dark</a>
+            <a class="collapse-item text-warning" href="/api/textpro/glitchtext?text1=aruga&text2=kocakz" target="_blank" >Glitch Text</a>
+            <a class="collapse-item text-warning" href="/api/textpro/stonetext?text1=aruga&text2=kocakz" target="_blank" >Stone Text</a>
+            <a class="collapse-item text-warning" href="/api/textpro/neonlight?text=aruga" target="_blank" >Neon Light</a>
+            <a class="collapse-item text-warning" href="/api/textpro/old1917?text=aruga" target="_blank" >Old 1917</a>
+            <a class="collapse-item text-warning" href="/api/textpro/miniontext?text=aruga" target="_blank" >Minion Text</a>
+            <a class="collapse-item text-warning" href="/api/textpro/pornhub?text1=aruga&text2=kocakz" target="_blank" >Pornhub Text</a>
+            <a class="collapse-item text-warning" href="/api/textpro/holographic?text=aruga" target="_blank" >Holographic</a>
+            <a class="collapse-item text-warning" href="/api/textpro/avengers?text1=aruga&text2=kocakz" target="_blank" >Avengers</a>
+            <a class="collapse-item text-warning" href="/api/textpro/marvelstudio?text1=aruga&text2=kocakz" target="_blank" >Marvel Studio</a>
+            <a class="collapse-item text-warning" href="/api/textpro/firework?text=aruga" target="_blank" >Firework Sparkle</a>
+            <a class="collapse-item text-warning" href="/api/textpro/lavatext?text=aruga" target="_blank" >Lava Text</a>
+            <a class="collapse-item text-warning" href="/api/textpro/captamerica?text=aruga" target="_blank" >Capten America</a>
+            <a class="collapse-item text-warning" href="/api/textpro/equalizer?text=aruga" target="_blank" >Equalizer</a>
+            <a class="collapse-item text-warning" href="/api/textpro/toxictext?text=aruga" target="_blank" >Toxic Text</a>
+            <a class="collapse-item text-warning" href="/api/textpro/matrixtext?text=aruga" target="_blank" >Matrix Text</a>
+            <a class="collapse-item text-warning" href="/api/textpro/bloodtext?text=aruga" target="_blank" >Blood Text</a>
+            <a class="collapse-item text-warning" href="/api/textpro/thundertext?text=aruga" target="_blank" >Thunder Text</a>
+            <a class="collapse-item text-warning" href="/api/textpro/neontext?text=aruga" target="_blank" >Neon Text</a>
+            <a class="collapse-item text-warning" href="/api/textpro/bokehtext?text=aruga" target="_blank" >Bokeh Text</a>
+            <a class="collapse-item text-warning" href="/api/textpro/greenneon?text=aruga" target="_blank" >Green Neon</a>
+            <a class="collapse-item text-warning" href="/api/textpro/advancedglow?text=aruga" target="_blank" >Advanced Glow</a>
+            <a class="collapse-item text-warning" href="/api/textpro/dropwater?text=aruga" target="_blank" >Drop Water</a>
+          </div>
+        </div>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseEdu" aria-expanded="true"
+          aria-controls="collapseEdu">
+          <i class="fas fa-fw fa-book text-warning"></i>
+          <span class="text-warning">Educational API</span>
+        </a>
+        <div id="collapseEdu" class="collapse" aria-labelledby="headingEdu" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Educational Features</h6>
+            <a class="collapse-item text-warning" href="/api/edu/idwiki?query=soekarno" target="_blank" >Wikipedia Indo</a>
+			<a class="collapse-item text-warning" href="/api/edu/enwiki?query=soekarno" target="_blank" >Wikipedia Eng</a>
+			<a class="collapse-item text-warning" href="/api/edu/corona?country=indonesia" target="_blank" >Corona Country</a>
+			<a class="collapse-item text-warning" href="/api/edu/resep?query=tahu" target="_blank" >Resep Makanan</a>
+			<a class="collapse-item text-warning" href="/api/edu/translate?lang=en&text=nama saya aruga" target="_blank" >Translate</a>
+			<a class="collapse-item text-warning" href="/api/edu/kbbi?query=asu" target="_blank" >KBBI</a>
+          </div>
+        </div>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseRandomT" aria-expanded="true"
+          aria-controls="collapseRandomT">
+          <i class="fas fa-fw fa-random text-warning"></i>
+          <span class="text-warning">Random Text API</span>
+        </a>
+        <div id="collapseRandomT" class="collapse" aria-labelledby="headingRandomT" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Random Features</h6>
+			<a class="collapse-item text-warning" href="/api/random/text/fancytext?text=aruga" target="_blank" >Fancy Text</a>
+			<a class="collapse-item text-warning" href="/api/random/text/quotes" target="_blank" >Quotes</a>
+			<a class="collapse-item text-warning" href="/api/random/text/pantun" target="_blank" >Pantun</a>
+			<a class="collapse-item text-warning" href="/api/random/text/katabijak" target="_blank" >Kata Bijak</a>
+			<a class="collapse-item text-warning" href="/api/random/text/faktaunik" target="_blank" >Fakta Uniq</a>
+          </div>
+        </div>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseFlam" aria-expanded="true"
+          aria-controls="collapseFlam">
+          <i class="fas fa-fw fa-bold text-warning"></i>
+          <span class="text-warning">Flamingtext API</span>
+        </a>
+        <div id="collapseFlam" class="collapse" aria-labelledby="headingFlam" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Flamingtext Features</h6>
+            <a class="collapse-item text-warning" href="/api/flamingtext/wroom?text=ArugaZ" target="_blank" >Wroom</a>
+			<a class="collapse-item text-warning" href="/api/flamingtext/text3d?text=ArugaZ" target="_blank" >3D Text</a>
+			<a class="collapse-item text-warning" href="/api/flamingtext/water?text=ArugaZ" target="_blank" >Water</a>
+			<a class="collapse-item text-warning" href="/api/flamingtext/blackbird?text=ArugaZ" target="_blank" >Blackbird</a>
+			<a class="collapse-item text-warning" href="/api/flamingtext/smurf?text=ArugaZ" target="_blank" >Smurf</a>
+			<a class="collapse-item text-warning" href="/api/flamingtext/memories?text=ArugaZ" target="_blank" >Memories</a>
+          </div>
+        </div>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseAnime" aria-expanded="true"
+          aria-controls="collapseAnime">
+          <i class="fab fa-fw fa-buysellads text-warning"></i>
+          <span class="text-warning">Anime&Manga API</span>
+        </a>
+        <div id="collapseAnime" class="collapse" aria-labelledby="headingAnime" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Cartoons Features</h6>
+			<a class="collapse-item text-warning" href="/api/anime/animequotes" target="_blank" >Anime Quotes</a>
+			<a class="collapse-item text-warning" href="/api/anime/mangasusu/latest" target="_blank" >Mangasusu.co latest</a>
+			<a class="collapse-item text-warning" href="/api/anime/mangasusu/image?url=https://m.mangasusu.co/manga/secret-class/chapter-54" target="_blank" >Mangasusu.co image</a>
+            <a class="collapse-item text-warning" href="/api/anime/komiku/search?query=kanojo" target="_blank" >Komiku.id Scraper</a>
+			<a class="collapse-item text-warning" href="/api/anime/komiku/image?url=https://komiku.id/ch/sekai-ka-kanojo-ka-erabenai-chapter-39-bahasa-indonesia/" target="_blank" >Komiku.id Image</a>
+		    <a class="collapse-item text-warning" href="/api/anime/nekopoi/random" target="_blank" >Nekopoi Random</a>
+			<a class="collapse-item text-warning" href="/api/anime/nekopoi/detail?url=https://nekopoi.care/tsunpuri-episode-1-subtitle-indonesia/" target="_blank" >Nekopoi Detail</a>
+      <a class="collapse-item text-warning" href="/api/anime/kusonime/search?query=naruto" target="_blank">Kusonime Scraper</a>
+      <a class="collapse-item text-warning" href="/api/anime/kusonime/detail?url=https://kusonime.com/naruto-shippuuden-movie3-sub-indo-1/" target="_blank">Kusonime Detail</a>
+		  </div>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePrimb" aria-expanded="true"
+          aria-controls="collapsePrimb">
+          <i class="fas fa-fw fa-bold text-warning"></i>
+          <span class="text-warning">Primbon API</span>
+        </a>
+        <div id="collapsePrimb" class="collapse" aria-labelledby="headingPrimb" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Primbon Features</h6>
+            <a class="collapse-item text-warning" href="/api/primbon/artinama?name=aruga" target="_blank" >Arti Nama</a>
+            <a class="collapse-item text-warning" href="/api/primbon/nomorhoki?nomor=081316691669" target="_blank" >Nomor Hoki</a>
+            <a class="collapse-item text-warning" href="/api/primbon/tafsirmimpi?mimpi=belanja" target="_blank" >Tafsir Mimpi</a>
+            <a class="collapse-item text-warning" href="/api/primbon/ramalanjodoh?nama1=aruga&tgl1=17-10-2002&nama2=kocakz&tgl2=7-9-2003" target="_blank" >Ramalan Jodoh</a>
+          </div>
+        </div>
+      </li>
+      <hr class="sidebar-divider">
+    </ul>
+    <!-- Sidebar -->
+    <div id="content-wrapper" class="d-flex flex-column">
+      <div id="content">
+        <!-- TopBar -->
+        <nav class="navbar navbar-expand navbar-light bg-navbar topbar mb-4 static-top bg-warning">
+          <button id="sidebarToggleTop" class="btn btn-link rounded-circle mr-3">
+            <i class="fa fa-bars"></i>
+          </button>
+          <ul class="navbar-nav ml-auto">
+            
+            <div class="topbar-divider d-none d-sm-block"></div>
+<li class="nav-item dropdown no-arrow mx-1">
+<a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="alertsDropdown" role="button">
+<i class="fas fa-bell fa-fw"></i>
+<span class="badge badge-danger badge-counter">3+</span>
+</a>
+<div aria-labelledby="alertsDropdown" class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in">
+<h6 class="dropdown-header">
+                  Alerts Center
+                </h6>
+<a class="dropdown-item d-flex align-items-center">
+<div class="mr-3">
+<div class="icon-circle bg-warning">
+<i class="fas fa-file-alt text-white"></i>
+</div>
+</div>
+<div>
+<div class="small text-gray-500">October 25, 2020</div>
+Online APi's Tools is finishing
+</div>
+</a>
+<a class="dropdown-item d-flex align-items-center">
+<div class="mr-3">
+<div class="icon-circle bg-warning">
+<i class="fas fa-exclamation-triangle text-white"></i>
+</div>
+</div>
+<div>
+<div class="small text-gray-500">October 25, 2020</div>
+Report if there are errors on this website to Admin
+</div>
+</a>
+<a class="dropdown-item d-flex align-items-center">
+<div class="mr-3">
+<div class="icon-circle bg-warning">
+<i class="fas fa-podcast text-white"></i>
+</div>
+</div>
+<div>
+<div class="small text-gray-500">November 1, 2020</div>
+In the future, Apikey UNLIMITED!
+</div>
+</a>
+<!-- <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a> -->
+</div>
+</li>
+            <li class="nav-item dropdown no-arrow">
+              <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <img class="img-profile rounded-circle" src="https://i.imgur.com/zJzZldV.jpeg" style="max-width: 100px">
+                <span class="ml-2 d-none d-lg-inline text-white small">KocakZ</span>
+              </a>
+            </li>
+          </ul>
+        </nav>        
+        <!-- Topbar -->
+
+        <!-- Container Fluid-->
+
+        <div class="container-fluid" id="container-wrapper">
+          <!-- Attention -->
+          <div id="demo" class="alert alert-warning alert-dismissible" role="alert">
+        <script>
+arrBulan = ["Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","November","Desember"];
+var txt = "";
+txt += "<p><b>Browser CodeName</b>: " + navigator.appCodeName + "</p>";
+txt += "<p><b>Browser Name</b>: " + navigator.appName + "</p>";
+txt += "<p><b>Cookies Enabled</b>: " + navigator.cookieEnabled + "</p>";
+txt += "<p><b>Browser Online</b>: " + navigator.onLine + "</p>";
+txt += "<p><b>Platform</b>: " + navigator.platform + "</p>";
+txt += "<p><b>User-agent header</b>: " + navigator.userAgent + "</p>";
+var d = new Date();
+const jam = d.getHours();
+const menit = d.getMinutes();
+const detik = d.getSeconds();
+const tgl = d.getDate();
+const bln = d.getMonth();
+const thn = d.getFullYear();
+const bulan = arrBulan[bln]
+document.write(txt)
+document.write("Date : "+ jam +":"+ menit +":"+ detik +"~"+ tgl +"-"+ bulan +"-"+ thn +"<br>Welcome back!")</script>
+          </div>
+        
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="card mb-4">
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-sm-between">
+                </div>
+                <div class="card-body">
+                  <h6 class="m-0 font-weight-bold text-warning">Example!</h6>
+				<div class="my-2"></div>
+				<code class="text-center"> [ Python ] : </code>
+				<pre>
+				<code class="python">
+from requests import get
+url = get('http://api.kocakz.xyz/api/blablabla').json()
+print(url)
+				</code>
+				</pre>
+				<code class="text-center"> [ PHP ] : </code>
+				<pre>
+				<code class="plain-text">
+$url = 'http://api.kocakz.xyz/api/blablabla';
+$curl = curl_init($url);
+curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($curl, CURLOPT_HTTPHEADER, [
+ 'Content-Type: application/json'
+]);
+$response = curl_exec($curl);
+curl_close($curl);
+echo $response . PHP_EOL; // appear response
+				</code>
+				</pre>
+				<code class="text-center"> [ Node JS ] : </code>
+				<pre>
+				<code class="javascript">
+const axios = require('axios');
+axios.get('http://api.kocakz.xyz/api/blablabla')
+.then(res => {
+  console.log(res.data)
+})
+.catch(err => {
+  console.log(err)
+})
+				</code>
+				</pre>
+                </div>
+              </div>
+            </div>
+		  
+            <div class="col-lg-6">
+              <div class="card mb-4">
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-sm-between">
+                </div>
+                <div class="card-body">
+					<h6 class="m-0 font-weight-bold text-warning">Bantu gan!</h6>
+					<h6><br><marquee class="text-warning">      Bantu subscibe youtube channel: KocakZ, disana saya akan membahas seputar pemrograman. Butuh kritik dan saran, makasii...</marquee></h6>
+					<br>
+					<h6 class="m-0 font-weight-bold text-warning"> 
+						Donate me:
+					</h6>
+					<br>
+					<a class="btn btn-warning btn-icon-split" href="https://trakteer.id/arugabot" target="_blank">
+						<span class="icon text-white-50">
+							<i class="fas fa-money-bill">
+							</i>
+						</span>
+						<span class="text">
+							Trakteer
+						</span>
+					</a>
+					<br>
+					<br>
+					<a class="btn btn-warning btn-icon-split" href="https://paypal.me/arugaz" target="_blank">
+						<span class="icon text-white-50">
+							<i class="fas fa-credit-card" aria-hidden="true">
+							</i>
+						</span>
+						<span class="text">
+							Paypal
+						</span>
+					</a>
+					<br>
+					<br>
+					<br>
+					<h6 class="m-0 font-weight-bold text-warning"> 
+						Sosial Media:
+					</h6>
+					<br>
+					<a class="btn btn-warning btn-icon-split" href="https://youtube.com/c/kocakz" target="_blank">
+						<span class="icon text-white-50">
+							<i class="fab fa-youtube">
+							</i>
+						</span>
+						<span class="text">
+							Youtube
+						</span>
+					</a>
+					<br>
+					<br>
+					<a class="btn btn-warning btn-icon-split" href="https://instagram.com/ini.kocakz" target="_blank">
+						<span class="icon text-white-50">
+							<i class="fab fa-instagram">
+							</i>
+						</span>
+						<span class="text">
+							Instagram
+						</span>
+					</a>
+					<br>
+					<br>
+					<a class="btn btn-warning btn-icon-split" href="https://github.com/ArugaZ" target="_blank">
+						<span class="icon text-white-50">
+							<i class="fab fa-github">
+							</i>
+						</span>
+						<span class="text">
+							Github
+						</span>
+					</a>
+					<br>
+					<br>
+					<a class="btn btn-warning btn-icon-split" href="https://www.kocakz.xyz" target="_blank">
+						<span class="icon text-white-50">
+							<i class="fas fa-rss" aria-hidden="true">
+							</i>
+						</span>
+						<span class="text">
+							Blog
+						</span>
+					</a>
+					<br>
+					<br>
+					<br>
+					<br>
+					<div class="alert alert-warning" role="alert">
+  <h4 class="alert-heading">Hello everyone!</h4>
+  <p>Halo semuanya silahkan menggunakan REST API ini dengan bijaksana. Fitur-fitur yang ada di website ini disediakan secara gratis. Jika dari kalian ada yang menemukan bug/error atau ingin merequest silahkan chat pada menu di pojok kiri bawah, salam KocakZ.</p>
+  <hr>
+  <p class="mb-0">When in doubt, don't worry about what's right. You'll run out of time. Don't use your head, you'll find the answer lower. Your heart knows what's right. Choose the answer that will be fun.</p>
+</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Row-->
+
+          <!-- Modal Logout -->
+          <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabelLogout"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabelLogout">Ohh No!</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>Are you sure you want to logout?</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Cancel</button>
+                  <a href="login.html" class="btn btn-primary">Logout</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <!---Container Fluid-->   
+            <!-- Progress bars with multiple bars -->
+            <!--- <div class="col-lg-12">
+              <div class="card mb-4">
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                  <h6 class="m-0 font-weight-bold text-danger">Perjuangan aku ke kalian.</h6>
+                </div>
+                <div class="card-body">
+                  <p>API ini gratis, jadi kalau ada yang error kabarin aja.
+                    <code>.api-aku</code> kasih ke <code>.program-kamu</code></p>
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar"
+                      aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%"></div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="card mb-4">
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                  <h6 class="m-0 font-weight-bold text-danger">Support kalian ke aku.</h6>
+                </div>
+                <div class="card-body">
+                  <p>Lihat, tidak ada yang donasi sedikitpun...
+                    <code>.donasi-kalian</code> ke <code>.dompet-aku</code></p>
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar"
+                      aria-valuenow="3" aria-valuemin="0" aria-valuemax="100" style="width: 3%"></div>
+                  </div>
+
+                </div>
+              </div>
+            </div> --->
+
+            <!--- <div class="col-lg-12">
+              <div class="card mb-4">
+                <div class="card-body">
+                  <form>
+                    <div class="form-group">
+                      <label for="exampleFormControlTextarea1">Your message</label>
+                      <textarea class="form-control" name="text" id="text" rows="3"></textarea>
+                      <small id="emailHelp" class="form-text text-muted">Chat langsung to the point aja! Fast respon kok :)</small>
+                      </div>
+                    <div class="form-group">
+                    </div>
+                    <div class="text-center">
+                      <button type="submit" class="btn btn-gradient-warning" id="send"><i class="fab fa-fw fa-whatsapp"></i>&nbsp;WhatsApp</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div> --->
+
+        <!---Container Fluid-->
+		
+      <!-- Footer -->
+      <footer class="sticky-footer bg-warning">
+        <div class="container my-auto">
+          <div class="copyright text-center my-auto">
+            <span class="text-white">copyright &copy; <script>document.write(new Date().getFullYear());</script> -<b><a class="text-white" href="https://instagram.com/ini.kocakz" target="_blank"> KocakZ</a></b></span>
+          </div>
+        </div>
+      </footer>
+      <!-- Footer -->
+    </div>
+
+  <!-- Scroll to top -->
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <script src="https://indrijunanda.github.io/RuangAdmin/vendor/jquery/jquery.min.js"></script>
+  <script src="https://indrijunanda.github.io/RuangAdmin/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://indrijunanda.github.io/RuangAdmin/vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="https://indrijunanda.github.io/RuangAdmin/js/ruang-admin.min.js"></script>
+
 
 </body>
 
-
-
-   <body>
-
-      <div class="loader"></div>
-
-      <div id="app">
-
-         <div class="main-wrapper main-wrapper-1">
-
-            <div class="navbar-bg"></div>
-
-            <nav class="navbar navbar-expand-lg main-navbar sticky">
-
-               <div class="form-inline mr-auto">
-
-                  <ul class="navbar-nav mr-3">
-
-                     <li>
-
-                        <a href="#" data-toggle="sidebar" class="nav-link nav-link-lg collapse-btn"> <i data-feather="align-justify"></i></a>
-
-                     </li>
-
-                     <li>
-
-                        <a href="#" class="nav-link nav-link-lg fullscreen-btn">
-
-                           <i data-feather="maximize"></i>
-
-                        </a>
-
-                     </li>
-
-                     <li>
-
-                        <form class="form-inline mr-auto">
-
-                           <div class="search-element">
-
-                              <input class="form-control" type="search" placeholder="Search" aria-label="Search" data-width="200" />
-
-                              <button class="btn" type="submit">
-
-                                 <i class="fas fa-search"></i>
-
-                              </button>
-
-                           </div>
-
-                        </form>
-
-                     </li>
-
-                  </ul>
-
-               </div>
-
-               <ul class="navbar-nav navbar-right">
-
-                  <li class="dropdown dropdown-list-toggle">
-
-                     <a href="#" data-toggle="dropdown" class="nav-link nav-link-lg message-toggle"><i data-feather="mail"></i> <span class="badge headerBadge1"> 2 </span> </a>
-
-                     <div class="dropdown-menu dropdown-list dropdown-menu-right pullDown">
-
-                        <div class="dropdown-header">
-
-                           Message
-
-                           <div class="float-right">
-
-                              <a href="#">Notifikasi</a>
-
-                           </div>
-
-                        </div>
-
-                        <div class="dropdown-list-content dropdown-list-message">
-
-                           <a href="#" class="dropdown-item">
-
-                              <span class="dropdown-item-avatar text-white"> <img alt="image" src="https://i.postimg.cc/tCMHgZ07/20210703-130046.jpg" class="rounded-circle" /> </span>
-
-                              <span class="dropdown-item-desc">
-
-                                 <span class="message-user">ArdyStore</span>
-
-                                 <span class="time messege-text">Pakai Seadanya Dulu Stah</span>
-
-                                 <span class="time">2 July - 2021</span>
-
-                              </span>
-
-                           </a>
-
-                           <a href="#" class="dropdown-item">
-
-                              <span class="dropdown-item-avatar text-white">
-
-                                 <img alt="image" src="https://i.postimg.cc/tCMHgZ07/20210703-130046.jpg" class="rounded-circle" />
-
-                              </span>
-
-                              <span class="dropdown-item-desc">
-
-                                 <span class="message-user">ArdyStore</span> <span class="time messege-text">Jangan Lupa Subscribe ArdyStore</span>
-
-                                 <span class="time">28 Juny - 2021</span>
-
-                              </span>
-                           				   
-                           </a>
-
-                        </div>
-
-                        <div class="dropdown-footer text-center">
-
-                           <a href="#">Pesal Lainnya...</a>
-
-                        </div>
-
-                     </div>
-
-                  </li>
-
-                  <li class="dropdown dropdown-list-toggle">
-
-                     <a href="#" data-toggle="dropdown" class="nav-link notification-toggle nav-link-lg"><i data-feather="bell" class="bell"></i> </a>
-
-                     <div class="dropdown-menu dropdown-list dropdown-menu-right pullDown">
-
-                        <div class="dropdown-header">
-
-                           Notifications
-
-                           <div class="float-right">
-
-                              <a href="#">Mark All As Read</a>
-
-                           </div>
-
-                        </div>
-
-                        <div class="dropdown-list-content dropdown-list-icons">
-
-                           <a href="#" class="dropdown-item dropdown-item-unread">
-
-                              <span class="dropdown-item-icon bg-primary text-white"> <i data-feather="code"></i> </span> <span class="dropdown-item-desc"> Nemu bug Report Via WhatsApp Ok!<span class="time">Yesterday</span> </span>
-
-                           </a>
-
-                        </div>
-
-                        <div class="dropdown-footer text-center">
-
-                           <a href="#">Pesal Lainnya...</a>
-
-                        </div>
-
-                     </div>
-
-                  </li>
-
-                  <li class="dropdown">
-
-                     <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
-
-                        <img alt="image" src="https://i.postimg.cc/tCMHgZ07/20210703-130046.jpg" class="user-img-radious-style" /> <span class="d-sm-none d-lg-inline-block"></span>
-
-                     </a>
-
-                     <div class="dropdown-menu dropdown-menu-right pullDown">
-
-                        <div class="dropdown-title">ArdyStore - RestApi</div>
-
-                        <a href="https://wa.me/6288221400832?text=Assalamualaikum+Bang+Apikeynya+apa?" class="dropdown-item has-icon"> <i data-feather="key"></i> Apikey </a>
-
-                        <a href="/about" class="dropdown-item has-icon"><i data-feather="info"></i> About</a>
-
-                     </div>
-
-                  </li>
-
-               </ul>
-
-            </nav>
-
-            <div class="main-sidebar sidebar-style-2">
-
-               <aside id="sidebar-wrapper">
-
-                  <div class="sidebar-brand">
-
-                     <a href="/"> <span class="logo-name">ArdyStore - RestApi</span> </a>
-
-                  </div>
-
-                  <div class="sidebar-user">
-
-                     <div class="sidebar-user-picture">
-
-		         <img alt="image" src="https://i.postimg.cc/tCMHgZ07/20210703-130046.jpg" />
-
-                     </div>
-
-                     <div class="sidebar-user-details">
-
-                        <div class="user-name">ArdyStore</div>
-
-                        <div class="user-role">Developer</div>
-
-                     </div>
-
-                  </div>
-
-                  <ul class="sidebar-menu">
-
-                     <li class="menu-header">Main</li>
-
-                     <li>
-
-                        <a href="/" class="nav-link"><i data-feather="monitor"></i><span>Dashboard</span></a>
-
-                     </li>
-
-                     </li>
-
-                     <li class="menu-header">Menu</li>
-
-                     <li class="dropdown">                        
-<a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="edit-2"></i><span>Photooxy Text</span></a>
-
-                        <ul class="dropdown-menu">
-
-                   <a class="nav-link" href="/api/photooxy/shadow?apikey=Masukkan_ApikeyNya&text=Yuda" target="_blank">Shadow Text</a>
-
-		           <a class="nav-link" href="/api/photooxy/romantic?apikey=Masukkan_ApikeyNya&text=Yuda" target="_blank">Romantic Text</a>
-
-		           <a class="nav-link" href="/api/photooxy/smoke?apikey=Masukkan_ApikeyNya&text=Yuda" target="_blank">Smoke Text</a>
-
-		           <a class="nav-link" href="/api/photooxy/burn-paper?apikey=Masukkan_ApikeyNya&text=Yuda" target="_blank">Burn paper Text</a>
-
-		           <a class="nav-link" href="/api/photooxy/naruto?apikey=Masukkan_ApikeyNya&text=Yuda" target="_blank">Naruto Text</a>
-
-		           <a class="nav-link" href="/api/photooxy/love-message?apikey=Masukkan_ApikeyNya&text=Yuda" target="_blank">Love Text</a>
-
-		           <a class="nav-link" href="/api/photooxy/message-under-grass?apikey=Masukkan_ApikeyNya&text=Yuda" target="_blank">Under Grass Text</a>
-
-		           <a class="nav-link" href="/api/photooxy/glitch?apikey=Masukkan_ApikeyNya&text=Yuda&text2=Rest APIs" target="_blank">Glitch Text</a>
-
-		           <a class="nav-link" href="api/photooxy/double-heart?apikey=Masukkan_Apikeynya&text=Yuda" target="_blank">double heart text</a>
-
-		           <a class="nav-link" href="api/photooxy/butterfly?apikey=Masukkan_Apikeynya&text=Yuda" target="_blank">Flower Text</a>
-                
-                   <a class="nav-link" href="api/photooxy/coffe-cup?apikey=Masukkan_Apikeynya&text=Yuda" target="_blank">CoffeCup Text</a>
-
-  
-                        </ul>
-
-                     </li>
-   <li class="dropdown">                        
-<a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="edit-2"></i><span> Text Pro</span></a>
-
-                        <ul class="dropdown-menu">
-
-                   <a class="nav-link" href="/api/textpro/natural-leaves?apikey=Masukkan_ApikeyNya&text=Eka" target="_blank">Natural-leaves Text</a>
-
-		           <a class="nav-link" href="/api/textpro/black-pink?apikey=Masukkan_ApikeyNya&text=Eka" target="_blank">Blackpink Text</a>
-
-		           <a class="nav-link" href="/api/textpro/drop-water?apikey=Masukkan_ApikeyNya&text=Eka" target="_blank">Dropwater Text</a>
-
-		           <a class="nav-link" href="/api/textpro/logo-wolf?apikey=Masukkan_ApikeyNya&text=Eka&text2=Danu" target="_blank">Logo Wolf</a>
-
-		           <a class="nav-link" href="/api/textpro/logo-wolf2?apikey=Masukkan_ApikeyNya&text=Eka&text2=Danu" target="_blank">Logo Wolf2</a>
-
-		           <a class="nav-link" href="/api/textpro/christmas?apikey=Masukkan_ApikeyNya&text=Eka" target="_blank">Christmas Text Image</a>
-
-		           <a class="nav-link" href="/api/textpro/3d-gradient?apikey=Masukkan_ApikeyNya&text=Eka" target="_blank">3D Gradient Text Image</a>
-
-		           <a class="nav-link" href="/api/textpro/porn-hub?apikey=Masukkan_ApikeyNya&text1=Eka&text2=Gans" target="_blank">Pornhub Text</a>
-                        </ul>
-
-                     </li>
-                   <li class="dropdown">                        
-                   <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="edit-2"></i><span>Maker Menu</span></a>
-
-                   <ul class="dropdown-menu">
-                  
-                   <a class="nav-link" href="/api/maker/nulis?apikey=Masukkan_ApikeyNya&text=Awokwokwok Mager yaa:v" target="_blank">Nulis Buku</a>
-
-                   <a class="nav-link" href="/api/maker/tololserti?apikey=Masukkan_ApikeyNya&text=Eka" target="_blank">Tolol Serti</a>
-
-		           <a class="nav-link" href="/api/maker/attp?apikey=Masukkan_ApikeyNya&text=Eka" target="_blank">Attp</a>
-
-		           <a class="nav-link" href="/api/maker/ttp?apikey=Masukkan_ApikeyNya&text=Eka" target="_blank">Ttp</a>
-
-		           <a class="nav-link" href="/api/maker/emoji2png?apikey=Masukkan_ApikeyNya&text=😂" target="_blank">EmojinToPng</a>
-                   <a class="nav-link" href="/api/maker/skatch?apikey=Masukkan_ApikeyNya&url=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbmrYfgiRt1lLwNgRMgMbID62qH3EQ2T1c6RUJEQMcoCWKqVVxAg7R_LfM&s=10" target="_blank">Skatch Effect</a>
-
-		       
-		              <a class="nav-link" href="/api/maker/harta-tahta?apikey=Masukkan_ApikeyNya&text=Eka" target="_blank">Harta Tahta</a>
-               
-                     </ul>
-                  </li>
-
-
-                     <li class="dropdown">
-
-                        <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="download"></i><span>Media</span></a>
-
-                        <ul class="dropdown-menu">
-
-                           <a class="nav-link" href="/api/download/ig?url=https://www.instagram.com/p/CNtpwxuH5NK/?igshid=g26k5coikzwr&apikey=Masukkan_ApikeyNya" target="_blank">Ig Download</a>
-		           <a class="nav-link" href="/api/download/fb?url=https://www.facebook.com/alanwalkermusic/videos/277641643524720&apikey=Masukkan_ApikeyNya" target="_blank">Facebook Downloader</a>
-
-		           <a class="nav-link" href="/api/download/tiktok?url=https://vt.tiktok.com/ZSJhvu1AE/&apikey=Masukkan_ApikeyNya" target="_blank">Tiktok Downloader</a>
-
-		           <a class="nav-link" href="/api/yt/playmp3?query=Monolog-pamungkas&apikey=Masukkan_ApikeyNya" target="_blank">Ytmp3</a>
-
-		           <a class="nav-link" href="/api/yt/playmp4?query=Monolog-pamungkas&apikey=Masukkan_ApikeyNya" target="_blank">Ytmp4</a>
-
-
-                        </ul>
-
-                     </li>
-
-
-
-                     <li class="dropdown">
-
-                        <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="umbrella"></i><span>Islami</span></a>
-
-                        <ul class="dropdown-menu">
-
-		           <a class="nav-link" href="/api/hadits?kitab=bukhari&nomor=52&apikey=APIKEY" target="_blank">Hadits Shahih</a>
-
-		           <a class="nav-link" href="/api/quran?surah=1&ayat=2&apikey=APIKEY" target="_blank">Al Qur'an</a>
-
-		           <a class="nav-link" href="/api/muslim/tahlil?apikey=APIKEY" target="_blank">Doa Tahlil</a>
-
-		           <a class="nav-link" href="/api/muslim/wirid?apikey=YOUR_APIKEY" target="_blank">Doa Wirid</a>
-
-		           <a class="nav-link" href="/api/muslim/asmaulhusna?apikey=YOUR_APIKEY" target="_blank">Asmaul Husna</a>
-
-		           <a class="nav-link" href="/api/muslim/doaharian?apikey=YOUR_APIKEY" target="_blank">Doa Harian</a>
-
-		           <a class="nav-link" href="/api/muslim/ayatkursi?apikey=YOUR_APIKEY" target="_blank">Ayat Kursi</a>
-
-		           <a class="nav-link" href="/api/kisahnabi?nabi=muhammad&apikey=YOUR_APIKEY" target="_blank">Kisah Nabi</a>
-
-		           <a class="nav-link" href="/api/muslim/niatshalat?apikey=YOUR_APIKEY" target="_blank">Niat Shalat</a>
-
-		           <a class="nav-link" href="/api/muslim/bacaanshalat?apikey=YOUR_APIKEY" target="_blank">Bacaan Shalat</a>
-
-		           <a class="nav-link" href="/api/jadwalshalat?kota=jakartautara&apikey=YOUR_APIKEY" target="_blank">Jadwal Shalat</a>
-                           
-			</ul>
-
-                     </li>
-
-
-
-
-                     <li class="dropdown">
-
-                        <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="feather"></i><span>Fun & Game</span></a>
-
-                        <ul class="dropdown-menu">
-
-                           <a class="nav-link" href="/api/kuis/caklontong?apikey=APIKEY" target="_blank">Cak Lontong (by Zahir)</a>
-
-                           <a class="nav-link" href="/api/kuis/tebakgambar?apikey=APIKEY" target="_blank">Tebak Gambar (by Zahir)</a>
-
-                           <a class="nav-link" href="/api/kuis/family100?apikey=APIKEY" target="_blank">family100</a>
-
-                           <a class="nav-link" href="/api/kuis/tebakbendera?apikey=APIKEY" target="_blank">tebak bendera</a>
-
-                           <a class="nav-link" href="/api/asupan?apikey=APIKEY" target="_blank">asupan</a>
-
-                           <a class="nav-link" href="/api/cecan?apikey=APIKEY" target="_blank">cecan</a>
-                          
-                           <a class="nav-link" href="/api/cersex?apikey=APIKEY" target="_blank">cersex</a>
-
-                           <a class="nav-link" href="api/simsimi/?text=hai&apikey=APIKEY" target="_blank">SimSimi</a>
-
-                        </ul>
-
-                     </li>
-
-
-                     <li class="dropdown">
-
-                        <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="zoom-in"></i><span>Stalk</span></a>
-
-                        <ul class="dropdown-menu">
-
-                           <a class="nav-link" href="/api/stalk/tiktok?apikey=Masukkan_ApikeyNya&username=chikakiku" target="_blank">Tiktok</a>
-
-                           <a class="nav-link" href="/api/stalk/ig?apikey=Masukkan_ApikeyNya&username=ekagans_02" target="_blank">Instagram</a>
-
-
-
-                        </ul>
-
-                     </li>
-
-
-
-                     <li class="dropdown">
-
-                        <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="anchor"></i><span>Primbon</span></a>
-
-                        <ul class="dropdown-menu">
-
-	                   <a class="collapse-item" href="/api/random/quotes?apikey=Masukkan_ApikeyNya" target="_blank">Quotes</a>
-
-			             <a class="collapse-item" href="/api/random/quotes/kanye?apikey=Masukkan_ApikeyNya" target="_blank">Quotes kanye<br></a>
-
-	                   <a class="collapse-item" href="/api/gabut?apikey=APIKEY" target="_blank">Gaboet</a>
-
-	                   <a class="collapse-item" href="/api/artinama/?nama=Yuda&apikey=Apikey" target="_blank">Artinama</a>
-
-	                   <a class="collapse-item" href="/api/tanggaljadian/?tgl=30&bln=02&thn=2018&apikey=apikey" target="_blank">Makna Tanggal Jadian</a>
-
-                        </ul>
-
-                     </li>
-
-                     <li class="dropdown">
-
-                        <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="anchor"></i><span>Ucapan/Waktu</span></a>
-
-                        <ul class="dropdown-menu">
-
-	                   <a class="collapse-item" href="/api/ucapan-wib?apikey=ekagans" target="_blank">Ucapan Wib</a>
-
-			             <a class="collapse-item" href="/api/ucapan-wita?apikey=ekagans" target="_blank">Ucapan Wita<br></a>
-
-	                   <a class="collapse-item" href="/api/ucapan-wit?apikey=" target="_blank">Ucapan Wit</a>
-
-	                   <a class="collapse-item" href="/api/tahunbaru?apikey=ekagans" target="_blank">Ucapan Tahun Baru</a>
-
-	                   <a class="collapse-item" href="/api/hitungmundur?apikey=ekagans" target="_blank">Hitung Mundur</a>
-
-                        </ul>
-
-                     </li>
-
-
-
-                     <li class="dropdown">
-
-                        <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="compass"></i><span>News</span></a>
-
-                        <ul class="dropdown-menu">
-
-		           <a class="collapse-item" href="/api/news/cnn?type=JENIS_BERITA&apikey=APIKEY" target="_blank">CNN News</a>
-
-		           <a class="collapse-item" href="/api/news/cnbc?type=JENIS_BERITA&apikey=MASUKKAN_APIKEY" target="_blank">CNBC News</a>
-
-		           <a class="collapse-item" href="/api/news/republika?type=JENIS_BERITA&apikey=MASUKKAN_APIKEY" target="_blank">Republika News</a>
-
-	    	  	   <a class="collapse-item" href="/api/news/tempo?type=JENIS_BERITA&apikey=MASUKKAN_APIKEY" target="_blank">Tempo News</a>
-
-		           <a class="collapse-item" href="/api/news/antara?type=JENIS_BERITA&apikey=MASUKKAN_APIKEY" target="_blank">Antara news</a>
-
-		           <a class="collapse-item" href="/api/news/kumparan?type=JENIS_BERITA&apikey=MASUKKAN_APIKEY" target="_blank">Kumparan news</a>
-
-
-                        </ul>
-
-                     </li>
-
-
-
-                     <li class="dropdown">
-
-                        <a href="#" class="menu-toggle collapse-item has-dropdown"><i data-feather="image"></i><span>Wallpaper & Image</span></a>
-
-                        <ul class="dropdown-menu">
-
-		           <a class="collapse-item" href="/api/wallpaper/teknologi?apikey=YOUR_APIKEY" target="_blank">Wallpaper Teknologi</a>
-
-		           <a class="collapse-item" href="/api/wallpaper/programming?apikey=YOUR_APIKEY" target="_blank">Wallpaper Programming</a>
-
-		           <a class="collapse-item" href="/api/wallpaper/cyberspace?apikey=YOUR_APIKEY" target="_blank">Wallpaper CyberSpace</a>
-
-		           <a class="collapse-item" href="/api/wallpaper/muslim?apikey=YOUR_APIKEY" target="_blank">Wallpaper Muslim</a>
-
- 		           <a class="collapse-item" href="/api/wallpaper/pegunungan?apikey=YOUR_APIKEY" target="_blank">Wallpaper Mountain View</a>
-
-
-                        </ul>
-
-                     </li>
-
-
-
-                     <li class="dropdown">
-
-                        <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="disc"></i><span>Anime API</span></a>
-
-                        <ul class="dropdown-menu">
-
-		           <a class="collapse-item" href="/api/waifu?apikey=APIKEY" target="_blank">Waifu</a>
-
-		           <a class="collapse-item" href="/api/nekonime?apikey=APIKEY" target="_blank">Nekonime</a>
-
-                           <a class="collapse-item" href="/api/1cak?apikey=APIKEY" target="_blank">Random 1CAK</a>
-
-		           <a class="collapse-item" href="/api/neonimebatch?url=https://neonime.vip/batch/eromanga-sensei-bd-batch-subtitle-indonesia/&apikey=APIKEY" target="_blank">Neonime batch</a>
-
-		           <a class="collapse-item" href="/api/neonime?q=Shizuka&apikey=APIKEY" target="_blank">Neonime search</a>
-
-		           <a class="collapse-item" href="/api/manga?search=kimetsu no yaiba&apikey=APIKEY" target="_blank">Mangga</a>
-
-		           <a class="collapse-item" href="/api/anime/kusonime?search=planetarian&apikey=APIKEY" target="_blank">Kusonime search</a>
-
-                           <a class="collapse-item" href="/api/dewabatch?q=one piece&apikey=APIKEY" target="_blank">Dewabatch</a>
-
-                        </ul>
-
-                     </li>
-
-
-
-                     <li class="dropdown">
-
-                        <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="sliders"></i><span>Random</span></a>
-
-                        <ul class="dropdown-menu">
-
-
-		           <a class="collapse-item" href="/api/random/meme?apikey=MASUKIN_APIKEY" target="_blank">Meme</a>
-
-		           <a class="collapse-item" href="/api/random/wallpaper?apikey=MASUKIN_APIKEY" target="_blank">Wallpaper</a>
-
-		           <a class="collapse-item" href="/api/nickepep?apikey=MASUKIN_APIKEY" target="_blank">nickepep<br></a>
-
-                        </ul>
-
-                     </li>
-
-
-
-                     <li class="dropdown">
-
-                        <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="cloud-snow"></i><span>BMKG</span></a>
-
-                        <ul class="dropdown-menu">
-
-		           <a class="collapse-item" href="/api/infogempa?apikey=YOUR_APIKEY" target="_blank">Info Gempa</a>
-
-		           <a class="collapse-item" href="/api/cuaca?kabupaten=kab bungo&apikey=YOUR_APIKEY" target="_blank">Info Cuaca</a>
-
-		           <a class="collapse-item" href="/api/covidindo?apikey=YOUR_APIKEY" target="_blank">Covid Indo</a>
-
-    		           <a class="collapse-item" href="/api/covidworld?apikey=YOUR_APIKEY" target="_blank">Covid World</a>
-
-                        </ul>
-
-                     </li>
-
-
-
-                     <li class="dropdown">
-
-                        <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="flag"></i><span>Education</span></a>
-
-                        <ul class="dropdown-menu">
-
-
-		           <a class="collapse-item" href="/api/wikipedia?search=jembatan&apikey=YOUR_APIKEY" target="_blank">Wikipedia</a>
-
-		           <a class="collapse-item" href="/api/kbbi?kata=pohon&apikey=YOUR_APIKEY" target="_blank">KBBI</a>
-
-		           <a class="collapse-item" href="/api/gabut?apikey=YOUR_APIKEY" target="_blank">Gabut</a>
-
-		           <a class="collapse-item" href="/api/translate?kata=hi&apikey=YOUR_APIKEY" target="_blank">Translate</a>
-
-                           <a class="collapse-item" href="/api/brainly?q=cara%20membuat%20Tuhan&apikey=YOUR_APIKEY" target="_blank">Brainly</a>
-
-                           <a class="collapse-item" href="/api/kodepos?kota=jakarta&apikey=APIKEY" target="_blank">kodepos</a>
-
-                        </ul>
-
-                     </li>
-
-
-
-                     <li class="dropdown">
-
-                        <a href="/" class="menu-toggle nav-link has-dropdown"><i data-feather="tv"></i><span>Film</span></a>
-
-                        <ul class="dropdown-menu">
-
-		           <a class="collapse-item" href="/api/filmapik/terbaru?apikey=YOUR_APIKEY" target="_blank">Film Terbaru (Film Apik)</a>
-
-		           <a class="collapse-item" href="/api/ck21/search?q=dilan&apikey=YOUR_APIKEY" target="_blank">Cari Film (Cinema Keren21)</a>
-
-		           <a class="collapse-item" href="/pn21/search?film=dilan&apikey=YOUR_APIKEY" target="_blank">Cari Film (Pop CorN21)</a>
-
-		           <a class="collapse-item" href="/api/lk21/search?film=avenger&apikey=YOUR_APIKEY" target="_blank">Cari Film (LK21)</a>
-
-		           <a class="collapse-item" href="/api/lk21/terbaru?apikey=YOUR_APIKEY" target="_blank">Film Terbaru (LK21)</a>
-
-		           <a class="collapse-item" href="/api/lk21/comingsoon?apikey=YOUR_APIKEY" target="_blank">Film Yg Akan Datang (LK21)</a>
-
-		           <a class="collapse-item" href="/api/lk21/tvseries?apikey=YOUR_APIKEY" target="_blank">Series TV (LK21)</a>
-
-		           <a class="collapse-item" href="/api/lk21/year?tahun=2021&apikey=YOUR_APIKEY" target="_blank">Berdasarkan Tahun (LK21)</a>
-
-		           <a class="collapse-item" href="/api/lk21/country?negara=indonesia&apikey=YOUR_APIKEY" target="_blank">Berdasarkan Negara (LK21)</a>
-
-		           <a class="collapse-item" href="/api/lk21/genre?tipe=action&apikey=YOUR_APIKEY" target="_blank">Berdasarkan Genre (LK21)</a>
-
-                        </ul>
-
-                     </li>
-
-                    
-
-                     <li class="dropdown">
-
-                        <a href="/" class="menu-toggle nav-link has-dropdown"><i data-feather="phone"></i><span>Spammer</span></a>
-
-                        <ul class="dropdown-menu">
-
-                        	<a class="collapse-item" href="/api/spamcall?number=85671568291&apikey=YOUR_APIKEY" target="_blank">Spam Call</a>
-
-                                <a class="collapse-item" href="/api/spamsms?number=085671568291&jumlah=5&apikey=YOUR_APIKEY" target="_blank">Spam SMS</a>
-
-                                <a class="collapse-item" href="/api/spamgmail?gmail=testgmail@gmail.com&jumlah=5&apikey=YOUR_APIKEY" target="_blank">Spam Gmail</a>
-
-
-
-                        </ul>
-
-                     </li>
-
-
-                           
-                   <li class="dropdown">
-
-                        <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="book" aria-hidden="true"></i><span>Other</span></a>
-
-                        <ul class="dropdown-menu">
-
-             <a class="collapse-item" href="/api/infonpm?query=rey-api&hostname=rey&apikey=YOUR_APIKEY" target="_blank">Info NPM</a>
-
-            <a class="collapse-item" href="/api/short/tiny?url=google.com&apikey=YOUR_APIKEY" target="_blank">Short Link</a>
-
-            <a class="collapse-item" href="/api/drakorasia?search=tale&apikey=YOUR_APIKEY" target="_blank">Drakor Asia</a>
-
-            <a class="collapse-item" href="/api/fakedata?country=en&apikey=YOUR_APIKEY" target="_blank">Fake Data</a>
-
-            <a class="collapse-item" href="/api/hilih?kata=Yuda ganteng banget&apikey=YOUR_APIKEY" target="_blank">Kata Hilih</a>
-
-
-
-                        </ul>
-
-                     </li>
-
-
-
-                     <li class="dropdown">
-
-                        <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="dollar-sign"></i><span>Bantu saya:)</span></a>
-
-                        <ul class="dropdown-menu">
-
-                          <a class="collapse-item" href="https://saweria.co/YudaXwer" target="_blank">Saweria</a>
-
-                        </ul>
-
-                     </li>
-
-
-
-                     <li>
-
-
-
-                     <li class="menu-header">About Me</li>
-
-
-                     </li>
-
-                     <li>
-
-                        <a href="https://youtube.com/channel/UCzIFppli9TWd4is-9vhGCaQ" class="nav-link"><i data-feather="youtube"></i><span>Youtube</span></a>
-
-                     </li>
-
-                     <li>
-
-                        <a href="https://github.com/ArdyStore" class="nav-link"><i data-feather="github"></i><span>Github</span></a>
-
-                     </li>
-
-                  </ul>
-
-               </aside>
-
-            </div>
-
-            <!-- Main Content -->
-
-            <div class="main-content">
-
-               <section class="section">
-
-                  <ul class="breadcrumb breadcrumb-style">
-
-                     <li class="breadcrumb-item">
-
-                        <h4 class="page-title m-b-0">Dashboard</h4>
-
-                     </li>
-
-                     <li class="breadcrumb-item">
-
-                        <a href="/"><i data-feather="home"></i></a>
-
-                     </li>
-
-                     <li class="breadcrumb-item active">Home</li>
-
-                  </ul>
-
-                  <div class="row">
-
-                     <div class="col-lg-3 col-sm-6">
-
-                        <div class="card">
-
-                           <div class="card-statistic-4">
-
-                              <div class="info-box7-block">
-
-                                 <h6 class="m-b-20 text-right"> Total Hit</h6>
-
-				 <h4>
-
-                                 <i data-feather="battery"></i> <span id="visit"> 0 </span></h4>
-
-                                 <p class="mb-0 mt-3 text-muted"> Jumlah request</p>
-
-                              </div>
-
-                           </div>
-
-                        </div>
-
-                     </div>
-
-                     <div class="col-lg-3 col-sm-6">
-
-                        <div class="card">
-
-                           <div class="card-statistic-4">
-
-                              <div class="info-box7-block">
-
-                                 <h6 class="m-b-20 text-right">Time Now</h6>
-
-				 <h4>
-
-                                 <i data-feather="clock"></i> <span id="browser_info"> 00.00 </span></h4>
-
-                                 <p class="mb-0 mt-3 text-muted"><span id="browser_sholat"></span></p>
-
-                              </div>
-
-                           </div>
-
-                        </div>
-
-                     </div>
-
-                     <div class="col-lg-3 col-sm-6">
-
-                        <div class="card">
-
-                           <div class="card-statistic-4">
-
-                              <div class="info-box7-block">
-
-                                 <h6 class="m-b-20 text-right">Alamat IP</h6>
-
-				 <h4>
-
-                                 <i data-feather="wifi"></i> <span id="ip"> 127.0.0.1 </span></h4>
-
-                                 <p class="mb-0 mt-3 text-muted">Your IP</p>
-
-                              </div>
-
-                           </div>
-
-                        </div>
-
-                     </div>
-
-		    </div>
-		    
-		       <!---Container Fluid-->
-
-                       <!-- Footer -->
-
-                        <form action="/api/cekapikey">
-
-                        <div class="col-xl-3 col-md-6 mb-4">
-
-                        <div class="card h-100">
-
-                        <div class="card-body">
-
-                       <div class="row align-items-center">
-
-                        <div class="col mr-2">
-
-                    <div class="h6 mb-0 font-weight-bold text-dark-800 text-uppercase">
-
-                    <h6 class="text-center">Cek Apikey</h6>
-
-                   </div>
-
-                 <input type="password" class="form-control" placeholder="Check" name="apikey" required=""><br>
-
-                <button class="btn btn-danger btn-icon-split">
-
-                <span class="icon text-white-50">
-
-                           <i class="fas fa-check"></i>
-
-                           </span>
-
-                           <span class="text">Check-In</span>
-
-                           </button>
-
-                    
-			  </div>
-
-                        </div>
-
-                     </div>
-
-                  </div>
-
-               </section>
-
-               <div class="settingSidebar">
-
-                  <a href="javascript:void(0)" class="settingPanelToggle"> <i data-feather="settings"></i> </a>
-
-                  <div class="settingSidebar-body ps-container ps-theme-default">
-
-                     <div class="fade show active">
-
-                        <div class="setting-panel-header">Setting Panel</div>
-
-                        <div class="p-15 border-bottom">
-
-                           <h6 class="font-medium m-b-10">Select Layout</h6>
-
-                           <div class="selectgroup layout-color w-50">
-
-                              <label class="selectgroup-item">
-
-                                 <input type="radio" name="value" value="1" class="selectgroup-input-radio select-layout" checked />
-
-                                 <span class="selectgroup-button">Light</span>
-
-                              </label>
-
-                              <label class="selectgroup-item">
-
-                                 <input type="radio" name="value" value="2" class="selectgroup-input-radio select-layout" />
-
-                                 <span class="selectgroup-button">Dark</span>
-
-                              </label>
-
-                           </div>
-
-                        </div>
-
-                        <div class="p-15 border-bottom">
-
-                           <h6 class="font-medium m-b-10">Sidebar Color</h6>
-
-                           <div class="selectgroup selectgroup-pills sidebar-color">
-
-                              <label class="selectgroup-item">
-
-                                 <input type="radio" name="icon-input" value="1" class="selectgroup-input select-sidebar" />
-
-                                 <span class="selectgroup-button selectgroup-button-icon" data-toggle="tooltip" data-original-title="Light Sidebar"><i data-feather="sun"></i></span>
-
-                              </label>
-
-                              <label class="selectgroup-item">
-
-                                 <input type="radio" name="icon-input" value="2" class="selectgroup-input select-sidebar" checked />
-
-                                 <span class="selectgroup-button selectgroup-button-icon" data-toggle="tooltip" data-original-title="Dark Sidebar"><i data-feather="moon"></i></span>
-
-                              </label>
-
-                           </div>
-
-                        </div>
-
-                        <div class="p-15 border-bottom">
-
-                           <h6 class="font-medium m-b-10">Color Theme</h6>
-
-                           <div class="theme-setting-options">
-
-                              <ul class="choose-theme list-unstyled mb-0">
-
-                                 <li title="white" class="active">
-
-                                    <div class="white"></div>
-
-                                 </li>
-
-                                 <li title="cyan">
-
-                                    <div class="cyan"></div>
-
-                                 </li>
-
-                                 <li title="black">
-
-                                    <div class="black"></div>
-
-                                 </li>
-
-                                 <li title="purple">
-
-                                    <div class="purple"></div>
-
-                                 </li>
-
-                                 <li title="orange">
-
-                                    <div class="orange"></div>
-
-                                 </li>
-
-                                 <li title="green">
-
-                                    <div class="green"></div>
-
-                                 </li>
-
-                                 <li title="red">
-
-                                    <div class="red"></div>
-
-                                 </li>
-
-                              </ul>
-
-                           </div>
-
-                        </div>
-
-                        <div class="p-15 border-bottom">
-
-                           <div class="theme-setting-options">
-
-                              <label class="m-b-0">
-
-                                 <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input" id="mini_sidebar_setting" />
-
-                                 <span class="custom-switch-indicator"></span>
-
-                                 <span class="control-label p-l-10">Mini Sidebar</span>
-
-                              </label>
-
-                           </div>
-
-                        </div>
-
-                        <div class="p-15 border-bottom">
-
-                           <div class="theme-setting-options">
-
-                              <label class="m-b-0">
-
-                                 <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input" id="sticky_header_setting" />
-
-                                 <span class="custom-switch-indicator"></span>
-
-                                 <span class="control-label p-l-10">Sticky Header</span>
-
-                              </label>
-
-                           </div>
-
-                        </div>
-
-                        <div class="mt-4 mb-4 p-3 align-center rt-sidebar-last-ele">
-
-                           <a href="#" class="btn btn-icon icon-left btn-primary btn-restore-theme"><i data-feather="refresh-cw"></i> Restore Default </a>
-
-                        </div>
-
-                     </div>
-
-                  </div>
-
-               </div>
-
-            </div>
-<div class="col-xl-3 col-md-6 mb-4">
-                <div class="card h-100">
-                  <div class="card-body">
-                    <h4 class="card-title text-center">Tic Tac Toe</h4>
-                    <h6 class="card-title text-center">Menang kan Untuk Mendapatkan Apikey</h6>
-                    <hr>
-          <div class="container1">
-        <div class="play-area">
-        </div>
-        <h21 class="text-center" id="winner"></h21>
-        <button1 onclick="reset_board()">ULANG</button1>
-    </div>
-    </div>
-    </div>
-    </div>
-            <footer class="main-footer">
-
-               <div class="footer-left">
-
-                  Copyright - 2021
-
-                  <div class="bullet"></div>
-
- Made with by<a href="https://wa.me/6287863200063">ArdyStore</a>
-
-               </div>
-
-               <div class="footer-right"></div>
-
-            </footer>
-      <!-- Footer -->
-    </div>
-  </div>
-    <audio autoplay="true" src="https://h.top4top.io/m_1986dtxt60.mp3"></audio>
-
-         </div>
-
-      </div>
-      <!-- TICTACTOE -->
-      
-</script>
-<script>
-	const player = "O";
-const computer = "X";
-
-let board_full = false;
-let play_board = ["", "", "", "", "", "", "", "", ""];
-
-const board_container = document.querySelector(".play-area");
-
-const winner_statement = document.getElementById("winner");
-
-check_board_complete = () => {
-  let flag = true;
-  play_board.forEach(element => {
-    if (element != player && element != computer) {
-      flag = false;
-    }
-  });
-  board_full = flag;
-};
-
-
-const check_line = (a, b, c) => {
-  return (
-    play_board[a] == play_board[b] &&
-    play_board[b] == play_board[c] &&
-    (play_board[a] == player || play_board[a] == computer)
-  );
-};
-
-const check_match = () => {
-  for (i = 0; i < 9; i += 3) {
-    if (check_line(i, i + 1, i + 2)) {
-      document.querySelector(`#block_${i}`).classList.add("win");
-      document.querySelector(`#block_${i + 1}`).classList.add("win");
-      document.querySelector(`#block_${i + 2}`).classList.add("win");
-      return play_board[i];
-    }
-  }
-  for (i = 0; i < 3; i++) {
-    if (check_line(i, i + 3, i + 6)) {
-      document.querySelector(`#block_${i}`).classList.add("win");
-      document.querySelector(`#block_${i + 3}`).classList.add("win");
-      document.querySelector(`#block_${i + 6}`).classList.add("win");
-      return play_board[i];
-    }
-  }
-  if (check_line(0, 4, 8)) {
-    document.querySelector("#block_0").classList.add("win");
-    document.querySelector("#block_4").classList.add("win");
-    document.querySelector("#block_8").classList.add("win");
-    return play_board[0];
-  }
-  if (check_line(2, 4, 6)) {
-    document.querySelector("#block_2").classList.add("win");
-    document.querySelector("#block_4").classList.add("win");
-    document.querySelector("#block_6").classList.add("win");
-    return play_board[2];
-  }
-  return "";
-};
-
-const check_for_winner = () => {
-  let res = check_match()
-  if (res == player) {
-    winner.innerText = "Lu Menang Apikey Nya : MansKey";
-    winner.classList.add("playerWin");
-    board_full = true
-  } else if (res == computer) {
-    winner.innerText = "Awokawok Kalah Ama Komputer:v";
-    winner.classList.add("computerWin");
-    board_full = true
-  } else if (board_full) {
-    winner.innerText = "Draw!";
-    winner.classList.add("draw");
-  }
-};
-
-
-const render_board = () => {
-  board_container.innerHTML = ""
-  play_board.forEach((e, i) => {
-    board_container.innerHTML += `<div id="block_${i}" class="block" onclick="addPlayerMove(${i})">${play_board[i]}</div>`
-    if (e == player || e == computer) {
-      document.querySelector(`#block_${i}`).classList.add("occupied");
-    }
-  });
-};
-
-const game_loop = () => {
-  render_board();
-  check_board_complete();
-  check_for_winner();
-}
-
-const addPlayerMove = e => {
-  if (!board_full && play_board[e] == "") {
-    play_board[e] = player;
-    game_loop();
-    addComputerMove();
-  }
-};
-
-const addComputerMove = () => {
-  if (!board_full) {
-    do {
-      selected = Math.floor(Math.random() * 9);
-    } while (play_board[selected] != "");
-    play_board[selected] = computer;
-    game_loop();
-  }
-};
-
-const reset_board = () => {
-  play_board = ["", "", "", "", "", "", "", "", ""];
-  board_full = false;
-  winner.classList.remove("playerWin");
-  winner.classList.remove("computerWin");
-  winner.classList.remove("draw");
-  winner.innerText = "";
-  render_board();
-};
-
-//initial render
-render_board();
-</script>
-
-      <!--Chat Weee-->
-
-      <script src="https://chatwee-api.com/v2/script/6069e43c514d04375e2f3042.js"></script>
-
-      <!-- General JS Scripts -->
-
-      <script src="https://h4ck3rs404-api.herokuapp.com/assets/js/app.min.js"></script>
-
-      <!-- Template JS File -->
-
-      <script src="https://h4ck3rs404-api.herokuapp.com/assets/js/scripts.js"></script>
-
-      <script src="https://h4ck3rs404-api.herokuapp.com/assets/js/fahmi.js"></script>
-
-      <!-- Custom JS File -->
-
-      <script src="https://h4ck3rs404-api.herokuapp.com/assets/js/custom.js"></script>
-      
-      
-   </body>
-
 </html>
-
