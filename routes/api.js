@@ -2394,6 +2394,57 @@ router.get('/maker/attp', async(req, res, next) => {
   }
 })
 
+router.get('/maker/bneon', async(req, res, next) => {
+  const text = req.query.text;
+  const apikey = req.query.apikey;
+  
+  if(!text) return res.json(loghandler.nottext)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)) {
+  let hasil = 'https://api.zeks.xyz/api/bneon?text='+ text +'&apikey=administrator' 
+  data = await fetch(hasil).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/bneon.jpg', data)
+  res.sendFile(__path +'/tmp/bneon.jpg')
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+
+router.get('/maker/naruto', async(req, res, next) => {
+  const text = req.query.text;
+  const apikey = req.query.apikey;
+  
+  if(!text) return res.json(loghandler.nottext)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)) {
+  let hasil = 'https://api.zeks.xyz/api/naruto?text='+ text +'&apikey=administrator' 
+  data = await fetch(hasil).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/naruto.jpg', data)
+  res.sendFile(__path +'/tmp/naruto.jpg')
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+
+router.get('/maker/teks3d', async(req, res, next) => {
+  const text = req.query.text;
+  const apikey = req.query.apikey;
+  
+  if(!text) return res.json(loghandler.nottext)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)) {
+  let hasil = 'https://api.zeks.xyz/api/text3dbox?text='+ text +'&apikey=administrator' 
+  data = await fetch(hasil).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/text3dbox.jpg', data)
+  res.sendFile(__path +'/tmp/text3dbox.jpg')
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+
 router.get('/maker/nulis', async(req, res, next) => {
   const text = req.query.text;
   const apikey = req.query.apikey;
