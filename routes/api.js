@@ -2480,7 +2480,7 @@ router.get('/maker/skytext', async(req, res, next) => {
 });
 
 router.get('/maker/pubglogo', async(req, res, next) => {
-  const text1 = req.query.text;
+  const text1 = req.query.text1;
   const text2 = req.query.text2;
   const apikey = req.query.apikey;
   
