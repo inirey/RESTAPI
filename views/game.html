@@ -1,0 +1,593 @@
+<!-- MiniGames -->
+<!doctype html><html><head> 
+  <meta property="og:image" content="https://i.postimg.cc/tCMHgZ07/20210703-130046.jpg"> 
+  <link rel="shortcut icon" href="https://i.postimg.cc/tCMHgZ07/20210703-130046.jpg"> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scallable=no"> 
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"> 
+  <title>🏓Ping Pong</title> 
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P|Sarabun" rel="stylesheet"> 
+ <style type="text/css" id="dcoder_stylesheet">
+
+body 
+{
+    margin:0; padding:5px;
+    background-color:#262626;
+    user-select:none;    
+    font-family: 'Sarabun', sans-serif;
+    
+    }
+
+body:after
+{     display:none; 
+      content: url(https://dl-web.dropbox.com/s/9smc0vzt2oe6jfl/Ping%20Pong%20music%202.mp3?dl=0);
+}
+i
+{    color:red; 
+    margin:0px 2px 0px 2px;   
+}
+
+.tab, #status
+{
+    position:absolute ;
+    top:0; left:0; right:0; bottom:0;
+    margin:auto;
+    background-color:white;
+    border-radius:10px;
+    z-index:1; 
+    width:330px;  height:370px;
+    padding:10px;
+    box-sizing:border-box ;
+    transition-duration:150ms;
+}
+img
+{
+    display:inline-block ;
+    position:relative ;
+    height:80px; width:80px;
+    border-radius:10px;
+    top:20px;
+}
+h3
+{   
+    display:inline-block ;
+    color:dimgray;
+    font-family: 'Press Start 2P', cursive;
+    font-size:20px; margin:2px;
+}
+#info
+{
+    display:block ;
+    position:relative;
+    font-family: 'Sarabun', sans-serif;  margin:15px; margin-top:25px;
+}
+#easy, #hard , #impossible
+{
+    display:block ;
+    position:relative ;
+    padding:12px;
+    font-family: 'Press Start 2P', cursive;
+    background-color:#efefef;
+    border:3px dashed #262626;
+    font-size:15px;
+    text-align:center;
+    margin:10px; 
+}
+
+#status
+{
+    font-family: 'Press Start 2P', cursive;
+    height:200px;
+    visibility:hidden;
+    transition-duration:100ms;
+}
+
+#result
+{
+    font-size:30px;
+    margin:20px 10px 10px 10px;
+}
+button
+{
+    padding:20px;
+    position:relative;
+    outline:none;
+    border:3px dashed #262626;
+    border-radius:10px;
+    background-color:green;
+    color:white;
+    font-family: 'Press Start 2P', cursive;
+    font-size:18px;
+    margin:8px; margin-top:25px;
+    box-shadow:0 1px 3px rgba(0,0,0,0.12), 0 3px 5px rgba(0,0,0,0.3);
+}
+button:active {
+    transform:scale(0.85);
+    box-shadow:0px 0px 0px gray;
+}
+
+
+
+#canvas
+{
+    position:absolute ;    
+    margin:auto;
+    top:0;  left:0;
+    bottom:0; right:0;
+    background-color:dimgray;
+    border:4px solid white;
+    box-sizing:border-box;
+    z-index:1;
+    
+}
+
+ #container
+{   display:block;
+    position:fixed;
+    height:100vh; width:100vw;
+    background-color:#262626;
+    z-index:5;
+}
+#load
+{
+    font-size:18px;
+    color:white;
+    margin:auto; text-align:center;
+    font-family: 'Aleo', serif;   
+    user-select:none;
+    z-index:10;
+}
+
+#loader
+{
+    display:block ;
+    position:relative ;
+    height:110px; width:110px;
+    border-radius:50%;
+    margin:auto; 
+    margin-top:40%;
+    background-image:-webkit-linear-gradient(left,#14ffe9,#ffeb3b,#ff00e0);
+    animation:animate 0.5s linear infinite;
+    border:7px solid white;
+    user-select:none;
+}
+#loader:after
+{
+    content:'';
+    position:absolute;
+    margin:15px;
+    height:80px; width:80px;
+    border-radius:50%;
+    background-color:#262626;
+    opacity:0.9;
+}
+#loader > span
+{
+    display:block ;
+    position:absolute ;
+    height:100%; width:100%;
+    border-radius:50%;
+    margin:auto; 
+    background-image:-webkit-linear-gradient(left,#14ffe9,#ffeb3b,#ff00e0);
+}
+
+#loader > span:nth-child(1)
+{
+    filter:blur(5px);
+}
+#loader > span:nth-child(2)
+{
+    filter:blur(10px);
+}
+#loader > span:nth-child(3)
+{
+    filter:blur(25px);
+}
+#loader > span:nth-child(4)
+{
+    filter:blur(45px);
+} 
+
+@keyframes animate
+{
+    100%
+    {
+        transform:rotate(360deg);
+    }
+}
+
+@keyframes pop
+{
+    0%
+    { transform:scale(0.8); }
+    34%
+    { transform:scale(1); }
+    66%
+    { transform:scale(0.9); }
+    100%
+    { transform:scale(1); }
+    
+}</style></head> 
+ <body onload="document.getElementById('container').style.visibility='hidden',document.getElementsByClassName('tab')[0].style.animation='pop .27s ease'"> 
+  <canvas id="canvas"></canvas> 
+  <!-- Loader starts --> 
+  <div id="container"> 
+   <div id="loader"> 
+    <span></span> 
+    <span></span> 
+    <span></span> 
+    <span></span> 
+   </div> 
+   <br> 
+   <br> 
+   <br> 
+   <div id="load">
+     Loading... 
+   </div> 
+  </div> 
+  <!--    Loader ends --> 
+  <div class="tab"> 
+   <div id="logo"> 
+    <img src="https://i.top4top.io/p_1878v71z30.png" alt="Logo"> 
+    <h3>Ping Pong</h3> 
+   </div> 
+   <div id="info"> 
+    <b>ⓘ</b> 🏆PEMAIN PERTAMA MENCETAK 10 POIN YANG AKAN MENANG🏆 . 
+   </div> 
+   <div class="level"> 
+    <div id="easy" onclick="eas()">
+      Level Pemula 
+    </div> 
+    <div id="hard" onclick="har()">
+      Level Sedang 
+    </div> 
+    <div id="impossible" onclick="imp()"> 
+     <i class="fas fa-skull"></i> Level Mustahil 
+     <i class="fas fa-skull"></i> 
+    </div> 
+   </div> 
+  </div> 
+  <div id="status"> 
+   <center> 
+    <div id="result">
+      Kamu Menang :D 
+    </div> 
+   </center> 
+   <center> 
+    <button onclick="again()">Mulai Ulang</button> 
+   </center> 
+  </div> 
+  <!-- To get clicking sound --> 
+  <audio id="music" autoplay loop> 
+   <source src="https://j.top4top.io/m_19253wtq75.mp3" type="audio/mp3"> 
+  </audio> 
+  <audio id="win" autoplay> 
+   <source src="https://dl-web.dropbox.com/s/rp61o4fyqrr4rzx/victory%20%20sound.mp3?dl=0" type="audio/mp3"> 
+  </audio> 
+  <audio id="lose" autoplay> 
+   <source src="https://dl-web.dropbox.com/s/v92i14096c2syxg/Lose%20Game%20.mp3?dl=0" type="audio/mp3"> 
+  </audio> 
+  <center> 
+   <a href="/api"> <font size="2px" style="font-family: Iceland, sans-serif;color:white;text-shadow: 0 0 1px red, 0px 0px 3px red" 2px"><b>Back To Rest Api</b></font></a> 
+   <font size="2px" style="font-family: Iceland, sans-serif;color:white;text-shadow: 0 0 1px red, 0px 0px 3px red" 2px"> 
+    <marquee behavior="scroll" direction="left" scrollamount="2" scrolldelay="25" width="100%"> 
+     <b>Banyak orang gagal karena mereka tidak memahami usaha yang diperlukan untuk menjadi sukses. Yukino Yukinoshita (Oregairu), Kita harus mensyukuri apa yang kita punya saat ini, karena mungkin orang lain belum tentu mempunyainya. Kayaba Akihiko (Sword Art Online),</b> 
+    </marquee> </font> 
+  </center> 
+ 
+<script type="text/javascript" id="dcoder_script">// Created by AMbuRaDul //
+
+var aiLevel = 0.03;
+var run ;
+
+function  init() {
+  
+  //for sound effects  
+  var music = document.getElementById("music");  
+ var win = document.getElementById("win");   
+var lose = document.getElementById("lose");    
+win.volume=0; lose.volume=0;
+music.play();
+    
+   
+document.getElementsByClassName('tab')[0].style.transform='scale(0)';  
+document.getElementsByClassName('tab')[0].style.animation='' ;      
+    //Just some canvas setup stuff    
+    var canvas = document.getElementById("canvas");
+    var ctx = canvas.getContext('2d');
+    
+    var h = canvas.height = 450;
+    var w = canvas.width = 284;
+    var fps = 40 ;
+    
+    //ball object
+    const ball = {
+    
+        x : w/2 ,
+        y : h/2 ,
+        r : 10 ,
+        speed : 9.5,
+        dx : 3,
+        dy : 5,
+        color : "red" ,
+     }
+     
+     //user paddle
+     const user = {
+          
+          x : 95 ,
+          y : h - 30,
+          height : 10 ,
+          width : 100 ,
+          point : 00,
+          color : "black" ,                  
+     }
+     
+     //AI paddle
+     const ai = {
+          
+          x : 95,
+          y : 20,
+          height : 10 ,
+          width : 100 ,
+          point : 00,
+          color : "black" ,                  
+     }
+     
+     //The net
+     const net = {
+         
+          x : 2,
+          y : h/2,
+          height : 5 ,
+          width : 10 ,
+          point : 0,
+          color : "black" , 
+     }
+
+
+// draw a rectangle, will be used to draw paddles
+function drawRect(x, y, w, h, color){
+
+    ctx.fillStyle = color;
+    ctx.fillRect(x, y, w, h);
+
+}
+
+// draw circle, will be used to draw the ball
+function drawArc(x, y, r, color){
+
+    ctx.fillStyle = color;
+    ctx.beginPath();
+    ctx.arc(x,y,r,0,Math.PI*2,true);
+    ctx.closePath();
+    ctx.fill();
+}  
+
+//to draw net
+function drawNet()  {
+    
+    for(let i = 0; i<19;i ++)
+    {
+        drawRect(net.x + 15*i, net.y, net.width, net.height, net.color);
+        
+    }
+}
+
+//to draw text i.e points
+function drawText(text,x,y)  {
+
+    ctx.fillStyle = "#FFF";
+    ctx.font = "30px Sarabun";
+    ctx.fillText(text, x, y);
+}
+ 
+// when ai or user scores, we reset the ball
+function resetBall(){
+
+    ball.x = canvas.width/2;
+    ball.y = canvas.height/2;
+    ball.speed = 9.5;
+    ball.dy=-ball.dy;
+}
+
+// collision detection
+function collision(b,p,dir){
+    
+    p.top = p.y - dir*p.height;
+    p.left = p.x - p.width/5;
+    p.right = p.x + p.width + 20 ;
+    
+    b.top = b.y + dir*b.r;
+    b.left = b.x - b.r ;
+    b.right = b.x + b.r ;
+    
+    
+var hitX = b.left > p.left && b.right < p.right;
+    var hitY = false;
+    if(dir === 1){
+        hitY = b.dy > 0 && b.y >= p.top;
+    }
+    if(dir === -1){
+        hitY = b.dy < 0 && b.y <= p.top + p.width/7;
+    }
+    
+    return hitY && hitX;    
+
+}
+
+//mousemove eventListener controls
+window.addEventListener("mousemove",function(evt) {
+
+  user.x = evt.x - user.width ;
+   evt.preventDefault();
+   
+   });
+        
+//touchmove eventListener controls
+canvas.addEventListener("touchmove", function(e){
+        var rect = canvas.getBoundingClientRect();
+        var root = document.documentElement;
+        var touch = e.changedTouches[0];
+        var touchX = parseInt(touch.clientX) - rect.top - root.scrollTop ;
+        e.preventDefault();
+        user.x = touchX - user.width/2;});
+        
+        
+        
+           
+//keyboard controls
+addEventListener("keydown",
+function(e) {
+  
+  //arrow left
+  if (e.keyCode == "83") {
+       user.y-=2;
+  } //arrow right
+  else if (e.keyCode =="85")  {    
+       user.y+=2;
+  }
+});
+
+
+
+    
+//to update everything
+function update () {
+    
+    //to change points
+    if( ball.y - ball.r < 0 ) {
+        user.point++;
+        resetBall();
+
+    }else if( ball.y + ball.r >h ){
+        ai.point++;
+        resetBall();
+    }
+        
+    //moving the ball
+    ball.x += ball.dx;
+    ball.y += ball.dy;    
+  
+   //to bounce off the ball from the edge  
+   if(ball.x - ball.r - 2 < 0 || ball.x + ball.r + 2> w){
+        ball.dx = -ball.dx;
+    }
+  
+    // we check if the paddle hit the user or the ai paddle
+  var player = (ball.y + ball.r < h/2)?ai:user;
+   var dir =  (ball.y + ball.r < h/2)?-1:1;
+   
+     //After collision effect
+     if(collision(ball,player,dir))
+     {
+       
+      // we check where the ball hits the paddle
+      let collidePoint =ball.x - (player.x+player.width/2);
+      collidePoint = collidePoint / (player.width/2);
+
+         //angle  
+        let angleRad = -(Math.PI/4) * collidePoint;
+
+       ball.dy = -dir*ball.speed * Math.cos(angleRad);
+
+        ball.dx = -dir*dir*ball.speed * Math.sin(angleRad);
+        
+        // speed up the ball everytime a paddle hits it.
+        ball.speed += 0.64;
+}     
+     //simple ai
+      ai.x += (ball.x - (ai.x + ai.width/2))*aiLevel;   
+              
+}
+    
+//to draw everything
+function render() {
+    
+    //clear previous builda
+    ctx.clearRect(0,0,w,h);
+    //the net
+    drawNet();    
+    //the ball
+    drawArc(ball.x, ball.y, ball.r, ball.color);
+    
+    //user paddle
+    drawRect(user.x, user.y, user.width, user.height, user.color);
+    //ai paddle
+    drawRect(ai.x, ai.y, ai.width, ai.height, ai.color); 
+    
+    //points
+    drawText(ai.point,20,h/2-20);
+    drawText(user.point,w-35,h/2 +45);  
+}
+
+//actual game
+function game() {
+
+    render();  update();
+    if(ai.point == 10)
+    {   
+        change('You lost');  
+        lose.volume=1;
+        lose.play()   ;          
+    }
+    else if(user.point == 10)
+    {
+        change('You won');
+        win.volume=1;
+        win.play();
+    }    
+}  
+
+function change(txt)
+{
+        clearInterval(run);
+        ai.point=0; user.point=0;
+        music.pause();
+        render();
+        
+document.getElementById("result").innerHTML= txt ;   document.getElementById('status').style.visibility='visible'; 
+document.getElementById('status').style.transform='scale(1)'; 
+document.getElementById('status').style.animation='pop .27s ease' ;     
+        
+}
+run = setInterval(game,1000/fps);    
+
+}
+
+function again()
+{
+document.getElementById('status').style.transform='scale(0)'; 
+document.getElementById('status').style.animation='' ;  
+    document.getElementsByClassName('tab')[0].style.transform='scale(1)';  
+document.getElementsByClassName('tab')[0].style.animation='pop .27s ease' ;
+  
+}
+
+//levels
+function eas() {
+    aiLevel = 0.03;    
+    document.getElementById("easy").style.backgroundColor="cyan";
+document.getElementById("hard").style.backgroundColor="#efefef";
+document.getElementById("impossible").style.backgroundColor="#efefef";
+    win.play();lose.play();
+    init();
+}
+function har() {
+    aiLevel = 0.06;
+        document.getElementById("easy").style.backgroundColor="#efefef";
+document.getElementById("hard").style.backgroundColor="cyan";
+document.getElementById("impossible").style.backgroundColor="#efefef";
+     win.play();lose.play();
+     init();
+    
+}
+function imp() {
+    aiLevel = 0.7;
+       document.getElementById("easy").style.backgroundColor="#efefef";
+document.getElementById("hard").style.backgroundColor="#efefef";
+document.getElementById("impossible").style.backgroundColor="cyan";
+
+    win.play();lose.play();
+    init();
+}</script></body></html>
