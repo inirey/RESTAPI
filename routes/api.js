@@ -2394,6 +2394,109 @@ router.get('/maker/attp', async(req, res, next) => {
   }
 })
 
+router.get('/maker/matrix', async(req, res, next) => {
+  const text = req.query.text;
+  const apikey = req.query.apikey;
+  
+  if(!text) return res.json(loghandler.nottext)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)) {
+  let hasil = 'https://api.zeks.xyz/api/matrix?text='+ text +'&apikey=administrator' 
+  data = await fetch(hasil).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/matrix.jpg', data)
+  res.sendFile(__path +'/tmp/matrix.jpg')
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+
+router.get('/maker/breakwall', async(req, res, next) => {
+  const text = req.query.text;
+  const apikey = req.query.apikey;
+  
+  if(!text) return res.json(loghandler.nottext)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)) {
+  let hasil = 'https://api.zeks.xyz/api/breakwall?text='+ text +'&apikey=administrator' 
+  data = await fetch(hasil).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/breakwall.jpg', data)
+  res.sendFile(__path +'/tmp/breakwall.jpg')
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+
+router.get('/maker/flowertext', async(req, res, next) => {
+  const text = req.query.text;
+  const apikey = req.query.apikey;
+  
+  if(!text) return res.json(loghandler.nottext)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)) {
+  let hasil = 'https://api.zeks.xyz/api/flowertext?text='+ text +'&apikey=administrator' 
+  data = await fetch(hasil).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/flowertext.jpg', data)
+  res.sendFile(__path +'/tmp/flowertext.jpg')
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+
+router.get('/maker/smoketext', async(req, res, next) => {
+  const text = req.query.text;
+  const apikey = req.query.apikey;
+  
+  if(!text) return res.json(loghandler.nottext)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)) {
+  let hasil = 'https://api.zeks.xyz/api/smoketext?text='+ text +'&apikey=administrator' 
+  data = await fetch(hasil).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/smoketext.jpg', data)
+  res.sendFile(__path +'/tmp/smoketext.jpg')
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+
+router.get('/maker/skytext', async(req, res, next) => {
+  const text = req.query.text;
+  const apikey = req.query.apikey;
+  
+  if(!text) return res.json(loghandler.nottext)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)) {
+  let hasil = 'https://api.zeks.xyz/api/skytext?text='+ text +'&apikey=administrator' 
+  data = await fetch(hasil).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/skytext.jpg', data)
+  res.sendFile(__path +'/tmp/skytext.jpg')
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+
+router.get('/maker/pubglogo', async(req, res, next) => {
+  const text1 = req.query.text;
+  const text2 = req.query.text;
+  const apikey = req.query.apikey;
+  
+  if(!text) return res.json(loghandler.nottext)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)) {
+  let hasil = 'https://api.zeks.xyz/api/pubglogo?text1='+ text1 +'&text2 +'&apikey=administrator'
+  data = await fetch(hasil).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/pubglogo.jpg', data)
+  res.sendFile(__path +'/tmp/pubglogo.jpg')
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+
 router.get('/maker/bneon', async(req, res, next) => {
   const text = req.query.text;
   const apikey = req.query.apikey;
