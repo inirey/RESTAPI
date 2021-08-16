@@ -2394,6 +2394,57 @@ router.get('/maker/attp', async(req, res, next) => {
   }
 })
 
+router.get('/maker/nulis', async(req, res, next) => {
+  const text = req.query.text;
+  const apikey = req.query.apikey;
+  
+  if(!text) return res.json(loghandler.nottext)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)) {
+  let hasil = 'https://api.zeks.xyz/api/nulis?text='+ text +'&apikey=administrator' 
+  data = await fetch(hasil).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/nulis.jpg', data)
+  res.sendFile(__path +'/tmp/nulis.jpg')
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+
+router.get('/maker/epep', async(req, res, next) => {
+  const text = req.query.text;
+  const apikey = req.query.apikey;
+  
+  if(!text) return res.json(loghandler.nottext)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)) {
+  let hasil = 'https://api.zeks.xyz/api/epep?text='+ text +'&apikey=administrator' 
+  data = await fetch(hasil).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/epep.jpg', data)
+  res.sendFile(__path +'/tmp/epep.jpg')
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+
+router.get('/maker/silverbutton', async(req, res, next) => {
+  const text = req.query.text;
+  const apikey = req.query.apikey;
+  
+  if(!text) return res.json(loghandler.nottext)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)) {
+  let hasil = 'https://api.zeks.xyz/api/splaybutton?text='+ text +'&apikey=administrator' 
+  data = await fetch(hasil).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/splaybutton.jpg', data)
+  res.sendFile(__path +'/tmp/splaybutton.jpg')
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+
 router.get('/maker/goldbutton', async(req, res, next) => {
   const text = req.query.text;
   const apikey = req.query.apikey;
