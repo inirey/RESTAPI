@@ -175,7 +175,7 @@ Akhir Pesan Error
 
 router.use(favicon(__path + "/views/favicon.ico"));
 
-const listkey = ["Ardy-Apikey", "MaxTeam"];
+const listkey = ["apirey", "ditofficial"];
 
 router.post("/apikey", async (req, res, next) => {
   const key = req.query.key;
