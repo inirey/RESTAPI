@@ -2402,7 +2402,7 @@ router.get('/maker/harta-tahta', async(req, res, next) => {
   if(!apikey) return res.json(loghandler.notparam)
   
   if(listkey.includes(apikey)) {
-  let hasil = 'https://api.zeks.xyz/api/hartatahta?text='+ text +'&apikey=apivinz' 
+  let hasil = 'https://api.zeks.xyz/api/hartatahta?text='+ text +'&apikey=administrator' 
   data = await fetch(hasil).then(v => v.buffer())
   await fs.writeFileSync(__path +'/tmp/tahta.jpg', data)
   res.sendFile(__path +'/tmp/tahta.jpg')
