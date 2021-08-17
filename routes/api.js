@@ -149,7 +149,6 @@ loghandler = {
     invalidKey: {
         status: false,
         creator: `${creator}`,
-        apikey: `${apikey}`,
         code: 404 ERORR,
         message: 'maaf apikeymu invalid'
     },
@@ -2718,6 +2717,22 @@ router.get('/web2plain-text', async(req, res, next) => {
   }
 });
 
+
+router.get('/cekapikey', async(req, res, next) => {
+  const apikey = req.query.apikey;
+  if(!apikey) return res.json(loghandler.notparam)
+  if(listkey.includes(apikey)) {
+    res.json({
+      status: 'false',
+      creator: `${creator}`,
+      apikey: `${apikey}`,
+      code: 404 erorr,
+      message: 'maaf apikeymu invalid'
+    })
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
 
 router.get('/cekapikey', async(req, res, next) => {
   const apikey = req.query.apikey;
