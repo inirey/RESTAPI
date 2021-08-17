@@ -8,7 +8,7 @@ var zahirr = db.get("zahirr");
 	console.log('')  
 }
  
-var creator = "Rey ganteng"
+var creator = "Reyganz"
 var secure = require('ssl-express-www');
 var cors = require('cors');
 var fetch = require('node-fetch');
@@ -147,10 +147,10 @@ loghandler = {
         message: 'masukan parameter value'
     },
     invalidKey: {
-        status: false,
-        creator: `${creator}`,
-        code: 406,
-        message: 'apikey nya = apirey'
+      status: 'MAAF APIKEY ANDA INVALID',
+      creator: `${creator}`,
+      apikey: `${apikey}`,
+      LIMIT: '0'
     },
     invalidlink: {
         status: false,
