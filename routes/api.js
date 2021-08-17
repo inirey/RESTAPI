@@ -147,10 +147,10 @@ loghandler = {
         message: 'masukan parameter value'
     },
     invalidKey: {
-        status: 'MAAF APIKEY ANDA INVALID',
+        status: false,
         creator: `${creator}`,
-        apikey: `${apikey}`,
-        LIMIT: '0'
+        code: 406,
+        message: 'apikey anda invalid'
     },
     invalidlink: {
         status: false,
