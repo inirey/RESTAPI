@@ -149,8 +149,8 @@ loghandler = {
     invalidKey: {
         status: false,
         creator: `${creator}`,
-        code: 404 ERORR,
-        message: 'maaf apikeymu invalid'
+        code: 406,
+        message: 'apikey invalid'
     },
     invalidlink: {
         status: false,
@@ -2723,11 +2723,10 @@ router.get('/cekapikey', async(req, res, next) => {
   if(!apikey) return res.json(loghandler.notparam)
   if(listkey.includes(apikey)) {
     res.json({
-      status: 'true',
+      status: 'active',
       creator: `${creator}`,
       apikey: `${apikey}`,
-      code: apikey aktif,
-      message: 'apikey anda valid limit 100 perhari'
+      message: 'APIKEY ACTIVE LIMIT 999'    
     })
   } else {
     res.json(loghandler.invalidKey)
