@@ -2617,6 +2617,21 @@ router.get('/maker/goldbutton', async(req, res, next) => {
   }
 });
 
+router.get('/random/asupan', async(req, res, next) => {
+  const apikey = req.query.apikey;
+  
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)) {
+  let hasil = 'https://raw.githubusercontent.com/inirey/Document-api/main/asupan.json' 
+  data = await fetch(hasil).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/asupan.mp4', data)
+  res.sendFile(__path +'/tmp/asupan.mp4')
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+
 router.get('/maker/harta-tahta', async(req, res, next) => {
   const text = req.query.text;
   const apikey = req.query.apikey;
