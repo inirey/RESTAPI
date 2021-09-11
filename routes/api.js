@@ -1172,6 +1172,23 @@ res.json(loghandler.invalidKey)
 })
 
 
+router.get('/wallpaper/cecan', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+
+  const cecan = JSON.parse(fs.readFileSync(__path +'/data/cecan.json'));
+  const randCecan = cecan[Math.floor(Math.random() * cecan.length)];
+  data = await fetch(randCecan).then(v => v.buffer());
+  await fs.writeFileSync(__path +'/tmp/cecan.jpeg', data)
+  res.sendFile(__path +'/tmp/cecan.jpeg');
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
+
 router.get('/wallpaper/muslim', async (req, res, next) => {
         var Apikey = req.query.apikey
             
