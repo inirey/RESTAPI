@@ -3,464 +3,519 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Scraper Free Rest Api's">
-  <meta name="author" content="KocakZ">
-  <base href="/api">
-  <title>REY API's</title>
-  <link href="https://i.pinimg.com/474x/58/e4/71/58e471c4ad95dbfd35dad9e8a5fbf175.jpg" rel="icon">
-  <link href="https://indrijunanda.github.io/RuangAdmin/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-  <link href="https://indrijunanda.github.io/RuangAdmin/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-  <link href="https://indrijunanda.github.io/RuangAdmin/css/ruang-admin.min.css" rel="stylesheet">
-  <meta property="og:title" content="REY API's">
-  <meta property="og:description" content="REST API TOOLS & DOWNLOADER ONLINE">
-  <meta property="og:image" content="https://i.pinimg.com/474x/58/e4/71/58e471c4ad95dbfd35dad9e8a5fbf175.jpg">
-  <meta property="og:url" content="#">
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/androidstudio.min.css">
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Free API By Rey</title>
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/default.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body id="page-top">
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/5fee5a40df060f156a92e37e/1eqth13e6';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
-   <div id="wrapper" >
-	<!-- Sidebar -->
-    <ul class="navbar-nav sidebar sidebar-light accordion" id="accordionSidebar">
-      <a class="sidebar-brand d-flex align-items-center justify-content-center bg-warning" href="/">
-        <div class="sidebar-brand-icon">
-          <img src="https://i.pinimg.com/474x/58/e4/71/58e471c4ad95dbfd35dad9e8a5fbf175.jpg">
+<body id="page-top" class="dark-mode">
+    <div id="wrapper">
+        <!-- Sidebar -->
+        <ul class="navbar-nav sidebar sidebar-light accordion" id="accordionSidebar">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+                <i class="fa fa-smile-beam fa-2x"></i>
+                <div class="sidebar-brand-text mx-3">Free APIs</div>
+            </a>
+            <hr class="sidebar-divider my-0">
+            <li class="nav-item active">
+                <a class="nav-link" href="/docs">
+                    <i class="fas fa-fw fa-thermometer-three-quarters"></i>
+                    <span>Statistic</span></a>
+            </li>
+            <hr class="sidebar-divider">
+            <div class="sidebar-heading">
+                Features
+            </div>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseDownload" aria-expanded="true" aria-controls="collapseBootstrap">
+                    <i class="fa fa-fw fa-arrow-down"></i>
+                    <span>Downloader</span>
+                </a>
+                <div id="collapseDownload" class="collapse" aria-labelledby="headingBootstrap" data-parent="#accordionSidebar">
+                    <div class="py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Downloader Features</h6>
+                        <a class="collapse-item" href="/api/fbdl?url=https://www.facebook.com/alanwalkermusic/videos/277641643524720" target="_blank">Facebook</a>
+                        <a class="collapse-item" href="/api/download/twitter?url=https://twitter.com/PassengersMovie/status/821025484150423557&apikey=hardianto" target="_blank">Twitter</a>
+                        <a class="collapse-item" href="/api/download/tiktok?url=https://vt.tiktok.com/ZSJwugoQJ/&apikey=hardianto" target="_blank">Tiktok</a>
+                        <a class="collapse-item" href="api/tiktokv2?url=https://vt.tiktok.com/ZSJwugoQJ/">Tiktok V2</a>
+                        <a class="collapse-item" href="/api/download/igstory?username=iamdorasnow&apikey=hardianto" target="_blank">Insta Story</a>
+                        <a class="collapse-item" target="_blank" href="/api/download/instareels?url=https://www.instagram.com/reel/CEpVJVHjc1s/&apikey=hardianto">Insta Reels</a>
+                        <a class="collapse-item" target="_blank" href="/api/instagram?url=https://www.instagram.com/reel/CSzYx-chQ1u/?utm_source=ig_web_copy_link">Instagram download</a>
+                        <a class="collapse-item" href="/api/download/instadl?url=https://www.instagram.com/p/CQpUpGvAhWq/?utm_source=ig_web_copy_link&apikey=hardianto" target="_blank">Instagram</a>
+                        <a class="collapse-item" href="/api/download/play?query=kokoronashi&apikey=hardianto" target="_blank">youtube play</a>
+                        <a class="collapse-item" href="/api/download/ytdownload?url=https://youtu.be/Nq5rzeJ5Ab4&apikey=hardianto" target="_blank">Youtube Download</a>
+                        <a class="collapse-item" href="/api/download/ytmp3?url=https://youtu.be/Nq5rzeJ5Ab4&apikey=APIKEY" target="_blank">ytmp3</a>
+                        <a class="collapse-item" href="/api/download/ytmp4?url=https://youtu.be/Nq5rzeJ5Ab4&apikey=APIKEY" target="_blank">Ytmp4</a>
+                        <a class="collapse-item" href="/api/yt/playmp3?query=Monolog-pamungkas&apikey=APIKEY" target="_blank">Youtube Play Mp3</a>
+                        <a class="collapse-item" href="/api/yt/playmp4?query=Monolog-pamungkas&apikey=APIKEY" target="_blank">Youtube Play Mp4</a>
+                        <a class="collapse-item" href="/api/yt/search?query=Monolog-pamungkas&apikey=APIKEY" target="_blank">Youtube Searching</a>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTextPro" aria-expanded="true" aria-controls="collapseForm">
+                    <i class="fa fa-fw fa-font"></i>
+                    <span>Text Pro Me</span>
+                </a>
+                <div id="collapseTextPro" class="collapse" aria-labelledby="headingForm" data-parent="#accordionSidebar">
+                    <div class="py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Textprome Features</h6>
+                        <a class="collapse-item" href="/api/textpro/natural-leaves?apikey=APIKEY&text=Hardianto" target="_blank">Natural Leaves Text Images</a>
+                        <a class="collapse-item" href="/api/textpro/black-pink?apikey=APIKEY&text=Hardianto" target="_blank">Black Pink Text Image</a>
+                        <a class="collapse-item" href="/api/textpro/drop-water?apikey=APIKEY&text=Hardianto" target="_blank">Drop Water Text Image</a>
+                        <a class="collapse-item" href="/api/textpro/logo-wolf?apikey=APIKEY&text=Hardianto&text2=Fxc7" target="_blank">Logo Wolf Text Image</a>
+                        <a class="collapse-item" href="/api/textpro/logo-wolf2?apikey=APIKEY&text=Hardianto&text2=Fxc7" target="_blank">Logo Wolf 2 Text Image</a>
+                        <a class="collapse-item" href="/api/textpro/logo-wolf?apikey=APIKEY&text=Hardianto" target="_blank">Thunder Text Image</a>
+                        <a class="collapse-item" href="/api/textpro/logo-wolf?apikey=APIKEY&text=Hardianto" target="_blank">Firework Sparkle Text Image</a>
+                        <a class="collapse-item" href="/api/textpro/logo-wolf?apikey=APIKEY&text=Hardianto" target="_blank">Matrix Text Image</a>
+                        <a class="collapse-item" href="/api/textpro/christmas?apikey=APIKEY&text=Hardianto" target="_blank">Christmas Text Image</a>
+                        <a class="collapse-item" href="/api/textpro/3d-gradient?apikey=APIKEY&text=Hardianto" target="_blank">3D Gradient Text Image</a>
+                        <a class="collapse-item" href="/api/textpro/porn-hub?apikey=APIKEY&text1=Hardianto&text2=Gans" target="_blank">Porn Hub Text Image</a>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTextPro2" aria-expanded="true" aria-controls="collapseForm">
+                    <i class="fa fa-fw fa-font"></i>
+                    <span>Photooxy</span>
+                </a>
+                <div id="collapseTextPro2" class="collapse" aria-labelledby="headingForm" data-parent="#accordionSidebar">
+                    <div class="py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Photooxy</h6>
+                        <a class="collapse-item" href="/api/photooxy/shadow?apikey=APIKEY&text=Hardianto">Shadow Text Effect</a>
+            <a class="collapse-item" target="_blank" href="/api/photooxy/romantic?apikey=APIKEY&text=Hardianto">Romantic Text Effect</a>
+            <a class="collapse-item" target="_blank" href="/api/photooxy/smoke?apikey=APIKEY&text=Hardianto">Smoke text Effect</a>
+            <a class="collapse-item" target="_blank" href="/api/photooxy/burn-paper?apikey=APIKEY&text=Hardianto">Burn-paper Text Effect</a>
+            <a class="collapse-item" target="_blank" href="/api/photooxy/naruto?apikey=APIKEY&text=Hardianto">Naruto Text Effect</a>
+            <a class="collapse-item" target="_blank" href="/api/photooxy/romantic?apikey=APIKEY&text=Hardianto">Romantic Text Effect</a>
+            <a class="collapse-item" target="_blank" href="/api/photooxy/love-message?apikey=APIKEY&text=Hardianto">Love-Message Text Effect</a>
+            <a class="collapse-item" target="_blank" href="/api/photooxy/message-under-grass?apikey=APIKEY&text=Hardianto">Message Under Grass</a>
+            <a class="collapse-item" target="_blank" href="/api/photooxy/glitch?apikey=APIKEY&text=Hardianto&text2=Rest APIs">Glitch Text Effect</a>
+            <a class="collapse-item" target="_blank" href="/api/photooxy/double-heart?apikey=APIKEY&text=Hardianto">Double Heart</a>
+            <a class="collapse-item" target="_blank" href="/api/photooxy/coffe-cup?apikey=APIKEY&text=Hardianto">Coffe-cup Text Effect</a>
+            <a class="collapse-item" target="_blank" href="/api/photooxy/love-text?apikey=APIKEY&text=Hardianto">Love-Text Effect</a>
+            <a class="collapse-item" target="_blank" href="/api/photooxy/butterfly?apikey=APIKEY&text=Hardianto">Butterfly Text Effect</a>
+            <h6 class="collapse-item">Photooxy video</h6>
+            <a class="collapse-item" target="_blank" href="/api/photooxy?effect=poly&query=hardianto&apikey=hardianto">Poly Text</a>
+            <a class="collapse-item" target="_blank" href="/api/photooxy?effect=bold&query=hardianto&apikey=hardianto">Bold Text</a>
+            <a class="collapse-item" target="_blank" href="/api/photooxy?effect=glowing&query=hardianto&apikey=hardianto">Glowing Text</a>
+            <a class="collapse-item" target="_blank" href="/api/photooxy?effect=colorful&query=hardianto&apikey=hardianto">Colorful Text</a>
+            <a class="collapse-item" target="_blank" href="/api/photooxy?effect=army&query=hardianto&apikey=hardianto">Army Text</a>
+            <a class="collapse-item" target="_blank" href="/api/photooxy?effect=retro&query=hardianto&apikey=hardianto">Retro Text</a>
         </div>
-        <div class="sidebar-brand-text mx-3">REY</div>
-      </a>
-      <hr class="sidebar-divider my-0">
-      <li class="nav-item active">
-        <a class="nav-link" href="/api">
-          <i class="fas fa-fw fa-code text-warning"></i>
-          <span class="text-warning">Documentation</span></a>
-      </li>
-      <hr class="sidebar-divider">
-      <div class="sidebar-heading text-warning">
-        Features
-      </div>
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseBootstrap"
-          aria-expanded="true" aria-controls="collapseBootstrap">
-          <i class="fas fa-fw fa-arrow-down text-warning"></i>
-          <span class="text-warning">Media API</span>
-        </a>
-        <div id="collapseBootstrap" class="collapse" aria-labelledby="headingBootstrap" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">SosMed Features</h6>
-                        <a class="collapse-item text-warning" href="api/stalk/npm?query=_inirey&apikey=apirey" target="_blank" >Npm stalk</a>
-                        <a class="collapse-item text-warning" href="api/stalk/ig?username=_sekhaa&apikey=apirey" target="_blank" >Instagram stalk</a>
-                        <a class="collapse-item text-warning" href="api/stalk/tiktok?username=_sekhaa&apikey=apirey" target="_blank" >Tiktok stalk</a>
-			<a class="collapse-item text-warning" href="api/download/ig?url=https://www.instagram.com/p/CNtpwxuH5NK/?igshid=g26k5coikzwr&apikey=apirey" target="_blank" >instagram Download</a>
-			<a class="collapse-item text-warning" href="api/download/fb?url=https://www.facebook.com/alanwalkermusic/videos/277641643524720&apikey=apirey" target="_blank" >Facebook Download</a>
-			<a class="collapse-item text-warning" href="api/download/tiktok?url=https://vt.tiktok.com/ZSJhvu1AE/&apikey=apirey" target="_blank" >Tiktok Download</a>
-                        <a class="collapse-item text-warning" href="api/music/joox?query=akad&apikey=apirey" target="_blank" >Joox play</a>
-                        <a class="collapse-item text-warning" href="api/music/spotify?query=Bondan&apikey=apirey" target="_blank" >Spotify search</a> 
-			<a class="collapse-item text-warning" href="api/yt/playmp3?query=surender lyric&apikey=apirey" target="_blank" >Yt Play Mp3</a>
-			<a class="collapse-item text-warning" href="api/yt/playmp4?query=surender lyric&apikey=apirey" target="_blank" >Yt Play Mp4</a>
-                        <a class="collapse-item text-warning" href="api/download/ytmp3?url=https://www.instagram.com/p/CNtpwxuH5NK/?igshid=g26k5coikzwr&apikey=apirey" target="_blank" >Yt Download Mp3</a>
-                        <a class="collapse-item text-warning" href="api/download/ytmp4?url=https://www.instagram.com/p/CNtpwxuH5NK/?igshid=g26k5coikzwr&apikey=apirey" target="_blank" >Yt Download Mp4</a>
-           </div>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseForm" aria-expanded="true"
-          aria-controls="collapseForm">
-          <i class="fas fa-fw fa-heading text-warning"></i>
-          <span class="text-warning">TextPro Me</span>
-        </a>
-        <div id="collapseForm" class="collapse" aria-labelledby="headingForm" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">TextPro Me</h6>
-            <a class="collapse-item text-warning" href="api/maker/naruto?text=reyganz&apikey=apirey" target="_blank" >Naruto banner</a>
-            <a class="collapse-item text-warning" href="api/maker/pubglogo?text1=reyyy&text2=ganzz&apikey=apirey" target="_blank" >PUBG logo</a>
-            <a class="collapse-item text-warning" href="api/maker/epep?text=reyganz&apikey=apirey" target="_blank" >FF logo</a>
-            <a class="collapse-item text-warning" href="api/maker/breakwall?text=reyganz&apikey=apirey" target="_blank" >breakwall</a>
-            <a class="collapse-item text-warning" href="api/maker/skytext?text=reyganz&apikey=apirey" target="_blank" >Sky text</a>
-            <a class="collapse-item text-warning" href="api/maker/matrix?text=reyganz&apikey=apirey" target="_blank" >Matrix</a>
-            <a class="collapse-item text-warning" href="api/maker/smoketext?text=reyganz&apikey=apirey" target="_blank" >Smoke text</a>
-            <a class="collapse-item text-warning" href="api/maker/flowertext?text=reyganz&apikey=apirey" target="_blank" >Flower text</a>   
-            <a class="collapse-item text-warning" href="api/maker/teks3d?text=reyganz&apikey=apirey" target="_blank" >Text 3D</a>
-            <a class="collapse-item text-warning" href="api/maker/bneon?text=reyganz&apikey=apirey" target="_blank" >Blue neon</a>
-        </div>
-       </div>
-     </li>
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePrimb" aria-expanded="true"
-          aria-controls="collapsePrimb">
-          <i class="fas fa-fw fa-bold text-warning"></i>
-          <span class="text-warning">Other API</span>
-        </a>
-        <div id="collapsePrimb" class="collapse" aria-labelledby="headingPrimb" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Other API</h6>
-            <a class="collapse-item text-warning" href="api/maker/silverbutton?text=reyganz&apikey=apirey" target="_blank" >YT Silver</a>
-            <a class="collapse-item text-warning" href="api/maker/goldbutton?text=reyganz&apikey=apirey" target="_blank" >YT Gold</a>
-            <a class="collapse-item text-warning" href="api/maker/harta-tahta?apikey=apirey&text=Reyganz" target="_blank" >Harta tahta</a>
-            <a class="collapse-item text-warning" href="api/maker/nulis?text=reyganz&apikey=apirey" target="_blank" >Nulis</a>
-            <a class="collapse-item text-warning" href="/api/primbon/nomorhoki?nomor=081316691669" target="_blank" >Nomor Hoki (erorr)</a>
-            <a class="collapse-item text-warning" href="/api/primbon/tafsirmimpi?mimpi=belanja" target="_blank" >Tafsir Mimpi (erorr)</a>
-            <a class="collapse-item text-warning" href="/api/primbon/ramalanjodoh?nama1=hmmmm&tgl1=17-10-2002&nama2=rey&tgl2=7-9-2003" target="_blank" >Ramalan Jodoh (erorr)</a>
-          </div>
-        </div>
-      </li>
-      <hr class="sidebar-divider">
-    </ul>
-    <!-- Sidebar -->
-    <div id="content-wrapper" class="d-flex flex-column">
-      <div id="content">
-        <!-- TopBar -->
-        <nav class="navbar navbar-expand navbar-light bg-navbar topbar mb-4 static-top bg-warning">
-          <button id="sidebarToggleTop" class="btn btn-link rounded-circle mr-3">
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseImage" aria-expanded="true" aria-controls="collapseTable">
+                    <i class="fa fa-fw fa-image"></i>
+                    <span>Random Images</span>
+                </a>
+                <div id="collapseImage" class="collapse" aria-labelledby="headingTable" data-parent="#accordionSidebar">
+                    <div class="py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Random</h6>
+                        <a class="collapse-item" target="_blank" href="/api/search/sticker?query=doge&apikey=hardianto">Stickerly</a>
+                        <a class="collapse-item" target="_blank" href="/api/search/pinterest?query=nezuko%20chan&apikey=hardianto">Pinterest</a>
+                        <a class="collapse-item" target="_blank" href="api/search/image?apikey=APIKEY&query=chikaku">Search Image</a>
+                        <a class="collapse-item" target="_blank" href="/api/maker/dadu?apikey=APIKEY">Random DADU</a>
+                        <a class="collapse-item" target="_blank" href="/api/wallpaper/teknologi?apikey=APIKEY">Wallpaper Teknologi</a>
+                       <a class="collapse-item" target="_blank" href="/api/wallpaper/programming?apikey=APIKEY">Wallpaper Programming</a>
+                       <a class="collapse-item" target="_blank" href="/api/wallpaper/cyberspace?apikey=APIKEY">Wallpaper CyberSpace</a>
+                       <a class="collapse-item" target="_blank" href="/api/wallpaper/muslim?apikey=APIKEY">Wallpaper Muslim</a>
+                       <a class="collapse-item" target="_blank" href="/api/wallpaper/pegunungan?apikey=APIKEY">Wallpaper Mountain View</a>
+                       <h6 class="collapse-header">Time Line API</h6>
+                       <a class="collapse-item" target="_blank" href="/api/asupan?apikey=APIKEY">Random Asupan</a>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseRandomText" aria-expanded="true" aria-controls="collapseTable">
+                    <i class="fa fa-fw fa-text-width"></i>
+                    <span>Random Text</span>
+                </a>
+                <div id="collapseRandomText" class="collapse" aria-labelledby="headingTable" data-parent="#accordionSidebar">
+                    <div class="py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Search</h6>
+                        <a class="collapse-item" target="_blank" href="/api/search/linkwa?name=hacker&apikey=hardianto">Link WA Group</a>
+                        <h6 class="collapse-header">Random Text</h6>
+                        <a class="collapse-item" target="_blank" href="/api/random/quotes?apikey=APIKEY">Quotes</a>
+                        <a class="collapse-item" target="_blank" href="/api/random/quotes/muslim?apikey=APIKEY">Quotes Islami</a>
+                        <a class="collapse-item" target="_blank" href="/api/random/quotes/kanye?apikey=APIKEY">Quotes Kanye</a>
+                        <a class="collapse-item" target="_blank" href="/api/random/asmaulhusna?apikey=APIKEY">Asmaul Husna</a>
+                        <a class="collapse-item" target="_blank" href="/api/random/meme?apikey=APIKEY">Meme</a>
+                        <a class="collapse-item" target="_blank" href="/api/random/wallpaper?apikey=APIKEY">Wallpaper</a>
+                     
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseInfo" aria-expanded="true" aria-controls="collapseTable">
+                    <i class="fa fa-fw fa-info"></i>
+                    <span>Anime & Manga</span>
+                </a>
+                <div id="collapseInfo" class="collapse" aria-labelledby="headingTable" data-parent="#accordionSidebar">
+                    <div class="py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Animanga</h6>
+            <a class="collapse-item" target="_blank" href="/api/anime/ongoing?apikey=hardianto">Otaku Ongoing</a>
+            <a class="collapse-item" target="_blank" href="/api/anime/kusonime?search=planetarian&apikey=APIKEY">Kusonime</a>
+            <a class="collapse-item" target="_blank" href="/api/search/imagechar?query=Tanjiro&apikey=hardianto">Character</a>
+            <a class="collapse-item" target="_blank" href="/api/anime/manga?search=kimetsu no yaiba&apikey=APIKEY">Manga</a>
+            <a class="collapse-item" target="_blank" href="/api/neonime/ongoing">Neonime Last</a>
+            <a class="collapse-item" target="_blank" href="api/anime/otakudesu?title=naruto&apikey=hardianto">Otakudesu</a>
+            <a class="collapse-item" target="_blank" href="/api/anime/loli?apikey=APIKEY">LoLi Chan</a>
+            <h6 class="collapse-header">SFW</h6>
+            <a class="collapse-item" target="_blank" href="/api/anime/random?sfw=smug&apikey=hardianto">random smug</a>
+            <a class="collapse-item" target="_blank" href="/api/anime/random?sfw=baka&apikey=hardianto">random baka</a>
+            <a class="collapse-item" target="_blank" href="/api/anime/random?sfw=tickle&apikey=hardianto">random tickle</a>
+            <a class="collapse-item" target="_blank" href="/api/anime/random?sfw=slap&apikey=hardianto">random slap</a>
+            <a class="collapse-item" target="_blank" href="/api/anime/random?sfw=poke&apikey=hardianto">random poke</a>
+            <a class="collapse-item" target="_blank" href="/api/anime/random?sfw=pat&apikey=hardianto">random pat</a>
+            <a class="collapse-item" target="_blank" href="/api/anime/random?sfw=neko&apikey=hardianto">random neko</a>
+            <a class="collapse-item" target="_blank" href="/api/anime/random?sfw=nekoGif&apikey=hardianto">random nekoGif</a>
+            <a class="collapse-item" target="_blank" href="/api/anime/random?sfw=meow&apikey=hardianto">random meow</a>
+            <a class="collapse-item" target="_blank" href="/api/anime/random?sfw=lizard&apikey=hardianto">random lizard</a>
+            <a class="collapse-item" target="_blank" href="/api/anime/random?sfw=kiss&apikey=hardianto">random kiss</a>
+            <a class="collapse-item" target="_blank" href="/api/anime/random?sfw=hug&apikey=hardianto">random hug</a>
+            <a class="collapse-item" target="_blank" href="/api/anime/random?sfw=foxGirl&apikey=hardianto">random foxGirl</a>
+            <a class="collapse-item" target="_blank" href="/api/anime/random?sfw=feed&apikey=hardianto">random feed</a>
+            <a class="collapse-item" target="_blank" href="/api/anime/random?sfw=cuddle&apikey=hardianto">random cuddle</a>
+            <a class="collapse-item" target="_blank" href="/api/anime/random?sfw=kemonomimi&apikey=hardianto">random kemonomimi</a>
+            <a class="collapse-item" target="_blank" href="/api/anime/random?sfw=holo&apikey=hardianto">random holo</a>
+            <a class="collapse-item" target="_blank" href="/api/anime/random?sfw=woof&apikey=hardianto">random woof</a>
+            <a class="collapse-item" target="_blank" href="/api/anime/random?sfw=wallpaper&apikey=hardianto">random wallpaper</a>
+            <a class="collapse-item" target="_blank" href="/api/anime/random?sfw=goose&apikey=hardianto">random goose</a>
+            <a class="collapse-item" target="_blank" href="/api/anime/random?sfw=gecg&apikey=hardianto">random gecg</a>
+            <a class="collapse-item" target="_blank" href="/api/anime/random?sfw=avatar&apikey=hardianto">random avatar</a>
+            <a class="collapse-item" target="_blank" href="/api/anime/random?sfw=smug&apikey=hardianto">random waifu</a>
+            <h6 class="collapse-header">Nsfw</h6>                   
+<a class="collapse-item" target="_blank" href="/api/anime/random?nsfw=randomHentaiGif&apikey=hardianto">random randomHentaiGif</a>
+<a class="collapse-item" target="_blank" href="/api/anime/random?nsfw=pussy&apikey=hardianto">random pussy</a>
+<a class="collapse-item" target="_blank" href="/api/anime/random?nsfw=nekoGif&apikey=hardianto">random nekoGif</a>
+<a class="collapse-item" target="_blank" href="/api/anime/random?nsfw=neko&apikey=hardianto">random  neko</a>
+<a class="collapse-item" target="_blank" href="/api/anime/random?nsfw=lesbian&apikey=hardianto">random lesbian</a>
+<a class="collapse-item" target="_blank" href="/api/anime/random?nsfw=kuni&apikey=hardianto">random kuni</a>
+<a class="collapse-item" target="_blank" href="/api/anime/random?nsfw=cumsluts&apikey=hardianto">random cumsluts</a>
+<a class="collapse-item" target="_blank" href="/api/anime/random?nsfw=classic&apikey=hardianto">random classic</a>
+<a class="collapse-item" target="_blank" href="/api/anime/random?nsfw=boobs&apikey=hardianto">random boobs</a>
+<a class="collapse-item" target="_blank" href="/api/anime/random?nsfw=bJ&apikey=hardianto">random bJ</a>
+<a class="collapse-item" target="_blank" href="/api/anime/random?nsfw=anal&apikey=hardianto">random anal</a>
+<a class="collapse-item" target="_blank" href="/api/anime/random?nsfw=avatar&apikey=hardianto">random avatar</a>
+<a class="collapse-item" target="_blank" href="/api/anime/random?nsfw=yuri&apikey=hardianto">random yuri</a>
+<a class="collapse-item" target="_blank" href="/api/anime/random?nsfw=trap&apikey=hardianto">random trap</a>
+<a class="collapse-item" target="_blank" href="/api/anime/random?nsfw=tits&apikey=hardianto">random tits</a>
+<a class="collapse-item" target="_blank" href="/api/anime/random?nsfw=girlSoloGif&apikey=hardianto">random girlSoloGif</a>
+<a class="collapse-item" target="_blank" href="/api/anime/random?nsfw=girlSolo&apikey=hardianto">random girlSolo</a>
+<a class="collapse-item" target="_blank" href="/api/anime/random?nsfw=pussyWankGif&apikey=hardianto">random pussyWankGif</a>
+<a class="collapse-item" target="_blank" href="/api/anime/random?nsfw=pussyArtl&apikey=hardianto">random pussyArtl</a>
+<a class="collapse-item" target="_blank" href="/api/anime/random?nsfw=kemonomimi&apikey=hardianto">random kemonomimi</a>
+<a class="collapse-item" target="_blank" href="/api/anime/random?nsfw=kitsune&apikey=hardianto">random kitsune</a>
+<a class="collapse-item" target="_blank" href="/api/anime/random?nsfw=keta&apikey=hardianto">random keta</a>
+<a class="collapse-item" target="_blank" href="/api/anime/random?nsfw=holo&apikey=hardianto">random holo</a>
+<a class="collapse-item" target="_blank" href="/api/anime/random?nsfw=holoEro&apikey=hardianto">random holoEro</a>
+<a class="collapse-item" target="_blank" href="/api/anime/random?nsfw=hentai&apikey=hardianto">random hentai</a>
+<a class="collapse-item" target="_blank" href="/api/anime/random?nsfw=futanari&apikey=hardianto">random futanari</a>
+<a class="collapse-item" target="_blank" href="/api/anime/random?nsfw=femdom&apikey=hardianto">random femdom</a>
+<a class="collapse-item" target="_blank" href="/api/anime/random?nsfw=feetGif&apikey=hardianto">random feetGif</a>
+<a class="collapse-item" target="_blank" href="/api/anime/random?nsfw=eroFeet&apikey=hardianto">random eroFeet</a>
+<a class="collapse-item" target="_blank" href="/api/anime/random?nsfw=feet&apikey=hardianto">random feet</a>
+<a class="collapse-item" target="_blank" href="/api/anime/random?nsfw=eroe&apikey=hardianto">random ero</a>
+<a class="collapse-item" target="_blank" href="/api/anime/random?nsfw=eroKitsune&apikey=hardianto">random eroKitsune</a>
+<a class="collapse-item" target="_blank" href="/api/anime/random?nsfw=eroKemonomimi&apikey=hardianto">random eroKemonomimi</a>
+<a class="collapse-item" target="_blank" href="/api/anime/random?nsfw=eroNeko&apikey=hardianto">random eroNeko</a>
+<a class="collapse-item" target="_blank" href="/api/anime/random?nsfw=eroYuri&apikey=hardianto">random eroYuri</a>
+<a class="collapse-item" target="_blank" href="/api/anime/random?nsfw=cumArts&apikey=hardianto">random cumArts</a>
+<a class="collapse-item" target="_blank" href="/api/anime/random?nsfw=blowJob&apikey=hardianto">random blowJob</a>
+<a class="collapse-item" target="_blank" href="/api/anime/random?nsfw=spank&apikey=hardianto">random spank</a>
+<a class="collapse-item" target="_blank" href="/api/anime/random?nsfw=gasm&apikey=hardianto">random gasm</a>
+            <a> </a>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseCreator" aria-expanded="true" aria-controls="collapseTable">
+                    <i class="fa fa-fw fa-plus-circle"></i>
+                    <span>Creator</span>
+                </a>
+                <div id="collapseCreator" class="collapse" aria-labelledby="headingTable" data-parent="#accordionSidebar">
+                    <div class="py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Creator</h6>
+                        <a class="collapse-item" target="_blank" href="/api/nuliskiri?text=Yamete Oniichan&apikey=hardianto">Magenulis Kiri</a>
+                        <a class="collapse-item" target="_blank" href="/api/nuliskanan?text=Yamete Onichan&apikey=hardianto">Magenulis Kanan</a>
+                        <a class="collapse-item" target="_blank" href="/api/foliokiri?text=Yamete Oniichan&apikey=hardianto">Folio Kiri</a>
+                        <a class="collapse-item" target="_blank" href="/api/foliokanan?text=Yamete Oniichan&apikey=hardianto">Folio Kanan</a>
+            <a class="collapse-item" target="_blank" href="/api/maker/attp?text=Yamete Oniichan&apikey=hardianto">ATTP</a>
+            <a class="collapse-item" target="_blank" href="/api/maker/ttp?text=Kyaaa&apikey=hardianto">TTP</a>
+            <a class="collapse-item" target="_blank" href="/api/ttpcustom?text=hardianto-chan&color=cyan&apikey=hardianto">TTP Custom</a>
+            <a class="collapse-item" target="_blank" href="/api/editor/blink?image=https://i.ibb.co/f884QwX/https-i-pinimg-com-originals-90-90-de-9090de6f0bdfdf9a9506c96023509a8b.jpg&image2=https://i.ibb.co/mTbD3Nx/https-i-pinimg-com-originals-6d-b8-7f-6db87f9e2b88e00e866e26c87f698d11.jpg&image3=https://i.ibb.co/mTbD3Nx/https-i-pinimg-com-originals-6d-b8-7f-6db87f9e2b88e00e866e26c87f698d11.jpg&apikey=hardianto">Clip Maker</a>
+            <a class="collapse-item" href="/api/pet?url=https://i.ibb.co/f884QwX/https-i-pinimg-com-originals-90-90-de-9090de6f0bdfdf9a9506c96023509a8b.jpg&apikey=hardianto" target="_blank">Pet Maker</a>
+            <a class="collapse-item" target="_blank" href="/api/maker/carbon?code=const anto = require('pahala')&color=cyan&apikey=hardianto">Carbon Maker</a>
+            <a class="collapse-item" target="_blank" href="/api/editor/tohd?url=https://i.ibb.co/WyvDRgy/20210422-044002.jpg&apikey=hardianto">Upscale Maker</a>
+            <a class="collapse-item" target="_blank" href="/api/editor/triggered?url=https://i.ibb.co/WyvDRgy/20210422-044002.jpg&apikey=hardianto">Tiggered Maker</a>
+            <a class="collapse-item" target="_blank" href="/api/editor/tonify?url=https://i.ibb.co/WyvDRgy/20210422-044002.jpg&apikey=hardianto">Tonify Maker</a>
+            <a class="collapse-item" target="_blank" href="/api/removebg?url=https://i.ibb.co/7CM77tx/c180e14f43cf.jpg&apikey=hardianto">Remove Background</a>
+            <a class="collapse-item" href="/api/bonk?by=https://i.ibb.co/f884QwX/https-i-pinimg-com-originals-90-90-de-9090de6f0bdfdf9a9506c96023509a8b.jpg&for=https://i.ibb.co/mTbD3Nx/https-i-pinimg-com-originals-6d-b8-7f-6db87f9e2b88e00e866e26c87f698d11.jpg&apikey=hardianto" target="_blank">Bonk Maker</a>
+            <a class="collapse-item" target="_blank" href="/api/creator/memegen?bawah=halo+bang&atas=anto&imgurl=https://i.ibb.co/WyvDRgy/20210422-044002.jpg&apikey=hardianto" >Meme Maker</a>
+            <a class="collapse-item" target="_blank" href="/api/stonk-up?image=https://i.ibb.co/mTbD3Nx/https-i-pinimg-com-originals-6d-b8-7f-6db87f9e2b88e00e866e26c87f698d11.jpg&apikey=hardianto">Stonk up</a>
+            <a class="collapse-item" target="_blank" href="/api/stonk?image=https://i.ibb.co/mTbD3Nx/https-i-pinimg-com-originals-6d-b8-7f-6db87f9e2b88e00e866e26c87f698d11.jpg&apikey=hardianto">Stonk</a>
+            <a class="collapse-item" target="_blank" href="/api/stonk-double?image=https://i.ibb.co/mTbD3Nx/https-i-pinimg-com-originals-6d-b8-7f-6db87f9e2b88e00e866e26c87f698d11.jpg&image2=https://i.ibb.co/mTbD3Nx/https-i-pinimg-com-originals-6d-b8-7f-6db87f9e2b88e00e866e26c87f698d11.jpg&apikey=hardianto">Double Stonk</a>
+            <a class="collapse-item" target="_blank" href="/api/not-stonk?image=https://i.ibb.co/mTbD3Nx/https-i-pinimg-com-originals-6d-b8-7f-6db87f9e2b88e00e866e26c87f698d11.jpg&apikey=hardianto">Not Stonk</a>
+            <a class="collapse-item" target="_blank" href="/api/rip?image=https://i.ibb.co/mTbD3Nx/https-i-pinimg-com-originals-6d-b8-7f-6db87f9e2b88e00e866e26c87f698d11.jpg&apikey=hardianto">Rip Maker</a>
+            <a class="collapse-item" target="_blank" href="/api/beta/hacker2?apikey=hardianto&pp=https://i.ibb.co/1s8T3sY/48f7ce63c7aa.jpg">Hengker Maker</a>
+            <a class="collapse-item" target="_blank" href="/api/beta/hacker3?apikey=hardianto&pp=https://i.ibb.co/1s8T3sY/48f7ce63c7aa.jpg">Hengker2 Maker</a>
+            <a class="collapse-item" target="_blank" href="/api/knights/patrick?apikey=hardianto&pp=https://i.ibb.co/1s8T3sY/48f7ce63c7aa.jpg">Patrick Maker</a>
+            <a class="collapse-item" target="_blank" href="/api/knights/spongebob?apikey=hardianto&pp=https://i.ibb.co/1s8T3sY/48f7ce63c7aa.jpg">SpongeBob Maker</a>
+            <a class="collapse-item" target="_blank" href="/api/bot/gura?apikey=hardianto&nama=anto chan">Gura Maker</a>
+            <a class="collapse-item" target="_blank" href="/api/bot/gfx1?apikey=hardianto&nama=anto%20gans">Kaneki Maker</a>
+            <a class="collapse-item" target="_blank" href="/api/bot/gfx2?apikey=hardianto&nama=anto%20gans">Loli Maker</a>
+            <a class="collapse-item" target="_blank" href="/api/bot/gfx3?apikey=hardianto&text1=anto&text2=gans">SadBoy Maker</a>
+            <a class="collapse-item" target="_blank" href="/api/bot/gfx4?apikey=hardianto&text1=anto&text2=chan">Waifu Maker</a>
+            <a class="collapse-item" target="_blank" href="/api/bot/gfx5?apikey=hardianto&text=anto chan">Rem Maker</a>
+            <h6 class="collapse-header">Image Magick</h6>
+            <a class="collapse-item" target="_blank" href="/api/harta?query=hardianto&apikey=hardianto">Tahta Maker</a>
+            <a class="collapse-item" target="_blank" href="/api/tahtaV2?query=hardianto&apikey=hardianto">TahtaV2 Maker</a>
+            <a class="collapse-item" target="_blank" href="/api/customtahta?query=hardianto\nganteng\nasu&apikey=hardianto">Custom Tahta</a>
+            <a class="collapse-item" target="_blank" href="/api/customtahtaV2?query=hardianto\nganteng\nasu&apikey=hardianto">Custom TahtaV2</a>
+            <a class="collapse-item" target="_blank" href="/api/maker/skatch?apikey=APIKEY&url=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbmrYfgiRt1lLwNgRMgMbID62qH3EQ2T1c6RUJEQMcoCWKqVVxAg7R_LfM&s=10">Skatch Effect</a>
+            <a class="collapse-item" target="_blank" href="/api/maker/harta-tahta?apikey=APIKEY&text=Hardianto">Harta Tahta Maker</a>
+            </div>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePrimbon" aria-expanded="true" aria-controls="collapseTable">
+                    <i class="fab fa-fw fa-acquisitions-incorporated"></i>
+                    <span>Information</span>
+                </a>
+                <div id="collapsePrimbon" class="collapse" aria-labelledby="headingTable" data-parent="#accordionSidebar">
+                    <div class="py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Information</h6>
+                        
+            <a class="collapse-item" target="_blank" href="/api/igstalk?username=hardianto02_&apikey=hardianto">Instagram Stalk</a>
+                        <a class="collapse-item" target="_blank" href="/api/info/covid?apikey=hardianto">Covid-19</a>
+                        <a class="collapse-item" target="_blank" href="/api/info/gempa?apikey=APIKEY">Info Gempa</a>
+            <a class="collapse-item" target="_blank" href="/api/info/cuaca?apikey=APIKEY&kota=banyuwangi">Info Cuaca</a>
+            <a class="collapse-item" target="_blank" href="/api/info/covidindo?apikey=APIKEY">Covid Indo</a>
+            <a class="collapse-item" target="_blank" href="/api/info/covidworld?apikey=APIKEY">Covid World</a>
+            <a class="collapse-item" target="_blank" href="/api/info/wikipedia?search=jembatan&apikey=APIKEY">Wikipedia</a>
+            <a class="collapse-item" target="_blank" href="/api/info/lirik?query=tones&apikey=hardianto">Lirik Lagu</a> 
+            <a class="collapse-item" target="_blank" href="/api/info/drakorasia?search=tale&apikey=APIKEY">Drakor Asia</a>
+            <a class="collapse-item" target="_blank" href="/api/info/playstore?query=mlbb&apikey=hardianto">Play Store</a>
+            <a class="collapse-item" target="_blank" href="/api/info/kbbi?kata=pohon&apikey=APIKEY">KBBI</a>
+            <a class="collapse-item" target="_blank" href="/api/info/kodepos?kota=jakarta&apikey=APIKEY">Kode Pos</a>
+            </div>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseIslamic" aria-expanded="true" aria-controls="collapseTable">
+                    <i class="fab fa-fw fa-acquisitions-incorporated"></i>
+                    <span>Islamic</span>
+                </a>
+                <div id="collapseIslamic" class="collapse" aria-labelledby="headingTable" data-parent="#accordionSidebar">
+                    <div class="py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Islam Masyaallah</h6>
+                        <a class="collapse-item" target="_blank" href="/api/muslim/surah?query=45&apikey=hardianto">Search Surah</a>                  
+                        <a class="collapse-item" target="_blank" href="/api/muslim/hadits?kitab=bukhari&nomor=52&apikey=APIKEY">Hadits Shahih</a>
+                        <a class="collapse-item" target="_blank" href="/api/muslim/quran?surah=1&ayat=2&apikey=APIKEY">Al Qur'an</a>
+                        <a class="collapse-item" target="_blank" href="/api/muslim/tahlil?apikey=APIKEY">Doa Tahlil</a>
+                        <a class="collapse-item" target="_blank" href="/api/muslim/wirid?apikey=APIKEY">Doa Wirid</a>
+                        <a class="collapse-item" target="_blank" href="/api/muslim/asmaulhusna?apikey=APIKEY">Asmaul Husna</a>
+                        <a class="collapse-item" target="_blank" href="/api/muslim/doaharian?apikey=APIKEY">Doa Harian</a>
+                        <a class="collapse-item" target="_blank" href="/api/muslim/ayatkursi?apikey=APIKEY">Ayat Kursi</a>
+                        <a class="collapse-item" target="_blank" href="/api/muslim/kisahnabi?nabi=muhammad&apikey=APIKEY">Kisah Nabi</a>
+                        <a class="collapse-item" target="_blank" href="/api/muslim/niatshalat?apikey=APIKEY">Niat Shalat</a>
+                        <a class="collapse-item" target="_blank" href="/api/muslim/bacaanshalat?apikey=APIKEY">Bacaan Shalat</a>
+                        <a class="collapse-item" target="_blank" href="/api/muslim/jadwalshalat?kota=jakartautara&apikey=APIKEY">Jadwal Shalat</a>
+                      </div>
+                </div>
+                </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseOther" aria-expanded="true" aria-controls="collapseTable">
+                    <i class="fa fa-fw fa-feather-alt"></i>
+                    <span>Other</span>
+                </a>     
+                <div id="collapseOther" class="collapse" aria-labelledby="headingTable" data-parent="#accordionSidebar">
+                    <div class="py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Other</h6>
+                        <a class="collapse-item" target="_blank" href="/api/welcome3?profile=https://i.ibb.co/1s8T3sY/48f7ce63c7aa.jpg&name=hardianto&bg=https://i.ibb.co/1s8T3sY/48f7ce63c7aa.jpg&namegb=anak muda&member=200">Welcomer3</a>
+                        <a class="collapse-item" target="_blank" href="/api/goodbye3?profile=https://i.ibb.co/1s8T3sY/48f7ce63c7aa.jpg&name=hardianto&bg=https://i.ibb.co/1s8T3sY/48f7ce63c7aa.jpg&namegb=anak muda&member=200">GoodBye3</a>
+                        <a class="collapse-item" target="_blank" href="/api/welcome4?profile=https://i.ibb.co/1s8T3sY/48f7ce63c7aa.jpg&name=hardianto">Welcomer4</a>
+                        <a class="collapse-item" target="_blank" href="/api/goodbye4?profile=https://i.ibb.co/1s8T3sY/48f7ce63c7aa.jpg&name=hardianto">GoodBye4</a>
+                        <a class="collapse-item" target="_blank" href="/api/levelup?profile=https://i.ibb.co/1s8T3sY/48f7ce63c7aa.jpg">leveling up</a>
+                        <a class="collapse-item" target="_blank" href="/api/knights/inv?apikey=hardianto&pp=https://i.ibb.co/1s8T3sY/48f7ce63c7aa.jpg&bg=https://i.ibb.co/1s8T3sY/48f7ce63c7aa.jpg&coal=20&stone=59&ore=50&ingot=211&wood=200&fish=200">Invertory</a>
+                        <a class="collapse-item" target="_blank" href="/api/knights/bag?apikey=hardianto&bg=https://i.ibb.co/1s8T3sY/48f7ce63c7aa.jpg">Bag</a>
+                        <a class="collapse-item" target="_blank" href="/api/rankcard?profile=https://i.ibb.co/1s8T3sY/48f7ce63c7aa.jpg&name=hardianto&bg=https://i.ibb.co/4YBNyvP/images-76.jpg&needxp=1000&curxp=500&level=20&logorank=https://i.ibb.co/Wn9cvnv/FABLED.png">Rank Card</a>
+                        <a class="collapse-item" target="_blank" href="/api/web2plain-text?apikey=APIKEY&url=https://hardianto-chan.herokuapp.com">Web To Plain-Text</a>
+                        <a class="collapse-item" target="_blank"
+                        href="/api/tools/welcomer?nama=hardianto&namaGb=Hardi-chan&pepeGb=https://i.ibb.co/WyvDRgy/20210422-044002.jpg&totalMem=300&pepeUser=https://i.ibb.co/K9Sqj84/20210417-155858.jpg&bege=https://i.ibb.co/WyvDRgy/20210422-044002.jpg&apikey=hardianto">Welcomer</a>
+                        <a class="collapse-item" target="_blank"
+                        href="/api/tools/verification?nama=hardianto&namaGb=Hardi-chan&pepeGb=https://i.ibb.co/WyvDRgy/20210422-044002.jpg&sn=300&pepeUser=https://i.ibb.co/K9Sqj84/20210417-155858.jpg&bege=https://i.ibb.co/WyvDRgy/20210422-044002.jpg&apikey=hardianto">verification</a>
+                        <a class="collapse-item"target="_blank"
+                        href="/api/tools/leave?nama=hardianto&namaGb=Hardi-chan&pepeGb=https://i.ibb.co/WyvDRgy/20210422-044002.jpg&totalMem=300&pepeUser=https://i.ibb.co/K9Sqj84/20210417-155858.jpg&bege=https://i.ibb.co/WyvDRgy/20210422-044002.jpg&apikey=hardianto">Leave</a>
+                        <a class="collapse-item"target="_blank"
+                        href="/api/tools/promote?nama=hardianto&namaGb=Hardi-chan&pepeGb=https://i.ibb.co/WyvDRgy/20210422-044002.jpg&totalMem=300&pepeUser=https://i.ibb.co/K9Sqj84/20210417-155858.jpg&bege=https://i.ibb.co/WyvDRgy/20210422-044002.jpg&apikey=hardianto">Promote</a>
+                        <a class="collapse-item"target="_blank"
+                        href="/api/tools/ceknsfw?url=https://i.ibb.co/K9Sqj84/20210417-155858.jpg&apikey=hardianto">Cek Nsfw</a>
+                        <a class="collapse-item"target="_blank"
+                        href="/api/tools/demote?nama=hardianto&namaGb=Hardi-chan&pepeGb=https://i.ibb.co/WyvDRgy/20210422-044002.jpg&totalMem=300&pepeUser=https://i.ibb.co/K9Sqj84/20210417-155858.jpg&bege=https://i.ibb.co/WyvDRgy/20210422-044002.jpg&apikey=hardianto">Demote</a>
+                        <a class="collapse-item" target="_blank" href="/api/tools/wpuser?apikey=APIKEY&url=http://gdjms.co.za/">Wordpress User</a>
+                        <a class="collapse-item" target="_blank" href="/api/short/tinyurl?url=google.com&apikey=APIKEY">Shortlink Tinyurl</a>
+                        <a class="collapse-item" target="_blank" href="/api/tools/stickerwm?urlFile=https://i.ibb.co/7CM77tx/c180e14f43cf.jpg&author=🤡🤡🤡&pack=⚙️⚙️⚙️&apikey=hardianto">Sticker Wa Watermark (Support Emoji)</a>
+                        <a class="collapse-item" target="_blank" href="/api/tools/welcomer2?name=anto&descriminator=43824&totalmem=34&namegb=wow+asu&ppuser=https://i.ibb.co/7CM77tx/c180e14f43cf.jpg&background=https://i.ibb.co/7CM77tx/c180e14f43cf.jpg&apikey=hardianto">Welcomer2</a>
+                        <a class="collapse-item" target="_blank" href="/api/tools/leave2?name=anto&descriminator=43824&totalmem=34&namegb=wow+asu&ppuser=https://i.ibb.co/7CM77tx/c180e14f43cf.jpg&background=https://i.ibb.co/7CM77tx/c180e14f43cf.jpg&apikey=hardianto">Leave2</a>
+                        <a class="collapse-item" target="_blank" href="/api/translate?kata=hi&apikey=APIKEY">Translate</a>
+                        <a class="collapse-item" target="_blank" href="/api/tools/webptomp4?url=https://mathiasbynens.be/demo/animated-webp-supported.webp&apikey=hardianto">WebptoMp4</a>
+                        <a class="collapse-item" target="_blank" href="/api/tools/ssweb?url=https://hardianto-chan.herokuapp.com&apikey=beta">Screnshoot Web</a>
+                        <a class="collapse-item" target="_blank" href="/api/fakedata?country=en&apikey=APIKEY">Fake Data</a>
+                     <h6 class="collapse-header">Encrypt Tools</h6>
+                        <a class="collapse-item" target="_blank" href="/api/base?apikey=APIKEY&type=base64&encode=Fxc7Apis">Base64 Encrypt</a>
+                        <a class="collapse-item" target="_blank" href="/api/base?apikey=APIKEY&type=base32&encode=Fxc7Apis">Base32 Encrypt</a>
+                     <h6 class="collapse-header">Decrypt Tools</h6>
+                        <a class="collapse-item" target="_blank" href="/api/base?apikey=APIKEY&type=base64&decode=Fxc7Apis">Base64 Decrypt</a>
+                        <a class="collapse-item" target="_blank" href="/api/base?apikey=APIKEY&type=base32&decode=Fxc7Apis">Base32 Decrypt</a>
+                    
+                    </div>
+                </div>
+            </li>
+            <hr class="sidebar-divider">
+            <div class="sidebar-heading">
+                Contact
+            </div>
+            <li class="nav-item">
+                <a class="nav-link" href="https://wa.me/6283195138570">
+                    <i class="fab fa-fw fa-whatsapp">WhatsApp</i>
+                    <span></span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://instagram.com/_sekhaa">
+                    <i class="fab fa-fw fa-instagram">Instagram</i>
+                    <span></span>
+                </a>
+            </li>
+            <hr class="sidebar-divider">
+        </ul>
+        <!-- Sidebar -->
+        <div id="content-wrapper" class="d-flex flex-column">
+            <div id="content">
+                <!-- TopBar -->
+                <nav class="navbar navbar-expand navbar-light bg-navbar topbar mb-4 static-top">
+                    <button id="sidebarToggleTop" class="btn btn-link rounded-circle mr-3">
             <i class="fa fa-bars"></i>
           </button>
-          <ul class="navbar-nav ml-auto">
-            
-            <div class="topbar-divider d-none d-sm-block"></div>
-<li class="nav-item dropdown no-arrow mx-1">
-<a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="alertsDropdown" role="button">
-<i class="fas fa-bell fa-fw"></i>
-<span class="badge badge-danger badge-counter">3+</span>
-</a>
-<div aria-labelledby="alertsDropdown" class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in">
-<h6 class="dropdown-header">
-                  Alerts Center
-                </h6>
-<a class="dropdown-item d-flex align-items-center">
-<div class="mr-3">
-<div class="icon-circle bg-warning">
-<i class="fas fa-file-alt text-white"></i>
-</div>
-</div>
-<div>
-<div class="small text-gray-500">October 25, 2020</div>
-Online APi's Tools is finishing
-</div>
-</a>
-<a class="dropdown-item d-flex align-items-center">
-<div class="mr-3">
-<div class="icon-circle bg-warning">
-<i class="fas fa-exclamation-triangle text-white"></i>
-</div>
-</div>
-<div>
-<div class="small text-gray-500">October 25, 2020</div>
-Report if there are errors on this website to Admin
-</div>
-</a>
-<a class="dropdown-item d-flex align-items-center">
-<div class="mr-3">
-<div class="icon-circle bg-warning">
-<i class="fas fa-podcast text-white"></i>
-</div>
-</div>
-<div>
-<div class="small text-gray-500">November 1, 2020</div>
-In the future, Apikey UNLIMITED!
-</div>
-</a>
-<!-- <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a> -->
-</div>
-</li>
-            <li class="nav-item dropdown no-arrow">
-              <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                <img class="img-profile rounded-circle" src="https://i.pinimg.com/474x/58/e4/71/58e471c4ad95dbfd35dad9e8a5fbf175.jpg" style="max-width: 100px">
-                <span class="ml-2 d-none d-lg-inline text-white small">REY</span>
-              </a>
-            </li>
-          </ul>
-        </nav>        
-        <!-- Topbar -->
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown no-arrow">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-user-circle fa-2x"></i>
+                                <span class="ml-2 d-none d-lg-inline small font-weight-bold">LoL Human</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- Topbar -->
 
-        <!-- Container Fluid-->
-
-        <div class="container-fluid" id="container-wrapper">
-          <!-- Attention -->
-          <div id="demo" class="alert alert-warning alert-dismissible" role="alert">
-        <script>
-arrBulan = ["Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","November","Desember"];
-var txt = "";
-txt += "<p><b>Browser CodeName</b>: " + navigator.appCodeName + "</p>";
-txt += "<p><b>Browser Name</b>: " + navigator.appName + "</p>";
-txt += "<p><b>Cookies Enabled</b>: " + navigator.cookieEnabled + "</p>";
-txt += "<p><b>Browser Online</b>: " + navigator.onLine + "</p>";
-txt += "<p><b>Platform</b>: " + navigator.platform + "</p>";
-txt += "<p><b>User-agent header</b>: " + navigator.userAgent + "</p>";
-var d = new Date();
-const jam = d.getHours();
-const menit = d.getMinutes();
-const detik = d.getSeconds();
-const tgl = d.getDate();
-const bln = d.getMonth();
-const thn = d.getFullYear();
-const bulan = arrBulan[bln]
-document.write(txt)
-document.write("Date : "+ jam +":"+ menit +":"+ detik +"~"+ tgl +"-"+ bulan +"-"+ thn +"<br>Welcome back!")</script>
-          </div>
-        
-          <div class="row">
-            <div class="col-lg-6">
-              <div class="card mb-4">
-                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-sm-between">
-                </div>
-                <div class="card-body">
-                  <h6 class="m-0 font-weight-bold text-warning">Example!</h6>
-				<div class="my-2"></div>
-				<code class="text-center"> [ Python ] : </code>
-				<pre>
-				<code class="python">
-from requests import get
-url = get('http://www.reysekha.my.id/api/blablabla').json()
-print(url)
-				</code>
-				</pre>
-				<code class="text-center"> [ PHP ] : </code>
-				<pre>
-				<code class="plain-text">
-$url = 'http://www.reysekha.my.id/api/blablabla';
-$curl = curl_init($url);
-curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
-curl_setopt($curl, CURLOPT_HTTPHEADER, [
- 'Content-Type: application/json'
-]);
-$response = curl_exec($curl);
-curl_close($curl);
-echo $response . PHP_EOL; // appear response
-				</code>
-				</pre>
-				<code class="text-center"> [ Node JS ] : </code>
-				<pre>
-				<code class="javascript">
-const axios = require('axios');
-axios.get('http://www.reysekha.my.id/api/blablabla')
-.then(res => {
-  console.log(res.data)
-})
-.catch(err => {
-  console.log(err)
-})
-				</code>
-				</pre>
-                </div>
-              </div>
-            </div>
-		  
-            <div class="col-lg-6">
-              <div class="card mb-4">
-                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-sm-between">
-                </div>
-                <div class="card-body">
-					<h6 class="m-0 font-weight-bold text-warning">Bantu gan!</h6>
-					<h6><br><marquee class="text-warning">      Bantu subscibe youtube channel: Rey sekha, disana saya akan membahas seputar pemrograman. Butuh kritik dan saran, makasii...</marquee></h6>
-					<br>
-					<h6 class="m-0 font-weight-bold text-warning"> 
-						Donate me:
-					</h6>
-					<br>
-					<a class="btn btn-warning btn-icon-split" href="https://trakteer.id/inirey" target="_blank">
-						<span class="icon text-white-50">
-							<i class="fas fa-money-bill">
-							</i>
-						</span>
-						<span class="text">
-							Trakteer
-						</span>
-					</a>
-					<br>
-					<br>
-					<a class="btn btn-warning btn-icon-split" href="https://paypal.me/inirey" target="_blank">
-						<span class="icon text-white-50">
-							<i class="fas fa-credit-card" aria-hidden="true">
-							</i>
-						</span>
-						<span class="text">
-							Paypal
-						</span>
-					</a>
-					<br>
-					<br>
-					<br>
-					<h6 class="m-0 font-weight-bold text-warning"> 
-						Sosial Media:
-					</h6>
-					<br>
-					<a class="btn btn-warning btn-icon-split" href="https://youtube.com/c/Rey sekha" target="_blank">
-						<span class="icon text-white-50">
-							<i class="fab fa-youtube">
-							</i>
-						</span>
-						<span class="text">
-							Youtube
-						</span>
-					</a>
-					<br>
-					<br>
-					<a class="btn btn-warning btn-icon-split" href="https://instagram.com/_sekhaa" target="_blank">
-						<span class="icon text-white-50">
-							<i class="fab fa-instagram">
-							</i>
-						</span>
-						<span class="text">
-							Instagram
-						</span>
-					</a>
-					<br>
-					<br>
-					<a class="btn btn-warning btn-icon-split" href="https://github.com/inirey" target="_blank">
-						<span class="icon text-white-50">
-							<i class="fab fa-github">
-							</i>
-						</span>
-						<span class="text">
-							Github
-						</span>
-					</a>
-					<br>
-					<br>
-					<a class="btn btn-warning btn-icon-split" href="https://www.reysekha.my.id/api" target="_blank">
-						<span class="icon text-white-50">
-							<i class="fas fa-rss" aria-hidden="true">
-							</i>
-						</span>
-						<span class="text">
-							Blog
-						</span>
-					</a>
-					<br>
-					<br>
-					<br>
-					<br>
-					<div class="alert alert-warning" role="alert">
-  <h4 class="alert-heading">Hello everyone!</h4>
-  <p>Halo semuanya silahkan menggunakan REST API ini dengan bijaksana. Fitur-fitur yang ada di website ini disediakan secara gratis. Jika dari kalian ada yang menemukan bug/error atau ingin merequest silahkan chat pada menu di pojok kiri bawah.</p>
-  <hr>
-  <p class="mb-0">When in doubt, don't worry about what's right. You'll run out of time. Don't use your head, you'll find the answer lower. Your heart knows what's right. Choose the answer that will be fun.</p>
-</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!--Row-->
-
-          <!-- Modal Logout -->
-          <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabelLogout"
-            aria-hidden="true">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabelLogout">Ohh No!</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  <p>Are you sure you want to logout?</p>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Cancel</button>
-                  <a href="login.html" class="btn btn-primary">Logout</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-        </div>
-        <!---Container Fluid-->   
-            <!-- Progress bars with multiple bars -->
-            <!--- <div class="col-lg-12">
-              <div class="card mb-4">
-                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                  <h6 class="m-0 font-weight-bold text-danger">Perjuangan aku ke kalian.</h6>
-                </div>
-                <div class="card-body">
-                  <p>API ini gratis, jadi kalau ada yang error kabarin aja.
-                    <code>.api-aku</code> kasih ke <code>.program-kamu</code></p>
-                  <div class="progress">
-                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar"
-                      aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%"></div>
-                  </div>
-
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-12">
-              <div class="card mb-4">
-                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                  <h6 class="m-0 font-weight-bold text-danger">Support kalian ke aku.</h6>
-                </div>
-                <div class="card-body">
-                  <p>Lihat, tidak ada yang donasi sedikitpun...
-                    <code>.donasi-kalian</code> ke <code>.dompet-aku</code></p>
-                  <div class="progress">
-                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar"
-                      aria-valuenow="3" aria-valuemin="0" aria-valuemax="100" style="width: 3%"></div>
-                  </div>
-
-                </div>
-              </div>
-            </div> --->
-
-            <!--- <div class="col-lg-12">
-              <div class="card mb-4">
-                <div class="card-body">
-                  <form>
-                    <div class="form-group">
-                      <label for="exampleFormControlTextarea1">Your message</label>
-                      <textarea class="form-control" name="text" id="text" rows="3"></textarea>
-                      <small id="emailHelp" class="form-text text-muted">Chat langsung to the point aja! Fast respon kok :)</small>
-                      </div>
-                    <div class="form-group">
+                <!-- Container Fluid-->
+                <div class="container-fluid" id="container-wrapper">
+                    <div class="card h-50 mb-4">
+                        <div class="card-body">
+                            <div class="row align-items-center">
+                                <div class="col mr-2">
+                                    <div class="text-md-left font-weight-bold mb-2 text-primary">RestFull Api For Easy To Your Code</div>
+                                    <div class="text-sm-left mb-0 font-weight-bold">free rest API buat kalian semua yang pasti fitur apikey unlimited mau request fitur? Chat Saia aja langsung chat lewad wasab
+                                        <a href="https:wa.me/6287811078485" target="_blank" style="color: #d3d5f3; text-decoration: none;">WhatsApp.</a>
+                                    </div>
+                                </div>
+                                <div class="col-auto">
+                                    <i class="fas fa-quote-right fa-2x text-primary"></i>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="text-center">
-                      <button type="submit" class="btn btn-gradient-warning" id="send"><i class="fab fa-fw fa-whatsapp"></i>&nbsp;WhatsApp</button>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div> --->
 
-        <!---Container Fluid-->
-		
-      <!-- Footer -->
-      <footer class="sticky-footer bg-warning">
-        <div class="container my-auto">
-          <div class="copyright text-center my-auto">
-            <span class="text-white">copyright &copy; <script>document.write(new Date().getFullYear());</script> -<b><a class="text-white" href="https://www.reysekha.my.id/api" target="_blank"> ReyganZ</a></b></span>
-          </div>
+                    <div class="row mb-3">
+                         <!-- New User Card Example -->
+                         <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card h-50">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-uppercase mb-1">apikey</div>
+                                            <div class="h5 mb-0 font-weight-bold">apirey</div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-shopping-cart fa-2x text-primary"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                     <!-- Footer -->
+     <form action="/api/cekapikey">
+        <div class="col-xl-3 col-md-6 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <div class="row align-items-center">
+                <div class="col mr-2">
+       <div class="h6 mb-0 font-weight-bold text-dark-800 text-uppercase">
+      <h6 class="text-center">[+] cek apikey [+]</h6>
+      </div>
+       <input type="password" class="form-control" placeholder="Check Your apikey" name="apikey" required=""><br>
+        <button class="btn btn-primary btn-sm ml-2">
+         <span class="icon text-white-50">
+          <i class="fas fa-check"></i>
+         </span>
+         <span class="text">Check</span>
+        </button>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ </div>
+</div>
+</div>
+                    <!--Row-->
+                    <div class="row">
+                        <div class="col-lg-12 text-center">
+                            Suport me
+                            <p>
+                                <a href="https://wa.me/6283195138570" class="btn btn-primary btn-sm mr-2" target="_blank"><i class="fa fa-fw fa-whatsapp"></i>&nbsp;WhatsApp</a>
+                                <a href="https://instagram.com/_sekhaa" class="btn btn-primary btn-sm ml-2" target="_blank"><i class="fab fa-fw fa-instagram"></i>&nbsp;Instagram</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!---Container Fluid-->
+            </div>
+             <!---Container Fluid-->
+     
+            <!-- Footer -->
+            <footer class="sticky-footer">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        Made with <i class="fa fa-heart"></i> by
+                        <a href="https://wa.me/6283195138570" target="_blank" style="color: #fff;">Reysekha</a>
+                        </span>
+                    </div>
+                </div>
+            </footer>
+            <!-- Footer -->
         </div>
-      </footer>
-      <!-- Footer -->
     </div>
 
-  <!-- Scroll to top -->
-  <a class="scroll-to-top rounded" href="#page-top">
-    <i class="fas fa-angle-up"></i>
-  </a>
+    <!-- Scroll to top -->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
 
-  <script src="https://indrijunanda.github.io/RuangAdmin/vendor/jquery/jquery.min.js"></script>
-  <script src="https://indrijunanda.github.io/RuangAdmin/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="https://indrijunanda.github.io/RuangAdmin/vendor/jquery-easing/jquery.easing.min.js"></script>
-  <script src="https://indrijunanda.github.io/RuangAdmin/js/ruang-admin.min.js"></script>
-
-
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="js/ruang-admin.min.js"></script>
 </body>
 
 </html>
