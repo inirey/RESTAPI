@@ -2057,6 +2057,34 @@ router.get("/photooxy/butterfly", async(req, res, next) => {
 /*
 @ TEXTPROME
 */
+router.get('/photooxy/army', async(req, res, next) => {
+
+  const apikey = req.query.apikey;
+
+  const text = req.query.text;
+  
+  if(!apikey) return res.json(loghandler.notparam)
+  if(!text) return res.json(loghandler.nottext)
+  
+  if(listkey.includes(apikey)){
+    zrapi 
+  .textpro("https://photooxy.com/logo-and-text-effects/army-camouflage-fabric-text-effect-221.html", [
+    text,
+  ])
+  .then((data) => {
+    res.json({
+      status: true,
+      code: 200,
+      creator: `${creator}`,
+      result: data
+    })
+  })
+  .catch((err) => console.log(err));
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+
 router.get('/textpro/logo-wolf', async(req, res, next) => {
   const apikey = req.query.apikey;
   const text = req.query.text;
