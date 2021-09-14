@@ -1198,8 +1198,8 @@ const Yuri = JSON.parse(fs.readFileSync(__path +'/data/yuri.json'))
 const randYuri = Yuri[Math.floor(Math.random() * Yuri.length)]
 //tansole.log(randTech)
 data = await fetch(randYuri).then(v => v.buffer())
-await fs.writeFileSync(__path +'/tmp/yuri.jpeg', data)
-res.sendFile(__path +'/tmp/yuri.jpeg')
+await fs.writeFileSync(__path +'/tmp/Yuri.jpeg', data)
+res.sendFile(__path +'/tmp/Yuri.jpeg')
 } else {
 res.json(loghandler.invalidKey)
 }
@@ -1273,6 +1273,37 @@ res.json(loghandler.invalidKey)
 }
 })
 
+router.get('/wallpaper/shota', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+
+  const Shota = JSON.parse(fs.readFileSync(__path +'/data/shota.json'));
+  const randShota = Shota[Math.floor(Math.random() * Shota.length)];
+  data = await fetch(randShota).then(v => v.buffer());
+  await fs.writeFileSync(__path +'/tmp/shota.jpeg', data)
+  res.sendFile(__path+ '/tmp/shota.jpeg');
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
+router.get('/wallpaper/nsfwloli', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+
+  const Lol = JSON.parse(fs.readFileSync(__path +'/data/nsfwloli.json'));
+  const randLol = Lol[Math.floor(Math.random() * Lol.length)];
+  data = await fetch(randLol).then(v => v.buffer());
+  await fs.writeFileSync(__path +'/tmp/lol.jpeg', data)
+  res.sendFile(__path+ '/tmp/lol.jpeg');
+} else {
+res.json(loghandler.invalidKey)
+}
+})
 
 router.get('/wallpaper/hinata', async (req, res, next) => {
         var Apikey = req.query.apikey
@@ -1281,10 +1312,10 @@ router.get('/wallpaper/hinata', async (req, res, next) => {
 	if(listkey.includes(Apikey)){
 
   const Hinata = JSON.parse(fs.readFileSync(__path +'/data/hinata.json'));
-  const randHinata = Hinata[Math.floor(Math.random() * Hinata.length)];
-  data = await fetch(randHinata).then(v => v.buffer());
-  await fs.writeFileSync(__path +'/tmp/hinata.jpeg', data)
-  res.sendFile(__path+ '/tmp/hinata.jpeg');
+  const randHin = Hinata[Math.floor(Math.random() * Hinata.length)];
+  data = await fetch(randHin).then(v => v.buffer());
+  await fs.writeFileSync(__path +'/tmp/Hinata.jpeg', data)
+  res.sendFile(__path+ '/tmp/Hinata.jpeg');
 } else {
 res.json(loghandler.invalidKey)
 }
