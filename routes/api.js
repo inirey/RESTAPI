@@ -3849,6 +3849,22 @@ router.get('/maker/dadu', async (req, res, next) => {
   }
 });
 
+router.get('/blackpink', async (req, res, next) => {
+  Apikey = req.query.apikey;
+  
+  if(!Apikey) return res.json(loghandler.notparam)
+  if(listkey.includes(Apikey)) {
+    const pop = JSON.parse(fs.readFileSync(__path +'/data/kpop.json'));
+    const Pop = pop[Math.floor(Math.random() * pop.length)];
+    let hasil = Pop.pop;
+    data = await fetch(hasil).then(v => v.buffer())
+    await fs.writeFileSync(__path +'/tmp/pink.jpeg', data)
+    res.sendFile(__path +'/tmp/pink.jpeg')
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+
 router.get('/asupan', async (req, res, next) => {
   Apikey = req.query.apikey;
   
