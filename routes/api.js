@@ -1139,6 +1139,22 @@ router.get('/search/image', async(req, res, next) => {
   }
 })
 
+router.get('/wallpaper/random/blackpink', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+
+  Black = JSON.parse(fs.readFileSync(__path +'/data/blackpink.json'));
+  const randBlack = Black[Math.floor(Math.random() * Black.length)]
+  data = await fetch(randBlack).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/blak.jpeg', data)
+  res.sendFile(__path +'/tmp/blak.jpeg')
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
 router.get('/wallpaper/kpop', async (req, res, next) => {
         var Apikey = req.query.apikey
             
