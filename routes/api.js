@@ -1146,7 +1146,7 @@ router.get('/wallpaper/kpop', async (req, res, next) => {
 	if(listkey.includes(Apikey)){
 
   Kpop = JSON.parse(fs.readFileSync(__path +'/data/kpop.json'));
-  const randKpop = Cogan[Math.floor(Math.random() * Kpop.length)]
+  const randKpop = Kpop[Math.floor(Math.random() * Kpop.length)]
   data = await fetch(randKpop).then(v => v.buffer())
   await fs.writeFileSync(__path +'/tmp/kpop.jpeg', data)
   res.sendFile(__path +'/tmp/kpop.jpeg')
@@ -1210,7 +1210,7 @@ router.get('/wallpaper/ppcouple', async (req, res, next) => {
 	if(listkey.includes(Apikey)){
 
   Pp = JSON.parse(fs.readFileSync(__path +'/data/profil.json'));
-  const randCogan = Pp[Math.floor(Math.random() * Pp.length)]
+  const randPp = Pp[Math.floor(Math.random() * Pp.length)]
   data = await fetch(randPp).then(v => v.buffer())
   await fs.writeFileSync(__path +'/tmp/pp.jpeg', data)
   res.sendFile(__path +'/tmp/pp.jpeg')
