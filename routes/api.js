@@ -1138,6 +1138,119 @@ router.get('/search/image', async(req, res, next) => {
     res.json(loghandler.invalidKey)
   }
 })
+
+router.get('/wallpaper/kpop', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+
+  Kpop = JSON.parse(fs.readFileSync(__path +'/data/kpop.json'));
+  const randKpop = Cogan[Math.floor(Math.random() * Kpop.length)]
+  data = await fetch(randKpop).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/kpop.jpeg', data)
+  res.sendFile(__path +'/tmp/kpop.jpeg')
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
+router.get('/wallpaper/hekel', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+
+  Hekel = JSON.parse(fs.readFileSync(__path +'/data/hekel.json'));
+  const randHekel = Hekel[Math.floor(Math.random() * Hekel.length)]
+  data = await fetch(randHekel).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/hek.jpeg', data)
+  res.sendFile(__path +'/tmp/hek.jpeg')
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
+router.get('/wallpaper/kucing', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+
+  Kucing = JSON.parse(fs.readFileSync(__path +'/data/kucing.json'));
+  const randKucing = Kucing[Math.floor(Math.random() * Kucing.length)]
+  data = await fetch(randKucing).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/kucing.jpeg', data)
+  res.sendFile(__path +'/tmp/kucing.jpeg')
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
+router.get('/wallpaper/pubg', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+
+  Pubg = JSON.parse(fs.readFileSync(__path +'/data/pubg.json'));
+  const randPubg = Pubg[Math.floor(Math.random() * Pubg.length)]
+  data = await fetch(randPubg).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/pubg.jpeg', data)
+  res.sendFile(__path +'/tmp/pubg.jpeg')
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
+router.get('/wallpaper/ppcouple', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+
+  Pp = JSON.parse(fs.readFileSync(__path +'/data/profil.json'));
+  const randCogan = Pp[Math.floor(Math.random() * Pp.length)]
+  data = await fetch(randPp).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/pp.jpeg', data)
+  res.sendFile(__path +'/tmp/pp.jpeg')
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
+router.get('/wallpaper/anjing', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+
+  Anjing = JSON.parse(fs.readFileSync(__path +'/data/anjing.json'));
+  const randAnjing = Anjing[Math.floor(Math.random() * Anjing.length)]
+  data = await fetch(randAnjing).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/ajg.jpeg', data)
+  res.sendFile(__path +'/tmp/ajg.jpeg')
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
+router.get('/wallpaper/doraemon', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+
+  Dora = JSON.parse(fs.readFileSync(__path +'/data/doraemon.json'));
+  const randDora = Dora[Math.floor(Math.random() * Dora.length)]
+  data = await fetch(randDora).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/dora.jpeg', data)
+  res.sendFile(__path +'/tmp/dora.jpeg')
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
 router.get('/wallpaper/cogan', async (req, res, next) => {
         var Apikey = req.query.apikey
             
