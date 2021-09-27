@@ -1139,6 +1139,70 @@ router.get('/search/image', async(req, res, next) => {
   }
 })
 
+router.get('/wallpaper/montor', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+
+  const Mon = JSON.parse(fs.readFileSync(__path +'/data/montor.json'));
+  const randMon = Mon[Math.floor(Math.random() * Mon.length)];
+  data = await fetch(randMon).then(v => v.buffer());
+  await fs.writeFileSync(__path +'/tmp/montor.jpeg', data)
+  res.sendFile(__path+ '/tmp/montor.jpeg');
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
+router.get('/wallpaper/mobil', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+
+  const Mob = JSON.parse(fs.readFileSync(__path +'/data/mobil.json'));
+  const randMob = Mob[Math.floor(Math.random() * Mob.length)];
+  data = await fetch(randMob).then(v => v.buffer());
+  await fs.writeFileSync(__path +'/tmp/mobil.jpeg', data)
+  res.sendFile(__path+ '/tmp/mobil.jpeg');
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
+router.get('/wallpaper/boneka-chucky', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+
+  const Bon = JSON.parse(fs.readFileSync(__path +'/data/boneka.json'));
+  const randBon = Bon[Math.floor(Math.random() * Bon.length)];
+  data = await fetch(randBon).then(v => v.buffer());
+  await fs.writeFileSync(__path +'/tmp/chucky.jpeg', data)
+  res.sendFile(__path+ '/tmp/chucky.jpeg');
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
+router.get('/wallpaper/anime', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+
+  const Wai23 = JSON.parse(fs.readFileSync(__path +'/data/wallhp2.json'));
+  const randWai23 = Wai23[Math.floor(Math.random() * Wai23.length)];
+  data = await fetch(randWai23).then(v => v.buffer());
+  await fs.writeFileSync(__path +'/tmp/wallhp2.jpeg', data)
+  res.sendFile(__path+ '/tmp/wallhp2.jpeg');
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
 router.get('/wallpaper/random/blackpink', async (req, res, next) => {
         var Apikey = req.query.apikey
             
@@ -1150,6 +1214,22 @@ router.get('/wallpaper/random/blackpink', async (req, res, next) => {
   data = await fetch(randBlack).then(v => v.buffer())
   await fs.writeFileSync(__path +'/tmp/blak.jpeg', data)
   res.sendFile(__path +'/tmp/blak.jpeg')
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
+router.get('/wallpaper/wallhp', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+
+  const Wai22 = JSON.parse(fs.readFileSync(__path +'/data/wallhp.json'));
+  const randWai22 = Wai22[Math.floor(Math.random() * Wai22.length)];
+  data = await fetch(randWai22).then(v => v.buffer());
+  await fs.writeFileSync(__path +'/tmp/wallhp.jpeg', data)
+  res.sendFile(__path+ '/tmp/wallhp.jpeg');
 } else {
 res.json(loghandler.invalidKey)
 }
