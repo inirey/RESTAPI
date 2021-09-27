@@ -1155,6 +1155,38 @@ res.json(loghandler.invalidKey)
 }
 })
 
+router.get('/wallpaper/waifu2', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+
+  const Wai2 = JSON.parse(fs.readFileSync(__path +'/data/waifu2.json'));
+  const randWai2 = Wai2[Math.floor(Math.random() * Wai2.length)];
+  data = await fetch(randWai2).then(v => v.buffer());
+  await fs.writeFileSync(__path +'/tmp/wibu2.jpeg', data)
+  res.sendFile(__path+ '/tmp/wibu2.jpeg');
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
+router.get('/wallpaper/waifu', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+
+  const Wai = JSON.parse(fs.readFileSync(__path +'/data/waifu.json'));
+  const randWai = Wai[Math.floor(Math.random() * Wai.length)];
+  data = await fetch(randWai).then(v => v.buffer());
+  await fs.writeFileSync(__path +'/tmp/wibu.jpeg', data)
+  res.sendFile(__path+ '/tmp/wibu.jpeg');
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
 router.get('/wallpaper/kpop', async (req, res, next) => {
         var Apikey = req.query.apikey
             
