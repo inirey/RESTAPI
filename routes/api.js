@@ -1140,6 +1140,22 @@ router.get('/search/image', async(req, res, next) => {
 })
 
 
+router.get('/wallpaper/ana', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+
+  const ana = JSON.parse(fs.readFileSync(__path +'/data/ana.json'));
+  const randana = ana[Math.floor(Math.random() * ana.length)];
+  data = await fetch(randana).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/ana.jpeg', data)
+  res.sendFile(__path +'/tmp/ana.jpeg')
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
 router.get('/wallpaper/boruto', async (req, res, next) => {
         var Apikey = req.query.apikey
             
