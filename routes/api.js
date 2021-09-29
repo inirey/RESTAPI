@@ -1139,6 +1139,151 @@ router.get('/search/image', async(req, res, next) => {
   }
 })
 
+
+router.get('/wallpaper/sagiri', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+
+  const Sagiri = JSON.parse(fs.readFileSync(__path +'/data/sagiri.json'));
+  const randSagiri = Sagiri[Math.floor(Math.random() * Sagiri.length)];
+  data = await fetch(randSagiri).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/sagiri.jpeg', data)
+  res.sendFile(__path +'/tmp/sagiri.jpeg')
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
+router.get('/wallpaper/minato', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+
+  const Minato = JSON.parse(fs.readFileSync(__path +'/data/minato.json'));
+  const randMinato = Minato[Math.floor(Math.random() * Minato.length)];
+  data = await fetch(randMinato).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/minato.jpeg', data)
+  res.sendFile(__path +'/tmp/minato.jpeg')
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
+router.get('/wallpaper/naruto', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+
+  const Naruto = JSON.parse(fs.readFileSync(__path +'/data/naruto.json'));
+  const randNaruto = Naruto[Math.floor(Math.random() * Naruto.length)];
+  data = await fetch(randNaruto).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/naruto.jpeg', data)
+  res.sendFile(__path +'/tmp/naruto.jpeg')
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
+router.get('/wallpaper/nezuko', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+
+  const Nezuko = JSON.parse(fs.readFileSync(__path +'/data/nezuko.json'));
+  const randNezuko = Nezuko[Math.floor(Math.random() * Nezuko.length)];
+  data = await fetch(randNezuko).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/nezu.jpeg', data)
+  res.sendFile(__path +'/tmp/nezu.jpeg')
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
+router.get('/wallpaper/onepiece', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+
+  const Pic = JSON.parse(fs.readFileSync(__path +'/data/onepiece.json'));
+  const randPic = Pic[Math.floor(Math.random() * Pic.length)];
+  data = await fetch(randPic).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/pic.jpeg', data)
+  res.sendFile(__path +'/tmp/pic.jpeg')
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
+router.get('/wallpaper/rize', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+
+  const Rize = JSON.parse(fs.readFileSync(__path +'/data/rize.json'));
+  const randRize = Rize[Math.floor(Math.random() * Rize.length)];
+  data = await fetch(randRize).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/rize.jpeg', data)
+  res.sendFile(__path +'/tmp/rize.jpeg')
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
+router.get('/wallpaper/sakura', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+
+  const Sakura = JSON.parse(fs.readFileSync(__path +'/data/sakura.json'));
+  const randSakura = Sakura[Math.floor(Math.random() * Sakura.length)];
+  data = await fetch(randSakura).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/sakura.jpeg', data)
+  res.sendFile(__path +'/tmp/sakura.jpeg')
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
+router.get('/wallpaper/sasuke', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+
+  const Sasuke = JSON.parse(fs.readFileSync(__path +'/data/sasuke.json'));
+  const randSasuke = Sasuke[Math.floor(Math.random() * Sasuke.length)];
+  data = await fetch(randSasuke).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/sasuke.jpeg', data)
+  res.sendFile(__path +'/tmp/sasuke.jpeg')
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
+router.get('/wallpaper/tsunade', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+
+  const Su = JSON.parse(fs.readFileSync(__path +'/data/tsunade.json'));
+  const randSu = Su[Math.floor(Math.random() * Su.length)];
+  data = await fetch(randSu).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/su.jpeg', data)
+  res.sendFile(__path +'/tmp/su.jpeg')
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
 router.get('/wallpaper/montor', async (req, res, next) => {
         var Apikey = req.query.apikey
             
@@ -1498,17 +1643,17 @@ res.json(loghandler.invalidKey)
 })
 
 
-router.get('/wallpaper/hekel', async (req, res, next) => {
+router.get('/wallpaper/sagiri', async (req, res, next) => {
         var Apikey = req.query.apikey
             
 	if(!Apikey) return res.json(loghandler.notparam)
 	if(listkey.includes(Apikey)){
 
-  const Hekel = JSON.parse(fs.readFileSync(__path +'/data/hekel.json'));
-  const randHekel = Hekel[Math.floor(Math.random() * Hekel.length)];
-  data = await fetch(randHekel).then(v => v.buffer())
-  await fs.writeFileSync(__path +'/tmp/hekel.jpeg', data)
-  res.sendFile(__path +'/tmp/hekel.jpeg')
+  const Sagiri = JSON.parse(fs.readFileSync(__path +'/data/sagiri.json'));
+  const randSagiri = Sagiri[Math.floor(Math.random() * Sagiri.length)];
+  data = await fetch(randSagiri).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/sagiri.jpeg', data)
+  res.sendFile(__path +'/tmp/sagiri.jpeg')
 } else {
 res.json(loghandler.invalidKey)
 }
