@@ -1140,6 +1140,199 @@ router.get('/search/image', async(req, res, next) => {
 })
 
 
+
+router.get('/wallpaper/kaori', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+
+  const kaori = JSON.parse(fs.readFileSync(__path +'/data/kaori.json'));
+  const randkaori = kaori[Math.floor(Math.random() * kaori.length)];
+  data = await fetch(randkaori).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/kaori.jpeg', data)
+  res.sendFile(__path +'/tmp/kaori.jpeg')
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
+router.get('/wallpaper/shizuka', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+
+  const shizuka = JSON.parse(fs.readFileSync(__path +'/data/shizuka.json'));
+  const randshizuka = shizuka[Math.floor(Math.random() * shizuka.length)];
+  data = await fetch(randshizuka).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/shizuka.jpeg', data)
+  res.sendFile(__path +'/tmp/shizuka.jpeg')
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
+router.get('/wallpaper/kaga', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+
+  const kaga = JSON.parse(fs.readFileSync(__path +'/data/kaga.json'));
+  const randkaga = kaga[Math.floor(Math.random() * kaga.length)];
+  data = await fetch(randkaga).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/kaga.jpeg', data)
+  res.sendFile(__path +'/tmp/kaga.jpeg')
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
+router.get('/wallpaper/kotori', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+
+  const kotori = JSON.parse(fs.readFileSync(__path +'/data/kotori.json'));
+  const randkotori = kotori[Math.floor(Math.random() * kotori.length)];
+  data = await fetch(randkotori).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/kotori.jpeg', data)
+  res.sendFile(__path +'/tmp/kotori.jpeg')
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
+router.get('/wallpaper/mikasa', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+
+  const mikasa = JSON.parse(fs.readFileSync(__path +'/data/mikasa.json'));
+  const randmikasa = mikasa[Math.floor(Math.random() * mikasa.length)];
+  data = await fetch(randmikasa).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/mikasa.jpeg', data)
+  res.sendFile(__path +'/tmp/mikasa.jpeg')
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
+router.get('/wallpaper/akiyama', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+
+  const akiyama = JSON.parse(fs.readFileSync(__path +'/data/akiyama.json'));
+  const randakiyama = akiyama[Math.floor(Math.random() * akiyama.length)];
+  data = await fetch(randakiyama).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/akiyama.jpeg', data)
+  res.sendFile(__path +'/tmp/akiyama.jpeg')
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
+router.get('/wallpaper/gremory', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+
+  const gremory = JSON.parse(fs.readFileSync(__path +'/data/gremory.json'));
+  const randgremory = gremory[Math.floor(Math.random() * gremory.length)];
+  data = await fetch(randgremory).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/gremory.jpeg', data)
+  res.sendFile(__path +'/tmp/gremory.jpeg')
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
+router.get('/wallpaper/isuzu', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+
+  const isuzu = JSON.parse(fs.readFileSync(__path +'/data/isuzu.json'));
+  const randisuzu = isuzu[Math.floor(Math.random() * isuzu.length)];
+  data = await fetch(randisuzu).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/isuzu.jpeg', data)
+  res.sendFile(__path +'/tmp/isuzu.jpeg')
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
+router.get('/wallpaper/shina', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+
+  const shina = JSON.parse(fs.readFileSync(__path +'/data/shina.json'));
+  const randshina = shina[Math.floor(Math.random() * shina.length)];
+  data = await fetch(randshina).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/shina.jpeg', data)
+  res.sendFile(__path +'/tmp/shina.jpeg')
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
+router.get('/wallpaper/kagura', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+
+  const kagura = JSON.parse(fs.readFileSync(__path +'/data/kagura.json'));
+  const randkagura = kagura[Math.floor(Math.random() * kagura.length)];
+  data = await fetch(randkagura).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/kagura.jpeg', data)
+  res.sendFile(__path +'/tmp/kagura.jpeg')
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
+router.get('/wallpaper/shinka', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+
+  const shinka = JSON.parse(fs.readFileSync(__path +'/data/shinka.json'));
+  const randshinka = shinka[Math.floor(Math.random() * shinka.length)];
+  data = await fetch(randshinka).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/shinka.jpeg', data)
+  res.sendFile(__path +'/tmp/shinka.jpeg')
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
+router.get('/wallpaper/eba', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+
+  const eba = JSON.parse(fs.readFileSync(__path +'/data/eba.json'));
+  const randeba = eba[Math.floor(Math.random() * eba.length)];
+  data = await fetch(randeba).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/eba.jpeg', data)
+  res.sendFile(__path +'/tmp/eba.jpeg')
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
 router.get('/wallpaper/deidara', async (req, res, next) => {
         var Apikey = req.query.apikey
             
