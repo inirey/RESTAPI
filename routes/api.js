@@ -4945,64 +4945,6 @@ router.get('/maker/silverbutton', async(req, res, next) => {
   }
 });
 
-//ReyGanz
-router.get('/download/mediafire', async (req, res, next) => {
-        const url = req.query.url;
-        const apikey = req.query.apikey;
-
-       if(!url) return res.json(loghandler.noturl)
-       if(!apikey) return res.json(loghandler.notparam)
-       if(listkey.includes(apikey)){
-       mediafireDl(`${url}`)
-        .then(data => {
-        var result = data;
-             res.json({
-             	author: 'Rey',
-                 result
-             })
-         })
-         .catch(e => {
-         	res.json(loghandler.error)
-});
-
-router.get('/download/instagram', async (req, res, next) => {
-        const url = req.query.url;
-       const apikey = req.query.apikey;
-
-       if(!url) return res.json(loghandler.noturl)
-       if(!apikey) return res.json(loghandler.notparam)
-       if(listkey.includes(apikey)){
-       igDownloader(`${url}`)
-        .then(data => {
-        var result = data.result;
-             res.json({
-             	author: 'Rey',
-                 result
-             })
-         })
-         .catch(e => {
-         	res.json(loghandler.error)
-});
-
-router.get('/download/tiktok', async (req, res, next) => {
-       const url = req.query.url;
-       const apikey = req.query.apikey;
-
-       if(!url) return res.json(loghandler.noturl)
-       if(!apikey) return res.json(loghandler.notparam)
-       if(listkey.includes(apikey)){
-       TiktokDownloader(`${url}`)
-        .then(data => {
-        var result = data.result;
-             res.json({
-             	author: 'Rey',
-                 result
-             })
-         })
-         .catch(e => {
-         	res.json(loghandler.error)
-});
-
 router.get('/maker/goldbutton', async(req, res, next) => {
   const text = req.query.text;
   const apikey = req.query.apikey;
