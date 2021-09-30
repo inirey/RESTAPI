@@ -4947,13 +4947,12 @@ router.get('/maker/silverbutton', async(req, res, next) => {
 
 //ReyGanz
 router.get('/download/mediafire', async (req, res, next) => {
-        var apikeyInput = req.query.apikey,
-            url = req.query.url
+        const url = req.query.url;
+        const apikey = req.query.apikey;
 
-	if(!apikeyInput) return res.json(loghandler.notparam)
-	if(apikeyInput != 'apirey') return res.sendFile(__path + '/views/eror.html')
-    if (!url) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter url"})
-
+       if(!url) return res.json(loghandler.noturl)
+       if(!apikey) return res.json(loghandler.notparam)
+       if(listkey.includes(apikey)){
        mediafireDl(`${url}`)
         .then(data => {
         var result = data;
@@ -4964,17 +4963,15 @@ router.get('/download/mediafire', async (req, res, next) => {
          })
          .catch(e => {
          	res.json(loghandler.error)
-})
-})
+});
 
 router.get('/download/instagram', async (req, res, next) => {
-        var apikeyInput = req.query.apikey,
-            url = req.query.url
+        const url = req.query.url;
+       const apikey = req.query.apikey;
 
-	if(!apikeyInput) return res.json(loghandler.notparam)
-	if(apikeyInput != 'apirey') return res.sendFile(__path + '/views/eror.html')
-    if (!url) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter url"})
-
+       if(!url) return res.json(loghandler.noturl)
+       if(!apikey) return res.json(loghandler.notparam)
+       if(listkey.includes(apikey)){
        igDownloader(`${url}`)
         .then(data => {
         var result = data.result;
@@ -4985,17 +4982,15 @@ router.get('/download/instagram', async (req, res, next) => {
          })
          .catch(e => {
          	res.json(loghandler.error)
-})
-})
+});
 
 router.get('/download/tiktok', async (req, res, next) => {
-        var apikeyInput = req.query.apikey,
-            url = req.query.url
+       const url = req.query.url;
+       const apikey = req.query.apikey;
 
-	if(!apikeyInput) return res.json(loghandler.notparam)
-	if(apikeyInput != 'apirey') return res.sendFile(__path + '/views/eror.html')
-    if (!url) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter url"})
-
+       if(!url) return res.json(loghandler.noturl)
+       if(!apikey) return res.json(loghandler.notparam)
+       if(listkey.includes(apikey)){
        TiktokDownloader(`${url}`)
         .then(data => {
         var result = data.result;
@@ -5006,8 +5001,7 @@ router.get('/download/tiktok', async (req, res, next) => {
          })
          .catch(e => {
          	res.json(loghandler.error)
-})
-})
+});
 
 router.get('/maker/goldbutton', async(req, res, next) => {
   const text = req.query.text;
