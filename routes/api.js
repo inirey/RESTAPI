@@ -21,6 +21,8 @@ var TikTokScraper = require('tiktok-scraper');
 var { EmojiAPI } = require("emoji-api");
 var emoji = new EmojiAPI();
 var router  = express.Router();
+var { TiktokDownloader } = require('../lib/tiktokdl.js')
+var { igDownloader } = require('../lib/igdown.js')
 var { color, bgcolor } = require(__path + '/lib/color.js');
 var { fetchJson } = require(__path + '/lib/fetcher.js');
 var options = require(__path + '/lib/options.js');
@@ -4941,6 +4943,70 @@ router.get('/maker/silverbutton', async(req, res, next) => {
     res.json(loghandler.invalidKey)
   }
 });
+
+//ReyGanz
+router.get('/download/mediafire', async (req, res, next) => {
+        var apikeyInput = req.query.apikey,
+            url = req.query.url
+
+	if(!apikeyInput) return res.json(loghandler.notparam)
+	if(apikeyInput != 'apirey') return res.sendFile(__path + '/views/eror.html')
+    if (!url) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter url"})
+
+       mediafireDl(`${url}`)
+        .then(data => {
+        var result = data;
+             res.json({
+             	author: 'Rey',
+                 result
+             })
+         })
+         .catch(e => {
+         	res.json(loghandler.error)
+})
+})
+
+router.get('/download/instagram', async (req, res, next) => {
+        var apikeyInput = req.query.apikey,
+            url = req.query.url
+
+	if(!apikeyInput) return res.json(loghandler.notparam)
+	if(apikeyInput != 'apirey') return res.sendFile(__path + '/views/eror.html')
+    if (!url) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter url"})
+
+       igDownloader(`${url}`)
+        .then(data => {
+        var result = data.result;
+             res.json({
+             	author: 'Rey',
+                 result
+             })
+         })
+         .catch(e => {
+         	res.json(loghandler.error)
+})
+})
+
+router.get('/download/tiktok', async (req, res, next) => {
+        var apikeyInput = req.query.apikey,
+            url = req.query.url
+
+	if(!apikeyInput) return res.json(loghandler.notparam)
+	if(apikeyInput != 'apirey') return res.sendFile(__path + '/views/eror.html')
+    if (!url) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter url"})
+
+       TiktokDownloader(`${url}`)
+        .then(data => {
+        var result = data.result;
+             res.json({
+             	author: 'Rey',
+                 result
+             })
+         })
+         .catch(e => {
+         	res.json(loghandler.error)
+})
+})
 
 router.get('/maker/goldbutton', async(req, res, next) => {
   const text = req.query.text;
