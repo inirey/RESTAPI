@@ -1541,6 +1541,166 @@ res.json(loghandler.invalidKey)
 }
 })
 
+router.get('/wallpaper/keneki', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+
+  const keneki = JSON.parse(fs.readFileSync(__path +'/data/keneki.json'));
+  const randkeneki = keneki[Math.floor(Math.random() * keneki.length)];
+  data = await fetch(randkeneki).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/keneki.jpeg', data)
+  res.sendFile(__path +'/tmp/keneki.jpeg')
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
+router.get('/wallpaper/megumin', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+
+  const megumin = JSON.parse(fs.readFileSync(__path +'/data/megumin.json'));
+  const randmegumin = megumin[Math.floor(Math.random() * megumin.length)];
+  data = await fetch(randmegumin).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/megumin.jpeg', data)
+  res.sendFile(__path +'/tmp/megumin.jpeg')
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
+router.get('/wallpaper/toukachan', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+
+  const toukachan = JSON.parse(fs.readFileSync(__path +'/data/toukachan.json'));
+  const randtoukachan = toukachan[Math.floor(Math.random() * toukachan.length)];
+  data = await fetch(randtoukachan).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/toukachan.jpeg', data)
+  res.sendFile(__path +'/tmp/toukachan.jpeg')
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
+router.get('/wallpaper/akira', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+
+  const akira = JSON.parse(fs.readFileSync(__path +'/data/akira.json'));
+  const randakira = akira[Math.floor(Math.random() * akira.length)];
+  data = await fetch(randakira).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/akira.jpeg', data)
+  res.sendFile(__path +'/tmp/akira.jpeg')
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
+router.get('/wallpaper/itori', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+
+  const itori = JSON.parse(fs.readFileSync(__path +'/data/itori.json'));
+  const randitori = itori[Math.floor(Math.random() * itori.length)];
+  data = await fetch(randitori).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/itori.jpeg', data)
+  res.sendFile(__path +'/tmp/itori.jpeg')
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
+router.get('/wallpaper/kurumi', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+
+  const kurumi = JSON.parse(fs.readFileSync(__path +'/data/kurumi.json'));
+  const randkurumi = kurumi[Math.floor(Math.random() * kurumi.length)];
+  data = await fetch(randkurumi).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/kurumi.jpeg', data)
+  res.sendFile(__path +'/tmp/kurumi.jpeg')
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
+router.get('/wallpaper/miku', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+
+  const miku = JSON.parse(fs.readFileSync(__path +'/data/miku.json'));
+  const randmiku = miku[Math.floor(Math.random() * miku.length)];
+  data = await fetch(randmiku).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/miku.jpeg', data)
+  res.sendFile(__path +'/tmp/miku.jpeg')
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
+router.get('/wallpaper/pokemon', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+
+  const pokemon = JSON.parse(fs.readFileSync(__path +'/data/pokemon.json'));
+  const randpokemon = pokemon[Math.floor(Math.random() * pokemon.length)];
+  data = await fetch(randpokemon).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/pokemon.jpeg', data)
+  res.sendFile(__path +'/tmp/pokemon.jpeg')
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
+router.get('/wallpaper/ryujin', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+
+  const ryujin = JSON.parse(fs.readFileSync(__path +'/data/ryujin.json'));
+  const randryujin = ryujin[Math.floor(Math.random() * ryujin.length)];
+  data = await fetch(randryujin).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/ryujin.jpeg', data)
+  res.sendFile(__path +'/tmp/ryujin.jpeg')
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
+router.get('/wallpaper/rose', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+
+  const rose = JSON.parse(fs.readFileSync(__path +'/data/rose.json'));
+  const randrose = rose[Math.floor(Math.random() * rose.length)];
+  data = await fetch(randrose).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/rose.jpeg', data)
+  res.sendFile(__path +'/tmp/rose.jpeg')
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
 router.get('/wallpaper/kaori', async (req, res, next) => {
         var Apikey = req.query.apikey
             
