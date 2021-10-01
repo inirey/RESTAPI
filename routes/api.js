@@ -8,7 +8,7 @@ var zahirr = db.get("zahirr");
 	console.log('')  
 }
  
-var creator = "Reyganz"
+var creator = "Rey"
 var secure = require('ssl-express-www');
 var cors = require('cors');
 var fetch = require('node-fetch');
@@ -1140,6 +1140,406 @@ router.get('/search/image', async(req, res, next) => {
 })
 
 
+
+router.get('/nsfw/ahegao', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+
+  const ahegao = JSON.parse(fs.readFileSync(__path +'/data/ahegao.json'));
+  const randahegao = ahegao[Math.floor(Math.random() * ahegao.length)];
+  data = await fetch(randahegao).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/ahegao.jpeg', data)
+  res.sendFile(__path +'/tmp/ahegao.jpeg')
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
+router.get('/nsfw/ass', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+
+  const ass = JSON.parse(fs.readFileSync(__path +'/data/ass.json'));
+  const randass = ass[Math.floor(Math.random() * ass.length)];
+  data = await fetch(randass).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/ass.jpeg', data)
+  res.sendFile(__path +'/tmp/ass.jpeg')
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
+router.get('/nsfw/bdsm', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+
+  const bdsm = JSON.parse(fs.readFileSync(__path +'/data/bdsm.json'));
+  const randbdsm = bdsm[Math.floor(Math.random() * bdsm.length)];
+  data = await fetch(randbdsm).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/bdsm.jpeg', data)
+  res.sendFile(__path +'/tmp/bdsm.jpeg')
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
+router.get('/nsfw/blowjob', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+
+  const blowjob = JSON.parse(fs.readFileSync(__path +'/data/blowjob.json'));
+  const randblowjob = blowjob[Math.floor(Math.random() * blowjob.length)];
+  data = await fetch(randblowjob).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/blowjob.jpeg', data)
+  res.sendFile(__path +'/tmp/blowjob.jpeg')
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
+router.get('/nsfw/cuckold', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+
+  const cuckold = JSON.parse(fs.readFileSync(__path +'/data/cuckold.json'));
+  const randcuckold = cuckold[Math.floor(Math.random() * cuckold.length)];
+  data = await fetch(randcuckold).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/cuckold.jpeg', data)
+  res.sendFile(__path +'/tmp/cuckold.jpeg')
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
+router.get('/nsfw/cum', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+
+  const cum = JSON.parse(fs.readFileSync(__path +'/data/cum.json'));
+  const randcum = cum[Math.floor(Math.random() * cum.length)];
+  data = await fetch(randcum).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/cum.jpeg', data)
+  res.sendFile(__path +'/tmp/cum.jpeg')
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
+router.get('/nsfw/ero', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+
+  const ero = JSON.parse(fs.readFileSync(__path +'/data/ero.json'));
+  const randero = ero[Math.floor(Math.random() * ero.length)];
+  data = await fetch(randero).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/ero.jpeg', data)
+  res.sendFile(__path +'/tmp/ero.jpeg')
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
+router.get('/nsfw/femdom', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+
+  const femdom = JSON.parse(fs.readFileSync(__path +'/data/femdom.json'));
+  const randfemdom = femdom[Math.floor(Math.random() * femdom.length)];
+  data = await fetch(randfemdom).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/femdom.jpeg', data)
+  res.sendFile(__path +'/tmp/femdom.jpeg')
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
+router.get('/nsfw/foot', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+
+  const foot = JSON.parse(fs.readFileSync(__path +'/data/foot.json'));
+  const randfoot = foot[Math.floor(Math.random() * foot.length)];
+  data = await fetch(randfoot).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/foot.jpeg', data)
+  res.sendFile(__path +'/tmp/foot.jpeg')
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
+router.get('/nsfw/gangbang', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+
+  const gangbang = JSON.parse(fs.readFileSync(__path +'/data/gangbang.json'));
+  const randgangbang = gangbang[Math.floor(Math.random() * gangbang.length)];
+  data = await fetch(randgangbang).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/gangbang.jpeg', data)
+  res.sendFile(__path +'/tmp/gangbang.jpeg')
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
+router.get('/nsfw/glasses', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+
+  const glasses = JSON.parse(fs.readFileSync(__path +'/data/glasses.json'));
+  const randglasses = glasses[Math.floor(Math.random() * glasses.length)];
+  data = await fetch(randglasses).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/glasses.jpeg', data)
+  res.sendFile(__path +'/tmp/glasses.jpeg')
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
+router.get('/nsfw/hentai', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+
+  const hentai = JSON.parse(fs.readFileSync(__path +'/data/hentai.json'));
+  const randhentai = hentai[Math.floor(Math.random() * hentai.length)];
+  data = await fetch(randhentai).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/hentai.jpeg', data)
+  res.sendFile(__path +'/tmp/hentai.jpeg')
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
+router.get('/nsfw/gifs', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+
+  const gifs = JSON.parse(fs.readFileSync(__path +'/data/gifs.json'));
+  const randgifs = gifs[Math.floor(Math.random() * gifs.length)];
+  data = await fetch(randgifs).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/gifs.jpeg', data)
+  res.sendFile(__path +'/tmp/gifs.jpeg')
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
+router.get('/nsfw/jahy', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+
+  const jahy = JSON.parse(fs.readFileSync(__path +'/data/jahy.json'));
+  const randjahy = jahy[Math.floor(Math.random() * jahy.length)];
+  data = await fetch(randjahy).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/jahy.jpeg', data)
+  res.sendFile(__path +'/tmp/jahy.jpeg')
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
+router.get('/nsfw/manga', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+
+  const manga = JSON.parse(fs.readFileSync(__path +'/data/manga.json'));
+  const randmanga = manga[Math.floor(Math.random() * manga.length)];
+  data = await fetch(randmanga).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/manga.jpeg', data)
+  res.sendFile(__path +'/tmp/manga.jpeg')
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
+router.get('/nsfw/masturbation', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+
+  const masturbation = JSON.parse(fs.readFileSync(__path +'/data/masturbation.json'));
+  const randmasturbation = masturbation[Math.floor(Math.random() * masturbation.length)];
+  data = await fetch(randmasturbation).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/masturbation.jpeg', data)
+  res.sendFile(__path +'/tmp/masturbation.jpeg')
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
+router.get('/nsfw/neko', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+
+  const neko = JSON.parse(fs.readFileSync(__path +'/data/neko.json'));
+  const randneko = neko[Math.floor(Math.random() * neko.length)];
+  data = await fetch(randneko).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/neko.jpeg', data)
+  res.sendFile(__path +'/tmp/neko.jpeg')
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
+router.get('/nsfw/orgy', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+
+  const orgy = JSON.parse(fs.readFileSync(__path +'/data/orgy.json'));
+  const randorgy = orgy[Math.floor(Math.random() * orgy.length)];
+  data = await fetch(randorgy).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/orgy.jpeg', data)
+  res.sendFile(__path +'/tmp/orgy.jpeg')
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
+router.get('/nsfw/panties', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+
+  const panties = JSON.parse(fs.readFileSync(__path +'/data/panties.json'));
+  const randpanties = panties[Math.floor(Math.random() * panties.length)];
+  data = await fetch(randpanties).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/panties.jpeg', data)
+  res.sendFile(__path +'/tmp/panties.jpeg')
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
+router.get('/nsfw/pussy', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+
+  const pussy = JSON.parse(fs.readFileSync(__path +'/data/pussy.json'));
+  const randpussy = pussy[Math.floor(Math.random() * pussy.length)];
+  data = await fetch(randpussy).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/pussy.jpeg', data)
+  res.sendFile(__path +'/tmp/pussy.jpeg')
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
+router.get('/nsfw/neko2', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+
+  const neko2 = JSON.parse(fs.readFileSync(__path +'/data/neko2.json'));
+  const randneko2 = neko2[Math.floor(Math.random() * neko2.length)];
+  data = await fetch(randneko2).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/neko2.jpeg', data)
+  res.sendFile(__path +'/tmp/neko2.jpeg')
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
+router.get('/nsfw/tentacles', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+
+  const tentacles = JSON.parse(fs.readFileSync(__path +'/data/tentacles.json'));
+  const randtentacles = tentacles[Math.floor(Math.random() * tentacles.length)];
+  data = await fetch(randtentacles).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/tentacles.jpeg', data)
+  res.sendFile(__path +'/tmp/tentacles.jpeg')
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
+router.get('/nsfw/thighs', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+
+  const thighs = JSON.parse(fs.readFileSync(__path +'/data/thighs.json'));
+  const randthighs = thighs[Math.floor(Math.random() * thighs.length)];
+  data = await fetch(randthighs).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/thighs.jpeg', data)
+  res.sendFile(__path +'/tmp/thighs.jpeg')
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
+router.get('/nsfw/yuri', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+
+  const yuri = JSON.parse(fs.readFileSync(__path +'/data/yuri.json'));
+  const randyuri = yuri[Math.floor(Math.random() * yuri.length)];
+  data = await fetch(randyuri).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/yuri.jpeg', data)
+  res.sendFile(__path +'/tmp/yuri.jpeg')
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
+router.get('/nsfw/zettai', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+
+  const zettai = JSON.parse(fs.readFileSync(__path +'/data/zettai.json'));
+  const randzettai = zettai[Math.floor(Math.random() * zettai.length)];
+  data = await fetch(randzettai).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/zettai.jpeg', data)
+  res.sendFile(__path +'/tmp/zettai.jpeg')
+} else {
+res.json(loghandler.invalidKey)
+}
+})
 
 router.get('/wallpaper/kaori', async (req, res, next) => {
         var Apikey = req.query.apikey
