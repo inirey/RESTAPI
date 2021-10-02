@@ -1573,6 +1573,86 @@ res.json(loghandler.invalidKey)
 }
 })
 
+router.get('/wallpaper/yotsuba', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+
+  const yotsuba = JSON.parse(fs.readFileSync(__path +'/data/yotsuba.json'));
+  const randyotsuba = yotsuba[Math.floor(Math.random() * yotsuba.length)];
+  data = await fetch(randyotsuba).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/yotsuba.jpeg', data)
+  res.sendFile(__path +'/tmp/yotsuba.jpeg')
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
+router.get('/wallpaper/shinomiya', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+
+  const shinomiya = JSON.parse(fs.readFileSync(__path +'/data/shinomiya.json'));
+  const randshinomiya = shinomiya[Math.floor(Math.random() * shinomiya.length)];
+  data = await fetch(randshinomiya).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/shinomiya.jpeg', data)
+  res.sendFile(__path +'/tmp/shinomiya.jpeg')
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
+router.get('/wallpaper/yumeko', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+
+  const yumeko = JSON.parse(fs.readFileSync(__path +'/data/yumeko.json'));
+  const randyumeko = yumeko[Math.floor(Math.random() * yumeko.length)];
+  data = await fetch(randyumeko).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/yumeko.jpeg', data)
+  res.sendFile(__path +'/tmp/yumeko.jpeg')
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
+router.get('/wallpaper/tejina', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+
+  const tejina = JSON.parse(fs.readFileSync(__path +'/data/tejina.json'));
+  const randtejina = tejina[Math.floor(Math.random() * tejina.length)];
+  data = await fetch(randtejina).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/tejina.jpeg', data)
+  res.sendFile(__path +'/tmp/tejina.jpeg')
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
+router.get('/wallpaper/chiho', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+
+  const chiho = JSON.parse(fs.readFileSync(__path +'/data/chiho.json'));
+  const randchiho = chiho[Math.floor(Math.random() * chiho.length)];
+  data = await fetch(randchiho).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/chiho.jpeg', data)
+  res.sendFile(__path +'/tmp/chiho.jpeg')
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
 router.get('/wallpaper/toukachan', async (req, res, next) => {
         var Apikey = req.query.apikey
             
