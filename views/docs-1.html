@@ -549,6 +549,23 @@
                     </div>
                     <h6 class="text-muted font-weight-normal">Total Feature</h6>
                   </div>
+<script>
+function toast(){
+
+}
+var ingfos = `mau request fitur chat lewad wasab free`
+if (localStorage.ingfos != ingfos && ingfos != '') alert(ingfos)
+localStorage.ingfos = ingfos
+window.setTimeout("waktu()", 1000);
+    function waktu() {
+        var waktu = new Date();
+        setTimeout("waktu()", 1000);
+        let strings = `${waktu.getHours()}:${waktu.getMinutes()}:${waktu.getSeconds()}`
+        document.getElementById("jam").textContent = strings
+    }
+const textnya = document.querySelector('.status'); 
+var apikey = document.getElementById("ampikey")
+</script>
           <!-- content-wrapper ends -->
           <!-- partial:partials/_footer.html -->
             <footer class="footer fixed-bottom">
