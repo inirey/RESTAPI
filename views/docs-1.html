@@ -1,517 +1,614 @@
 
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rey | Api</title>
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="https://technext.github.io/elegant/img/svg/logo.svg" type="image/x-icon">
-  <!-- Custom styles -->
-  <link rel="stylesheet" href="https://technext.github.io/elegant/css/style.min.css">
-</head>
-
-<body>
-  <div class="layer"></div>
-<!-- ! Body -->
-<a class="skip-link sr-only" href="#skip-target">Skip to content</a>
-<div class="page-flex">
-  <!-- ! Sidebar -->
-  <aside class="sidebar">
-    <div class="sidebar-start">
-        <div class="sidebar-head">
-            <a href="/" class="logo-wrapper" title="Home">
-                <span class="sr-only">Home</span>
-                <span class="icon logo" aria-hidden="true"></span>
-                <div class="logo-text">
-                    <span class="logo-title">Rey</span>
-                    <span class="logo-subtitle">Api's</span>
-                </div>
-
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <script src="/cdn-cgi/apps/head/wAIvkjQdFEkH9AHVeUMJ13g2w_4.js"></script><script data-ad-client="ca-pub-8640399148235153" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/css/iziToast.css" integrity="sha512-DIW4FkYTOxjCqRt7oS9BFO+nVOwDL4bzukDyDtMO7crjUZhwpyrWBFroq+IqRe6VnJkTpRAS6nhDvf0w+wHmxg==" crossorigin="anonymous" />
+    <script src="//gitcdn.link/cdn/justpiple/asset/master/vendors/jvectormap/jquery-jvectormap.min.js"></script>
+    <script src="//gitcdn.link/cdn/justpiple/asset/master/vendors/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+  <link href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+   <script src="//cdn.jsdelivr.net/npm/sweetalert2@10/dist/sweetalert2.min.js"></script>
+    <title>Rey API</title>
+    <!-- plugins:css -->
+    <link  rel="stylesheet" type="text/css"href="//gitcdn.link/cdn/justpiple/asset/master/vendors/mdi/css/materialdesignicons.min.css">
+    <link  rel="stylesheet" type="text/css"href="//gitcdn.link/cdn/justpiple/asset/master/vendors/css/vendor.bundle.base.css">
+    <!-- endinject -->
+    <!-- Plugin css for this page -->
+    <link  rel="stylesheet" type="text/css"href="//gitcdn.link/cdn/justpiple/asset/master/vendors/jvectormap/jquery-jvectormap.css">
+    <link  rel="stylesheet" type="text/css"href="//gitcdn.link/cdn/justpiple/asset/master/vendors/flag-icon-css/css/flag-icon.min.css">
+    <link  rel="stylesheet" type="text/css"href="//gitcdn.link/cdn/justpiple/asset/master/vendors/owl-carousel-2/owl.carousel.min.css">
+    <link  rel="stylesheet" type="text/css"href="//gitcdn.link/cdn/justpiple/asset/master/vendors/owl-carousel-2/owl.theme.default.min.css">
+    <link  rel="stylesheet" type="text/css"href="//gitcdn.link/cdn/justpiple/asset/master/css/style.css">
+    <link  rel="stylesheet" type="text/css"href="//gitcdn.link/cdn/justpiple/asset/master/css/custom.css">
+    <!-- End layout styles -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/js/iziToast.js" integrity="sha512-OmBbzhZ6lgh87tQFDVBHtwfi6MS9raGmNvUNTjDIBb/cgv707v9OuBVpsN6tVVTLOehRFns+o14Nd0/If0lE/A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.6.1/smooth-scrollbar.min.js" integrity="sha512-UmrYi6FvCoDgKRTzLOvAj/egIrJtoTIQV0u/stO1h5f4DQNcXnhwnY0rel5zduc3CNqO6LfVI8ZaGUKCrLIo7g==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.2/qs.min.js"
+      integrity="sha256-TDxXjkAUay70ae/QJBEpGKkpVslXaHHayklIVglFRT4="
+      crossorigin="anonymous"
+    ></script>
+ <!-- main meta tag -->   
+<meta name="description" content="Free API by rey">
+<meta name="keywords" content="Rey Api's">
+<meta name="robots" content="index, nofollow">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="author" content="ben, elios">
+  <!-- fbmeta tag -->
+<meta property="og:image" content="https://www.reysekha.my.id">
+<meta property="og:title" content="REY API">    
+<meta name="og:description" content="Free API by rey">
+<meta property="og:url" content="https://www.reysekha.site">
+<meta property="og:type" content="website">
+  <!-- twitter meta tag -->
+<meta property="twitter:image" content="favicon.ico">
+<meta property="twitter:title" content="Rey Api API">    
+<meta name="twitter:description" content="Free API by Rey">
+<meta property="twitter:url" content="https://www.reysekha.site">
+  </head>
+  <body>
+      <div id="preloader">
+        <div class="loader"></div>
+    </div>
+        <div class="container-scroller" id="scrollers">
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
+          <center class="sidebar-brand brand-logo" alt="logo" style="color: white;">Rey Api's</center>
+          <span class="sidebar-brand brand-logo-mini" alt="logo" style="color: white;">REY</span>
+        </div>
+        <ul class="nav"> 
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="/dashboard">
+              <span class="menu-icon">
+                <i class="mdi mdi-speedometer"></i>
+              </span>
+              <span class="menu-title">Dashboard</span>
             </a>
-            <button class="sidebar-toggle transparent-btn" title="Menu" type="button">
-                <span class="sr-only">Toggle menu</span>
-                <span class="icon menu-toggle" aria-hidden="true"></span>
-            </button>
-        </div>
-        <div class="sidebar-body">
-            <ul class="sidebar-body-menu">
-                <li>
-                    <a class="active" href="/"><span class="icon home" aria-hidden="true"></span>Dashboard</a>
-                </li>
-                <li>
-                    <a class="show-cat-btn" href="##">
-                        <span class="icon document" aria-hidden="true"></span>Downloader
-                        <span class="category__btn transparent-btn" title="Open list">
-                            <span class="sr-only">Open list</span>
-                            <span class="icon arrow-down" aria-hidden="true"></span>
-                        </span>
-                    </a>
-                    <ul class="cat-sub-menu">
-                        <a class="collapse-item text-warning" href="/api/music/joox?query=akad&apikey=apirey" target="_blank" >Joox search</a>
-			<a class="collapse-item text-warning" href="/api/download/ytmp4?url=https://youtu.be/6l5V3BWDcMw&apikey=apirey" target="_blank" >Youtube Video</a>
-			<a class="collapse-item text-warning" href="/api/download/ytmp3?url=https://youtu.be/6l5V3BWDcMw&apikey=apirey" target="_blank" >Youtube Audio</a>
-			<a class="collapse-item text-warning" href="/api/music/spotify?query=akad&apikey=apirey" target="_blank" >Spotify search</a>
-			<a class="collapse-item text-warning" href="/api/yt/playmp3?query=surender&apikey=apirey" target="_blank" >play mp3</a>
-                        <a class="collapse-item text-warning" href="/api/yt/playmp4?query=surender&apikey=apirey" target="_blank" >play mp4</a>
-			<a class="collapse-item text-warning" href="/api/yt/search?query=surender&apikey=apirey" target="_blank" >yt search</a>
-                        <a class="collapse-item text-warning" href="/api/download/tiktok?url=https://vt.tiktok.com/ZSeJ7P56G&apikey=apirey" target="_blank" >Tiktok download (ERORR)</a>
-                        <a class="collapse-item text-warning" href="/api/download/instagram?url=https://www.instagram.com/p/CUU8PwHhU-9/?utm_medium=copy_link&apikey=apirey" target="_blank" >Instagram download</a>
-                        <a class="collapse-item text-warning" href="/api/download/fb?url=https://www.facebook.com/botikaonline/videos/837084093818982&apikey=apirey" target="_blank" >Facebook download (ERORR)</a>
-                        <a class="collapse-item text-warning" href="/api/download/mediafire?url=https://www.mediafire.com/file/jds1setz7xzfoty/BOTZ6.zip/file&apikey=apirey" target="_blank" >Mediafire download (ERORR)</a>
-                        <a class="collapse-item text-warning" href="/api/stalk/ig?username=attahalilintar&apikey=apirey" target="_blank" >Stalk Instagram</a>
-			<a class="collapse-item text-warning" href="/api/stalk/tiktok?username=attahalilintar&apikey=apirey" target="_blank" >stalk tiktok</a>
-                        <a class="collapse-item text-warning" href="/api/stalk/npm?query=Zhiirr&apikey=apirey" target="_blank" >stalk npm</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a class="show-cat-btn" href="##">
-                        <span class="icon folder" aria-hidden="true"></span>Textpro me
-                        <span class="category__btn transparent-btn" title="Open list">
-                            <span class="sr-only">Open list</span>
-                            <span class="icon arrow-down" aria-hidden="true"></span>
-                        </span>
-                    </a>
-                    <ul class="cat-sub-menu">
-                        <a class="collapse-item text-warning" href="/api/textpro/magma?text=reyyy&apikey=apirey" target="_blank" >magma</a>
-<a class="collapse-item text-warning" href="/api/textpro/hallowen-text?text=reyyy&apikey=apirey" target="_blank" >hallowen effect</a>
-<a class="collapse-item text-warning" href="/api/textpro/neon-light?text=reyyy&apikey=apirey" target="_blank" >Neon light</a>
-<a class="collapse-item text-warning" href="/api/textpro/broken-glass?text=reyyy&apikey=apirey" target="_blank" >broken glass</a>
-<a class="collapse-item text-warning" href="/api/textpro/art-papper?text=reyyy&apikey=apirey" target="_blank" >Art papper</a>
-<a class="collapse-item text-warning" href="/api/textpro/glossy?text=reyyy&apikey=apirey" target="_blank" >glossy</a>
-<a class="collapse-item text-warning" href="/api/textpro/water-color?text=reyyy&apikey=apirey" target="_blank" >water color</a>
-<a class="collapse-item text-warning" href="/api/textpro/multi-color?text=reyyy&apikey=apirey" target="_blank" >multi color</a>
-<a class="collapse-item text-warning" href="/api/textpro/neon-devil?text=reyyy&apikey=apirey" target="_blank" >Neon devil</a>
-<a class="collapse-item text-warning" href="/api/textpro/sky-text?text=reyyy&apikey=apirey" target="_blank" >sky text</a>
-<a class="collapse-item text-warning" href="/api/textpro/luxury?text=reyyy&apikey=apirey" target="_blank" >luxury</a>
-<a class="collapse-item text-warning" href="/api/textpro/vintage?text=reyyy&text2=ganzzz&apikey=apirey" target="_blank" >vintage</a>
-<a class="collapse-item text-warning" href="/api/textpro/writing?text=reyyy&apikey=apirey" target="_blank" >Writing</a>
-<a class="collapse-item text-warning" href="/api/textpro/engraved?text=reyyy&apikey=apirey" target="_blank" >Engraved</a>
-<a class="collapse-item text-warning" href="/api/textpro/glue-text?text=reyyy&apikey=apirey" target="_blank" >Glue text</a>
-<a class="collapse-item text-warning" href="/api/textpro/pornhub?text=rey&text2=ganz&apikey=apirey" target="_blank" >porn HUB</a>
-<a class="collapse-item text-warning" href="/api/textpro/holograpic?text=reyyy&apikey=apirey" target="_blank" >holograpic</a>
-<a class="collapse-item text-warning" href="/api/textpro/deluxe-silver?text=reyyy&apikey=apirey" target="_blank" >deluxe silver</a>
-<a class="collapse-item text-warning" href="/api/textpro/fabric?text=reyyy&apikey=apirey" target="_blank" >Fabric</a>
-<a class="collapse-item text-warning" href="/api/textpro/wicker?text=reyyy&apikey=apirey" target="_blank" >wicker</a>
-<a class="collapse-item text-warning" href="/api/textpro/larva?text=reyyy&apikey=apirey" target="_blank" >Larva</a>
-<a class="collapse-item text-warning" href="/api/textpro/toxic-bokeh?text=reyyy&apikey=apirey" target="_blank" >Toxic</a>
-<a class="collapse-item text-warning" href="/api/textpro/stroberi?text=reyyy&apikey=apirey" target="_blank" >strobery</a>
-<a class="collapse-item text-warning" href="/api/textpro/koi?text=reyyy&apikey=apirey" target="_blank" >koi pish</a>
-<a class="collapse-item text-warning" href="/api/textpro/bread?text=reyyy&apikey=apirey" target="_blank" >Bread</a>
-<a class="collapse-item text-warning" href="/api/textpro/horor-blood?text=reyyy&apikey=apirey" target="_blank" >horor blood</a>
-<a class="collapse-item text-warning" href="/api/textpro/honey?text=reyyy&apikey=apirey" target="_blank" >honey</a>
-<a class="collapse-item text-warning" href="/api/textpro/ice?text=reyyy&apikey=apirey" target="_blank" >Ice</a>
-<a class="collapse-item text-warning" href="/api/textpro/rusty?text=reyyy&apikey=apirey" target="_blank" >Rusty effect</a>
-             <a class="collapse-item text-warning" href="/api/textpro/captain?text=Rey&text2=ganz&apikey=apirey" target="_blank" >captain Amerika</a>
-            <a class="collapse-item text-warning" href="/api/textpro/3d-gradient?text=Rey&apikey=apirey" target="_blank" >gradien</a>
-            <a class="collapse-item text-warning" href="/api/textpro/christmas?text=Rey&apikey=apirey" target="_blank" >christmas</a>
-            <a class="collapse-item text-warning" href="/api/textpro/drop-water?text=Rey&apikey=apirey" target="_blank" >drop water</a>
-            <a class="collapse-item text-warning" href="/api/textpro/black-pink?text=Rey&apikey=apirey" target="_blank" >blackpink</a>
-            <a class="collapse-item text-warning" href="/api/textpro/logo-wolf?text=Rey&text2&apikey=apirey" target="_blank" >Logo Wolf</a>
-            <a class="collapse-item text-warning" href="/api/textpro/natural-leavest?text=reyganz&apikey=apirey" target="_blank" >Natural leavest</a>
-            <a class="collapse-item text-warning" href="/api/textpro/logo-wolf2?text=Rey&text2&apikey=apirey" target="_blank" >Logo Wolf 2</a>
-            <a class="collapse-item text-warning" href="/api/textpro/harry-potter?text=Reyganz&apikey=apirey" target="_blank" >Harry Potter</a>
-            <a class="collapse-item text-warning" href="/api/textpro/3dstone?text=Reyganz&apikey=apirey" target="_blank" >3D stone</a>
-            <a class="collapse-item text-warning" href="/api/textpro/1917?text=Reyganz&apikey=apirey" target="_blank" >1917</a>
-            <a class="collapse-item text-warning" href="/api/textpro/thunder2?text=reyganz&apikey=apirey" target="_blank" >Thunder 2</a>
-            <a class="collapse-item text-warning" href="/api/textpro/space?text=Rey&text2=ganz&apikey=apirey" target="_blank" >Space</a>
-            <a class="collapse-item text-warning" href="/api/textpro/joker-logo?text=Reyganz&apikey=apirey" target="_blank" >Joker logo</a>
-            <a class="collapse-item text-warning" href="/api/textpro/hallowen?text=Reyganz&apikey=apirey" target="_blank" >hallowen</a>
-            <a class="collapse-item text-warning" href="/api/textpro/blood?text=Reyganz&apikey=apirey" target="_blank" >Blood text</a>
-            <a class="collapse-item text-warning" href="/api/textpro/astone?text=Reyganz&apikey=apirey" target="_blank" >Astone</a>
-            <a class="collapse-item text-warning" href="/api/textpro/grafity-text?text=reyyy&apikey=apirey" target="_blank" >Grafity text</a>
-            <a class="collapse-item text-warning" href="/api/textpro/grafity-text2?text=reyyy&text2=ganz&apikey=apirey" target="_blank" >Grafity text2</a>
-            <a class="collapse-item text-warning" href="/api/textpro/ninja-logo?text=reyyy&text2=ganzzz&apikey=apirey" target="_blank" >Ninja logo</a>
-            <a class="collapse-item text-warning" href="/api/textpro/lion-logo?text=reyyy&text2=ganzz&apikey=apirey" target="_blank" >lion logo</a>
-            <a class="collapse-item text-warning" href="/api/textpro/avengers-logo?text=rey&text2=ganz&apikey=apirey" target="_blank" >Avengers</a>
-            <a class="collapse-item text-warning" href="/api/textpro/marvel-logo2?text=Rey&text2=ganz" target="_blank" >Marvel studio</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a class="show-cat-btn" href="##">
-                        <span class="icon image" aria-hidden="true"></span>photooxy API
-                        <span class="category__btn transparent-btn" title="Open list">
-                            <span class="sr-only">Open list</span>
-                            <span class="icon arrow-down" aria-hidden="true"></span>
-                        </span>
-                    </a>
-                    <ul class="cat-sub-menu">
-                       <a class="collapse-item text-warning" href="/api/photooxy/army?text=reyganz&apikey=apirey" target="_blank" >Army text</a>
-                        <a class="collapse-item text-warning" href="/api/maker/matrix?text=rey&apikey=apirey" target="_blank" >matrix</a>
-                        <a class="collapse-item text-warning" href="/api/maker/pubglogo?text1=rey&text2=ganz&apikey=apirey" target="_blank" >PUBG</a>
-                        <a class="collapse-item text-warning" href="/api/maker/breakwall?text=rey&apikey=apirey" target="_blank" >breakwall</a>
-                        <a class="collapse-item text-warning" href="/api/photooxy/butterfly?text=rey&apikey=apirey" target="_blank" >butterfly</a>
-                        <a class="collapse-item text-warning" href="/api/photooxy/naruto?text1=rey&apikey=apirey" target="_blank" >naruto</a>
-                        <a class="collapse-item text-warning" href="/api/photooxy/smoke?text1=rey&apikey=apirey" target="_blank" >smoke text</a> 
-                        <a class="collapse-item text-warning" href="/api/photooxy/burn-papper?text=rey&apikey=apirey" target="_blank" >burn papper</a>
-                        <a class="collapse-item text-warning" href="/api/photooxy/love-message?text=rey&apikey=apirey" target="_blank" >love message</a>
-                        <a class="collapse-item text-warning" href="/api/photooxy/love-text?text=rey&apikey=apirey" target="_blank" >love text</a>
-                        <a class="collapse-item text-warning" href="/api/photooxy/coffe-cup?text=rey&apikey=apirey" target="_blank" >coffe cup</a>
-                        <a class="collapse-item text-warning" href="/api/photooxy/double-heart?text=rey&apikey=apirey" target="_blank" >double heart</a>
-                        <a class="collapse-item text-warning" href="/api/photooxy/glitch?text=rey&text2=ganz&apikey=apirey" target="_blank" >glitch effect</a>
-                        <a class="collapse-item text-warning" href="/api/photooxy/message-under-grass?text=rey&apikey=apirey" target="_blank" >message under grass</a>                                     
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a class="show-cat-btn" href="##">
-                        <span class="icon paper" aria-hidden="true"></span>Fun & kuis
-                        <span class="category__btn transparent-btn" title="Open list">
-                            <span class="sr-only">Open list</span>
-                            <span class="icon arrow-down" aria-hidden="true"></span>
-                        </span>
-                    </a>
-                    <ul class="cat-sub-menu">
-                        <a class="collapse-item text-warning" href="/api/kuis/tebakGambar?apikey=apirey" target="_blank" >tebak gambar</a>
-                        <a class="collapse-item text-warning" href="/api/kuis/caklontong?apikey=apirey" target="_blank" >caklontong</a>
-                        <a class="collapse-item text-warning" href="/api/blackpink?apikey=apirey" target="_blank" >random blackpink</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a class="show-cat-btn" href="##">
-                        <span class="icon paper" aria-hidden="true"></span>Random & Anime
-                        <span class="category__btn transparent-btn" title="Open list">
-                            <span class="sr-only">Open list</span>
-                            <span class="icon arrow-down" aria-hidden="true"></span>
-                        </span>
-                    </a>
-                    <ul class="cat-sub-menu">
-                        <a class="collapse-item text-warning" href="/api/wallpaper/boruto?apikey=apirey" target="_blank" >Random boruto</a>
-                        <a class="collapse-item text-warning" href="/api/wallpaper/kaori?apikey=apirey" target="_blank" >Random kaori</a>
-<a class="collapse-item text-warning" href="/api/wallpaper/shizuka?apikey=apirey" target="_blank" >Random shizuka</a>
-<a class="collapse-item text-warning" href="/api/wallpaper/kaga?apikey=apirey" target="_blank" >Random kaga</a>
-<a class="collapse-item text-warning" href="/api/wallpaper/kotori?apikey=apirey" target="_blank" >Random kotori</a>
-<a class="collapse-item text-warning" href="/api/wallpaper/mikasa?apikey=apirey" target="_blank" >Random mikasa</a>
-<a class="collapse-item text-warning" href="/api/wallpaper/akiyama?apikey=apirey" target="_blank" >Random akiyama</a>
-<a class="collapse-item text-warning" href="/api/wallpaper/gremory?apikey=apirey" target="_blank" >Random gremory</a>
-<a class="collapse-item text-warning" href="/api/wallpaper/isuzu?apikey=apirey" target="_blank" >Random isuzu</a>
-<a class="collapse-item text-warning" href="/api/wallpaper/shina?apikey=apirey" target="_blank" >Random shina</a>
-<a class="collapse-item text-warning" href="/api/wallpaper/kagura?apikey=apirey" target="_blank" >Random kagura</a>
-<a class="collapse-item text-warning" href="/api/wallpaper/shinka?apikey=apirey" target="_blank" >Random shinka</a>
-<a class="collapse-item text-warning" href="/api/wallpaper/eba?apikey=apirey" target="_blank" >Random eba</a>
-                        <a class="collapse-item text-warning" href="/api/wallpaper/elaina?apikey=apirey" target="_blank" >Random elaina</a>
-                        <a class="collapse-item text-warning" href="/api/wallpaper/yuri?apikey=apirey" target="_blank" >Random yuri</a>
-                        <a class="collapse-item text-warning" href="/api/wallpaper/erza?apikey=apirey" target="_blank" >Random erza</a>
-                        <a class="collapse-item text-warning" href="/api/wallpaper/hinata?apikey=apirey" target="_blank" >Random hinata</a>
-                        <a class="collapse-item text-warning" href="/api/wallpaper/minato?apikey=apirey" target="_blank" >Random minato</a>
-                        <a class="collapse-item text-warning" href="/api/wallpaper/naruto?apikey=apirey" target="_blank" >Random Naruto</a>
-                        <a class="collapse-item text-warning" href="/api/wallpaper/sagiri?apikey=apirey" target="_blank" >Random Sagiri</a>
-                        <a class="collapse-item text-warning" href="/api/wallpaper/nezuko?apikey=apirey" target="_blank" >Random nezuko</a>
-                        <a class="collapse-item text-warning" href="/api/wallpaper/rize?apikey=apirey" target="_blank" >Random rize</a>
-                        <a class="collapse-item text-warning" href="/api/wallpaper/ana?apikey=apirey" target="_blank" >Random Anna</a>
-                        <a class="collapse-item text-warning" href="/api/wallpaper/deidara?apikey=apirey" target="_blank" >Random Deidara</a>
-<a class="collapse-item text-warning" href="/api/wallpaper/yuki?apikey=apirey" target="_blank" >Random Yuki</a>
-<a class="collapse-item text-warning" href="/api/wallpaper/ana?apikey=apirey" target="_blank" >Random Anna</a>
-<a class="collapse-item text-warning" href="/api/wallpaper/asuna?apikey=apirey" target="_blank" >Random Asuna</a>
-<a class="collapse-item text-warning" href="/api/wallpaper/ayuzawa?apikey=apirey" target="_blank" >Random Ayuzawa</a>
-<a class="collapse-item text-warning" href="/api/wallpaper/chitoge?apikey=apirey" target="_blank" >Random Chitoge</a>
-<a class="collapse-item text-warning" href="/api/wallpaper/emilia?apikey=apirey" target="_blank" >Random Emilia</a>
-<a class="collapse-item text-warning" href="/api/wallpaper/hestia?apikey=apirey" target="_blank" >Random hestia</a>
-<a class="collapse-item text-warning" href="/api/wallpaper/inori?apikey=apirey" target="_blank" >Random inori</a>
-<a class="collapse-item text-warning" href="/api/wallpaper/itachi?apikey=apirey" target="_blank" >Random itachi</a>
-<a class="collapse-item text-warning" href="/api/wallpaper/madara?apikey=apirey" target="_blank" >Random Madara</a>
-                        <a class="collapse-item text-warning" href="/api/wallpaper/sakura?apikey=apirey" target="_blank" >Random sakura</a>
-                        <a class="collapse-item text-warning" href="/api/wallpaper/sasuke?apikey=apirey" target="_blank" >Random Sasuke</a>
-                        <a class="collapse-item text-warning" href="/api/wallpaper/tsunade?apikey=apirey" target="_blank" >Random Tsunade</a>
-                        <a class="collapse-item text-warning" href="/api/wallpaper/onepiece?apikey=apirey" target="_blank" >Random one piece</a>
-                        <a class="collapse-item text-warning" href="/api/wallpaper/mobil?apikey=apirey" target="_blank" >Random mobil</a>
-                        <a class="collapse-item text-warning" href="/api/wallpaper/montor?apikey=apirey" target="_blank" >Random montor</a>
-                        <a class="collapse-item text-warning" href="/api/wallpaper/boneka-chucky?apikey=apirey" target="_blank" >Random boneka chucky</a>
-                                                <a class="collapse-item text-warning" href="/api/wallpaper/keneki?apikey=apirey" target="_blank" >Random keneki</a>
-                        <a class="collapse-item text-warning" href="/api/wallpaper/megumin?apikey=apirey" target="_blank" >Random Megumin</a>
-                        <a class="collapse-item text-warning" href="/api/wallpaper/toukachan?apikey=apirey" target="_blank" >Random toukachan</a>
-                        <a class="collapse-item text-warning" href="/api/wallpaper/akira?apikey=apirey" target="_blank" >Random akira</a>
-		                <a class="collapse-item text-warning" href="/api/wallpaper/itori?apikey=apirey" target="_blank" >Random itori</a>
-		                <a class="collapse-item text-warning" href="/api/wallpaper/kurumi?apikey=apirey" target="_blank" >Random kurumi</a>
-                        <a class="collapse-item text-warning" href="/api/wallpaper/miku?apikey=apirey" target="_blank" >Random miku</a>
-                        <a class="collapse-item text-warning" href="/api/wallpaper/pokemon?apikey=apirey" target="_blank" >Random pokemon</a>
-                        <a class="collapse-item text-warning" href="/api/wallpaper/ryujin?apikey=apirey" target="_blank" >Random Ryujin ityz</a>
-		                <a class="collapse-item text-warning" href="/api/wallpaper/rose?apikey=apirey" target="_blank" >Random rose blpk</a>
-                        <a class="collapse-item text-warning" href="/api/wallpaper/justina?apikey=apirey" target="_blank" >Random justina xie</a>
-                        <a class="collapse-item text-warning" href="/api/wallpaper/random/blackpink?apikey=apirey" target="_blank" >Random blackpink</a>
-                        <a class="collapse-item text-warning" href="/api/wallpaper/doraemon?apikey=apirey" target="_blank" >Random Doraemon</a>
-                        <a class="collapse-item text-warning" href="/api/wallpaper/ppcouple?apikey=apirey" target="_blank" >Random ppcouple</a>
-                        <a class="collapse-item text-warning" href="/api/wallpaper/kpop?apikey=apirey" target="_blank" >Random kpop</a>
-                        <a class="collapse-item text-warning" href="/api/wallpaper/hekel?apikey=apirey" target="_blank" >Random hekel</a>
-                        <a class="collapse-item text-warning" href="/api/wallpaper/pubg?apikey=apirey" target="_blank" >Random PUBG</a>
-                        <a class="collapse-item text-warning" href="/api/wallpaper/cogan?apikey=apirey" target="_blank" >Random cogan</a>
-                        <a class="collapse-item text-warning" href="/api/wallpaper/cecan?apikey=apirey" target="_blank" >Random cecan</a>
-                        <a class="collapse-item text-warning" href="/api/wallpaper/aesthetic?apikey=apirey" target="_blank" >Random Aesthetic</a>
-                        <a class="collapse-item text-warning" href="/api/wallpaper/wallhp?apikey=apirey" target="_blank" >Random wallhp aesthetic</a>
-                        <a class="collapse-item text-warning" href="/api/wallpaper/anime?apikey=apirey" target="_blank" >Random wallhp anime</a>
-                        <a class="collapse-item text-warning" href="/api/asupan?apikey=apirey" target="_blank" >Random asupan</a>
-                        <a class="collapse-item text-warning" href="/api/wallpaper/kucing?apikey=apirey" target="_blank" >Random Kucing</a>
-                        <a class="collapse-item text-warning" href="/api/wallpaper/anjing?apikey=apirey" target="_blank" >Random Anjing</a>
-                        </li>
-                    </ul>
-                </li>
-              <li>
-                <li>
-                    <a class="show-cat-btn" href="##">
-                        <span class="icon paper" aria-hidden="true"></span>Maker others
-                        <span class="category__btn transparent-btn" title="Open list">
-                            <span class="sr-only">Open list</span>
-                            <span class="icon arrow-down" aria-hidden="true"></span>
-                        </span>
-                    </a>
-                    <ul class="cat-sub-menu">
-                        <a class="collapse-item text-warning" href="/api/maker/harta-tahta?text=reyganz&apikey=apirey" target="_blank" >harta tahta</a>
-                        <a class="collapse-item text-warning" href="/api/maker/silverbutton?text=reyganz&apikey=apirey" target="_blank" >silver button (by vinz)</a>
-                        <a class="collapse-item text-warning" href="/api/maker/goldbutton?text=reyganz&apikey=apirey" target="_blank" >gold button (by vinz)</a>
-                        <a class="collapse-item text-warning" href="/api/maker/nulis?text=reyganz&apikey=apirey" target="_blank" >nulis buku</a>
-                        <a class="collapse-item text-warning" href="/api/maker/emoji2png?text=😅&apikey=apirey" target="_blank" >emoji 2png</a>
-                        </li>
-                    </ul>
-                </li>
-              <li>
-                <a class="show-cat-btn" href="##">
-                        <span class="icon paper" aria-hidden="true"></span>Anime & nsfw
-                        <span class="category__btn transparent-btn" title="Open list">
-                            <span class="sr-only">Open list</span>
-                            <span class="icon arrow-down" aria-hidden="true"></span>
-                        </span>
-                    </a>
-                    <ul class="cat-sub-menu">
-                        <a class="collapse-item text-warning" href="/api/nsfw/ahegao?apikey=apirey" target="_blank" >nsfw ahegao</a>
-                        <a class="collapse-item text-warning" href="/api/nsfw/ass?apikey=apirey" target="_blank" >nsfw ass</a>
-                        <a class="collapse-item text-warning" href="/api/nsfw/bdsm?apikey=apirey" target="_blank" >Nswf bdsm</a>
-                        <a class="collapse-item text-warning" href="/api/nsfw/blowjob?apikey=apirey" target="_blank" >nsfw blowjob</a>
-		        <a class="collapse-item text-warning" href="/api/nsfw/cuckold?apikey=apirey" target="_blank" >nsfw cuckold</a>
-		        <a class="collapse-item text-warning" href="/api/nsfw/cum?apikey=apirey" target="_blank" >nsfw cum</a>
-                        <a class="collapse-item text-warning" href="/api/nsfw/ero?apikey=apirey" target="_blank" >nsfw ero</a>
-                        <a class="collapse-item text-warning" href="/api/nsfw/femdom?apikey=apirey" target="_blank" >nsfw femdom</a>
-                        <a class="collapse-item text-warning" href="/api/nsfw/foot?apikey=apirey" target="_blank" >nsfw foot</a>
-		                <a class="collapse-item text-warning" href="/api/nsfw/gangbang?apikey=apirey" target="_blank" >nsfw gangbanh</a>
-		                <a class="collapse-item text-warning" href="/api/nsfw/glasses?apikey=apirey" target="_blank" >nsfw glasses</a>
-                        <a class="collapse-item text-warning" href="/api/nsfw/hentai?apikey=apirey" target="_blank" >nsfw hentai</a>
-                        <a class="collapse-item text-warning" href="/api/nsfw/gifs?apikey=apirey" target="_blank" >nsfw gifs</a>
-                        <a class="collapse-item text-warning" href="/api/nsfw/jahy?apikey=apirey" target="_blank" >nsfw jahy</a>
-		                <a class="collapse-item text-warning" href="/api/nsfw/manga?apikey=apirey" target="_blank" >nsfw manga</a>
-		                <a class="collapse-item text-warning" href="/api/nsfw/masturbation?apikey=apirey" target="_blank" >nsfw mstb</a>
-                        <a class="collapse-item text-warning" href="/api/nsfw/neko?apikey=apirey" target="_blank" >nsfw neko</a>
-                        <a class="collapse-item text-warning" href="/api/nsfw/orgy?apikey=apirey" target="_blank" >nsfw orgy</a>
-                        <a class="collapse-item text-warning" href="/api/nsfw/panties?apikey=apirey" target="_blank" >nsfw panties</a>
-		                <a class="collapse-item text-warning" href="/api/nsfw/pussy?apikey=apirey" target="_blank" >nsfw pussy</a>
-		                <a class="collapse-item text-warning" href="/api/nsfw/neko2?apikey=apirey" target="_blank" >nsfw neko2</a>
-		                <a class="collapse-item text-warning" href="/api/nsfw/tentacles?apikey=apirey" target="_blank" >nsfw tentacles</a>
-                        <a class="collapse-item text-warning" href="/api/nsfw/thighs?apikey=apirey" target="_blank" >nsfw things</a>
-                        <a class="collapse-item text-warning" href="/api/nsfw/yuri?apikey=apirey" target="_blank" >nsfw yuri</a>
-                        <a class="collapse-item text-warning" href="/api/nsfw/zettai?apikey=apirey" target="_blank" >nsfw zettai</a>
-                        <a class="collapse-item text-warning" href="/api/wallpaper/waifu?apikey=apirey" target="_blank" >Waifu</a>
-                        <a class="collapse-item text-warning" href="/api/wallpaper/waifu2?apikey=apirey" target="_blank" >Waifu2</a>
-                        <a class="collapse-item text-warning" href="/api/wallpaper/nsfwloli?apikey=apirey" target="_blank" >Nswf loli</a>
-                        <a class="collapse-item text-warning" href="/api/wallpaper/shota?apikey=apirey" target="_blank" >shota</a>
-		        <a class="collapse-item text-warning" href="/api/wallpaper/loli?apikey=apirey" target="_blank" >anime loli</a>
-                        </li>
-                    </ul>
-                </li>
-        </div>
-    <div class="sidebar-footer">
-        <a href="##" class="sidebar-user">
-            <span class="sidebar-user-img">
-                <picture><source srcset="https://avatars.githubusercontent.com/u/85196372?s=400&u=d02ac8f49deb6e049f70b27b0787c394de7b5c36&v=4.jpg" type="image/webp"><img src="./img/avatar/avatar-illustrated-01.png" alt="User name"></picture>
-            </span>
-            <div class="sidebar-user-info">
-                <span class="sidebar-user__title">Rey sekha</span>
-                <span class="sidebar-user__subtitle">Dev Web</span>
+          </li>
+                    <li class="nav-item menu-items">
+            <a class="nav-link" data-toggle="collapse" href="#ui-basic3" aria-expanded="false" aria-controls="ui-basic3">
+              <span class="menu-icon">
+                <i class="mdi mdi-play-circle-outline"></i>
+              </span>
+              <span class="menu-title">Media-Feature</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="ui-basic3">
+              <ul class="nav flex-column sub-menu">
+                          <li class="nav-item"><a class="nav-link"  href="/api/music/joox?query=akad&apikey=apirey" target="_blank" >Joox search</a></li>
+			              <li class="nav-item"><a class="nav-link"  href="/api/download/ytmp4?url=https://youtu.be/6l5V3BWDcMw&apikey=apirey" target="_blank" >Youtube Video</a></li>
+			              <li class="nav-item"><a class="nav-link"  href="/api/download/ytmp3?url=https://youtu.be/6l5V3BWDcMw&apikey=apirey" target="_blank" >Youtube Audio</a></li>
+			              <li class="nav-item"><a class="nav-link"  href="/api/music/spotify?query=akad&apikey=apirey" target="_blank" >Spotify search</a></li>
+			              <li class="nav-item"><a class="nav-link"  href="/api/yt/playmp3?query=surender&apikey=apirey" target="_blank" >play mp3</a></li>
+                          <li class="nav-item"><a class="nav-link"  href="/api/yt/playmp4?query=surender&apikey=apirey" target="_blank" >play mp4</a></li>
+			             <li class="nav-item"><a class="nav-link"  href="/api/yt/search?query=surender&apikey=apirey" target="_blank" >yt search</a></li>
+                        <li class="nav-item"><a class="nav-link"  href="/api/download/tiktok?url=https://vt.tiktok.com/ZSeJ7P56G&apikey=apirey" target="_blank" >Tiktok download</a></li>
+                        <li class="nav-item"><a class="nav-link"  href="/api/download/instagram?url=https://www.instagram.com/p/CUU8PwHhU-9/?utm_medium=copy_link&apikey=apirey" target="_blank" >Instagram download</a></li>
+                        <li class="nav-item"><a class="nav-link"  href="/api/download/fb?url=https://www.facebook.com/botikaonline/videos/837084093818982&apikey=apirey" target="_blank" >Facebook download</a></li>
+                        <li class="nav-item"><a class="nav-link"  href="/api/download/mediafire?url=https://www.mediafire.com/file/jds1setz7xzfoty/BOTZ6.zip/file&apikey=apirey" target="_blank" >Mediafire download</a></li>
+                        <li class="nav-item"><a class="nav-link"  href="/api/stalk/ig?username=attahalilintar&apikey=apirey" target="_blank" >Stalk Instagram</a></li>
+			            <li class="nav-item"><a class="nav-link"  href="/api/stalk/tiktok?username=attahalilintar&apikey=apirey" target="_blank" >stalk tiktok</a></li>
+                        <li class="nav-item"><a class="nav-link"  href="/api/stalk/npm?query=Zhiirr&apikey=apirey" target="_blank" >stalk npm</a></li>
+              </ul>
             </div>
-        </a>
-    </div>
-</aside>
-  <div class="main-wrapper">
-    <!-- ! Main nav -->
-    <nav class="main-nav--bg">
-  <div class="container main-nav">
-    <div class="main-nav-start">
-      <div class="search-wrapper">
-        <i data-feather="search" aria-hidden="true"></i>
-        <input type="text" placeholder="Enter keywords ..." required>
-      </div>
-    </div>
-    <div class="main-nav-end">
-      <button class="sidebar-toggle transparent-btn" title="Menu" type="button">
-        <span class="sr-only">Toggle menu</span>
-        <span class="icon menu-toggle--gray" aria-hidden="true"></span>
-      </button>
-      <div class="lang-switcher-wrapper">
-        <button class="lang-switcher transparent-btn" type="button">
-          EN
-          <i data-feather="chevron-down" aria-hidden="true"></i>
-        </button>
-        <ul class="lang-menu dropdown">
-          <li><a href="##">English</a></li>
-          <li><a href="##">French</a></li>
-          <li><a href="##">Uzbek</a></li>
-        </ul>
-      </div>
-      <button class="theme-switcher gray-circle-btn" type="button" title="Switch theme">
-        <span class="sr-only">Switch theme</span>
-        <i class="sun-icon" data-feather="sun" aria-hidden="true"></i>
-        <i class="moon-icon" data-feather="moon" aria-hidden="true"></i>
-      </button>
-      <div class="notification-wrapper">
-        <button class="gray-circle-btn dropdown-btn" title="To messages" type="button">
-          <span class="sr-only">To messages</span>
-          <span class="icon notification active" aria-hidden="true"></span>
-        </button>
-        <ul class="users-item-dropdown notification-dropdown dropdown">
-          <li>
-            <a href="##">
-              <div class="notification-dropdown-icon info">
-                <i data-feather="check"></i>
-              </div>
-              <div class="notification-dropdown-text">
-                <span class="notification-dropdown__title">System just updated</span>
-                <span class="notification-dropdown__subtitle">succes update template</span>
-              </div>
+          </li>          
+          <li class="nav-item menu-items">
+            <a class="nav-link" data-toggle="collapse" href="#ui-basic6" aria-expanded="false" aria-controls="ui-basic6">
+              <span class="menu-icon">
+                <i class="mdi mdi-cat"></i>
+              </span>
+              <span class="menu-title">Random-anime</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="ui-basic6">
+              <ul class="nav flex-column sub-menu">
+      <li class="nav-item"><a class="nav-link"  href="/api/wallpaper/boruto?apikey=apirey" target="_blank" >Random boruto</a></li>
+                        <li class="nav-item"><a class="nav-link"  href="/api/wallpaper/kaori?apikey=apirey" target="_blank" >Random kaori</a></li>
+<li class="nav-item"><a class="nav-link"  href="/api/wallpaper/shizuka?apikey=apirey" target="_blank" >Random shizuka</a></li>
+<li class="nav-item"><a class="nav-link"  href="/api/wallpaper/kaga?apikey=apirey" target="_blank" >Random kaga</a></li>
+<li class="nav-item"><a class="nav-link"  href="/api/wallpaper/kotori?apikey=apirey" target="_blank" >Random kotori</a></li>
+<li class="nav-item"><a class="nav-link"  href="/api/wallpaper/mikasa?apikey=apirey" target="_blank" >Random mikasa</a></li>
+<li class="nav-item"><a class="nav-link"  href="/api/wallpaper/akiyama?apikey=apirey" target="_blank" >Random akiyama</a></li>
+<li class="nav-item"><a class="nav-link"  href="/api/wallpaper/gremory?apikey=apirey" target="_blank" >Random gremory</a></li>
+<li class="nav-item"><a class="nav-link"  href="/api/wallpaper/isuzu?apikey=apirey" target="_blank" >Random isuzu</a></li>
+<li class="nav-item"><a class="nav-link"  href="/api/wallpaper/shina?apikey=apirey" target="_blank" >Random shina</a></li>
+<li class="nav-item"><a class="nav-link"  href="/api/wallpaper/kagura?apikey=apirey" target="_blank" >Random kagura</a></li>
+<li class="nav-item"><a class="nav-link"  href="/api/wallpaper/shinka?apikey=apirey" target="_blank" >Random shinka</a></li>
+<li class="nav-item"><a class="nav-link"  href="/api/wallpaper/eba?apikey=apirey" target="_blank" >Random eba</a></li>
+                        <li class="nav-item"><a class="nav-link"  href="/api/wallpaper/elaina?apikey=apirey" target="_blank" >Random elaina</a></li>
+                        <li class="nav-item"><a class="nav-link"  href="/api/wallpaper/yuri?apikey=apirey" target="_blank" >Random yuri</a></li>
+                        <li class="nav-item"><a class="nav-link"  href="/api/wallpaper/erza?apikey=apirey" target="_blank" >Random erza</a></li>
+                        <li class="nav-item"><a class="nav-link"  href="/api/wallpaper/hinata?apikey=apirey" target="_blank" >Random hinata</a></li>
+                        <li class="nav-item"><a class="nav-link"  href="/api/wallpaper/minato?apikey=apirey" target="_blank" >Random minato</a></li>
+                        <li class="nav-item"><a class="nav-link"  href="/api/wallpaper/naruto?apikey=apirey" target="_blank" >Random Naruto</a></li>
+                        <li class="nav-item"><a class="nav-link"  href="/api/wallpaper/sagiri?apikey=apirey" target="_blank" >Random Sagiri</a></li>
+                        <li class="nav-item"><a class="nav-link"  href="/api/wallpaper/nezuko?apikey=apirey" target="_blank" >Random nezuko</a></li>
+                        <li class="nav-item"><a class="nav-link"  href="/api/wallpaper/rize?apikey=apirey" target="_blank" >Random rize</a></li>
+                        <li class="nav-item"><a class="nav-link"  href="/api/wallpaper/ana?apikey=apirey" target="_blank" >Random Anna</a></li>
+                        <li class="nav-item"><a class="nav-link"  href="/api/wallpaper/deidara?apikey=apirey" target="_blank" >Random Deidara</a></li>
+<li class="nav-item"><a class="nav-link"  href="/api/wallpaper/yuki?apikey=apirey" target="_blank" >Random Yuki</a></li>
+<li class="nav-item"><a class="nav-link"  href="/api/wallpaper/ana?apikey=apirey" target="_blank" >Random Anna</a></li>
+<li class="nav-item"><a class="nav-link"  href="/api/wallpaper/asuna?apikey=apirey" target="_blank" >Random Asuna</a></li>
+<li class="nav-item"><a class="nav-link"  href="/api/wallpaper/ayuzawa?apikey=apirey" target="_blank" >Random Ayuzawa</a></li>
+<li class="nav-item"><a class="nav-link"  href="/api/wallpaper/chitoge?apikey=apirey" target="_blank" >Random Chitoge</a></li>
+<li class="nav-item"><a class="nav-link"  href="/api/wallpaper/emilia?apikey=apirey" target="_blank" >Random Emilia</a></li>
+<li class="nav-item"><a class="nav-link"  href="/api/wallpaper/hestia?apikey=apirey" target="_blank" >Random hestia</a></li>
+<li class="nav-item"><a class="nav-link"  href="/api/wallpaper/inori?apikey=apirey" target="_blank" >Random inori</a></li>
+<li class="nav-item"><a class="nav-link"  href="/api/wallpaper/itachi?apikey=apirey" target="_blank" >Random itachi</a></li>
+<li class="nav-item"><a class="nav-link"  href="/api/wallpaper/madara?apikey=apirey" target="_blank" >Random Madara</a></li>
+                        <li class="nav-item"><a class="nav-link"  href="/api/wallpaper/sakura?apikey=apirey" target="_blank" >Random sakura</a></li>
+                        <li class="nav-item"><a class="nav-link"  href="/api/wallpaper/sasuke?apikey=apirey" target="_blank" >Random Sasuke</a></li>
+                        <li class="nav-item"><a class="nav-link"  href="/api/wallpaper/tsunade?apikey=apirey" target="_blank" >Random Tsunade</a></li>
+                        <li class="nav-item"><a class="nav-link"  href="/api/wallpaper/onepiece?apikey=apirey" target="_blank" >Random one piece</a></li>
+                        <li class="nav-item"><a class="nav-link"  href="/api/wallpaper/mobil?apikey=apirey" target="_blank" >Random mobil</a></li>
+                        <li class="nav-item"><a class="nav-link"  href="/api/wallpaper/montor?apikey=apirey" target="_blank" >Random montor</a></li>
+                        <li class="nav-item"><a class="nav-link"  href="/api/wallpaper/boneka-chucky?apikey=apirey" target="_blank" >Random boneka chucky</a></li>
+                                                <li class="nav-item"><a class="nav-link"  href="/api/wallpaper/keneki?apikey=apirey" target="_blank" >Random keneki</a></li>
+                        <li class="nav-item"><a class="nav-link"  href="/api/wallpaper/megumin?apikey=apirey" target="_blank" >Random Megumin</a></li>
+                        <li class="nav-item"><a class="nav-link"  href="/api/wallpaper/toukachan?apikey=apirey" target="_blank" >Random toukachan</a></li>
+                        <li class="nav-item"><a class="nav-link"  href="/api/wallpaper/akira?apikey=apirey" target="_blank" >Random akira</a></li>
+		                <li class="nav-item"><a class="nav-link"  href="/api/wallpaper/itori?apikey=apirey" target="_blank" >Random itori</a></li>
+		                <li class="nav-item"><a class="nav-link"  href="/api/wallpaper/kurumi?apikey=apirey" target="_blank" >Random kurumi</a></li>
+                        <li class="nav-item"><a class="nav-link"  href="/api/wallpaper/miku?apikey=apirey" target="_blank" >Random miku</a></li>
+                        <li class="nav-item"><a class="nav-link"  href="/api/wallpaper/pokemon?apikey=apirey" target="_blank" >Random pokemon</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" data-toggle="collapse" href="#ui-basic7" aria-expanded="false" aria-controls="ui-basic7">
+              <span class="menu-icon">
+                <i class=" mdi mdi-sync"></i>
+              </span>
+              <span class="menu-title">Random-image</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="ui-basic7">
+              <ul class="nav flex-column sub-menu">
+          <li class="nav-item"><a class="nav-link"  href="/api/wallpaper/ryujin?apikey=apirey" target="_blank" >Random Ryujin ityz</a></li>
+		                <li class="nav-item"><a class="nav-link"  href="/api/wallpaper/rose?apikey=apirey" target="_blank" >Random rose blpk</a></li>
+                        <li class="nav-item"><a class="nav-link"  href="/api/wallpaper/justina?apikey=apirey" target="_blank" >Random justina xie</a></li>
+                        <li class="nav-item"><a class="nav-link"  href="/api/wallpaper/random/blackpink?apikey=apirey" target="_blank" >Random blackpink</a></li>                        
+                        <li class="nav-item"><a class="nav-link"  href="/api/wallpaper/doraemon?apikey=apirey" target="_blank" >Random Doraemon</a></li>                      
+                        <li class="nav-item"><a class="nav-link"  href="/api/wallpaper/ppcouple?apikey=apirey" target="_blank" >Random ppcouple</a></li>
+                        <li class="nav-item"><a class="nav-link"  href="/api/wallpaper/kpop?apikey=apirey" target="_blank" >Random kpop</a></li>
+                        <li class="nav-item"><a class="nav-link"  href="/api/wallpaper/hekel?apikey=apirey" target="_blank" >Random hekel</a></li>
+                        <li class="nav-item"><a class="nav-link"  href="/api/wallpaper/pubg?apikey=apirey" target="_blank" >Random PUBG</a></li>
+                        <li class="nav-item"><a class="nav-link"  href="/api/wallpaper/cogan?apikey=apirey" target="_blank" >Random cogan</a></li>
+                        <li class="nav-item"><a class="nav-link"  href="/api/wallpaper/cecan?apikey=apirey" target="_blank" >Random cecan</a></li>
+                        <li class="nav-item"><a class="nav-link"  href="/api/wallpaper/aesthetic?apikey=apirey" target="_blank" >Random Aesthetic</a></li>
+                        <li class="nav-item"><a class="nav-link"  href="/api/wallpaper/wallhp?apikey=apirey" target="_blank" >Random wallhp aesthetic</a></li>
+                        <li class="nav-item"><a class="nav-link"  href="/api/wallpaper/anime?apikey=apirey" target="_blank" >Random wallhp anime</a></li>
+                        <li class="nav-item"><a class="nav-link"  href="/api/asupan?apikey=apirey" target="_blank" >Random asupan</a></li>
+                        <li class="nav-item"><a class="nav-link"  href="/api/wallpaper/kucing?apikey=apirey" target="_blank" >Random Kucing</a></li>
+                        <li class="nav-item"><a class="nav-link"  href="/api/wallpaper/anjing?apikey=apirey" target="_blank" >Random Anjing</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" data-toggle="collapse" href="#ui-basic8" aria-expanded="false" aria-controls="ui-basic8">
+              <span class="menu-icon">
+                <i class="mdi mdi-gamepad-variant"></i>
+              </span>
+              <span class="menu-title">Game-Feature</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="ui-basic8">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"><a class="nav-link"  href="/api/kuis/tebakGambar?apikey=apirey" target="_blank" >tebak gambar</a></li>
+                <li class="nav-item"><a class="nav-link"  href="/api/kuis/caklontong?apikey=apirey" target="_blank" >caklontong</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" data-toggle="collapse" href="#nulis" aria-expanded="false" aria-controls="nulis">
+              <span class="menu-icon">
+                <i class="mdi mdi-grease-pencil"></i>
+              </span>
+              <span class="menu-title">image maker</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="nulis">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"><a class="nav-link"  href="/api/maker/harta-tahta?text=reyganz&apikey=apirey" target="_blank" >harta tahta</a></li>
+                        <li class="nav-item"><a class="nav-link"  href="/api/maker/silverbutton?text=reyganz&apikey=apirey" target="_blank" >silver button</a></li>
+                        <li class="nav-item"><a class="nav-link"  href="/api/maker/goldbutton?text=reyganz&apikey=apirey" target="_blank" >gold button</a></li>
+                        <li class="nav-item"><a class="nav-link"  href="/api/maker/nulis?text=reyganz&apikey=apirey" target="_blank" >nulis buku</a></li>
+                        <li class="nav-item"><a class="nav-link"  href="/api/maker/emoji2png?text=😅&apikey=apirey" target="_blank" >emoji 2png</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" data-toggle="collapse" href="#ui-basic9" aria-expanded="false" aria-controls="ui-basic9">
+              <span class="menu-icon">
+                <i class="mdi mdi-folder-multiple-image"></i>
+              </span>
+              <span class="menu-title">Nsfw-Feature</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="ui-basic9">
+              <ul class="nav flex-column sub-menu">
+<li class="nav-item"><a class="nav-link"  href="/api/nsfw/ahegao?apikey=apirey" target="_blank" >nsfw ahegao</a></li>
+                        <li class="nav-item"><a class="nav-link"  href="/api/nsfw/ass?apikey=apirey" target="_blank" >nsfw ass</a></li>
+                        <li class="nav-item"><a class="nav-link"  href="/api/nsfw/bdsm?apikey=apirey" target="_blank" >Nswf bdsm</a></li>
+                        <li class="nav-item"><a class="nav-link"  href="/api/nsfw/blowjob?apikey=apirey" target="_blank" >nsfw blowjob</a></li>
+		               <li class="nav-item"><a class="nav-link"  href="/api/nsfw/cuckold?apikey=apirey" target="_blank" >nsfw cuckold</a></li>
+		               <li class="nav-item"><a class="nav-link"  href="/api/nsfw/cum?apikey=apirey" target="_blank" >nsfw cum</a></li>
+                        <li class="nav-item"><a class="nav-link"  href="/api/nsfw/ero?apikey=apirey" target="_blank" >nsfw ero</a></li>
+                        <li class="nav-item"><a class="nav-link"  href="/api/nsfw/femdom?apikey=apirey" target="_blank" >nsfw femdom</a></li>
+                        <li class="nav-item"><a class="nav-link"  href="/api/nsfw/foot?apikey=apirey" target="_blank" >nsfw foot</a></li>
+		                <li class="nav-item"><a class="nav-link"  href="/api/nsfw/gangbang?apikey=apirey" target="_blank" >nsfw gangbanh</a></li>
+		                <li class="nav-item"><a class="nav-link"  href="/api/nsfw/glasses?apikey=apirey" target="_blank" >nsfw glasses</a></li>
+                        <li class="nav-item"><a class="nav-link"  href="/api/nsfw/hentai?apikey=apirey" target="_blank" >nsfw hentai</a></li>
+                        <li class="nav-item"><a class="nav-link"  href="/api/nsfw/gifs?apikey=apirey" target="_blank" >nsfw gifs</a></li>
+                        <li class="nav-item"><a class="nav-link"  href="/api/nsfw/jahy?apikey=apirey" target="_blank" >nsfw jahy</a></li>
+		                <li class="nav-item"><a class="nav-link"  href="/api/nsfw/manga?apikey=apirey" target="_blank" >nsfw manga</a></li>
+		                <li class="nav-item"><a class="nav-link"  href="/api/nsfw/masturbation?apikey=apirey" target="_blank" >nsfw mstb</a></li>
+                        <li class="nav-item"><a class="nav-link"  href="/api/nsfw/neko?apikey=apirey" target="_blank" >nsfw neko</a></li>
+                        <li class="nav-item"><a class="nav-link"  href="/api/nsfw/orgy?apikey=apirey" target="_blank" >nsfw orgy</a></li>
+                        <li class="nav-item"><a class="nav-link"  href="/api/nsfw/panties?apikey=apirey" target="_blank" >nsfw panties</a></li>
+		                <li class="nav-item"><a class="nav-link"  href="/api/nsfw/pussy?apikey=apirey" target="_blank" >nsfw pussy</a></li>
+		                <li class="nav-item"><a class="nav-link"  href="/api/nsfw/neko2?apikey=apirey" target="_blank" >nsfw neko2</a></li>
+		                <li class="nav-item"><a class="nav-link"  href="/api/nsfw/tentacles?apikey=apirey" target="_blank" >nsfw tentacles</a></li>
+                        <li class="nav-item"><a class="nav-link"  href="/api/nsfw/thighs?apikey=apirey" target="_blank" >nsfw things</a></li>
+                        <li class="nav-item"><a class="nav-link"  href="/api/nsfw/yuri?apikey=apirey" target="_blank" >nsfw yuri</a></li>
+                        <li class="nav-item"><a class="nav-link"  href="/api/nsfw/zettai?apikey=apirey" target="_blank" >nsfw zettai</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" data-toggle="collapse" href="#textpro" aria-expanded="false" aria-controls="textpro">
+              <span class="menu-icon">
+                <i class=" mdi mdi-image-multiple"></i>
+              </span>
+              <span class="menu-title">Text Pro Me</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="textpro">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"><a class="nav-link"  href="/api/textpro/magma?text=reyyy&apikey=apirey" target="_blank" >magma</a></li>
+<li class="nav-item"><a class="nav-link"  href="/api/textpro/hallowen-text?text=reyyy&apikey=apirey" target="_blank" >hallowen effect</a></li>
+<li class="nav-item"><a class="nav-link"  href="/api/textpro/neon-light?text=reyyy&apikey=apirey" target="_blank" >Neon light</a></li>
+<li class="nav-item"><a class="nav-link"  href="/api/textpro/broken-glass?text=reyyy&apikey=apirey" target="_blank" >broken glass</a></li>
+<li class="nav-item"><a class="nav-link"  href="/api/textpro/art-papper?text=reyyy&apikey=apirey" target="_blank" >Art papper</a></li>
+<li class="nav-item"><a class="nav-link"  href="/api/textpro/glossy?text=reyyy&apikey=apirey" target="_blank" >glossy</a></li>
+<li class="nav-item"><a class="nav-link"  href="/api/textpro/water-color?text=reyyy&apikey=apirey" target="_blank" >water color</a></li>
+<li class="nav-item"><a class="nav-link"  href="/api/textpro/multi-color?text=reyyy&apikey=apirey" target="_blank" >multi color</a></li>
+<li class="nav-item"><a class="nav-link"  href="/api/textpro/neon-devil?text=reyyy&apikey=apirey" target="_blank" >Neon devil</a></li>
+<li class="nav-item"><a class="nav-link"  href="/api/textpro/sky-text?text=reyyy&apikey=apirey" target="_blank" >sky text</a></li>
+<li class="nav-item"><a class="nav-link"  href="/api/textpro/luxury?text=reyyy&apikey=apirey" target="_blank" >luxury</a></li>
+<li class="nav-item"><a class="nav-link"  href="/api/textpro/vintage?text=reyyy&text2=ganzzz&apikey=apirey" target="_blank" >vintage</a></li>
+<li class="nav-item"><a class="nav-link"  href="/api/textpro/writing?text=reyyy&apikey=apirey" target="_blank" >Writing</a></li>
+<li class="nav-item"><a class="nav-link"  href="/api/textpro/engraved?text=reyyy&apikey=apirey" target="_blank" >Engraved</a></li>
+<li class="nav-item"><a class="nav-link"  href="/api/textpro/glue-text?text=reyyy&apikey=apirey" target="_blank" >Glue text</a></li>
+<li class="nav-item"><a class="nav-link"  href="/api/textpro/pornhub?text=rey&text2=ganz&apikey=apirey" target="_blank" >porn HUB</a></li>
+<li class="nav-item"><a class="nav-link"  href="/api/textpro/holograpic?text=reyyy&apikey=apirey" target="_blank" >holograpic</a></li>
+<li class="nav-item"><a class="nav-link"  href="/api/textpro/deluxe-silver?text=reyyy&apikey=apirey" target="_blank" >deluxe silver</a></li>
+<li class="nav-item"><a class="nav-link"  href="/api/textpro/fabric?text=reyyy&apikey=apirey" target="_blank" >Fabric</a></li>
+<li class="nav-item"><a class="nav-link"  href="/api/textpro/wicker?text=reyyy&apikey=apirey" target="_blank" >wicker</a></li>
+<li class="nav-item"><a class="nav-link"  href="/api/textpro/larva?text=reyyy&apikey=apirey" target="_blank" >Larva</a></li>
+<li class="nav-item"><a class="nav-link"  href="/api/textpro/toxic-bokeh?text=reyyy&apikey=apirey" target="_blank" >Toxic</a></li>
+<li class="nav-item"><a class="nav-link"  href="/api/textpro/stroberi?text=reyyy&apikey=apirey" target="_blank" >strobery</a></li>
+<li class="nav-item"><a class="nav-link"  href="/api/textpro/koi?text=reyyy&apikey=apirey" target="_blank" >koi pish</a></li>
+<li class="nav-item"><a class="nav-link"  href="/api/textpro/bread?text=reyyy&apikey=apirey" target="_blank" >Bread</a></li>
+<li class="nav-item"><a class="nav-link"  href="/api/textpro/horor-blood?text=reyyy&apikey=apirey" target="_blank" >horor blood</a></li>
+<li class="nav-item"><a class="nav-link"  href="/api/textpro/honey?text=reyyy&apikey=apirey" target="_blank" >honey</a></li>
+<li class="nav-item"><a class="nav-link"  href="/api/textpro/ice?text=reyyy&apikey=apirey" target="_blank" >Ice</a></li>
+<li class="nav-item"><a class="nav-link"  href="/api/textpro/rusty?text=reyyy&apikey=apirey" target="_blank" >Rusty effect</a></li>
+             <li class="nav-item"><a class="nav-link"  href="/api/textpro/captain?text=Rey&text2=ganz&apikey=apirey" target="_blank" >captain Amerika</a></li>
+            <li class="nav-item"><a class="nav-link"  href="/api/textpro/3d-gradient?text=Rey&apikey=apirey" target="_blank" >gradien</a></li>
+            <li class="nav-item"><a class="nav-link"  href="/api/textpro/christmas?text=Rey&apikey=apirey" target="_blank" >christmas</a></li>
+            <li class="nav-item"><a class="nav-link"  href="/api/textpro/drop-water?text=Rey&apikey=apirey" target="_blank" >drop water</a></li>
+            <li class="nav-item"><a class="nav-link"  href="/api/textpro/black-pink?text=Rey&apikey=apirey" target="_blank" >blackpink</a></li>
+            <li class="nav-item"><a class="nav-link"  href="/api/textpro/logo-wolf?text=Rey&text2&apikey=apirey" target="_blank" >Logo Wolf</a></li>
+            <li class="nav-item"><a class="nav-link"  href="/api/textpro/natural-leavest?text=reyganz&apikey=apirey" target="_blank" >Natural leavest</a></li>
+            <li class="nav-item"><a class="nav-link"  href="/api/textpro/logo-wolf2?text=Rey&text2&apikey=apirey" target="_blank" >Logo Wolf 2</a></li>
+            <li class="nav-item"><a class="nav-link"  href="/api/textpro/harry-potter?text=Reyganz&apikey=apirey" target="_blank" >Harry Potter</a></li>
+            <li class="nav-item"><a class="nav-link"  href="/api/textpro/3dstone?text=Reyganz&apikey=apirey" target="_blank" >3D stone</a></li>
+            <li class="nav-item"><a class="nav-link"  href="/api/textpro/1917?text=Reyganz&apikey=apirey" target="_blank" >1917</a></li>
+            <li class="nav-item"><a class="nav-link"  href="/api/textpro/thunder2?text=reyganz&apikey=apirey" target="_blank" >Thunder 2</a></li>
+            <li class="nav-item"><a class="nav-link"  href="/api/textpro/space?text=Rey&text2=ganz&apikey=apirey" target="_blank" >Space</a></li>
+            <li class="nav-item"><a class="nav-link"  href="/api/textpro/joker-logo?text=Reyganz&apikey=apirey" target="_blank" >Joker logo</a></li>
+            <li class="nav-item"><a class="nav-link"  href="/api/textpro/hallowen?text=Reyganz&apikey=apirey" target="_blank" >hallowen</a></li>
+            <li class="nav-item"><a class="nav-link"  href="/api/textpro/blood?text=Reyganz&apikey=apirey" target="_blank" >Blood text</a></li>
+            <li class="nav-item"><a class="nav-link"  href="/api/textpro/astone?text=Reyganz&apikey=apirey" target="_blank" >Astone</a></li>
+            <li class="nav-item"><a class="nav-link"  href="/api/textpro/grafity-text?text=reyyy&apikey=apirey" target="_blank" >Grafity text</a></li>
+            <li class="nav-item"><a class="nav-link"  href="/api/textpro/grafity-text2?text=reyyy&text2=ganz&apikey=apirey" target="_blank" >Grafity text2</a></li>
+            <li class="nav-item"><a class="nav-link"  href="/api/textpro/ninja-logo?text=reyyy&text2=ganzzz&apikey=apirey" target="_blank" >Ninja logo</a></li>
+            <li class="nav-item"><a class="nav-link"  href="/api/textpro/lion-logo?text=reyyy&text2=ganzz&apikey=apirey" target="_blank" >lion logo</a></li>
+            <li class="nav-item"><a class="nav-link"  href="/api/textpro/avengers-logo?text=rey&text2=ganz&apikey=apirey" target="_blank" >Avengers</a></li>
+            <li class="nav-item"><a class="nav-link"  href="/api/textpro/marvel-logo2?text=Rey&text2=ganz" target="_blank" >Marvel studio</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" data-toggle="collapse" href="#photooxy" aria-expanded="false" aria-controls="photooxy">
+              <span class="menu-icon">
+                <i class=" mdi mdi-image-multiple"></i>
+              </span>
+              <span class="menu-title">Photooxy</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="photooxy">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"><a class="nav-link"  href="/api/photooxy/army?text=reyganz&apikey=apirey" target="_blank" >Army text</a></li>
+                        <li class="nav-item"><a class="nav-link"  href="/api/maker/matrix?text=rey&apikey=apirey" target="_blank" >matrix</a></li>
+                        <li class="nav-item"><a class="nav-link"  href="/api/maker/pubglogo?text1=rey&text2=ganz&apikey=apirey" target="_blank" >PUBG</a></li>
+                        <li class="nav-item"><a class="nav-link"  href="/api/maker/breakwall?text=rey&apikey=apirey" target="_blank" >breakwall</a></li>
+                        <li class="nav-item"><a class="nav-link"  href="/api/photooxy/butterfly?text=rey&apikey=apirey" target="_blank" >butterfly</a></li>
+                        <li class="nav-item"><a class="nav-link"  href="/api/photooxy/naruto?text1=rey&apikey=apirey" target="_blank" >naruto</a></li>
+                        <li class="nav-item"><a class="nav-link"  href="/api/photooxy/smoke?text1=rey&apikey=apirey" target="_blank" >smoke text</a></li> 
+                        <li class="nav-item"><a class="nav-link"  href="/api/photooxy/burn-papper?text=rey&apikey=apirey" target="_blank" >burn papper</a></li>
+                        <li class="nav-item"><a class="nav-link"  href="/api/photooxy/love-message?text=rey&apikey=apirey" target="_blank" >love message</a></li>
+                        <li class="nav-item"><a class="nav-link"  href="/api/photooxy/love-text?text=rey&apikey=apirey" target="_blank" >love text</a></li>
+                        <li class="nav-item"><a class="nav-link"  href="/api/photooxy/coffe-cup?text=rey&apikey=apirey" target="_blank" >coffe cup</a></li>
+                        <li class="nav-item"><a class="nav-link"  href="/api/photooxy/double-heart?text=rey&apikey=apirey" target="_blank" >double heart</a></li>
+                        <li class="nav-item"><a class="nav-link"  href="/api/photooxy/glitch?text=rey&text2=ganz&apikey=apirey" target="_blank" >glitch effect</a></li>
+                        <li class="nav-item"><a class="nav-link"  href="/api/photooxy/message-under-grass?text=rey&apikey=apirey" target="_blank" >message under grass</a></li>                                     
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item nav-category">
+            <span class="nav-link">Contact Me</span>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" target="_blank"  href="https://t.me/sekhaa" target="_blank">
+              <span class="menu-icon">
+                <i class="bi bi-telegram"></i>
+              </span>
+              <span class="menu-title">Telegram</span>
             </a>
           </li>
-          <li>
-            <a href="##">
-              <div class="notification-dropdown-icon danger">
-                <i data-feather="info" aria-hidden="true"></i>
-              </div>
-              <div class="notification-dropdown-text">
-                <span class="notification-dropdown__title">Info limit apikey</span>
-                <span class="notification-dropdown__subtitle">Unlimited key!</span>
-              </div>
+          <li class="nav-item menu-items">
+            <a class="nav-link" target="_blank"  href="http://wa.me/6283195138570" target="_blank">
+              <span class="menu-icon">
+                <i class="bi bi-whatsapp"></i>
+              </span>
+              <span class="menu-title">Whatsapp</span>
             </a>
           </li>
-          <li>
-            <a href="##">
-              <div class="notification-dropdown-icon info">
-                <i data-feather="check" aria-hidden="true"></i>
-              </div>
-              <div class="notification-dropdown-text">
-                <span class="notification-dropdown__title">APIKEY!</span>
-                <span class="notification-dropdown__subtitle">custom apikey? chat me free!</span>
-              </div>
+          <li class="nav-item nav-category">
+            <span class="nav-link">Script bot</span>
+          </li>
+          <li class="nav-item menu-items" id="other">
+            <a class="nav-link" href="https://github.com/inirey/whatsapp-bot">
+              <span class="menu-icon">
+                <i class="bi bi-github"></i>
+              </span>
+              <span class="menu-title">Whatsapp Bot</span>
             </a>
           </li>
-          <li>
-            <a class="link-to-page" href="##">Go to Notifications page</a>
-          </li>
         </ul>
-      </div>
-      <div class="nav-user-wrapper">
-        <button href="##" class="nav-user-btn dropdown-btn" title="My profile" type="button">
-          <span class="sr-only">My profile</span>
-          <span class="nav-user-img">
-            <picture><source srcset="https://avatars.githubusercontent.com/u/85196372?s=400&u=d02ac8f49deb6e049f70b27b0787c394de7b5c36&v=4.jpg" type="image/webp"><img src="./img/avatar/avatar-illustrated-02.png" alt="User name"></picture>
-          </span>
-        </button>
-        <ul class="users-item-dropdown nav-user-dropdown dropdown">
-          <li><a href="##">
-              <i data-feather="user" aria-hidden="true"></i>
-              <span>Profile</span>
-            </a></li>
-          <li><a href="##">
-              <i data-feather="settings" aria-hidden="true"></i>
-              <span>Account settings</span>
-            </a></li>
-          <li><a class="danger" href="##">
-              <i data-feather="log-out" aria-hidden="true"></i>
-              <span>Log out</span>
-            </a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</nav>
-    <!-- ! Main -->
-    <main class="main users chart-page" id="skip-target">
-      <div class="container">
-        <h2 class="main-title">Dashboard</h2>
-        <div class="row stat-cards">
-          <div class="col-md-6 col-xl-3">
-            <article class="stat-cards-item">
-              <div class="stat-cards-icon primary">
-                <i data-feather="bar-chart-2" aria-hidden="true"></i>
-              </div>
-              <div class="stat-cards-info">
-                <p class="stat-cards-info__num">412</p>
-                <p class="stat-cards-info__title">Total users</p>
-                <p class="stat-cards-info__progress">
-                  <span class="stat-cards-info__profit success">
-                    <i data-feather="trending-up" aria-hidden="true"></i>4.07%
-                  </span>
-                  Last month
-                </p>
-              </div>
-            </article>
+      </nav>
+        <div class="container-fluid page-body-wrapper">
+        <!-- partial:partials/_navbar.html -->
+        <nav class="navbar p-0 fixed-top d-flex flex-row">
+          <div class="navbar-brand-wrapper d-flex d-lg-none align-items-center justify-content-center">
+            <span class="navbar-brand brand-logo-mini" alt="logo" style="color: white;">REY</span>
           </div>
-          <div class="col-md-6 col-xl-3">
-            <article class="stat-cards-item">
-              <div class="stat-cards-icon warning">
-                <i data-feather="file" aria-hidden="true"></i>
-              </div>
-              <div class="stat-cards-info">
-                <p class="stat-cards-info__num">7628</p>
-                <p class="stat-cards-info__title">Total visits</p>
-                <p class="stat-cards-info__progress">
-                  <span class="stat-cards-info__profit success">
-                    <i data-feather="trending-up" aria-hidden="true"></i>0.24%
-                  </span>
-                  Last month
-                </p>
-              </div>
-            </article>
+          <div class="navbar-menu-wrapper flex-grow d-flex align-items-stretch">
+            <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+              <span class="mdi mdi-menu"></span>
+            </button> 
+            <ul class="navbar-nav w-100">
+            </ul>
+            <ul class="navbar-nav navbar-nav-right"> 
+              <li class="nav-item dropdown">
+                <a class="nav-link count-indicator dropdown-toggle" id="messageDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
+                  <i class="bi bi-search"></i>
+                </a>
+                <div class="dropdown-menu dropdown-search navbar-dropdown" aria-labelledby="messageDropdown">
+                    <div class="dropdown-item preview-item">
+                     <form  class="dropdown-search" action="/search" method="GET">
+                                        <div class="input-group">
+                                          <div class="input-group-prepend">
+                                                <button class="input-group-text" type="submit">
+                                              <i class="bi bi-search"></i>
+                                                </button>
+                                            </div>
+                                            <input type="text" class="form-control" name="q" placeholder="Search" autocomplete="off" required="">
+                                        </div>
+                                    </form>
+                    </div>
+                </div>
+              </li>
+              <li class="nav-item dropdown border-left">
+                <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown">
+                  <i class="mdi mdi-bell"></i>
+                  
+                </a>
+                <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
+                  <a class="dropdown-item preview-item">
+                 <h6 class="p-3 mb-0">Notifications</h6>
+                   <p class="text-muted ellipsis mb-0"> All Notifications will show here</p>
+                   </a>
+                   <div class="dropdown-divider"></div>
+                   
+                <a class="dropdown-item preview-item">
+                    <div class="text-muted ellipsis mb-0">
+                      No Notifications</p>
+                    </div>
+                  </a>
+              
+              </li>
+              <li class="nav-item dropdown">
+              
+                <a class="nav-link" id="profileDropdown" href="#" data-toggle="dropdown">
+                  <div class="navbar-profile">
+                    <i class="mdi mdi-account"> </i>
+                    <p class="mb-0 d-none d-sm-block navbar-profile-name">anda wibu</p>
+                    <i class="mdi mdi-menu-down d-none d-sm-block"></i>
+                  </div>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="profileDropdown">
+                      <div class="user-box">
+                          <div class="u-text">
+                      <h4>anda wibu</h4>
+                          </div>
+               </div>
+                  <div class="dropdown-divider"></div>
+                      <a class="dropdown-item p-3 mb-0 text-center" href="/login">Login</a>
+                       <div class="dropdown-divider"></div>
+                      <a class="dropdown-item p-3 mb-0 text-center" href="/register">Register</a>
+                </div>
+                
+              </li>
+            </ul>
+            <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+              <span class="mdi mdi-format-line-spacing"></span>
+            </button>
           </div>
-          <div class="col-md-6 col-xl-3">
-            <article class="stat-cards-item">
-              <div class="stat-cards-icon purple">
-                <i data-feather="file" aria-hidden="true"></i>
+        </nav>
+        <!-- partial -->
+        <div class="main-panel">
+          <div class="content-wrapper">
+        <div class="row">
+              <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-9">
+                        <div class="d-flex align-items-center align-self-start">
+                          <h3 id="jam">11:7:45</h3>
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <div class="icon icon-box-success ">
+                          <span class="bi bi-clock-fill icon-item"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <h6 class="text-muted font-weight-normal">Time</h6>
+                  </div>
+                </div>
               </div>
-              <div class="stat-cards-info">
-                <p class="stat-cards-info__num">4786</p>
-                <p class="stat-cards-info__title">Total request</p>
-                <p class="stat-cards-info__progress">
-                  <span class="stat-cards-info__profit danger">
-                    <i data-feather="trending-down" aria-hidden="true"></i>1.64%
-                  </span>
-                  Last month
-                </p>
+              <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-9">
+                        <div class="d-flex align-items-center align-self-start">
+                            <span id="uptime">05 Jam 24 Menit 17 Detik </span>
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <div class="icon icon-box-success">
+                          <span class="bi bi-clock-history fa-2x icon-item"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <h6 class="text-muted font-weight-normal">Uptime</h6>
+                  </div>
+                </div>
               </div>
-            </article>
-          </div>
-          <div class="col-md-6 col-xl-3">
-            <article class="stat-cards-item">
-              <div class="stat-cards-icon success">
-                <i data-feather="feather" aria-hidden="true"></i>
+              <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-9">
+                        <div class="d-flex align-items-center align-self-start">
+                        <h3 class="mb-1" id="totalhit">97600</h3>
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <div class="icon icon-box-success">
+                          <span class="mdi mdi-arrow-top-right icon-item"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <h6 class="text-muted font-weight-normal">Total Hit</h6>
+                  </div>
+                </div>
               </div>
-              <div class="stat-cards-info">
-                <p class="stat-cards-info__num">197</p>
-                <p class="stat-cards-info__title">Total feature</p>
-                <p class="stat-cards-info__progress">
-                  <span class="stat-cards-info__profit warning">
-                    <i data-feather="trending-up" aria-hidden="true"></i>0.00%
-                  </span>
-                  Last month
-                </p>
-              </div>
-            </article>
-          </div>
-        </div>
-    </main>
-    <!-- ! Footer -->
-    <footer class="footer">
-  <div class="container footer--flex">
-    <div class="footer-start">
-      <p>2021 © Made with By Rey ❤️ <a href="www.reysekha.my.id" target="_blank"
-          rel="noopener noreferrer">github.com/inirey</a></p>
-  </div>
+            </div>
+<div class="card card-round mt-5">
+<div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+<h4 class="m-0 font-weight-bold text-primary">CEK APIKEY</h4>
 </div>
-<!-- Chart library -->
-<script src="https://technext.github.io/elegant/plugins/chart.min.js"></script>
-<!-- Icons library -->
-<script src="https://technext.github.io/elegant/plugins/feather.min.js"></script>
-<!-- Custom scripts -->
-<script src="https://technext.github.io/elegant/js/script.js"></script>
-</body>
+          <div class="card-body">
+<p class="status" style="font-size: 17px;"></p>
+<form class="forms-sample" id="cekkeyform">
+  <div class="form-group">
+            <input class="form-control" id="ampikey" type="text" placeholder="Masukkan Apikey" required>
+</div>
+  <div class="form-group">
+      <button type="submit" id="sbm" class="btn btn-primary">Submit</button>
+  </div>
+</form>
+</div>
+</div>
+<div class="card card-round mt-5">
+<div class="card-body">
+<!-- main ads -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="fluid"
+     data-ad-layout-key="-fh+4r+18-g5+q8"
+     data-ad-client="ca-pub-8640399148235153"
+     data-ad-slot="8576387960"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>   
+</div>
+</div>
+                  </div>
+<script>
+function toast(){
 
+}
+var ingfos = `Welcome free api unlimited apikey`
+if (localStorage.ingfos != ingfos && ingfos != '') alert(ingfos)
+localStorage.ingfos = ingfos
+window.setTimeout("waktu()", 1000);
+    function waktu() {
+        var waktu = new Date();
+        setTimeout("waktu()", 1000);
+        let strings = `${waktu.getHours()}:${waktu.getMinutes()}:${waktu.getSeconds()}`
+        document.getElementById("jam").textContent = strings
+    }
+const textnya = document.querySelector('.status'); 
+var apikey = document.getElementById("ampikey")
+</script>
+          </div>
+          <!-- content-wrapper ends -->
+          <!-- partial:partials/_footer.html -->
+            <footer class="footer fixed-bottom">
+            <div class="d-sm-flex justify-content-center justify-content-sm-between">
+              <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">
+                    Made with <i class="mdi mdi-heart"></i> by
+              <a href="https://api.whatsapp.com/send/?phone=6283195138570" target="_blank">Rey</a></span>
+            </div>
+            </footer>
+          <!-- partial -->
+        </div>
+        <!-- main-panel ends -->
+      </div>
+      <!-- page-body-wrapper ends -->
+    </div>
+    <script>
+    function deletenotif(username){
+    $.ajax({
+                    url: '/deletenotif?'+username,
+                    type: 'POST',
+                    success: async function(data, textStatus, jqXHR) {
+                   location = location.href
+                }
+    })
+}
+    </script>
+         <script src="//gitcdn.link/cdn/justpiple/asset/master/vendors/js/vendor.bundle.base.js"></script>
+    <script src="//gitcdn.link/cdn/justpiple/asset/master/vendors/chart.js/Chart.min.js"></script>
+    <script src="//gitcdn.link/cdn/justpiple/asset/master/vendors/progressbar.js/progressbar.min.js"></script>
+    <script src="//gitcdn.link/cdn/justpiple/asset/master/vendors/owl-carousel-2/owl.carousel.min.js"></script>
+    <script src="//gitcdn.link/cdn/justpiple/asset/master/js/off-canvas.js"></script>
+    <script src="//gitcdn.link/cdn/justpiple/asset/master/js/hoverable-collapse.js"></script>
+    <script src="//gitcdn.link/cdn/justpiple/asset/master/js/misc.js"></script>
+    <script src="//gitcdn.link/cdn/justpiple/asset/master/js/settings.js"></script>
+    <script src="//gitcdn.link/cdn/justpiple/asset/master/js/todolist.js"></script>
+    <script src="//gitcdn.link/cdn/justpiple/asset/master/js/dashboard.js"></script>
+    <script src="//gitcdn.link/cdn/justpiple/asset/master/js/main.js"></script>
+  </body>
 </html>
