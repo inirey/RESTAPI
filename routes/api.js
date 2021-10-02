@@ -1749,6 +1749,70 @@ res.json(loghandler.invalidKey)
 }
 })
 
+router.get('/wallpaper/tatasurya', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+
+  const tatasurya = JSON.parse(fs.readFileSync(__path +'/data/tatasurya.json'));
+  const randtatasurya = tatasurya[Math.floor(Math.random() * tatasurya.length)];
+  data = await fetch(randtatasurya).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/tatasurya.jpeg', data)
+  res.sendFile(__path +'/tmp/tatasurya.jpeg')
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
+router.get('/wallpaper/kartun', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+
+  const kartun = JSON.parse(fs.readFileSync(__path +'/data/kartun.json'));
+  const randkartun = kartun[Math.floor(Math.random() * kartun.length)];
+  data = await fetch(randkartun).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/kartun.jpeg', data)
+  res.sendFile(__path +'/tmp/kartun.jpeg')
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
+router.get('/wallpaper/pentol', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+
+  const pentol = JSON.parse(fs.readFileSync(__path +'/data/pentol.json'));
+  const randpentol = pentol[Math.floor(Math.random() * pentol.length)];
+  data = await fetch(randpentol).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/pentol.jpeg', data)
+  res.sendFile(__path +'/tmp/pentol.jpeg')
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
+router.get('/wallpaper/katakata', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+
+  const katakata = JSON.parse(fs.readFileSync(__path +'/data/katakata.json'));
+  const randkatakata = katakata[Math.floor(Math.random() * katakata.length)];
+  data = await fetch(randkatakata).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/katakata.jpeg', data)
+  res.sendFile(__path +'/tmp/katakata.jpeg')
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
 router.get('/wallpaper/toukachan', async (req, res, next) => {
         var Apikey = req.query.apikey
             
