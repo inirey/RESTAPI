@@ -386,15 +386,21 @@ router.get('/instagram', async (req, res, next) => {
   if(!apikey) return res.json(loghandler.notparam)
   if(listkey.includes(apikey)){
   igDownloader(url)
-    .then(data => {
-      result = data.result;
+    .then((data) => {
+      result = {
            res.json({
-             	author: 'Rey',
-                 result
-             })
-         })
-         .catch(e => {
-         	res.json(loghandler.error)
+                status: true,
+             	author: Rey
+                 }
+      res.json(result)
+    })
+    .catch((err) => {
+      res.json(err);
+    });
+    } else {
+    	res.json(loghandler.invalidKey)
+    }
+});
 });
 
 router.get('/download/ig', async(req, res, next) => {
