@@ -418,8 +418,8 @@ router.get('/download/fb', async (req, res, next) => {
        .then((result) => {
             res.json({
               status: true,
-              code: 200,
-              creator: `${creator}`
+              creator: Rey
+              result
             })
         })
         .catch((error) => {
