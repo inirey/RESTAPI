@@ -73,7 +73,7 @@ var {
   WPUser
 } = require('./../lib/utils/tools');
 
-var Fbdown = require('./../lib/utils/fbdl');
+var fbdown = require('./../lib/utils/fbdl');
 
 var tebakGambar = require('./../lib/utils/tebakGambar');
 
@@ -411,24 +411,22 @@ router.get('/download/fb', async (req, res, next) => {
             
 	if(!Apikey) return res.json(loghandler.notparam)
 	if(listkey.includes(Apikey)){
-    if (!url) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter url"})
+        if (!url) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter url"})
 
-       FB(url)
-       .then((data) => {
-         res.json({
-           status: true,
-           code: 200,
-           creator: `${creator}`,
-           title: data.title,
-           desc: data.deskripsi,
-           durasi: data.durasi,
-           thumb: data.thumbnail,
-           result: data.hd
-         })
-       });
-} else {
-res.json(loghandler.invalidKey)
-}
+       fbdown(url)
+       .then((result) => {
+      res.json({
+        code: 200,
+        creator: `${creator}`,
+        result
+      })
+    })
+    .catch((error) => {
+      res.json(error)
+    });
+    } else {
+    	res.json(loghandler.invalidKey)
+    }
 });
 
 router.get('/stalk/tiktok', async (req, res, next) => {
