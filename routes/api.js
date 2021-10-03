@@ -417,17 +417,18 @@ router.get('/download/fb', async (req, res, next) => {
        fbDownloader(url)
        .then((result) => {
             res.json({
-              status: true,
-              creator: Rey,
-              result
-            })
-        })
-        .catch((error) => {
-            res.json(error);
-        });
-      } else {
-     res.json(loghandler.invalidKey)
-     }
+        status: true,
+        code: 200,
+        creator: `${creator}`,
+        result
+      })
+    })
+    .catch((error) => {
+      res.json(error)
+    });
+    } else {
+    	res.json(loghandler.invalidKey)
+    }
 });
 
 router.get('/stalk/tiktok', async (req, res, next) => {
