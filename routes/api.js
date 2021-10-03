@@ -74,7 +74,7 @@ var {
 } = require('./../lib/utils/tools');
 
 var {
-  fbdown,
+  FBdown,
   fbdown2
 } = require('./../lib/utils/fbdl');
 
@@ -414,20 +414,21 @@ router.get('/download/fb', async (req, res, next) => {
   if(!url) return res.json(loghandler.noturl)
   if(!apikey) return res.json(loghandler.notparam)
   if(listkey.includes(apikey)){
-       fbdown(url)
+       FBdown(url)
        .then((result) => {
-      res.json({
-        code: 200,
-        creator: `${creator}`,
-        result
-      })
-    })
-    .catch((error) => {
-      res.json(error)
-    });
-    } else {
-    	res.json(loghandler.invalidKey)
-    }
+            res.json({
+              status: true,
+              code: 200,
+              creator: `${creator}`,
+              result
+            })
+        })
+        .catch((error) => {
+            res.json(error);
+        });
+      } else {
+     res.json(loghandler.invalidKey)
+     }
 });
 
 router.get('/stalk/tiktok', async (req, res, next) => {
