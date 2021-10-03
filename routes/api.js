@@ -407,6 +407,33 @@ router.get('/download/ig', async(req, res, next) => {
     }
 });
 
+router.get('/download/fb2', async (req, res, next) => {
+
+        var Apikey = req.query.apikey,
+            url = req.query.url
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+    if (!url) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter url"})
+
+       FB(url)
+       .then((data) => {
+         res.json({
+           status: true,
+           code: 200,
+           creator: `${creator}`,
+           title: data.title,
+           desc: data.deskripsi,
+           durasi: data.durasi,
+           thumb: data.thumbnail,
+           result: data.hd
+         })
+       });
+} else {
+res.json(loghandler.invalidKey)
+}
+});
+
 router.get('/download/fb', async (req, res, next) => {
 
   const url = req.query.url;
