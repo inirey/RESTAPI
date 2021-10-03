@@ -46,8 +46,8 @@ var {
 
 var {
   igStalk,
-  igDownload
-} = require("./../lib/utils/ig");
+  igDownloader
+} = require("./../lib/utils/igdown");
 
 var {
   ytDonlodMp3,
@@ -379,6 +379,24 @@ res.json(loghandler.invalidKey)
 }
 })
 
+router.get('/instagram', async (req, res, next) => {
+  const url = req.query.url;
+  const apikey = req.query.apikey;
+  if(!url) return res.json(loghandler.noturl)
+  if(!apikey) return res.json(loghandler.notparam)
+  if(listkey.includes(apikey)){
+  igDownloader(url)
+    .then(data => {
+      result = data.result;
+           res.json({
+             	author: 'Rey',
+                 result
+             })
+         })
+         .catch(e => {
+         	res.json(loghandler.error)
+});
+
 router.get('/download/ig', async(req, res, next) => {
   const url = req.query.url;
   const apikey = req.query.apikey;
@@ -404,6 +422,7 @@ router.get('/download/ig', async(req, res, next) => {
     } else {
     	res.json(loghandler.invalidKey)
     }
+});
 });
 
 router.get('/download/fb', async (req, res, next) => {
