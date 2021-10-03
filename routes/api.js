@@ -74,7 +74,7 @@ var {
 } = require('./../lib/utils/tools');
 
 var {
-  FBdown,
+  fbDownloader,
   fbdown2
 } = require('./../lib/utils/fbdl');
 
@@ -414,7 +414,7 @@ router.get('/download/fb', async (req, res, next) => {
   if(!url) return res.json(loghandler.noturl)
   if(!apikey) return res.json(loghandler.notparam)
   if(listkey.includes(apikey)){
-       FBdown(url)
+       fbDownloader(url)
        .then((result) => {
             res.json({
               status: true,
