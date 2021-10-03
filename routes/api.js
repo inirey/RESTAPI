@@ -73,7 +73,10 @@ var {
   WPUser
 } = require('./../lib/utils/tools');
 
-var fbdown = require('./../lib/utils/fbdl');
+var {
+  fbdown,
+  fbdown2
+} = require('./../lib/utils/fbdl');
 
 var tebakGambar = require('./../lib/utils/tebakGambar');
 
@@ -406,13 +409,11 @@ router.get('/download/ig', async(req, res, next) => {
 
 router.get('/download/fb', async (req, res, next) => {
 
-        var Apikey = req.query.apikey,
-            url = req.query.url
-            
-	if(!Apikey) return res.json(loghandler.notparam)
-	if(listkey.includes(Apikey)){
-        if (!url) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter url"})
-
+  const url = req.query.url;
+  const apikey = req.query.apikey;
+  if(!url) return res.json(loghandler.noturl)
+  if(!apikey) return res.json(loghandler.notparam)
+  if(listkey.includes(apikey)){
        fbdown(url)
        .then((result) => {
       res.json({
@@ -454,8 +455,8 @@ router.get('/stalk/tiktok', async (req, res, next) => {
              })
          })
    } else {
-res.json(loghandler.invalidKey)
-}
+       res.json(loghandler.invalidKey)
+   }
 })
 
 router.get('/stalk/ig', async(req, res, next) => {
