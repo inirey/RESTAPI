@@ -73,6 +73,8 @@ var {
   WPUser
 } = require('./../lib/utils/tools');
 
+var Fbdown = require('./../lib/utils/fbdl');
+
 var tebakGambar = require('./../lib/utils/tebakGambar');
 
 var cookie = process.env.COOCKIE
