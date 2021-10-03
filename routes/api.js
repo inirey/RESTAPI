@@ -2149,6 +2149,102 @@ res.json(loghandler.invalidKey)
 }
 })
 
+router.get('/wallpaper/trans', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+
+  const trans = JSON.parse(fs.readFileSync(__path +'/data/trans.json'));
+  const randtrans = trans[Math.floor(Math.random() * trans.length)];
+  data = await fetch(randtrans).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/trans.jpeg', data)
+  res.sendFile(__path +'/tmp/trans.jpeg')
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
+router.get('/wallpaper/jeni', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+
+  const jeni = JSON.parse(fs.readFileSync(__path +'/data/jeni.json'));
+  const randjeni = jeni[Math.floor(Math.random() * jeni.length)];
+  data = await fetch(randjeni).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/jeni.jpeg', data)
+  res.sendFile(__path +'/tmp/jeni.jpeg')
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
+router.get('/wallpaper/jiso', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+
+  const jiso = JSON.parse(fs.readFileSync(__path +'/data/jiso.json'));
+  const randjiso = jiso[Math.floor(Math.random() * jiso.length)];
+  data = await fetch(randjiso).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/jiso.jpeg', data)
+  res.sendFile(__path +'/tmp/jiso.jpeg')
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
+router.get('/wallpaper/satanic', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+
+  const satanic = JSON.parse(fs.readFileSync(__path +'/data/satanic.json'));
+  const randsatanic = satanic[Math.floor(Math.random() * satanic.length)];
+  data = await fetch(randsatanic).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/satanic.jpeg', data)
+  res.sendFile(__path +'/tmp/satanic.jpeg')
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
+router.get('/wallpaper/cecan2', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+
+  const cecan2 = JSON.parse(fs.readFileSync(__path +'/data/cecan2.json'));
+  const randcecan2 = cecan2[Math.floor(Math.random() * cecan2.length)];
+  data = await fetch(randcecan2).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/cecan2.jpeg', data)
+  res.sendFile(__path +'/tmp/cecan2.jpeg')
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
+router.get('/wallpaper/cogan2', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+
+  const cogan2 = JSON.parse(fs.readFileSync(__path +'/data/cogan2.json'));
+  const randcogan2 = cogan2[Math.floor(Math.random() * cogan2.length)];
+  data = await fetch(randcogan2).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/cogan2.jpeg', data)
+  res.sendFile(__path +'/tmp/cogan2.jpeg')
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
 router.get('/wallpaper/itachi', async (req, res, next) => {
         var Apikey = req.query.apikey
             
