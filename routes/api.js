@@ -379,7 +379,7 @@ res.json(loghandler.invalidKey)
 }
 })
 
-router.get('/instagram', async (req, res, next) => {
+router.get('/download/ig', async(req, res, next) => {
   const url = req.query.url;
   const apikey = req.query.apikey;
   if(!url) return res.json(loghandler.noturl)
@@ -388,37 +388,11 @@ router.get('/instagram', async (req, res, next) => {
   igDownloader(url)
     .then((data) => {
       result = {
-           res.json({
-                status: true,
-             	author: Rey
-                 }
-      res.json(result)
-    })
-    .catch((err) => {
-      res.json(err);
-    });
-    } else {
-    	res.json(loghandler.invalidKey)
-    }
-});
-});
-
-router.get('/download/ig', async(req, res, next) => {
-  const url = req.query.url;
-  const apikey = req.query.apikey;
-  if(!url) return res.json(loghandler.noturl)
-  if(!apikey) return res.json(loghandler.notparam)
-  if(listkey.includes(apikey)){
-  igDownload(url)
-    .then((data) => {
-      result = {
         status: true,
         code: 200,
         creator: `${creator}`,
-        id: data.id,
-        shortCode: data.shortCode,
-        caption: data.caption,
-        result: data.url
+        url: ${link},
+        result: ${desc}
       }
       res.json(result)
     })
