@@ -5953,6 +5953,33 @@ router.get('/maker/emoji2png', async(req, res, next) => {
   }
 });
 
+router.get('/downloader/facebook', async(req, res, next) => {
+  const apikey = req.query.apikey;
+  const url = req.query.url;
+  
+  if(!url) return res.json(loghandler.noturl)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+    fetch(encodeURI(`https://fb-scrape.herokuapp.com/api/fb?url=${url}`))
+    .then(response => response.json())
+        .then(data => {
+        var result = data;
+             res.json({
+               status: true,
+               code: 200,
+               creator: `${creator}`,
+                 result
+             })
+         })
+         .catch(e => {
+         	res.json(loghandler.error)
+})
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+
 router.get('/web2plain-text', async(req, res, next) => {
   const apikey = req.query.apikey;
   const url = req.query.url;
