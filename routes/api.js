@@ -417,22 +417,22 @@ router.get('/downloader/facebook2', async(req, res, next) => {
   if(listkey.includes(apikey)){
     fetch(encodeURI(`https://fb-scrape.herokuapp.com/api/fb?url=${url}`))
     .then(response => response.json())
-        .then((data) => {
-         res.json({
-           status: true,
-           code: 200,
-           creator: `${creator}`,
-           name: `${name}`,
-           desc: `${description}`,
-           durasi: `${duration}`,
-           thumb: `${thumbnailUrl}`,
-           result: `${contentUrl}`,
+        .then(hasil => {
+
+        var result = hasil.data;
+             res.json({
+                 status : true,
+                 creator : `${creator}`,
+                 result
+             })
          })
-       });
+         .catch(e => {
+         	res.json(loghandler.error)
+})
 } else {
-res.json(loghandler.invalidKey)
+  res.json(loghandler.invalidKey)
 }
-});
+})
 
 router.get('/download/fb2', async (req, res, next) => {
 
