@@ -407,6 +407,33 @@ router.get('/download/ig', async(req, res, next) => {
     }
 });
 
+router.get('/downloader/facebook2', async(req, res, next) => {
+  const apikey = req.query.apikey;
+  const url = req.query.url;
+  
+  if(!url) return res.json(loghandler.noturl)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+    fetch(encodeURI(`https://fb-scrape.herokuapp.com/api/fb?url=${url}`))
+    .then(response => response.json())
+        .then((data) => {
+         res.json({
+           status: true,
+           code: 200,
+           creator: `${creator}`,
+           name: data.name,
+           desc: data.description,
+           durasi: data.duration,
+           thumb: data.thumbnailUrl,
+           result: data.contentUrl
+         })
+       });
+} else {
+res.json(loghandler.invalidKey)
+}
+});
+
 router.get('/download/fb2', async (req, res, next) => {
 
         var Apikey = req.query.apikey,
