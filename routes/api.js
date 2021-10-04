@@ -407,7 +407,7 @@ router.get('/download/ig', async(req, res, next) => {
     }
 });
 
-router.get('/downloader/facebook2', async(req, res, next) => {
+router.get('/downloader/facebook', async(req, res, next) => {
   const apikey = req.query.apikey;
   const url = req.query.url;
   
@@ -419,7 +419,7 @@ router.get('/downloader/facebook2', async(req, res, next) => {
     .then(response => response.json())
         .then(hasil => {
 
-        var result = hasil.data.contentUrl;
+        var result = hasil.data;
              res.json({
                  status : true,
                  creator : `${creator}`,
@@ -434,7 +434,7 @@ router.get('/downloader/facebook2', async(req, res, next) => {
 }
 })
 
-router.get('/download/fb2', async (req, res, next) => {
+router.get('/downloader/fb2', async (req, res, next) => {
 
         var Apikey = req.query.apikey,
             url = req.query.url
@@ -461,7 +461,7 @@ res.json(loghandler.invalidKey)
 }
 });
 
-router.get('/download/fb', async (req, res, next) => {
+router.get('/downloader/fb', async (req, res, next) => {
 
   const url = req.query.url;
   const apikey = req.query.apikey;
@@ -5980,7 +5980,7 @@ router.get('/maker/emoji2png', async(req, res, next) => {
   }
 });
 
-router.get('/downloader/facebook', async(req, res, next) => {
+router.get('/downloader/facebook2', async(req, res, next) => {
   const apikey = req.query.apikey;
   const url = req.query.url;
   
