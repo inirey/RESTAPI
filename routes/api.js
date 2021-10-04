@@ -422,11 +422,11 @@ router.get('/downloader/facebook2', async(req, res, next) => {
            status: true,
            code: 200,
            creator: `${creator}`,
-           name: data.name,
-           desc: data.description,
-           durasi: data.duration,
-           thumb: data.thumbnailUrl,
-           result: data.contentUrl
+           name: `${name}`,
+           desc: `${description}`,
+           durasi: `${duration}`,
+           thumb: `${thumbnailUrl}`,
+           result: `${contentUrl}`,
          })
        });
 } else {
