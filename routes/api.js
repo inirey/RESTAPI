@@ -419,7 +419,7 @@ router.get('/downloader/facebook2', async(req, res, next) => {
     .then(response => response.json())
         .then(hasil => {
 
-        var result = hasil.data;
+        var result = hasil.data.contentUrl;
              res.json({
                  status : true,
                  creator : `${creator}`,
