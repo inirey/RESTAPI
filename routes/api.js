@@ -3095,6 +3095,32 @@ res.json(loghandler.invalidKey)
 }
 })
 
+router.get('/fun/simisimi', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            text = req.query.text
+   
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+        if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter text"})
+
+       fetch(encodeURI(`https://simsumi.herokuapp.com/api?text=${text}&lang=id`))
+        .then(response => response.json())
+        .then(data => {
+        var result = data;
+             res.json({
+                 status : true,
+                 creator : `${creator}`,
+                 result
+             })
+         })
+         .catch(e => {
+         	res.json(loghandler.error)
+})
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
 router.get('/random/asmaulhusna', async (req, res, next) => {
         var Apikey = req.query.apikey
             
