@@ -407,6 +407,114 @@ router.get('/download/ig', async(req, res, next) => {
     }
 });
 
+router.get('/stalk/ig', async(req, res, next) => {
+  const apikey = req.query.apikey;
+  const username = req.query.username;
+  
+  if(!username) return res.json(loghandler.notusername)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+    fetch(encodeURI(`https://aqulzz.herokuapp.com/igstalk?username=${username}`))
+    .then(response => response.json())
+        .then(hasil => {
+
+        var result = hasil.data;
+             res.json({
+                 status : true,
+                 creator : `${creator}`,
+                 result
+             })
+         })
+         .catch(e => {
+         	res.json(loghandler.error)
+})
+} else {
+  res.json(loghandler.invalidKey)
+}
+})
+
+router.get('/downloader/pinterest', async(req, res, next) => {
+  const apikey = req.query.apikey;
+  const q = req.query.q;
+  
+  if(!q) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+    fetch(encodeURI(`https://aqulzz.herokuapp.com/pinterest?q=${q}`))
+    .then(response => response.json())
+        .then(hasil => {
+
+        var result = hasil.data;
+             res.json({
+                 status : true,
+                 creator : `${creator}`,
+                 result
+             })
+         })
+         .catch(e => {
+         	res.json(loghandler.error)
+})
+} else {
+  res.json(loghandler.invalidKey)
+}
+})
+
+router.get('/downloader/igtv', async(req, res, next) => {
+  const apikey = req.query.apikey;
+  const url = req.query.url;
+  
+  if(!url) return res.json(loghandler.noturl)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+    fetch(encodeURI(`https://aqulzz.herokuapp.com/igtv?url=${url}`))
+    .then(response => response.json())
+        .then(hasil => {
+
+        var result = hasil.data;
+             res.json({
+                 status : true,
+                 creator : `${creator}`,
+                 result
+             })
+         })
+         .catch(e => {
+         	res.json(loghandler.error)
+})
+} else {
+  res.json(loghandler.invalidKey)
+}
+})
+
+router.get('/downloader/tiktok2', async(req, res, next) => {
+  const apikey = req.query.apikey;
+  const url = req.query.url;
+  
+  if(!url) return res.json(loghandler.noturl)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+    fetch(encodeURI(`https://aqulzz.herokuapp.com/tiktok?url=${url}`))
+    .then(response => response.json())
+        .then(hasil => {
+
+        var result = hasil.data;
+             res.json({
+                 status : true,
+                 creator : `${creator}`,
+                 result
+             })
+         })
+         .catch(e => {
+         	res.json(loghandler.error)
+})
+} else {
+  res.json(loghandler.invalidKey)
+}
+})
+
 router.get('/downloader/facebook', async(req, res, next) => {
   const apikey = req.query.apikey;
   const url = req.query.url;
@@ -514,7 +622,7 @@ router.get('/stalk/tiktok', async (req, res, next) => {
    }
 })
 
-router.get('/stalk/ig', async(req, res, next) => {
+router.get('/stalk/ig2', async(req, res, next) => {
   const username = req.query.username;
   const apikey = req.query.apikey;
   if(!username) return res.json(loghandler.notusername)
