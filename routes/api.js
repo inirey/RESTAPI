@@ -419,7 +419,7 @@ router.get('/stalk/ig', async(req, res, next) => {
     .then(response => response.json())
         .then(hasil => {
 
-        var result = hasil.data;
+        var result = hasil.result;
              res.json({
                  status : true,
                  creator : `${creator}`,
@@ -446,7 +446,7 @@ router.get('/downloader/pinterest', async(req, res, next) => {
     .then(response => response.json())
         .then(hasil => {
 
-        var result = hasil.data;
+        var result = hasil.result;
              res.json({
                  status : true,
                  creator : `${creator}`,
@@ -473,7 +473,7 @@ router.get('/downloader/igtv', async(req, res, next) => {
     .then(response => response.json())
         .then(hasil => {
 
-        var result = hasil.data;
+        var result = hasil.result;
              res.json({
                  status : true,
                  creator : `${creator}`,
@@ -488,7 +488,7 @@ router.get('/downloader/igtv', async(req, res, next) => {
 }
 })
 
-router.get('/downloader/tiktok2', async(req, res, next) => {
+router.get('/download/tiktok2', async(req, res, next) => {
   const apikey = req.query.apikey;
   const url = req.query.url;
   
@@ -500,7 +500,7 @@ router.get('/downloader/tiktok2', async(req, res, next) => {
     .then(response => response.json())
         .then(hasil => {
 
-        var result = hasil.data;
+        var result = hasil.result;
              res.json({
                  status : true,
                  creator : `${creator}`,
