@@ -3094,6 +3094,109 @@ router.get('/random/quotes/muslim', async (req, res, next) => {
 res.json(loghandler.invalidKey)
 }
 })
+router.get('/fun/simisimi-ind2', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            text = req.query.text
+   
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+        if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter text"})
+
+       fetch(encodeURI(`https://api.simsimi.net/v2/?text=${text}&lc=id`))
+        .then(response => response.json())
+        .then(data => {
+        var result = data;
+             res.json({
+                 status : true,
+                 creator : `${creator}`,
+                 result
+             })
+         })
+         .catch(e => {
+         	res.json(loghandler.error)
+})
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
+router.get('/fun/simisimi4', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            text = req.query.text
+   
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+        if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter text"})
+
+       fetch(encodeURI(`https://api.simsimi.net/v2/?text=${text}&lc=ar`))
+        .then(response => response.json())
+        .then(data => {
+        var result = data;
+             res.json({
+                 status : true,
+                 creator : `${creator}`,
+                 result
+             })
+         })
+         .catch(e => {
+         	res.json(loghandler.error)
+})
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
+router.get('/fun/simisimi3', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            text = req.query.text
+   
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+        if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter text"})
+
+       fetch(encodeURI(`https://api.simsimi.net/v2/?text=${text}&lc=ph`))
+        .then(response => response.json())
+        .then(data => {
+        var result = data;
+             res.json({
+                 status : true,
+                 creator : `${creator}`,
+                 result
+             })
+         })
+         .catch(e => {
+         	res.json(loghandler.error)
+})
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
+router.get('/fun/simisimi2', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            text = req.query.text
+   
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+        if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter text"})
+
+       fetch(encodeURI(`https://api.simsimi.net/v2/?text=${text}&lc=en`))
+        .then(response => response.json())
+        .then(data => {
+        var result = data;
+             res.json({
+                 status : true,
+                 creator : `${creator}`,
+                 result
+             })
+         })
+         .catch(e => {
+         	res.json(loghandler.error)
+})
+} else {
+res.json(loghandler.invalidKey)
+}
+})
 
 router.get('/fun/simisimi', async (req, res, next) => {
         var Apikey = req.query.apikey
