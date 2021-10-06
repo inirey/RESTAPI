@@ -124,7 +124,7 @@ loghandler = {
     notnabi: {
         status: false,
         creator: `${creator}`,
-        code: 406,
+        code: 406, 
         message: 'masukan parameter nabi'
     },
     nottext3: {
@@ -501,6 +501,60 @@ router.get('/download/shoppe', async(req, res, next) => {
         .then(hasil => {
 
         var result = hasil.data;
+             res.json({
+                 status : true,
+                 creator : `${creator}`,
+                 result
+             })
+         })
+         .catch(e => {
+         	res.json(loghandler.error)
+})
+} else {
+  res.json(loghandler.invalidKey)
+}
+})
+
+router.get('/primbon/artimimpi', async(req, res, next) => {
+  const apikey = req.query.apikey;
+  const text = req.query.text;
+  
+  if(!text) return res.json(loghandler.nottext)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+    fetch(encodeURI(`http://kocakz.herokuapp.com/api/primbon/tafsirmimpi?mimpi=${text}`))
+    .then(response => response.json())
+        .then(hasil => {
+
+        var result = hasil.result;
+             res.json({
+                 status : true,
+                 creator : `${creator}`,
+                 result
+             })
+         })
+         .catch(e => {
+         	res.json(loghandler.error)
+})
+} else {
+  res.json(loghandler.invalidKey)
+}
+})
+
+router.get('/primbon/artinama', async(req, res, next) => {
+  const apikey = req.query.apikey;
+  const text = req.query.text;
+  
+  if(!text) return res.json(loghandler.nottext)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+    fetch(encodeURI(`http://kocakz.herokuapp.com/api/primbon/artinama?name=${text}`))
+    .then(response => response.json())
+        .then(hasil => {
+
+        var result = hasil.result;
              res.json({
                  status : true,
                  creator : `${creator}`,
@@ -969,6 +1023,96 @@ res.json(loghandler.invalidKey)
 }
 })
 
+router.get('/random/faktaunik', async (req, res, next) => {
+        var Apikey = req.query.apikey
+	if(!Apikey) return res.json(loghandler.notparam)
+        if(listkey.includes(Apikey)){
+
+       fetch(encodeURI(`http://kocakz.herokuapp.com/api/random/text/faktaunik`))
+        .then(response => response.json())
+        .then(hasil => {
+        var result = hasil.result;
+             res.json({
+                 creator : `${creator}`,
+                 result
+             })
+         })
+         .catch(e => {
+         	res.json(loghandler.error)
+})
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
+router.get('/random/katabijak', async (req, res, next) => {
+        var Apikey = req.query.apikey
+	if(!Apikey) return res.json(loghandler.notparam)
+        if(listkey.includes(Apikey)){
+
+       fetch(encodeURI(`http://kocakz.herokuapp.com/api/random/text/katabijak`))
+        .then(response => response.json())
+        .then(hasil => {
+        var result = hasil.result;
+             res.json({
+                 creator : `${creator}`,
+                 result
+             })
+         })
+         .catch(e => {
+         	res.json(loghandler.error)
+})
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
+router.get('/random/pantun', async (req, res, next) => {
+        var Apikey = req.query.apikey
+	if(!Apikey) return res.json(loghandler.notparam)
+        if(listkey.includes(Apikey)){
+
+       fetch(encodeURI(`http://kocakz.herokuapp.com/api/random/text/pantun`))
+        .then(response => response.json())
+        .then(hasil => {
+        var result = hasil.result;
+             res.json({
+                 creator : `${creator}`,
+                 result
+             })
+         })
+         .catch(e => {
+         	res.json(loghandler.error)
+})
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
+router.get('/random/fancytext', async (req, res, next) => {
+        var Apikey = req.query.apikey
+             text = req.query.text 
+  
+	if(!Apikey) return res.json(loghandler.notparam)
+        if(!text) return res.json(loghandler.nottext)
+	if(listkey.includes(Apikey)){
+
+       fetch(encodeURI(`http://kocakz.herokuapp.com/api/random/text/fancytext?text=${text}`))
+        .then(response => response.json())
+        .then(hasil => {
+        var result = hasil.result;
+             res.json({
+                 creator : `${creator}`,
+                 result
+             })
+         })
+         .catch(e => {
+         	res.json(loghandler.error)
+})
+} else {
+res.json(loghandler.invalidKey)
+}
+})
 
 router.get('/random/quotes', async (req, res, next) => {
         var Apikey = req.query.apikey
@@ -976,10 +1120,10 @@ router.get('/random/quotes', async (req, res, next) => {
 	if(!Apikey) return res.json(loghandler.notparam)
 	if(listkey.includes(Apikey)){
 
-       fetch(encodeURI(`https://python-api-zhirrr.herokuapp.com/api/random/quotes`))
+       fetch(encodeURI(`http://kocakz.herokuapp.com/api/random/text/quotes`))
         .then(response => response.json())
-        .then(data => {
-        var result = data;
+        .then(hasil => {
+        var result = hasil.result;
              res.json({
                  creator : `${creator}`,
                  result
