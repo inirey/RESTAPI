@@ -434,6 +434,33 @@ router.get('/download/mediafire', async(req, res, next) => {
 }
 })
 
+router.get('/stalk/github', async(req, res, next) => {
+  const apikey = req.query.apikey;
+  const username = req.query.username;
+  
+  if(!username) return res.json(loghandler.notusername)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+    fetch(encodeURI(`https://free-restapii.herokuapp.com/docs/githubstalk?username=${username}&apikey=LoliKillers`))
+    .then(response => response.json())
+        .then(hasil => {
+
+        var result = hasil.result;
+             res.json({
+                 status : true,
+                 creator : `${creator}`,
+                 result
+             })
+         })
+         .catch(e => {
+         	res.json(loghandler.error)
+})
+} else {
+  res.json(loghandler.invalidKey)
+}
+})
+
 router.get('/stalk/ig', async(req, res, next) => {
   const apikey = req.query.apikey;
   const username = req.query.username;
@@ -1011,31 +1038,6 @@ router.get('/stalk/npm', async (req, res, next) => {
         var result = data;
              res.json({
                  status : true,
-                 creator : `${creator}`,
-                 result
-             })
-         })
-         .catch(e => {
-         	res.json(loghandler.error)
-})
-} else {
-res.json(loghandler.invalidKey)
-}
-})
-
-router.get('/stalk/github', async (req, res, next) => {
-        const username = req.query.username;
-        const apikey = req.query.apikey;
-
-        if(!username) return res.json(loghandler.notusername)
-	if(!Apikey) return res.json(loghandler.notparam)
-        if(listkey.includes(Apikey)){
-
-       fetch(encodeURI(`https://free-restapii.herokuapp.com/docs/githubstalk?username=${username}&apikey=LoliKillers`))
-        .then(response => response.json())
-        .then(hasil => {
-        var result = hasil.data;
-             res.json({
                  creator : `${creator}`,
                  result
              })
