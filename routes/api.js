@@ -1023,6 +1023,31 @@ res.json(loghandler.invalidKey)
 }
 })
 
+router.get('/stalk/github', async (req, res, next) => {
+        const username = req.query.username;
+        const apikey = req.query.apikey;
+
+        if(!username) return res.json(loghandler.notusername)
+	if(!Apikey) return res.json(loghandler.notparam)
+        if(listkey.includes(Apikey)){
+
+       fetch(encodeURI(`https://free-restapii.herokuapp.com/docs/githubstalk?username=${username}&apikey=LoliKillers`))
+        .then(response => response.json())
+        .then(hasil => {
+        var result = hasil.data;
+             res.json({
+                 creator : `${creator}`,
+                 result
+             })
+         })
+         .catch(e => {
+         	res.json(loghandler.error)
+})
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
 router.get('/random/faktaunik', async (req, res, next) => {
         var Apikey = req.query.apikey
 	if(!Apikey) return res.json(loghandler.notparam)
