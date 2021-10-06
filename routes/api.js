@@ -488,6 +488,33 @@ router.get('/downloader/wallpaperflare', async(req, res, next) => {
 }
 })
 
+router.get('/download/sticker', async(req, res, next) => {
+  const apikey = req.query.apikey;
+  const q = req.query.q;
+  
+  if(!q) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+    fetch(encodeURI(`https://api.zeks.me/api/searchsticker?apikey=reyterganz&q=${q}`))
+    .then(response => response.json())
+        .then(hasil => {
+
+        var result = hasil.sticker;
+             res.json({
+                 status : true,
+                 creator : `${creator}`,
+                 result
+             })
+         })
+         .catch(e => {
+         	res.json(loghandler.error)
+})
+} else {
+  res.json(loghandler.invalidKey)
+}
+})
+
 router.get('/downloader/pinterest', async(req, res, next) => {
   const apikey = req.query.apikey;
   const q = req.query.q;
