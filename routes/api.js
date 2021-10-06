@@ -446,7 +446,7 @@ router.get('/stalk/github', async(req, res, next) => {
     .then(response => response.json())
         .then(hasil => {
 
-        var result = hasil.result;
+        var result = hasil.data.result;
              res.json({
                  status : true,
                  creator : `${creator}`,
