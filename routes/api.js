@@ -596,6 +596,60 @@ router.get('/downloader/xnxx', async(req, res, next) => {
 }
 })
 
+router.get('/downloader/twittervid', async(req, res, next) => {
+  const apikey = req.query.apikey;
+  const url = req.query.url;
+  
+  if(!url) return res.json(loghandler.noturl)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+    fetch(encodeURI(`http://kocakz.herokuapp.com/api/media/twvid?url=${url}`))
+    .then(response => response.json())
+        .then(hasil => {
+
+        var result = hasil.getVideo;
+             res.json({
+                 status : true,
+                 creator : `${creator}`,
+                 result
+             })
+         })
+         .catch(e => {
+         	res.json(loghandler.error)
+})
+} else {
+  res.json(loghandler.invalidKey)
+}
+})
+
+router.get('/downloader/twitterimg', async(req, res, next) => {
+  const apikey = req.query.apikey;
+  const url = req.query.url;
+  
+  if(!url) return res.json(loghandler.noturl)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+    fetch(encodeURI(`http://kocakz.herokuapp.com/api/media/twimg?url=${url}`))
+    .then(response => response.json())
+        .then(hasil => {
+
+        var result = hasil.images;
+             res.json({
+                 status : true,
+                 creator : `${creator}`,
+                 result
+             })
+         })
+         .catch(e => {
+         	res.json(loghandler.error)
+})
+} else {
+  res.json(loghandler.invalidKey)
+}
+})
+
 router.get('/downloader/xvideo', async(req, res, next) => {
   const apikey = req.query.apikey;
   const query = req.query.query;
@@ -635,7 +689,7 @@ router.get('/downloader/pornhub', async(req, res, next) => {
     .then(response => response.json())
         .then(hasil => {
 
-        var result = hasil.results;
+        var result = hasil.res;
              res.json({
                  status : true,
                  creator : `${creator}`,
