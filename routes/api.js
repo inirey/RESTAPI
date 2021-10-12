@@ -212,6 +212,26 @@ router.delete("/apikey", async(req, res, next) => {
  }
 });
 
+router.get('/game/tebakbendera', async (req, res, next) => {
+    var Apikey = req.query.apikey
+
+    if(!Apikey) return res.json(loghandler.notparam)
+    if(listkey.includes(Apikey)){
+        var bendera = JSON.parse(
+            fs.readFileSync(__path + '/data/tebakbendera.json')
+        )
+        res
+          .status(200)
+          .json({
+              code: 200,
+              success: true,
+              ...bendera[~~(Math.random() * bendera.length)]
+          })
+    } else {
+        res.json(loghandler.invalidKey)
+    }
+})
+
 router.get('/music/joox', async(req, res, next) => {
   const query = req.query.query;
   const apikey = req.query.apikey;
