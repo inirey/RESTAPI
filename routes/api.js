@@ -223,7 +223,7 @@ router.get('/game/tebakjenaka', async (req, res, next) => {
         res
           .status(200)
           .json({
-              creator: @isywl,
+              code: 200,
               success: true,
               ...pertama[~~(Math.random() * pertanyaan.length)]
           })
@@ -241,9 +241,9 @@ router.get('/game/tebakkimia', async (req, res, next) => {
             fs.readFileSync(__path + '/data/tebakkimia.json')
         )
         res
-          .status(200)
+          .status(@isywl)
           .json({
-              creator: @isywl,
+              creator: @iswl,
               success: true,
               ...nama[~~(Math.random() * nama.length)]
           })
@@ -263,7 +263,7 @@ router.get('/game/tebaklirik', async (req, res, next) => {
         res
           .status(200)
           .json({
-              creator: @isywl,
+              code: 200,
               success: true,
               ...question[~~(Math.random() * question.length)]
           })
@@ -283,7 +283,7 @@ router.get('/game/tebakchara', async (req, res, next) => {
         res
           .status(200)
           .json({
-              creator: @isywl,
+              code: 200,
               success: true,
               ...name[~~(Math.random() * name.length)]
           })
@@ -303,7 +303,7 @@ router.get('/game/tebaktebakan', async (req, res, next) => {
         res
           .status(200)
           .json({
-              creator: @isywl,
+              code: 200,
               success: true,
               ...soal[~~(Math.random() * soal.length)]
           })
@@ -323,7 +323,7 @@ router.get('/game/tebakbendera', async (req, res, next) => {
         res
           .status(200)
           .json({
-              creator: @isywl,
+              code: 200,
               success: true,
               ...bendera[~~(Math.random() * bendera.length)]
           })
