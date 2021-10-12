@@ -1,0 +1,518 @@
+[
+  {
+    "result": {
+      "bendera": "🇨🇬",
+      "nama": "Kongo - Brazzaville"
+    }
+  },
+  {
+    "result": {
+      "bendera": "🇦🇽",
+      "nama": "Kepulauan Åland"
+    }
+  },
+  {
+    "result": {
+      "bendera": "🇰🇲",
+      "nama": "Komoro"
+    }
+  },
+  {
+    "result": {
+      "bendera": "🇨🇦",
+      "nama": "Kanada"
+    }
+  },
+  {
+    "result": {
+      "bendera": "🇬🇾",
+      "nama": "Guyana"
+    }
+  },
+  {
+    "result": {
+      "bendera": "🇦🇸",
+      "nama": "Samoa Amerika"
+    }
+  },
+  {
+    "result": {
+      "bendera": "🇸🇴",
+      "nama": "Somalia"
+    }
+  },
+  {
+    "result": {
+      "bendera": "🇰🇷",
+      "nama": "Korea Selatan"
+    }
+  },
+  {
+    "result": {
+      "bendera": "🇲🇩",
+      "nama": "Moldova"
+    }
+  },
+  {
+    "result": {
+      "bendera": "🇳🇷",
+      "nama": "Nauru"
+    }
+  },
+  {
+    "result": {
+      "bendera": "🇩🇪",
+      "nama": "Jerman"
+    }
+  },
+  {
+    "result": {
+      "bendera": "🇵🇲",
+      "nama": "St. Pierre & Miquelon"
+    }
+  },
+  {
+    "result": {
+      "bendera": "🇲🇹",
+      "nama": "Malta"
+    }
+  },
+  {
+    "result": {
+      "bendera": "🇱🇸",
+      "nama": "Lesotho"
+    }
+  },
+  {
+    "result": {
+      "bendera": "🇱🇦",
+      "nama": "Laos"
+    }
+  },
+  {
+    "result": {
+      "bendera": "🇵🇱",
+      "nama": "Polandia"
+    }
+  },
+  {
+    "result": {
+      "bendera": "🇦🇷",
+      "nama": "Argentina"
+    }
+  },
+  {
+    "result": {
+      "bendera": "🇻🇮",
+      "nama": "Kepulauan Virgin AS"
+    }
+  },
+  {
+    "result": {
+      "bendera": "🇵🇲",
+      "nama": "St. Pierre & Miquelon"
+    }
+  },
+  {
+    "result": {
+      "bendera": "🇵🇬",
+      "nama": "Papua Nugini"
+    }
+  },
+  {
+    "result": {
+      "bendera": "🇹🇯",
+      "nama": "Tajikistan"
+    }
+  },
+  {
+    "result": {
+      "bendera": "🇸🇻",
+      "nama": "El Salvador"
+    }
+  },
+  {
+    "result": {
+      "bendera": "🇹🇴",
+      "nama": "Tonga"
+    }
+  },
+  {
+    "result": {
+      "bendera": "🇪🇪",
+      "nama": "Estonia"
+    }
+  },
+  {
+    "result": {
+      "bendera": "🇨🇰",
+      "nama": "Kepulauan Cook"
+    }
+  },
+  {
+    "result": {
+      "bendera": "🇲🇼",
+      "nama": "Malawi"
+    }
+  },
+  {
+    "result": {
+      "bendera": "🇵🇪",
+      "nama": "Peru"
+    }
+  },
+  {
+    "result": {
+      "bendera": "🇧🇯",
+      "nama": "Benin"
+    }
+  },
+  {
+    "result": {
+      "bendera": "🇲🇦",
+      "nama": "Maroko"
+    }
+  },
+  {
+    "result": {
+      "bendera": "🇸🇲",
+      "nama": "San Marino"
+    }
+  },
+  {
+    "result": {
+      "bendera": "🇬🇷",
+      "nama": "Yunani"
+    }
+  },
+  {
+    "result": {
+      "bendera": "🇺🇸",
+      "nama": "Amerika Serikat"
+    }
+  },
+  {
+    "result": {
+      "bendera": "🇮🇪",
+      "nama": "Irlandia"
+    }
+  },
+  {
+    "result": {
+      "bendera": "🇲🇼",
+      "nama": "Malawi"
+    }
+  },
+  {
+    "result": {
+      "bendera": "🇪🇹",
+      "nama": "Ethiopia"
+    }
+  },
+  {
+    "result": {
+      "bendera": "🇹🇰",
+      "nama": "Tokelau"
+    }
+  },
+  {
+    "result": {
+      "bendera": "🇯🇪",
+      "nama": "Jersey"
+    }
+  },
+  {
+    "result": {
+      "bendera": "🇦🇬",
+      "nama": "Antigua & Barbuda"
+    }
+  },
+  {
+    "result": {
+      "bendera": "🇩🇯",
+      "nama": "Djibouti"
+    }
+  },
+  {
+    "result": {
+      "bendera": "🇦🇩",
+      "nama": "Andorra"
+    }
+  },
+  {
+    "result": {
+      "bendera": "🇦🇫",
+      "nama": "Afganistan"
+    }
+  },
+  {
+    "result": {
+      "bendera": "🇻🇪",
+      "nama": "Venezuela"
+    }
+  },
+  {
+    "result": {
+      "bendera": "🇹🇿",
+      "nama": "Tanzania"
+    }
+  },
+  {
+    "result": {
+      "bendera": "🇦🇶",
+      "nama": "Antartika"
+    }
+  },
+  {
+    "result": {
+      "bendera": "🇸🇻",
+      "nama": "El Salvador"
+    }
+  },
+  {
+    "result": {
+      "bendera": "🇭🇺",
+      "nama": "Hongaria"
+    }
+  },
+  {
+    "result": {
+      "bendera": "🇹🇲",
+      "nama": "Turkmenistan"
+    }
+  },
+  {
+    "result": {
+      "bendera": "🇧🇸",
+      "nama": "Bahama"
+    }
+  },
+  {
+    "result": {
+      "bendera": "🇬🇩",
+      "nama": "Grenada"
+    }
+  },
+  {
+    "result": {
+      "bendera": "🇨🇿",
+      "nama": "Republik Ceko"
+    }
+  },
+  {
+    "result": {
+      "bendera": "🇵🇦",
+      "nama": "Panama"
+    }
+  },
+  {
+    "result": {
+      "bendera": "🇵🇫",
+      "nama": "Polinesia Prancis"
+    }
+  },
+  {
+    "result": {
+      "bendera": "🇳🇨",
+      "nama": "Kaledonia Baru"
+    }
+  },
+  {
+    "result": {
+      "bendera": "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
+      "nama": "Skotlandia"
+    }
+  },
+  {
+    "result": {
+      "bendera": "🇯🇲",
+      "nama": "Jamaika"
+    }
+  },
+  {
+    "result": {
+      "bendera": "🇩🇲",
+      "nama": "Dominika"
+    }
+  },
+  {
+    "result": {
+      "bendera": "🇸🇴",
+      "nama": "Somalia"
+    }
+  },
+  {
+    "result": {
+      "bendera": "🇪🇺",
+      "nama": "Uni Eropa"
+    }
+  },
+  {
+    "result": {
+      "bendera": "🇧🇦",
+      "nama": "Bosnia & Herzegovina"
+    }
+  },
+  {
+    "result": {
+      "bendera": "🇸🇨",
+      "nama": "Seychelles"
+    }
+  },
+  {
+    "result": {
+      "bendera": "🇵🇪",
+      "nama": "Peru"
+    }
+  },
+  {
+    "result": {
+      "bendera": "🇵🇲",
+      "nama": "St. Pierre & Miquelon"
+    }
+  },
+  {
+    "result": {
+      "bendera": "🇦🇴",
+      "nama": "Angola"
+    }
+  },
+  {
+    "result": {
+      "bendera": "🇧🇳",
+      "nama": "Brunei"
+    }
+  },
+  {
+    "result": {
+      "bendera": "🇧🇭",
+      "nama": "Bahrain"
+    }
+  },
+  {
+    "result": {
+      "bendera": "🇬🇹",
+      "nama": "Guatemala"
+    }
+  },
+  {
+    "result": {
+      "bendera": "🇻🇬",
+      "nama": "Kepulauan Virgin Britania Raya"
+    }
+  },
+  {
+    "result": {
+      "bendera": "🇭🇷",
+      "nama": "Kroasia"
+    }
+  },
+  {
+    "result": {
+      "bendera": "🇲🇿",
+      "nama": "Mozambik"
+    }
+  },
+  {
+    "result": {
+      "bendera": "🇷🇺",
+      "nama": "Rusia"
+    }
+  },
+  {
+    "result": {
+      "bendera": "🇻🇮",
+      "nama": "Kepulauan Virgin AS"
+    }
+  },
+  {
+    "result": {
+      "bendera": "🇵🇳",
+      "nama": "Kepulauan Pitcairn"
+    }
+  },
+  {
+    "result": {
+      "bendera": "🇬🇸",
+      "nama": "Georgia Selatan & Kepulauan Sandwich Selatan"
+    }
+  },
+  {
+    "result": {
+      "bendera": "🇺🇬",
+      "nama": "Uganda"
+    }
+  },
+  {
+    "result": {
+      "bendera": "🇩🇯",
+      "nama": "Djibouti"
+    }
+  },
+  {
+    "result": {
+      "bendera": "🇹🇫",
+      "nama": "Teritori Prancis Selatan"
+    }
+  },
+  {
+    "result": {
+      "bendera": "🇱🇮",
+      "nama": "Liechtenstein"
+    }
+  },
+  {
+    "result": {
+      "bendera": "🇬🇼",
+      "nama": "Guinea-Bissau"
+    }
+  },
+  {
+    "result": {
+      "bendera": "🇸🇹",
+      "nama": "Sao Tome & Principe"
+    }
+  },
+  {
+    "result": {
+      "bendera": "🇮🇩",
+      "nama": "Indonesia"
+    }
+  },
+  {
+    "result": {
+      "bendera": "🇮🇪",
+      "nama": "Irlandia"
+    }
+  },
+  {
+    "result": {
+      "bendera": "🇸🇽",
+      "nama": "Sint Maarten"
+    }
+  },
+  {
+    "result": {
+      "bendera": "🇱🇦",
+      "nama": "Laos"
+    }
+  },
+  {
+    "result": {
+      "bendera": "🇫🇲",
+      "nama": "Mikronesia"
+    }
+  },
+  {
+    "result": {
+      "bendera": "🇵🇱",
+      "nama": "Polandia"
+    }
+  },
+  {
+    "result": {
+      "bendera": "🇰🇵",
+      "nama": "Korea Utara"
+    }
+  }
+]
