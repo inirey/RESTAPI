@@ -225,7 +225,7 @@ router.get('/game/tebakjenaka', async (req, res, next) => {
           .json({
               code: 200,
               success: true,
-              ...pertama[~~(Math.random() * pertanyaan.length)]
+              ...pertanyaan[~~(Math.random() * pertanyaan.length)]
           })
     } else {
         res.json(loghandler.invalidKey)
@@ -241,9 +241,9 @@ router.get('/game/tebakkimia', async (req, res, next) => {
             fs.readFileSync(__path + '/data/tebakkimia.json')
         )
         res
-          .status(@isywl)
+          .status(200)
           .json({
-              creator: @iswl,
+              code: 200,
               success: true,
               ...nama[~~(Math.random() * nama.length)]
           })
