@@ -1,14 +1,14 @@
 {
-  "name": "api-zhirrr",
+  "name": "api-rey",
   "version": "1.1.0",
-  "description": "My Rest Api Projectttttt",
+  "description": "My Rest Api",
   "main": "nodemon index.js",
   "scripts": {
     "start": "nodemon index.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Zhirrr/Zhirrr-Api.git"
+    "url": "git+https://github.com/inirey/Rey-API-s.git"
   },
   "keywords": [
     "simple",
@@ -19,7 +19,7 @@
   "author": "Zhirrr",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Zhirrr/Zhirrr-Api/issues"
+    "url": "https://github.com/inirey/Rey-API-s/issues"
   },
   "dependencies": {
     "axios": "^0.21.1",
@@ -54,5 +54,5 @@
     "ytdl-core": "^4.5.0",
     "zrapi": "0.0.6"
   },
-  "homepage": "https://github.com/Zhirrr/Zhirrr-Api#readme"
+  "homepage": "https://github.com/inirey/Rey-API-s#readme"
 }
