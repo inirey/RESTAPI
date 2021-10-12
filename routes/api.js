@@ -212,6 +212,106 @@ router.delete("/apikey", async(req, res, next) => {
  }
 });
 
+router.get('/game/tebakjenaka', async (req, res, next) => {
+    var Apikey = req.query.apikey
+
+    if(!Apikey) return res.json(loghandler.notparam)
+    if(listkey.includes(Apikey)){
+        var pertanyaan = JSON.parse(
+            fs.readFileSync(__path + '/data/tebakjenaka.json')
+        )
+        res
+          .status(200)
+          .json({
+              creator: @isywl,
+              success: true,
+              ...pertama[~~(Math.random() * pertanyaan.length)]
+          })
+    } else {
+        res.json(loghandler.invalidKey)
+    }
+})
+
+router.get('/game/tebakkimia', async (req, res, next) => {
+    var Apikey = req.query.apikey
+
+    if(!Apikey) return res.json(loghandler.notparam)
+    if(listkey.includes(Apikey)){
+        var nama = JSON.parse(
+            fs.readFileSync(__path + '/data/tebakkimia.json')
+        )
+        res
+          .status(200)
+          .json({
+              creator: @isywl,
+              success: true,
+              ...nama[~~(Math.random() * nama.length)]
+          })
+    } else {
+        res.json(loghandler.invalidKey)
+    }
+})
+
+router.get('/game/tebaklirik', async (req, res, next) => {
+    var Apikey = req.query.apikey
+
+    if(!Apikey) return res.json(loghandler.notparam)
+    if(listkey.includes(Apikey)){
+        var question = JSON.parse(
+            fs.readFileSync(__path + '/data/tebakkimia.json')
+        )
+        res
+          .status(200)
+          .json({
+              creator: @isywl,
+              success: true,
+              ...question[~~(Math.random() * question.length)]
+          })
+    } else {
+        res.json(loghandler.invalidKey)
+    }
+})
+
+router.get('/game/tebakchara', async (req, res, next) => {
+    var Apikey = req.query.apikey
+
+    if(!Apikey) return res.json(loghandler.notparam)
+    if(listkey.includes(Apikey)){
+        var name = JSON.parse(
+            fs.readFileSync(__path + '/data/tebakchara.json')
+        )
+        res
+          .status(200)
+          .json({
+              creator: @isywl,
+              success: true,
+              ...name[~~(Math.random() * name.length)]
+          })
+    } else {
+        res.json(loghandler.invalidKey)
+    }
+})
+
+router.get('/game/tebaktebakan', async (req, res, next) => {
+    var Apikey = req.query.apikey
+
+    if(!Apikey) return res.json(loghandler.notparam)
+    if(listkey.includes(Apikey)){
+        var soal = JSON.parse(
+            fs.readFileSync(__path + '/data/tebaktebakan.json')
+        )
+        res
+          .status(200)
+          .json({
+              creator: @isywl,
+              success: true,
+              ...soal[~~(Math.random() * soal.length)]
+          })
+    } else {
+        res.json(loghandler.invalidKey)
+    }
+})
+
 router.get('/game/tebakbendera', async (req, res, next) => {
     var Apikey = req.query.apikey
 
@@ -223,7 +323,7 @@ router.get('/game/tebakbendera', async (req, res, next) => {
         res
           .status(200)
           .json({
-              code: 200,
+              creator: @isywl,
               success: true,
               ...bendera[~~(Math.random() * bendera.length)]
           })
