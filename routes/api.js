@@ -1157,7 +1157,7 @@ router.get('/download/tiktok2', async(req, res, next) => {
 }
 })
 
-router.get('/downloader/facebook', async(req, res, next) => {
+router.get('/downloader/facebook2', async(req, res, next) => {
   const apikey = req.query.apikey;
   const url = req.query.url;
   
@@ -1165,11 +1165,11 @@ router.get('/downloader/facebook', async(req, res, next) => {
   if(!apikey) return res.json(loghandler.notparam)
   
   if(listkey.includes(apikey)){
-    fetch(encodeURI(`https://neoxr-api.herokuapp.com/api/fb2?url=${url}&apikey=${neoxr}`))
+    fetch(encodeURI(`https://neoxr-api.herokuapp.com/api/fb2?url=${url}&apikey=yntkts`))
     .then(response => response.json())
         .then(hasil => {
 
-        var result = hasil.sd;
+        var result = hasil.data.sd;
              res.json({
                  status : true,
                  creator : `${creator}`,
@@ -1192,11 +1192,11 @@ router.get('/downloader/facebook', async(req, res, next) => {
   if(!apikey) return res.json(loghandler.notparam)
   
   if(listkey.includes(apikey)){
-    fetch(encodeURI(`https://neoxr-api.herokuapp.com/api/fb2?url=${url}&apikey=${neoxr}`))
+    fetch(encodeURI(`https://neoxr-api.herokuapp.com/api/fb2?url=${url}&apikey=yntkts`))
     .then(response => response.json())
         .then(hasil => {
 
-        var result = hasil.hd;
+        var result = hasil.data.hd;
              res.json({
                  status : true,
                  creator : `${creator}`,
