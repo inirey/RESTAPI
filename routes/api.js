@@ -1169,7 +1169,7 @@ router.get('/downloader/facebook2', async(req, res, next) => {
     .then(response => response.json())
         .then(hasil => {
 
-        var result = hasil.sd;
+        var result = hasil.data;
              res.json({
                  status : true,
                  creator : `${creator}`,
@@ -1196,7 +1196,7 @@ router.get('/downloader/facebook', async(req, res, next) => {
     .then(response => response.json())
         .then(hasil => {
 
-        var result = hasil.hd;
+        var result = hasil.data;
              res.json({
                  status : true,
                  creator : `${creator}`,
