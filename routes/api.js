@@ -695,6 +695,60 @@ router.get('/downloader/wallpaperflare', async(req, res, next) => {
 }
 })
 
+router.get('/download/ytmp32', async(req, res, next) => {
+  const apikey = req.query.apikey;
+  const url = req.query.url;
+  
+  if(!url) return res.json(loghandler.noturl)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+    fetch(encodeURI(`http://kocakz.herokuapp.com/api/media/ytaudio?url=${url}`))
+    .then(response => response.json())
+        .then(hasil => {
+
+        var result = hasil.result;
+             res.json({
+                 status : true,
+                 creator : `${creator}`,
+                 result
+             })
+         })
+         .catch(e => {
+         	res.json(loghandler.error)
+})
+} else {
+  res.json(loghandler.invalidKey)
+}
+})
+
+router.get('/download/ytmp42', async(req, res, next) => {
+  const apikey = req.query.apikey;
+  const url = req.query.url;
+  
+  if(!url) return res.json(loghandler.noturl)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+    fetch(encodeURI(`http://kocakz.herokuapp.com/api/media/ytvid?url=${url}`))
+    .then(response => response.json())
+        .then(hasil => {
+
+        var result = hasil.titleInfo;
+             res.json({
+                 status : true,
+                 creator : `${creator}`,
+                 result
+             })
+         })
+         .catch(e => {
+         	res.json(loghandler.error)
+})
+} else {
+  res.json(loghandler.invalidKey)
+}
+})
+
 router.get('/download/shoppe', async(req, res, next) => {
   const apikey = req.query.apikey;
   const q = req.query.q;
