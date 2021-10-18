@@ -734,7 +734,7 @@ router.get('/download/ytmp42', async(req, res, next) => {
     .then(response => response.json())
         .then(hasil => {
 
-        var result = hasil.titleInfo;
+        var result = hasil.getVideo;
              res.json({
                  status : true,
                  creator : `${creator}`,
