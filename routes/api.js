@@ -9,6 +9,9 @@ var zahirr = db.get("zahirr");
 }
  
 var creator = "Rey"
+var neoxr = "yntkts"
+var zeks = "administrator"
+var zeks2 = "apivinz"
 var secure = require('ssl-express-www');
 var cors = require('cors');
 var fetch = require('node-fetch');
@@ -1162,7 +1165,7 @@ router.get('/downloader/facebook', async(req, res, next) => {
   if(!apikey) return res.json(loghandler.notparam)
   
   if(listkey.includes(apikey)){
-    fetch(encodeURI(`https://fb-scrape.herokuapp.com/api/fb?url=${url}`))
+    fetch(encodeURI(`https://neoxr-api.herokuapp.com/api/fb2?url=${url}&apikey=${neoxr}`))
     .then(response => response.json())
         .then(hasil => {
 
