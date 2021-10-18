@@ -1169,7 +1169,34 @@ router.get('/downloader/facebook', async(req, res, next) => {
     .then(response => response.json())
         .then(hasil => {
 
-        var result = hasil.data;
+        var result = hasil.sd;
+             res.json({
+                 status : true,
+                 creator : `${creator}`,
+                 result
+             })
+         })
+         .catch(e => {
+         	res.json(loghandler.error)
+})
+} else {
+  res.json(loghandler.invalidKey)
+}
+})
+
+router.get('/downloader/facebook', async(req, res, next) => {
+  const apikey = req.query.apikey;
+  const url = req.query.url;
+  
+  if(!url) return res.json(loghandler.noturl)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+    fetch(encodeURI(`https://neoxr-api.herokuapp.com/api/fb2?url=${url}&apikey=${neoxr}`))
+    .then(response => response.json())
+        .then(hasil => {
+
+        var result = hasil.hd;
              res.json({
                  status : true,
                  creator : `${creator}`,
