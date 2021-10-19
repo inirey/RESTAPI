@@ -590,6 +590,33 @@ router.get('/download/ig', async(req, res, next) => {
     }
 });
 
+router.get('/download/joox2', async(req, res, next) => {
+  const apikey = req.query.apikey;
+  const query = req.query.query;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+    fetch(encodeURI(`https://mnazria.herokuapp.com/api/jooxnich?search=${query}`))
+    .then(response => response.json())
+        .then(hasil => {
+
+        var result = hasil.result;
+             res.json({
+                 status : true,
+                 creator : `${creator}`,
+                 result
+             })
+         })
+         .catch(e => {
+         	res.json(loghandler.error)
+})
+} else {
+  res.json(loghandler.invalidKey)
+}
+})
+
 router.get('/download/mediafire', async(req, res, next) => {
   const apikey = req.query.apikey;
   const url = req.query.url;
