@@ -590,6 +590,33 @@ router.get('/download/ig', async(req, res, next) => {
     }
 });
 
+router.get('/download/stickerline', async(req, res, next) => {
+  const apikey = req.query.apikey;
+  const url = req.query.url;
+  
+  if(!url) return res.json(loghandler.noturl)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+    fetch(encodeURI(`http://nzcha-apii.herokuapp.com/stickerline?url=${url}`))
+    .then(response => response.json())
+        .then(hasil => {
+
+        var result = hasil.result;
+             res.json({
+                 status : true,
+                 creator : `${creator}`,
+                 result
+             })
+         })
+         .catch(e => {
+         	res.json(loghandler.error)
+})
+} else {
+  res.json(loghandler.invalidKey)
+}
+})
+
 router.get('/download/smule', async(req, res, next) => {
   const apikey = req.query.apikey;
   const url = req.query.url;
@@ -617,6 +644,33 @@ router.get('/download/smule', async(req, res, next) => {
 }
 })
 
+router.get('/download/joox3', async(req, res, next) => {
+  const apikey = req.query.apikey;
+  const query = req.query.query;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+    fetch(encodeURI(`http://nzcha-apii.herokuapp.com/joox?q=${query}`))
+    .then(response => response.json())
+        .then(hasil => {
+
+        var result = hasil.data;
+             res.json({
+                 status : true,
+                 creator : `${creator}`,
+                 result
+             })
+         })
+         .catch(e => {
+         	res.json(loghandler.error)
+})
+} else {
+  res.json(loghandler.invalidKey)
+}
+})
+
 router.get('/download/joox2', async(req, res, next) => {
   const apikey = req.query.apikey;
   const query = req.query.query;
@@ -626,6 +680,87 @@ router.get('/download/joox2', async(req, res, next) => {
   
   if(listkey.includes(apikey)){
     fetch(encodeURI(`https://mnazria.herokuapp.com/api/jooxnich?search=${query}`))
+    .then(response => response.json())
+        .then(hasil => {
+
+        var result = hasil.lirik;
+             res.json({
+                 status : true,
+                 creator : `${creator}`,
+                 result
+             })
+         })
+         .catch(e => {
+         	res.json(loghandler.error)
+})
+} else {
+  res.json(loghandler.invalidKey)
+}
+})
+
+router.get('/download/apkdl', async(req, res, next) => {
+  const apikey = req.query.apikey;
+  const url = req.query.url;
+  
+  if(!url) return res.json(loghandler.noturl)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+    fetch(encodeURI(`http://nzcha-apii.herokuapp.com/apk-download?dl_url=${url}`))
+    .then(response => response.json())
+        .then(hasil => {
+
+        var result = hasil.result;
+             res.json({
+                 status : true,
+                 creator : `${creator}`,
+                 result
+             })
+         })
+         .catch(e => {
+         	res.json(loghandler.error)
+})
+} else {
+  res.json(loghandler.invalidKey)
+}
+})
+
+router.get('/download/apk', async(req, res, next) => {
+  const apikey = req.query.apikey;
+  const query = req.query.query;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+    fetch(encodeURI(`http://nzcha-apii.herokuapp.com/apk-search?q=${query}`))
+    .then(response => response.json())
+        .then(hasil => {
+
+        var result = hasil.result;
+             res.json({
+                 status : true,
+                 creator : `${creator}`,
+                 result
+             })
+         })
+         .catch(e => {
+         	res.json(loghandler.error)
+})
+} else {
+  res.json(loghandler.invalidKey)
+}
+})
+
+router.get('/download/googleimg', async(req, res, next) => {
+  const apikey = req.query.apikey;
+  const query = req.query.query;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+    fetch(encodeURI(`http://nzcha-apii.herokuapp.com/googleimage?q=${query}`))
     .then(response => response.json())
         .then(hasil => {
 
