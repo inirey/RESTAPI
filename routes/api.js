@@ -1354,7 +1354,7 @@ router.get('/downloader/facebook2', async(req, res, next) => {
   if(!apikey) return res.json(loghandler.notparam)
   
   if(listkey.includes(apikey)){
-    fetch(encodeURI(`https://neoxr-api.herokuapp.com/api/fb2?url=${url}&apikey=yntkts`))
+    fetch(encodeURI(`https://api.neoxr.eu.org/api/fb?url=${url}&apikey=yourkey`))
     .then(response => response.json())
         .then(hasil => {
 
@@ -1381,11 +1381,11 @@ router.get('/downloader/facebook', async(req, res, next) => {
   if(!apikey) return res.json(loghandler.notparam)
   
   if(listkey.includes(apikey)){
-    fetch(encodeURI(`https://neoxr-api.herokuapp.com/api/fb2?url=${url}&apikey=yntkts`))
+    fetch(encodeURI(`https://api.neoxr.eu.org/api/fb?url=${url}&apikey=yourkey`))
     .then(response => response.json())
         .then(hasil => {
 
-        var result = hasil.data;
+        var result = hasil.data.url;
              res.json({
                  status : true,
                  creator : `${creator}`,
