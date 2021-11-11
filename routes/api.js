@@ -3177,6 +3177,22 @@ res.json(loghandler.invalidKey)
 }
 })
 
+router.get('/random/cosplay', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+
+  const cosplay = JSON.parse(fs.readFileSync(__path +'/data/cosplay.json'));
+  const randcosplay = cosplay[Math.floor(Math.random() * cosplay.length)];
+  data = await fetch(randcosplay).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/cosplay.jpeg', data)
+  res.sendFile(__path +'/tmp/cosplay.jpeg')
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
 router.get('/wallpaper/shina', async (req, res, next) => {
         var Apikey = req.query.apikey
             
