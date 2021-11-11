@@ -100,6 +100,36 @@ loghandler = {
         code: 406,
         message: 'masukan parameter url'
     },
+    notgcname: {
+        status: false,
+        creator: `${creator}`,
+        code: 406,
+        message: 'masukkan paramer gcname'
+        },
+    notgcicon: {
+        status: false,
+        creator: `${creator}`,
+        code: 406,
+        message: 'masukkan paramer gcicon'
+        },
+    notpp: {
+        status: false,
+        creator: `${creator}`,
+        code: 406,
+        message: 'masukkan paramer pp'
+        },
+    notbg: {
+        status: false,
+        creator: `${creator}`,
+        code: 406,
+        message: 'masukkan paramer bg'
+        },
+    notmemberCount: {
+        status: false,
+        creator: `${creator}`,
+        code: 406,
+        message: 'masukkan paramer memberCount'
+        },
     notquery: {
         status: false,
         creator: `${creator}`,
@@ -7214,6 +7244,30 @@ router.get('/maker/skatch', async(req, res, next) => {
   data = await fetch(hasil).then(v => v.buffer())
          await fs.writeFileSync(__path +'/tmp/skatch.jpeg', data)
         res.sendFile(__path+'/tmp/skatch.jpeg')
+  } else {
+    res.json(loghandler.invalidKey)
+  }
+});
+router.get('/canvas/welcome', async(req, res, next) => {
+  const apikey = req.query.apikey;
+  const username = req.query.username;
+  const memberCount = req.query.memberCount;
+  const gcname = req.query.gcname;
+  const bg = req.query.bg;
+  const pp = req.query.pp;
+  const gcicon = req.query.gcicon;
+  if(!username) return res.json(loghandler.notusername)
+  if(!memberCount) return res.json(loghandler.memberCount)
+  if(!gcname) return res.json(loghandler.gcname)
+  if(!bg) return res.json(loghandler.bg)
+  if(!pp) return res.json(loghandler.pp)
+  if(!gcicon) return res.json(loghandler.gcicon)
+  if(!apikey) return res.json(loghandler.notparam)
+  if(listkey.includes(apikey)){
+  let hasil = `https://hadi-api.herokuapp.com/api/card/welcome3?username=${username}&memberCount=${memberCount}&bg=${bg}&pp=${pp}&gcicon=${gcicon}`
+  data = await fetch(hasil).then(v => v.buffer())
+         await fs.writeFileSync(__path +'/tmp/welcome.png', data)
+        res.sendFile(__path+'/tmp/welcome.png')
   } else {
     res.json(loghandler.invalidKey)
   }
