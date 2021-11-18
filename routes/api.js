@@ -4175,13 +4175,13 @@ res.json(loghandler.invalidKey)
 })
 
 
-router.get('/random/quotes/muslim', async (req, res, next) => {
+router.get('/random/quotes2', async (req, res, next) => {
         var Apikey = req.query.apikey
             
 	if(!Apikey) return res.json(loghandler.notparam)
 	if(listkey.includes(Apikey)){
 
-       fetch(encodeURI(`https://docs-api-zahirrr.herokuapp.com/api/quote?type=agamis`))
+       fetch(encodeURI(`https://kocakz.herokuapp.com/api/random/text/quotes`))
         .then(response => response.json())
         .then(data => {
         var result = data;
