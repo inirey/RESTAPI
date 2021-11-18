@@ -213,7 +213,7 @@ Akhir Pesan Error
 
 router.use(favicon(__path + "/views/favicon.ico"));
 
-const listkey = ["apirey", "ditofficial"];
+const listkey = ["apirey", "APIKEY", "ditofficial"];
 
 router.post("/apikey", async (req, res, next) => {
   const key = req.query.key;
@@ -351,7 +351,7 @@ router.get('/game/tebaklirik', async (req, res, next) => {
     if(!Apikey) return res.json(loghandler.notparam)
     if(listkey.includes(Apikey)){
         var question = JSON.parse(
-            fs.readFileSync(__path + '/data/tebakkimia.json')
+            fs.readFileSync(__path + '/data/tebaklirik.json')
         )
         res
           .status(200)
