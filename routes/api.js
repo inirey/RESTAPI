@@ -1476,7 +1476,7 @@ router.get('/downloader/fb', async (req, res, next) => {
   if(!url) return res.json(loghandler.noturl)
   if(!apikey) return res.json(loghandler.notparam)
   if(listkey.includes(apikey)){
-       fbDownloader(url)
+       fbDownloader(`${url}`)
        .then((result) => {
             res.json({
         status: true,
