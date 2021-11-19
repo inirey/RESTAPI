@@ -595,8 +595,10 @@ router.get('/download/tiktok', async (req, res, next) => {
         .then(data => {
         var result = data.result;
              res.json({
-             	author: 'Rey',
-                 result
+               status: true,
+               code: 200,
+               creator: `${creator}`,
+               result
              })
          })
          .catch((error) => {
