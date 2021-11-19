@@ -24,6 +24,7 @@ var TikTokScraper = require('tiktok-scraper');
 var { EmojiAPI } = require("emoji-api");
 var emoji = new EmojiAPI();
 var router  = express.Router();
+var { TiktokDownloader } = require('../lib/tiktokdl.js')
 var { color, bgcolor } = require(__path + '/lib/color.js');
 var { fetchJson } = require(__path + '/lib/fetcher.js');
 var options = require(__path + '/lib/options.js');
@@ -81,7 +82,7 @@ var {
   fbdown2
 } = require('./../lib/utils/fbdl');
 
-var TiktokDownloader = require('./../lib/tiktokdl');
+//var TiktokDownloader = require('./../lib/tiktokdl');
 
 var tebakGambar = require('./../lib/utils/tebakGambar');
 
