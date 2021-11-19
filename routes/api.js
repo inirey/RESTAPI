@@ -81,6 +81,8 @@ var {
   fbdown2
 } = require('./../lib/utils/fbdl');
 
+var TiktokDownloader = require('./../lib/tiktokdl');
+
 var tebakGambar = require('./../lib/utils/tebakGambar');
 
 var cookie = process.env.COOCKIE
@@ -588,7 +590,7 @@ router.get('/download/tiktok', async (req, res, next) => {
 	if(!Apikey) return res.json(loghandler.notparam)
 	if(listkey.includes(Apikey)){
      if (!url) return res.json(loghandler.noturl)
-     Tiktok(url)
+     TiktokDownloader(Url)
      .then((data) => {
        res.json(data)
      })
