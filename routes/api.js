@@ -598,10 +598,13 @@ router.get('/download/tiktok', async (req, res, next) => {
                  result
              })
          })
-         .catch(e => {
-         	res.json(loghandler.error)
-})
-})
+         .catch((error) => {
+            res.json(error);
+        });
+      } else {
+     res.json(loghandler.invalidKey)
+     }
+});
 
 router.get('/download/ig', async(req, res, next) => {
   const url = req.query.url;
