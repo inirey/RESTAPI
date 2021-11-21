@@ -650,7 +650,7 @@ router.get('/download/ig2', async(req, res, next) => {
   if(!apikey) return res.json(loghandler.notparam)
   if(listkey.includes(apikey)){
   igdl(url)
-    .then(result) => {
+    .then((result) => {
       res.json({
         status: true,
         code: 200,
