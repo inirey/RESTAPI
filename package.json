@@ -52,6 +52,7 @@
     "urlencode": "^1.1.0",
     "yt-search": "^2.7.6",
     "ytdl-core": "^4.5.0",
+    "api-rey": "1.1.0",
     "zrapi": "0.0.6"
   },
   "homepage": "https://github.com/inirey/Rey-API-s#readme"
