@@ -49,6 +49,17 @@ var {
 } = require("./../lib/utils/photooxy");
 
 var {
+  ttdownloader,
+  pinterest,
+  fbdown,
+  igstalk,
+  igstory,
+  igdl,
+  linkwa,
+  igDownloader
+} = require("./../lib/anjay");
+
+var {
   igStalk,
   igDownloader
 } = require("./../lib/utils/igdown");
@@ -622,6 +633,29 @@ router.get('/download/ig', async(req, res, next) => {
         code: 200,
         creator: `${creator}`,
         result
+      })
+    })
+    .catch((error) => {
+      res.json(error)
+    });
+    } else {
+    	res.json(loghandler.invalidKey)
+    }
+});
+
+router.get('/download/ig2', async(req, res, next) => {
+  const url = req.query.url;
+  const apikey = req.query.apikey;
+  if(!url) return res.json(loghandler.noturl)
+  if(!apikey) return res.json(loghandler.notparam)
+  if(listkey.includes(apikey)){
+  igdl(url)
+    .then((data) => {
+      res.json({
+        status: true,
+        code: 200,
+        creator: `${creator}`,
+        result.data
       })
     })
     .catch((error) => {
