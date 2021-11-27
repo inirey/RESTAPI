@@ -1430,7 +1430,7 @@ router.get('/downloader/facebook2', async(req, res, next) => {
   if(!apikey) return res.json(loghandler.notparam)
   
   if(listkey.includes(apikey)){
-    fetch(encodeURI(`https://api.neoxr.eu.org/api/fb?url=${url}&apikey=yourkey`))
+    fetch(encodeURI(`https://api-xcoders.xyz/api/download/fb?url=${url}&apikey=UW8wc3KPy0`))
     .then(response => response.json())
         .then(hasil => {
 
@@ -1457,7 +1457,7 @@ router.get('/downloader/facebook', async(req, res, next) => {
   if(!apikey) return res.json(loghandler.notparam)
   
   if(listkey.includes(apikey)){
-    fetch(encodeURI(`https://api.neoxr.eu.org/api/fb?url=${url}&apikey=yourkey`))
+    fetch(encodeURI(`https://api-xcoders.xyz/api/download/fb?url=${url}&apikey=UW8wc3KPy0`))
     .then(response => response.json())
         .then(hasil => {
 
