@@ -2965,6 +2965,22 @@ res.json(loghandler.invalidKey)
 }
 })
 
+router.get('/random/yuli', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+
+  const yuli = JSON.parse(fs.readFileSync(__path +'/data/yulibocil.json'));
+  const randyuli = yuli[Math.floor(Math.random() * yuli.length)];
+  data = await fetch(randyuli).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/yuli.jpeg', data)
+  res.sendFile(__path +'/tmp/yuli.jpeg')
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
 router.get('/wallpaper/pentol', async (req, res, next) => {
         var Apikey = req.query.apikey
             
