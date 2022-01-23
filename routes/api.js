@@ -1,5 +1,5 @@
 __path = process.cwd()
-var favicon = require('serve-favicon');
+//var favicon = require('serve-favicon');
 var express = require('express');
 var db = require(__path + '/database/db');
 try {
