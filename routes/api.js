@@ -225,7 +225,7 @@ loghandler = {
 Akhir Pesan Error
 */
 
-router.use(favicon(__path + "/views/favicon.ico"));
+//router.use(favicon(__path + "/views/favicon.ico"));
 
 const listkey = ["apirey", "APIKEY", "ditofficial"];
 
