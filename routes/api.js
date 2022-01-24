@@ -6993,12 +6993,11 @@ router.get('/asupan', async (req, res, next) => {
   
   if(!Apikey) return res.json(loghandler.notparam)
   if(listkey.includes(Apikey)) {
-    const asupan = JSON.parse(fs.readFileSync(__path +'/data/asupan.json'));
-    const Asupan = asupan[Math.floor(Math.random() * asupan.length)];
-    let hasil = Asupan.asupan;
-    data = await fetch(hasil).then(v => v.buffer())
-    await fs.writeFileSync(__path +'/tmp/asupan.mp4', data)
-    res.sendFile(__path +'/tmp/asupan.mp4')
+  const Asupan = JSON.parse(fs.readFileSync(__path +'/data/asupantiktok.json'));
+  const randAsupan = Asupan[Math.floor(Math.random() * Asupan.length)];
+  data = await fetch(randAsupan).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/asupan.mp4', data)
+  res.sendFile(__path +'/tmp/asupan.mp4')
   } else {
     res.json(loghandler.invalidKey)
   }
@@ -7272,8 +7271,8 @@ router.get('/maker/goldbutton', async(req, res, next) => {
   if(listkey.includes(apikey)) {
   let hasil = 'https://api.zeks.xyz/api/gplaybutton?text='+ text +'&apikey=administrator' 
   data = await fetch(hasil).then(v => v.buffer())
-  await fs.writeFileSync(__path +'/tmp/gplaybutton.jpg', data)
-  res.sendFile(__path +'/tmp/gplaybutton.jpg')
+  await fs.writeFileSync(__path +'/tmp/ppp.jpg', data)
+  res.sendFile(__path +'/tmp/ppp.jpg')
   } else {
     res.json(loghandler.invalidKey)
   }
@@ -7287,10 +7286,10 @@ router.get('/maker/harta-tahta', async(req, res, next) => {
   if(!apikey) return res.json(loghandler.notparam)
   
   if(listkey.includes(apikey)) {
-  let hasil = 'https://api.zeks.xyz/api/hartatahta?text='+ text +'&apikey=administrator' 
+  let hasil = 'https://api.zeks.me/api/hartatahta?text='+ text +'&apikey=administrator' 
   data = await fetch(hasil).then(v => v.buffer())
-  await fs.writeFileSync(__path +'/tmp/tahta.jpg', data)
-  res.sendFile(__path +'/tmp/tahta.jpg')
+  await fs.writeFileSync(__path +'/tmp/ok.jpg', data)
+  res.sendFile(__path +'/tmp/ok.jpg')
   } else {
     res.json(loghandler.invalidKey)
   }
