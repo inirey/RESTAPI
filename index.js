@@ -1,3 +1,4 @@
+//yy
 __path = process.cwd();
 //var favicon = require('serve-favicon');
 var express = require('express'),
