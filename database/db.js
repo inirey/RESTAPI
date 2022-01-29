@@ -3,9 +3,9 @@ var __path = process.cwd(),
      { color } = require(__path + '/lib/color.js')
 
 // Connection URL
-var url = 'https://fxc7-api.herokuapp.com';
+var url = 'https://api.sekha.tech';
 try {
-if(url == 'https://fxc7-api.herokuapp.com') throw console.log(color('Cek konfigurasi database, var url belum diisi','red'));
+if(url == 'https://api.sekha.tech') throw console.log(color('Cek konfigurasi database, var url belum diisi','red'));
 } catch (e) {
 	return;
 	}
