@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/inirey/Rey-API-s.git"
+    "url": "git+https://github.com/inirey/RESTAPI.git"
   },
   "keywords": [
     "simple",
@@ -16,10 +16,10 @@
     "rest",
     "api"
   ],
-  "author": "Zhirrr",
+  "author": "skh",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/inirey/Rey-API-s/issues"
+    "url": "https://github.com/inirey/RESTAPI/issues"
   },
   "dependencies": {
     "axios": "^0.21.1",
@@ -52,5 +52,5 @@
     "api-rey": "1.1.0",
     "zrapi": "0.0.6"
   },
-  "homepage": "https://github.com/inirey/Rey-API-s#readme"
+  "homepage": "https://github.com/inirey/RESTAPI#readme"
 }
