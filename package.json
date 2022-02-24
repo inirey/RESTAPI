@@ -22,7 +22,7 @@
     "url": "https://github.com/inirey/RESTAPI/issues"
   },
   "dependencies": {
-    "axios": "^0.21.1",
+    "axios": "^0.26.0",
     "base-64": "^1.0.0",
     "base32": "0.0.6",
     "chalk": "^4.1.0",
