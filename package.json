@@ -40,7 +40,7 @@
     "instatouch": "^2.3.3",
     "lodash": "^4.17.20",
     "moment": "^2.29.1",
-    "mongodb": "^3.6.3",
+    "mongodb": "^4.0.0",
     "monk": "^7.3.3",
     "morgan": "^1.10.0",
     "needle": "^2.6.0",
