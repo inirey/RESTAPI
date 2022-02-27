@@ -44,7 +44,7 @@
     "monk": "^7.3.3",
     "morgan": "^1.10.0",
     "needle": "^2.6.0",
-    "node-fetch": "^2.6.1",
+    "node-fetch": "^3.0.0",
     "nodemon": "^2.0.7",
     "request": "^2.88.2",
     "ssl-express-www": "^3.0.7",
