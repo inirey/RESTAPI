@@ -1,4 +1,4 @@
-FROM node:16.13.0
+FROM node:17.9.0
 
 RUN apt-get update
 RUN apt-get upgrade -y
