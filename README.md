@@ -1,7 +1,4 @@
 <p align="center">
-<img src="https://avatars.githubusercontent.com/u/85196372?v=4" width="128" height="128"/>
-</p>
-<p align="center">
 <a href="#"><img title="Rest-Api" src="https://img.shields.io/badge/Rest Api Free-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
 </p>
 <p align="center">
