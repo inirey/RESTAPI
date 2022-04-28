@@ -57,7 +57,7 @@
     "ssl-express-www": "^3.0.7",
     "tiktok-scraper": "^1.4.12",
     "urlencode": "^1.1.0",
-    "skh-api": "1.1.0",
+    "skh-api": "1.0.0",
     "zrapi": "0.0.6"
   },
   "homepage": "https://github.com/inirey/RESTAPI#readme"
