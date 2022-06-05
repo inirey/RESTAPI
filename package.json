@@ -1,7 +1,7 @@
 {
-  "name": "api-rey",
+  "name": "sekha-ganteng",
   "version": "1.1.0",
-  "description": "CANGKEMAN",
+  "description": "turu",
   "main": "node index.js",
   "scripts": {
     "start": "nodemon index.js"
@@ -13,12 +13,10 @@
   "keywords": [
     "simple",
     "api",
-    "rest-api",
-    "free-api",
     "rest",
     "api"
   ],
-  "author": "sekha",
+  "author": "Zhirrr",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/inirey/RESTAPI/issues"
@@ -55,9 +53,10 @@
     "nodemon": "^2.0.7",
     "request": "^2.88.2",
     "ssl-express-www": "^3.0.7",
+    "skh-api": "^1.0.0",
     "tiktok-scraper": "^1.4.12",
     "urlencode": "^1.1.0",
-    "skh-api": "1.1.0",
+    "api-rey": "1.1.0",
     "zrapi": "0.0.6"
   },
   "homepage": "https://github.com/inirey/RESTAPI#readme"
