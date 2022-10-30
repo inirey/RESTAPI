@@ -1,5 +1,5 @@
 {
-  "name": "sekha-ganteng",
+  "name": "R-API",
   "version": "1.1.0",
   "description": "turu",
   "main": "node index.js",
@@ -16,7 +16,7 @@
     "rest",
     "api"
   ],
-  "author": "Zhirrr",
+  "author": "Reyganz",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/inirey/RESTAPI/issues"
