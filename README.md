@@ -1,4 +1,4 @@
-<h1 align="center">🚀 REST API FREE</h1>
+<h1 align="center">🚀 REST API FREE <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="35" height="35" /></h1>
 
 <p align="center">
   <a href="#"><img title="Rest-Api" src="https://img.shields.io/badge/Rest%20API-Free-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
@@ -6,7 +6,7 @@
   <a href="https://github.com/inirey"><img title="Author" src="https://img.shields.io/badge/Author-Sekha-orange.svg?style=for-the-badge&logo=github"></a>
   <br />
   <a href="https://www.codefactor.io/repository/github/inirey/API-REST/overview/master">
-    <img title="Rating" src="https://www.codefactor.io/repository/github/inirey/RESTAPI/badge/master" />
+    <img title="Rating" src="https://www.codefactor.io/repository/github/inirey/API-REST/badge/master" />
   </a>
 </p>
 
@@ -28,27 +28,43 @@
 
 ## 📝 Description
 
-This is a **free REST API** project maintained by **Sekha**. It offers a simple and powerful structure to build RESTful services. Feel free to fork, contribute, or star if you like it!
+🎯 This is a **free REST API** project maintained by **Sekha**.
+
+🛠️ It provides a simple structure to build your own RESTful services — ready to deploy and easy to modify.
+
+⭐ Feel free to star and contribute!
 
 ---
 
-## 🛠️ Features
+## ✨ Features
 
-- Easy to deploy
-- Docker support
-- Vercel integration
-- Simple and clean code structure
+- 🔌 REST API based structure
+- 🐳 Docker & Vercel ready
+- ⚡ Fast setup
+- 🧼 Clean & minimal code
+- 🎉 Actively updated
 
 ---
 
-## 📦 Deployment
+## 🚀 Deployment
 
-Check out the latest release with **Vercel Support ✨** deployed **13 minutes ago**.
+✅ Latest release: **Vercel Support ✨**
+
+🕒 Deployed: **13 minutes ago**
 
 ---
 
 ## 🤝 Contributors
 
-Thanks to all amazing contributors! 💖
+Thanks to all contributors who made this project better! 🙏🏻  
+Want to join? Pull requests are welcome! 💌
 
 ---
+
+## 🙋🏻‍♂️ Let's Connect!
+
+<p align="center">
+  <img src="https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif" width="100" />
+  <br/>
+  <strong>Happy Coding!</strong> 💻✨
+</p>
