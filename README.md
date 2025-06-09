@@ -5,7 +5,7 @@
   <br />
   <a href="https://github.com/inirey"><img title="Author" src="https://img.shields.io/badge/Author-Sekha-orange.svg?style=for-the-badge&logo=github"></a>
   <br />
-  <a href="https://www.codefactor.io/repository/github/inirey/RESTAPI/overview/master">
+  <a href="https://www.codefactor.io/repository/github/inirey/API-REST/overview/master">
     <img title="Rating" src="https://www.codefactor.io/repository/github/inirey/RESTAPI/badge/master" />
   </a>
 </p>
@@ -52,5 +52,3 @@ Check out the latest release with **Vercel Support ✨** deployed **13 minutes a
 Thanks to all amazing contributors! 💖
 
 ---
-
-Let me know kalau lo mau tambahin banner atau gif biar makin menarik. Mau gue generate banner custom juga bisa!
