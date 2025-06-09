@@ -36,6 +36,17 @@
 
 ---
 
+## <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzkTi0ej52GhDLAAbnKzVyl7-GkSwmqGdazlHF5auMseQdGXRfrS4uxXA&s=10.jpg" width="45" /> How To Deploy on vercel 
+
+```bash
+please change NODEJS version to 20×
+add enviroment npm insall 
+add enviroment yarn install
+add enviroment node index.js
+add enviroment mongodb Url
+```
+
+
 ## <img src="https://media3.giphy.com/media/v1.Y2lkPTZjMDliOTUybjRwY25yMXVhZGZiMnJxMHQ4aHBhbGlkNnowOGZpZXFwZjE0emZtayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/65n8RPEa3r65q/giphy.gif" width="45" /> How To Install On Terminal
 
 ```bash
@@ -45,6 +56,7 @@ git clone https://github.com/inirey/API-REST
 yarn install
 node index.js
 ```
+
 
 
 ## <img src="https://media2.giphy.com/media/v1.Y2lkPTZjMDliOTUyZWR6ZXlnNW1sbG5rNmJlbjdzOXVra2tvZnZteHplZGp0YzI0c2VtdCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/gDPxwdP6SKFnsWDJ2u/giphy.gif" width="45" /> Features
