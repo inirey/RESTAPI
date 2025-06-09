@@ -46,7 +46,7 @@
 
 ---
 
-## <img src="https://media0.giphy.com/media/v1.Y2lkPTZjMDliOTUyeWxpbDcycmExM3RzYWRyM3RxcW1pdXpiZm9wMTd5OW90eGF1eGE0dSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/veHIwhDRl780wT2XfC/giphy.gif" width="35" /> Deployment
+## <img src="https://media2.giphy.com/media/v1.Y2lkPTZjMDliOTUydmp4c3JiZ3U2dnd0dmx4N3Z4OXZxcHNnenRwODI0MG5udWc4bmhvbCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/twNmUOclpYf5PFJTLp/giphy.gif" width="30" /> Deployment
 
 ✅ Latest: **Vercel Support ✨**  
 ✅ Latest: **Railway Support ✨**  
