@@ -46,9 +46,12 @@
 
 ---
 
-## <img src="https://media0.giphy.com/media/v1.Y2lkPTZjMDliOTUyeWxpbDcycmExM3RzYWRyM3RxcW1pdXpiZm9wMTd5OW90eGF1eGE0dSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/veHIwhDRl780wT2XfC/giphy.gif" width="50" /> Deployment
+## <img src="https://media0.giphy.com/media/v1.Y2lkPTZjMDliOTUyeWxpbDcycmExM3RzYWRyM3RxcW1pdXpiZm9wMTd5OW90eGF1eGE0dSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/veHIwhDRl780wT2XfC/giphy.gif" width="35" /> Deployment
 
 ✅ Latest: **Vercel Support ✨**  
+✅ Latest: **Railway Support ✨**  
+✅ Latest: **Heroku Support ✨**  
+✅ Latest: **Github codespace Support ✨**  
 🕒 Updated: **Latest ago**
 
 ---
