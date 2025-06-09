@@ -12,7 +12,7 @@
 
 ---
 
-## <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdmUzN2ttanU4OHd3OHNvZGE2YWl4aDBocmh2aGlxM3BpYmR6MWh5ZCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/kH6CqY9t5sGDjACMcU/giphy.gif" width="30" /> GitHub Stats
+## <img src="https://media1.giphy.com/media/v1.Y2lkPTZjMDliOTUyaHp4MTZ1Y3ZwMHVwZm5uaHR4dnZvNmdjdWxhcDM5cGRzdGNkbm14NyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/du3J3cXyzhj75IOgvA/giphy.gif" width="30" /> GitHub Stats
 
 <p align="center">
   <a href="https://github.com/inirey/followers"><img src="https://img.shields.io/github/followers/inirey?color=blue&style=flat-square" title="Followers"/></a>
@@ -66,7 +66,7 @@ Wanna join the squad? Submit a PR! 🚀
 ## <img src="https://media3.giphy.com/media/v1.Y2lkPTZjMDliOTUyYWF4ZDU4MmNkNGk3MnZ2OXUxdjN1MWhqdnFycHN2dGpmaWkxaXZzbyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/MaXOUjkV73aO4/giphy.gif" width="35" /> Stay Connected
 
 <p align="center">
-  <img src="https://media1.giphy.com/media/v1.Y2lkPTZjMDliOTUycDZ2eWVzMnJ1c2VlNW50a3hiZzB1c3N0Ynp2dDgzazBxdzFuZDJ4NiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/y69OrzhaWfE7frw6OI/giphy.gif" width="100" />
+  <img src="https://media4.giphy.com/media/v1.Y2lkPTZjMDliOTUyNzg3bWlidGkyajZwcDluYm4waTVmdmxpMXVjbHR5dGY0YThtaXc5cyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/bGgsc5mWoryfgKBx1u/giphy.gif" width="100" />
   <br/>
   <strong>Happy Coding!</strong> 💻✨
 </p>
