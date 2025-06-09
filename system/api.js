@@ -9,9 +9,6 @@ var zahirr = db.get("zahirr");
 }
  
 var creator = "Rey"
-var neoxr = "yntkts"
-var zeks = "administrator"
-var zeks2 = "apivinz"
 var secure = require('ssl-express-www');
 var cors = require('cors');
 var fetch = require('node-fetch');
