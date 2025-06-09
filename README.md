@@ -90,7 +90,7 @@ Wanna join the squad? Submit a PR! 🚀
 
 [Join Here ✨](https://chat.whatsapp.com/GkF9CmF3BXwLUrzgMaQUgu)
 
-## <img src="https://media3.giphy.com/media/v1.Y2lkPTZjMDliOTUyYWF4ZDU4MmNkNGk3MnZ2OXUxdjN1MWhqdnFycHN2dGpmaWkxaXZzbyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/MaXOUjkV73aO4/giphy.gif" width="45" /> Stay Connected
+## <img src="https://media3.giphy.com/media/v1.Y2lkPTZjMDliOTUyYWF4ZDU4MmNkNGk3MnZ2OXUxdjN1MWhqdnFycHN2dGpmaWkxaXZzbyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/MaXOUjkV73aO4/giphy.gif" width="60" /> Stay Connected
 
 <p align="center">
   <img src="https://media4.giphy.com/media/v1.Y2lkPTZjMDliOTUyNzg3bWlidGkyajZwcDluYm4waTVmdmxpMXVjbHR5dGY0YThtaXc5cyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/bGgsc5mWoryfgKBx1u/giphy.gif" width="100" />
