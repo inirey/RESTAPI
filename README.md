@@ -85,6 +85,8 @@ Thanks to all the amazing contributors who helped improve this project!
 Wanna join the squad? Submit a PR! 🚀
 
 ---
+## <img src="https://media3.giphy.com/media/v1.Y2lkPTZjMDliOTUycmdpamdkY2ZuaWFkbW9tdXEyNW5va29lOWY1endoc3lranJqanR1MCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/6zVq0RLEA890FCD6D1/giphy.gif" width="45" /> Group Discussion WhatsApp 
+
 
 ## <img src="https://media3.giphy.com/media/v1.Y2lkPTZjMDliOTUyYWF4ZDU4MmNkNGk3MnZ2OXUxdjN1MWhqdnFycHN2dGpmaWkxaXZzbyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/MaXOUjkV73aO4/giphy.gif" width="45" /> Stay Connected
 
