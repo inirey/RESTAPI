@@ -38,7 +38,7 @@
 
 ## <img src="https://media2.giphy.com/media/v1.Y2lkPTZjMDliOTUyZWR6ZXlnNW1sbG5rNmJlbjdzOXVra2tvZnZteHplZGp0YzI0c2VtdCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/gDPxwdP6SKFnsWDJ2u/giphy.gif" width="40" /> Features
 
-- <img src="https://media.giphy.com/media/citBl9yPwnU9a/giphy.gif" width="20" /> REST API ready
+- <img src="https://media0.giphy.com/media/v1.Y2lkPTZjMDliOTUyNDF0enI0ODltdmg2OGYzcDBmZnhtOWdpNG5rNnBqanppdG43cHVzeCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/11ASZtb7vdJagM/giphy.gif" width="20" /> Downloader
 - <img src="https://media.giphy.com/media/xUPGcgtKxm3zN1fj20/giphy.gif" width="20" /> Docker & Vercel support
 - <img src="https://media.giphy.com/media/10SvWCbt1ytWCc/giphy.gif" width="20" /> Clean architecture
 - <img src="https://media.giphy.com/media/3o6gE5aYpNHfKtJ8ek/giphy.gif" width="20" /> Easy to deploy
