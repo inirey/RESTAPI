@@ -38,11 +38,11 @@
 
 ## <img src="https://media2.giphy.com/media/v1.Y2lkPTZjMDliOTUyZWR6ZXlnNW1sbG5rNmJlbjdzOXVra2tvZnZteHplZGp0YzI0c2VtdCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/gDPxwdP6SKFnsWDJ2u/giphy.gif" width="40" /> Features
 
-- <img src="https://media0.giphy.com/media/v1.Y2lkPTZjMDliOTUyNDF0enI0ODltdmg2OGYzcDBmZnhtOWdpNG5rNnBqanppdG43cHVzeCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/11ASZtb7vdJagM/giphy.gif" width="20" /> Downloader
-- <img src="https://media0.giphy.com/media/v1.Y2lkPTZjMDliOTUydWl2NXcxYnp2aGRlZnRydndqbGMxcnRlb2t0ZTdyMmRoNjl0MWM1ZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/gdZnsWuO9SQiaTbzHv/giphy.gif" width="20" /> 18 + Content scraaper
-- <img src="https://media0.giphy.com/media/v1.Y2lkPTZjMDliOTUydGZic3F3MW5wdzR0eGZlNmp3dzk1NzY0c3ZmN2lmb2M3cXlsMWttcyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/A1oBMukTqFfkoY1HiH/giphy.gif" width="20" /> Anime Random Image
-- <img src="https://media2.giphy.com/media/v1.Y2lkPTZjMDliOTUyNTJ2anl6cGw5NDhlcWx1cjBiazN3eWpoYjM1N2h4eXJqOG1vaXkybSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/AhhGtrpj5ZxGZER5yC/giphy.gif" width="20" /> Games
-- <img src="https://media.giphy.com/media/3oEdv8Rd3tHkG3CS8E/giphy.gif" width="20" /> Other & Open Source
+- <img src="https://media0.giphy.com/media/v1.Y2lkPTZjMDliOTUyNDF0enI0ODltdmg2OGYzcDBmZnhtOWdpNG5rNnBqanppdG43cHVzeCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/11ASZtb7vdJagM/giphy.gif" width="30" /> Downloader
+- <img src="https://media0.giphy.com/media/v1.Y2lkPTZjMDliOTUydWl2NXcxYnp2aGRlZnRydndqbGMxcnRlb2t0ZTdyMmRoNjl0MWM1ZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/gdZnsWuO9SQiaTbzHv/giphy.gif" width="30" /> 18 + Content scraaper
+- <img src="https://media0.giphy.com/media/v1.Y2lkPTZjMDliOTUyMTgxd2ZpZzljbGYwNnRsb3cydWh5emxudXF2ZDQzaGZjczhjdzY1aiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ErZ8hv5eO92JW/giphy.gif" width="30" /> Anime Random Image
+- <img src="https://media2.giphy.com/media/v1.Y2lkPTZjMDliOTUyNTJ2anl6cGw5NDhlcWx1cjBiazN3eWpoYjM1N2h4eXJqOG1vaXkybSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/AhhGtrpj5ZxGZER5yC/giphy.gif" width="30" /> Games
+- <img src="https://media.giphy.com/media/3oEdv8Rd3tHkG3CS8E/giphy.gif" width="30" /> Other & Open Source
 
 ---
 
