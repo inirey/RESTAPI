@@ -1,27 +1,25 @@
 {
-  "name": "api-rey",
+  "name": "API-REST",
   "version": "1.1.0",
-  "description": "CANGKEMAN",
+  "description": "turu",
   "main": "node index.js",
   "scripts": {
     "start": "nodemon index.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/inirey/RESTAPI.git"
+    "url": "git+https://github.com/inirey/API-REST.git"
   },
   "keywords": [
     "simple",
     "api",
-    "rest-api",
-    "free-api",
     "rest",
     "api"
   ],
-  "author": "sekha",
+  "author": "Reyganz",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/inirey/RESTAPI/issues"
+    "url": "https://github.com/inirey/API-REST/issues"
   },
   "dependencies": {
     "axios": "^0.21.1",
@@ -55,10 +53,12 @@
     "nodemon": "^2.0.7",
     "request": "^2.88.2",
     "ssl-express-www": "^3.0.7",
+    "skh-api": "^1.0.0",
     "tiktok-scraper": "^1.4.12",
     "urlencode": "^1.1.0",
     "skh-api": "2.1.1",
+    "api-rey": "1.1.0",
     "zrapi": "0.0.6"
   },
-  "homepage": "https://github.com/inirey/RESTAPI#readme"
+  "homepage": "https://github.com/inirey/API-REST#readme"
 }
