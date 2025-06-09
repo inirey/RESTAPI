@@ -63,7 +63,7 @@ Wanna join the squad? Submit a PR! 🚀
 
 ---
 
-## <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="35" /> Stay Connected
+## <img src="https://media3.giphy.com/media/v1.Y2lkPTZjMDliOTUyYWF4ZDU4MmNkNGk3MnZ2OXUxdjN1MWhqdnFycHN2dGpmaWkxaXZzbyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/MaXOUjkV73aO4/giphy.gif" width="35" /> Stay Connected
 
 <p align="center">
   <img src="https://media1.giphy.com/media/v1.Y2lkPTZjMDliOTUycDZ2eWVzMnJ1c2VlNW50a3hiZzB1c3N0Ynp2dDgzazBxdzFuZDJ4NiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/y69OrzhaWfE7frw6OI/giphy.gif" width="100" />
