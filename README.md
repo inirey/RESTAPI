@@ -32,7 +32,7 @@
 
 <img src="https://media.giphy.com/media/LHZyixOnHwDDy/giphy.gif" width="20" /> Easy to use, modify, and deploy anywhere.
 
-<img src="https://media.giphy.com/media/xT0xeJpnrWC4XWblEk/giphy.gif" width="20" /> Star it if you like it!
+<img src="https://media4.giphy.com/media/v1.Y2lkPTZjMDliOTUyZDdsczZ6Njlqc3NpdXA5ZmFhZXlrancxNjB6YWl2a2FpcTNrNnNrayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/VboHReFzVELtR1Aj3f/giphy.gif" width="20" /> Star it if you like it!
 
 ---
 
