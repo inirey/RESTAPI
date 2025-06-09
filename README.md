@@ -36,6 +36,17 @@
 
 ---
 
+## <img src="https://media3.giphy.com/media/v1.Y2lkPTZjMDliOTUybjRwY25yMXVhZGZiMnJxMHQ4aHBhbGlkNnowOGZpZXFwZjE0emZtayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/65n8RPEa3r65q/giphy.gif" width="45" /> How To Install On Terminal
+
+```bash
+apt update
+apt upgrade
+git clone https://github.com/inirey/API-REST
+yarn install
+node index.js
+```
+
+
 ## <img src="https://media2.giphy.com/media/v1.Y2lkPTZjMDliOTUyZWR6ZXlnNW1sbG5rNmJlbjdzOXVra2tvZnZteHplZGp0YzI0c2VtdCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/gDPxwdP6SKFnsWDJ2u/giphy.gif" width="45" /> Features
 
 - <img src="https://media0.giphy.com/media/v1.Y2lkPTZjMDliOTUyNDF0enI0ODltdmg2OGYzcDBmZnhtOWdpNG5rNnBqanppdG43cHVzeCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/11ASZtb7vdJagM/giphy.gif" width="30" /> Downloader
