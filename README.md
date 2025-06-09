@@ -36,7 +36,7 @@
 
 ---
 
-## <img src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif" width="30" /> Features
+## <img src="https://media2.giphy.com/media/v1.Y2lkPTZjMDliOTUyZWR6ZXlnNW1sbG5rNmJlbjdzOXVra2tvZnZteHplZGp0YzI0c2VtdCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/gDPxwdP6SKFnsWDJ2u/giphy.gif" width="30" /> Features
 
 - <img src="https://media.giphy.com/media/citBl9yPwnU9a/giphy.gif" width="20" /> REST API ready
 - <img src="https://media.giphy.com/media/xUPGcgtKxm3zN1fj20/giphy.gif" width="20" /> Docker & Vercel support
@@ -56,7 +56,7 @@
 
 ---
 
-## <img src="https://media.giphy.com/media/3o6Zt481isNVuQI1l6/giphy.gif" width="30" /> Contributors
+## <img src="https://media4.giphy.com/media/v1.Y2lkPTZjMDliOTUycTljaHNxOHE4Nm1kZGlraHVrdHQ5cWhoam96Y3R0ZThwcmgzczVneCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/2AVDG3vH0DVuiS9EYg/giphy.gif" width="30" /> Contributors
 
 Thanks to all the amazing contributors who helped improve this project!  
 Wanna join the squad? Submit a PR! 🚀
@@ -66,7 +66,7 @@ Wanna join the squad? Submit a PR! 🚀
 ## <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="35" /> Stay Connected
 
 <p align="center">
-  <img src="https://media.giphy.com/media/13HgwGsXF0aiGY/giphy.gif" width="100" />
+  <img src="https://media1.giphy.com/media/v1.Y2lkPTZjMDliOTUycDZ2eWVzMnJ1c2VlNW50a3hiZzB1c3N0Ynp2dDgzazBxdzFuZDJ4NiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/y69OrzhaWfE7frw6OI/giphy.gif" width="100" />
   <br/>
   <strong>Happy Coding!</strong> 💻✨
 </p>
