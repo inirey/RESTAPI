@@ -26,7 +26,7 @@
 
 ---
 
-## <img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" width="30" /> Description
+## <img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" width="40" /> Description
 
 <img src="https://media.giphy.com/media/kaBU6pgv0OsPHz2yxy/giphy.gif" width="20" /> This is a **free REST API** project maintained by **Sekha**.
 
@@ -36,7 +36,7 @@
 
 ---
 
-## <img src="https://media2.giphy.com/media/v1.Y2lkPTZjMDliOTUyZWR6ZXlnNW1sbG5rNmJlbjdzOXVra2tvZnZteHplZGp0YzI0c2VtdCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/gDPxwdP6SKFnsWDJ2u/giphy.gif" width="30" /> Features
+## <img src="https://media2.giphy.com/media/v1.Y2lkPTZjMDliOTUyZWR6ZXlnNW1sbG5rNmJlbjdzOXVra2tvZnZteHplZGp0YzI0c2VtdCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/gDPxwdP6SKFnsWDJ2u/giphy.gif" width="40" /> Features
 
 - <img src="https://media.giphy.com/media/citBl9yPwnU9a/giphy.gif" width="20" /> REST API ready
 - <img src="https://media.giphy.com/media/xUPGcgtKxm3zN1fj20/giphy.gif" width="20" /> Docker & Vercel support
@@ -46,7 +46,7 @@
 
 ---
 
-## <img src="https://media2.giphy.com/media/v1.Y2lkPTZjMDliOTUydmp4c3JiZ3U2dnd0dmx4N3Z4OXZxcHNnenRwODI0MG5udWc4bmhvbCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/twNmUOclpYf5PFJTLp/giphy.gif" width="30" /> Deployment
+## <img src="https://media2.giphy.com/media/v1.Y2lkPTZjMDliOTUydmp4c3JiZ3U2dnd0dmx4N3Z4OXZxcHNnenRwODI0MG5udWc4bmhvbCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/twNmUOclpYf5PFJTLp/giphy.gif" width="40" /> Deployment
 
 ✅ Latest: **Vercel Support ✨**  
 ✅ Latest: **Railway Support ✨**  
@@ -56,14 +56,14 @@
 
 ---
 
-## <img src="https://media4.giphy.com/media/v1.Y2lkPTZjMDliOTUycTljaHNxOHE4Nm1kZGlraHVrdHQ5cWhoam96Y3R0ZThwcmgzczVneCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/2AVDG3vH0DVuiS9EYg/giphy.gif" width="30" /> Contributors
+## <img src="https://media4.giphy.com/media/v1.Y2lkPTZjMDliOTUycTljaHNxOHE4Nm1kZGlraHVrdHQ5cWhoam96Y3R0ZThwcmgzczVneCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/2AVDG3vH0DVuiS9EYg/giphy.gif" width="40" /> Contributors
 
 Thanks to all the amazing contributors who helped improve this project!  
 Wanna join the squad? Submit a PR! 🚀
 
 ---
 
-## <img src="https://media3.giphy.com/media/v1.Y2lkPTZjMDliOTUyYWF4ZDU4MmNkNGk3MnZ2OXUxdjN1MWhqdnFycHN2dGpmaWkxaXZzbyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/MaXOUjkV73aO4/giphy.gif" width="35" /> Stay Connected
+## <img src="https://media3.giphy.com/media/v1.Y2lkPTZjMDliOTUyYWF4ZDU4MmNkNGk3MnZ2OXUxdjN1MWhqdnFycHN2dGpmaWkxaXZzbyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/MaXOUjkV73aO4/giphy.gif" width="40" /> Stay Connected
 
 <p align="center">
   <img src="https://media4.giphy.com/media/v1.Y2lkPTZjMDliOTUyNzg3bWlidGkyajZwcDluYm4waTVmdmxpMXVjbHR5dGY0YThtaXc5cyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/bGgsc5mWoryfgKBx1u/giphy.gif" width="100" />
