@@ -46,10 +46,10 @@
 
 ---
 
-## <img src="https://media.giphy.com/media/26gsgIkMzl5J6bxKk/giphy.gif" width="30" /> Deployment
+## <img src="https://media0.giphy.com/media/v1.Y2lkPTZjMDliOTUyeWxpbDcycmExM3RzYWRyM3RxcW1pdXpiZm9wMTd5OW90eGF1eGE0dSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/veHIwhDRl780wT2XfC/giphy.gif" width="30" /> Deployment
 
 ✅ Latest: **Vercel Support ✨**  
-🕒 Updated: **13 minutes ago**
+🕒 Updated: **Latest ago**
 
 ---
 
