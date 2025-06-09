@@ -36,7 +36,7 @@
 
 ---
 
-## <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzkTi0ej52GhDLAAbnKzVyl7-GkSwmqGdazlHF5auMseQdGXRfrS4uxXA&s=10.jpg" width="45" /> How To Deploy on vercel 
+## <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzkTi0ej52GhDLAAbnKzVyl7-GkSwmqGdazlHF5auMseQdGXRfrS4uxXA&s=10.jpg" width="50" /> How To Deploy on vercel 
 
 ```bash
 please change NODEJS version to 20×
