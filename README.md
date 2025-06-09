@@ -12,7 +12,7 @@
 
 ---
 
-## 📊 GitHub Stats
+## <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdmUzN2ttanU4OHd3OHNvZGE2YWl4aDBocmh2aGlxM3BpYmR6MWh5ZCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/kH6CqY9t5sGDjACMcU/giphy.gif" width="30" /> GitHub Stats
 
 <p align="center">
   <a href="https://github.com/inirey/followers"><img src="https://img.shields.io/github/followers/inirey?color=blue&style=flat-square" title="Followers"/></a>
@@ -26,45 +26,44 @@
 
 ---
 
-## 📝 Description
+## <img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" width="30" /> Description
 
-🎯 This is a **free REST API** project maintained by **Sekha**.
+<img src="https://media.giphy.com/media/kaBU6pgv0OsPHz2yxy/giphy.gif" width="20" /> This is a **free REST API** project maintained by **Sekha**.
 
-🛠️ It provides a simple structure to build your own RESTful services — ready to deploy and easy to modify.
+<img src="https://media.giphy.com/media/LHZyixOnHwDDy/giphy.gif" width="20" /> Easy to use, modify, and deploy anywhere.
 
-⭐ Feel free to star and contribute!
-
----
-
-## ✨ Features
-
-- 🔌 REST API based structure
-- 🐳 Docker & Vercel ready
-- ⚡ Fast setup
-- 🧼 Clean & minimal code
-- 🎉 Actively updated
+<img src="https://media.giphy.com/media/xT0xeJpnrWC4XWblEk/giphy.gif" width="20" /> Star it if you like it!
 
 ---
 
-## 🚀 Deployment
+## <img src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif" width="30" /> Features
 
-✅ Latest release: **Vercel Support ✨**
-
-🕒 Deployed: **13 minutes ago**
-
----
-
-## 🤝 Contributors
-
-Thanks to all contributors who made this project better! 🙏🏻  
-Want to join? Pull requests are welcome! 💌
+- <img src="https://media.giphy.com/media/citBl9yPwnU9a/giphy.gif" width="20" /> REST API ready
+- <img src="https://media.giphy.com/media/xUPGcgtKxm3zN1fj20/giphy.gif" width="20" /> Docker & Vercel support
+- <img src="https://media.giphy.com/media/10SvWCbt1ytWCc/giphy.gif" width="20" /> Clean architecture
+- <img src="https://media.giphy.com/media/3o6gE5aYpNHfKtJ8ek/giphy.gif" width="20" /> Easy to deploy
+- <img src="https://media.giphy.com/media/3oEdv8Rd3tHkG3CS8E/giphy.gif" width="20" /> Open Source
 
 ---
 
-## 🙋🏻‍♂️ Let's Connect!
+## <img src="https://media.giphy.com/media/26gsgIkMzl5J6bxKk/giphy.gif" width="30" /> Deployment
+
+✅ Latest: **Vercel Support ✨**  
+🕒 Updated: **13 minutes ago**
+
+---
+
+## <img src="https://media.giphy.com/media/3o6Zt481isNVuQI1l6/giphy.gif" width="30" /> Contributors
+
+Thanks to all the amazing contributors who helped improve this project!  
+Wanna join the squad? Submit a PR! 🚀
+
+---
+
+## <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="35" /> Stay Connected
 
 <p align="center">
-  <img src="https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif" width="100" />
+  <img src="https://media.giphy.com/media/13HgwGsXF0aiGY/giphy.gif" width="100" />
   <br/>
   <strong>Happy Coding!</strong> 💻✨
 </p>
